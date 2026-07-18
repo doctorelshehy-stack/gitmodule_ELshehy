@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script></head><body>
+<div class="slide-content" style="background:#264653; overflow:hidden;">
+  <svg style="position:absolute; top:0; left:0; width:960px; height:540px; z-index:0;" viewBox="0 0 960 540" aria-hidden="true">
+    <circle cx="800" cy="-80" r="320" fill="#2a9d8f" opacity="0.12"/>
+    <circle cx="850" cy="120" r="140" fill="#e9c46a" opacity="0.10"/>
+    <rect x="-50" y="380" width="1100" height="220" fill="#2a9d8f" opacity="0.08" transform="rotate(-8 480 490)"/>
+    <rect x="0" y="0" width="8" height="540" fill="#2a9d8f"/>
+  </svg>
+  <div style="position:absolute; top:130px; left:70px; width:80px; height:5px; background:#e9c46a; border-radius:2px; z-index:5;"></div>
+  <p style="position:absolute; top:148px; left:70px; font-size:48px; font-weight:700; color:#ffffff; z-index:10; line-height:1.15;">Malabsorption</p>
+  <p style="position:absolute; top:212px; left:70px; font-size:42px; font-weight:700; color:#e9c46a; z-index:10; line-height:1.15;">Syndrome</p>
+  <p style="position:absolute; top:280px; left:70px; font-size:24px; font-weight:600; color:#ffffff; opacity:0.85; z-index:10;">&amp;</p>
+  <p style="position:absolute; top:310px; left:70px; font-size:36px; font-weight:700; color:#e9c46a; z-index:10;">Coeliac Disease</p>
+  <p style="position:absolute; top:365px; left:70px; font-size:18px; color:#ffffff; opacity:0.75; z-index:10; max-width:500px; line-height:1.5;">
+    Definition, Causes, Clinical Features, Investigations,<br>Diagnosis, Complications &amp; Treatment
+  </p>
+  <div style="position:absolute; bottom:0; left:0; right:0; height:52px; background:rgba(0,0,0,0.25); z-index:5;"></div>
+  <p style="position:absolute; bottom:14px; left:70px; font-size:14px; color:#e9c46a; z-index:10; font-style:italic;">Gastro-enterology &amp; Internal Medicine</p>
+  <svg style="position:absolute; right:60px; top:80px; z-index:2;" width="220" height="300" viewBox="0 0 220 300" aria-hidden="true">
+    <ellipse cx="110" cy="120" rx="90" ry="60" fill="#2a9d8f" opacity="0.2"/>
+    <path d="M 60 120 Q 60 80 110 70 Q 160 80 160 120 Q 160 160 110 170 Q 60 160 60 120 Z" fill="#2a9d8f" opacity="0.15"/>
+    <path d="M 80 140 Q 80 180 90 220" stroke="#e9c46a" stroke-width="3" fill="none" opacity="0.4"/>
+    <path d="M 110 140 Q 110 190 115 240" stroke="#e9c46a" stroke-width="3" fill="none" opacity="0.4"/>
+    <path d="M 140 140 Q 140 180 135 220" stroke="#e9c46a" stroke-width="3" fill="none" opacity="0.4"/>
+    <circle cx="90" cy="220" r="4" fill="#e76f51" opacity="0.5"/>
+    <circle cx="115" cy="240" r="3" fill="#e76f51" opacity="0.4"/>
+    <circle cx="135" cy="220" r="4" fill="#e76f51" opacity="0.5"/>
+  </svg>
+</div></body></html>

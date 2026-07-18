@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script></head><body>
+<div class="slide-content" style="background:#ffffff; overflow:hidden;">
+  <div style="position:absolute; top:0; left:0; right:0; height:56px; background:#264653; z-index:2;"></div>
+  <p style="position:absolute; top:12px; left:50px; font-size:21px; font-weight:700; color:#ffffff; z-index:10;">Investigations — Laboratory</p>
+  <div style="position:absolute; top:68px; left:40px; right:40px; bottom:10px; display:grid; grid-template-columns:1fr 1fr; gap:14px; z-index:5;">
+    <div>
+      <p style="font-size:16px; font-weight:700; color:#264653; margin-bottom:8px;">CBC for Anemia Type</p>
+      <div style="background:#f0f7f7; padding:10px 14px; border-radius:8px; margin-bottom:10px;">
+        <p style="font-size:12px; color:#264653; margin-bottom:4px;"><span style="font-weight:700; color:#e76f51;">Low MCV:</span> Measure serum ferritin &amp; soluble transferrin receptor → differentiate iron deficiency from chronic disorder</p>
+        <p style="font-size:12px; color:#264653; margin-bottom:4px;"><span style="font-weight:700; color:#f4a261;">High MCV:</span> Measure serum B12, serum &amp; red cell folate</p>
+        <p style="font-size:12px; color:#264653;"><span style="font-weight:700; color:#2a9d8f;">Normal MCV:</span> May indicate mixed deficiencies</p>
+      </div>
+      <div style="background:#ffffff; border-left:3px solid #2a9d8f; padding:8px 12px; margin-bottom:6px;">
+        <p style="font-size:12px; color:#264653;"><span style="font-weight:600;">Red cell folate:</span> Good indicator of small bowel disease. Frequently low in coeliac &amp; Crohn's</p>
+      </div>
+      <div style="background:#ffffff; border-left:3px solid #e9c46a; padding:8px 12px; margin-bottom:6px;">
+        <p style="font-size:12px; color:#264653;"><span style="font-weight:600;">Howell-Jolly bodies:</span> May indicate splenic atrophy (associated with coeliac disease)</p>
+      </div>
+      <div style="background:#ffffff; border-left:3px solid #f4a261; padding:8px 12px;">
+        <p style="font-size:12px; color:#264653;"><span style="font-weight:600;">Serum minerals &amp; vitamins</span> + immunological tests (anti-gliadin, endomysial Ab)</p>
+      </div>
+    </div>
+    <div>
+      <p style="font-size:16px; font-weight:700; color:#264653; margin-bottom:8px;">Key Serum Markers</p>
+      <div style="background:#f0f7f7; padding:10px 14px; border-radius:8px;">
+        <div style="display:flex; align-items:flex-start; margin-bottom:8px;">
+          <div style="min-width:8px; height:8px; background:#2a9d8f; border-radius:50%; margin-top:5px; margin-right:8px;"></div>
+          <p style="font-size:12px; color:#264653; line-height:1.5;"><span style="font-weight:600;">Serum albumin:</span> Indicates nutritional status &amp; intestinal protein loss</p>
+        </div>
+        <div style="display:flex; align-items:flex-start; margin-bottom:8px;">
+          <div style="min-width:8px; height:8px; background:#f4a261; border-radius:50%; margin-top:5px; margin-right:8px;"></div>
+          <p style="font-size:12px; color:#264653; line-height:1.5;"><span style="font-weight:600;">Low Ca²⁺ + raised ALP:</span> Suggests osteomalacia (Vit D deficiency)</p>
+        </div>
+        <div style="display:flex; align-items:flex-start; margin-bottom:8px;">
+          <div style="min-width:8px; height:8px; background:#e9c46a; border-radius:50%; margin-top:5px; margin-right:8px;"></div>
+          <p style="font-size:12px; color:#264653; line-height:1.5;"><span style="font-weight:600;">HLA testing:</span> Useful in coeliac disease (DQ2/DQ8)</p>
+        </div>
+        <div style="display:flex; align-items:flex-start;">
+          <div style="min-width:8px; height:8px; background:#e76f51; border-radius:50%; margin-top:5px; margin-right:8px;"></div>
+          <p style="font-size:12px; color:#264653; line-height:1.5;"><span style="font-weight:600;">Anti-gliadin &amp; endomysial Ab:</span> Specific for coeliac disease</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:50;" width="48" height="28" viewBox="0 0 48 28" aria-hidden="true">
+  <rect x="0" y="0" width="48" height="28" rx="14" fill="#264653" opacity="0.85"/>
+  <text x="24" y="19" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="14" font-weight="600">6</text>
+</svg>
+</div></body></html>

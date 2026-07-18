@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Non-Variceal UGIB</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;background:#fff;overflow:hidden;position:relative;">
+
+  
+
+  <p style="position:absolute;top:30px;left:50px;font-family:'Times New Roman',serif;font-size:32px;font-weight:700;color:#003049;z-index:10;margin:0;">
+    Non-Variceal Upper GI Bleeding
+  </p>
+  <div style="position:absolute;top:68px;left:50px;width:80px;height:3px;background:#c1121f;z-index:10;"></div>
+
+  <!-- Left: Causes -->
+  <div style="position:absolute;top:95px;left:50px;width:420px;z-index:10;font-family:'Times New Roman',serif;">
+    <p style="font-size:18px;font-weight:700;color:#780000;margin:0 0 10px 0;">Most Common Causes</p>
+    <ol style="margin:0;padding-left:22px;font-size:15px;color:#003049;line-height:2.0;">
+      <li><strong style="color:#c1121f;">Peptic ulcer disease</strong> (most frequent)</li>
+      <li>Mucosal erosive disease of upper GIT</li>
+      <li>Mallory-Weiss syndrome</li>
+      <li>Upper GIT malignancies</li>
+    </ol>
+
+    <p style="font-size:18px;font-weight:700;color:#669bbc;margin:20px 0 8px 0;">Management Goals</p>
+    <ol style="margin:0;padding-left:22px;font-size:14px;color:#003049;line-height:1.8;">
+      <li>Hemodynamic resuscitation (same as variceal)</li>
+      <li><strong style="color:#c1121f;">No role</strong> for somatostatin/terlipressin in non-variceal bleeding</li>
+      <li>Stop bleeding via endoscopic therapy</li>
+      <li>Endoscopic risk stratification (Forrest classification)</li>
+    </ol>
+  </div>
+
+  <!-- Right: Endoscopic treatment -->
+  <div style="position:absolute;top:95px;left:500px;width:420px;z-index:10;font-family:'Times New Roman',serif;">
+    <p style="font-size:18px;font-weight:700;color:#003049;margin:0 0 10px 0;">Endoscopic Treatment Options</p>
+
+    <div style="background:rgba(102,155,188,0.06);padding:12px;border-radius:6px;border-left:4px solid #669bbc;margin-bottom:8px;">
+      <p style="font-size:15px;font-weight:700;color:#003049;margin:0 0 4px 0;">Thermocoagulation</p>
+      <p style="font-size:13px;color:#003049;margin:0;">Heat probe or argon plasma coagulation to cauterize bleeding vessels.</p>
+    </div>
+
+    <div style="background:rgba(120,0,0,0.04);padding:12px;border-radius:6px;border-left:4px solid #780000;margin-bottom:8px;">
+      <p style="font-size:15px;font-weight:700;color:#780000;margin:0 0 4px 0;">Metallic Clips</p>
+      <p style="font-size:13px;color:#003049;margin:0;">Mechanical compression of bleeding vessel — effective for visible vessels.</p>
+    </div>
+
+    <div style="background:rgba(253,240,213,0.5);padding:12px;border-radius:6px;border-left:4px solid #fdf0d5;margin-bottom:8px;">
+      <p style="font-size:15px;font-weight:700;color:#003049;margin:0 0 4px 0;">Sclerosant Injection</p>
+      <p style="font-size:13px;color:#003049;margin:0;">Epinephrine <strong style="color:#c1121f;">should NOT</strong> be used as sole agent. Combine with other sclerosant.</p>
+    </div>
+
+    <div style="background:rgba(192,18,31,0.04);padding:12px;border-radius:6px;border-left:4px solid #c1121f;">
+      <p style="font-size:15px;font-weight:700;color:#c1121f;margin:0 0 4px 0;">Surgery</p>
+      <p style="font-size:13px;color:#003049;margin:0;">Indicated if bleeding cannot be adequately controlled by endoscopy.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

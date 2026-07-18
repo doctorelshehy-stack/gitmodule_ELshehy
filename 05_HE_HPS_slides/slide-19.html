@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HPS - Clinical Diagnosis</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;position:relative;background:#ffffff;font-family:'Times New Roman',Times,serif;color:#1a1a2e;overflow:hidden;">
+<div style="position:absolute;top:0;left:0;width:960px;height:540px;background:#ffffff;z-index:0;"></div>
+<svg aria-hidden="true" style="position:absolute;top:0;left:0;z-index:1;" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="8" height="540" fill="#264653"/>
+</svg>
+<p style="position:absolute;top:20px;left:44px;z-index:5;font-size:32px;font-weight:700;color:#264653;">HPS — Clinical Diagnosis</p>
+<div style="position:absolute;top:64px;left:44px;width:80px;height:3px;z-index:5;background:#2a9d8f;border-radius:1.5px;"></div>
+
+<div style="position:absolute;top:90px;left:44px;right:44px;z-index:5;">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+    <div style="background:#f8f9fa;padding:16px;border-radius:6px;border-top:3px solid #2a9d8f;">
+      <p style="margin:0 0 8px 0;font-size:15px;font-weight:700;color:#2a9d8f;">History</p>
+      <ul style="margin:0;padding-left:16px;font-size:13px;color:#1a1a2e;">
+        <li style="margin-bottom:5px;"><strong>History of underlying chronic liver disease</strong> — most symptoms reflect this: fatigue, confusion, abdominal distension, ankle swelling, GI bleeding</li>
+        <li style="margin-bottom:5px;"><strong>Shortness of breath (dyspnea)</strong> — particularly if it is worsened by standing upright from a recumbent position (platypnea)</li>
+        <li style="margin-bottom:5px;"><strong>Orthodeoxia</strong> — decrease in arterial oxygen saturation when moving from supine to upright position</li>
+        <li style="margin-bottom:5px;">Exercise intolerance and easy fatigability</li>
+        <li style="margin-bottom:5px;">Progressive dyspnea over months to years</li>
+      </ul>
+    </div>
+    <div style="background:#f8f9fa;padding:16px;border-radius:6px;border-top:3px solid #f4a261;">
+      <p style="margin:0 0 8px 0;font-size:15px;font-weight:700;color:#f4a261;">Physical Examination</p>
+      <ul style="margin:0;padding-left:16px;font-size:13px;color:#1a1a2e;">
+        <li style="margin-bottom:5px;"><strong>Stigmata of chronic liver disease</strong> — jaundice, muscle wasting, gynecomastia, ascites, spider angiomata, leg edema, splenomegaly</li>
+        <li style="margin-bottom:5px;">Typically, the heart and lung examination are <strong>normal</strong> without evidence of pulmonary edema, pleural effusion or heart failure (these could mimic HPS)</li>
+        <li style="margin-bottom:5px;"><strong>Spider nevi</strong> — very common in cirrhosis but may be more numerous in HPS</li>
+        <li style="margin-bottom:5px;"><strong>Severe ascites</strong> can cause elevation of the diaphragm, impair ventilation and lead to tachypnea</li>
+        <li style="margin-bottom:5px;"><strong>Central cyanosis</strong> — if arterial oxygen saturation is very low, may be noted (bluish discoloration of lips, tongue, and oral mucosa)</li>
+        <li style="margin-bottom:5px;">Digital clubbing (in advanced cases)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div style="position:absolute;top:380px;left:44px;right:44px;z-index:5;">
+  <div style="background:#fff3cd;padding:8px 14px;border-radius:4px;border:1px solid #ffc107;">
+    <p style="margin:0;font-size:12px;color:#856404;"><strong>Key Clinical Pearl:</strong> Platypnea-orthodeoxia (dyspnea and hypoxemia worsened by upright posture) is a classic but not universal feature of HPS. Ask specifically about positional breathlessness in all cirrhotic patients with respiratory symptoms.</p>
+  </div>
+</div>
+<svg aria-hidden="true" style="position:absolute;right:32px;bottom:24px;z-index:20;" width="40" height="28" viewBox="0 0 40 28">
+      <rect x="0" y="0" width="40" height="28" rx="4" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="19" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" font-family: 'Times New Roman', Times, serif;">19</text>
+    </svg>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UGIB — Approach</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;background:#fff;overflow:hidden;position:relative;">
+
+  
+
+  <p style="position:absolute;top:26px;left:50px;font-family:'Times New Roman',serif;font-size:30px;font-weight:700;color:#003049;z-index:10;margin:0;">
+    Approach to Upper GI Bleeding
+  </p>
+  <div style="position:absolute;top:64px;left:50px;width:80px;height:3px;background:#c1121f;z-index:10;"></div>
+
+  <!-- History -->
+  <div style="position:absolute;top:90px;left:50px;width:430px;z-index:10;font-family:'Times New Roman',serif;">
+    <p style="font-size:18px;font-weight:700;color:#780000;margin:0 0 8px 0;">History — Key Questions</p>
+    <ul style="margin:0;padding-left:18px;font-size:13px;color:#003049;line-height:1.7;">
+      <li>Abdominal pain, dyspepsia</li>
+      <li>Hematemesis, hematochezia, melena</li>
+      <li>Features of blood loss: shock, syncope, anemia</li>
+      <li>Features of underlying cause: jaundice, weight loss</li>
+      <li>Medications: <strong style="color:#c1121f;">NSAIDs, aspirin, corticosteroids, anticoagulants</strong></li>
+      <li>Epistaxis or hemoptysis (rule out non-GI source)</li>
+      <li>Past history: previous UGIB, DM, CAD, CKD, liver disease, COPD</li>
+      <li>Previous abdominal surgery</li>
+    </ul>
+  </div>
+
+  <!-- Examination -->
+  <div style="position:absolute;top:90px;left:500px;width:420px;z-index:10;font-family:'Times New Roman',serif;">
+    <p style="font-size:18px;font-weight:700;color:#669bbc;margin:0 0 8px 0;">Examination</p>
+    <div style="background:rgba(120,0,0,0.04);padding:10px 14px;border-radius:6px;border-left:4px solid #780000;margin-bottom:8px;">
+      <p style="font-size:14px;font-weight:700;color:#780000;margin:0 0 4px 0;">General</p>
+      <p style="font-size:13px;color:#003049;margin:0;">Vital signs — pulse, BP, respiratory rate, temperature</p>
+    </div>
+    <div style="background:rgba(102,155,188,0.06);padding:10px 14px;border-radius:6px;border-left:4px solid #669bbc;margin-bottom:8px;">
+      <p style="font-size:14px;font-weight:700;color:#003049;margin:0 0 4px 0;">Shock Assessment</p>
+      <p style="font-size:13px;color:#003049;margin:0;">Cold extremities, tachycardia, hypotension, chest pain, confusion, delirium, oliguria</p>
+    </div>
+    <div style="background:rgba(253,240,213,0.5);padding:10px 14px;border-radius:6px;border-left:4px solid #fdf0d5;margin-bottom:8px;">
+      <p style="font-size:14px;font-weight:700;color:#003049;margin:0 0 4px 0;">Cirrhosis Stigmata</p>
+      <p style="font-size:13px;color:#003049;margin:0;">Palmar erythema, spider nevi, purpura, ecchymosis</p>
+    </div>
+    <div style="background:rgba(192,18,31,0.04);padding:10px 14px;border-radius:6px;border-left:4px solid #c1121f;">
+      <p style="font-size:14px;font-weight:700;color:#c1121f;margin:0 0 4px 0;">Mass / Tumor Signs</p>
+      <p style="font-size:13px;color:#003049;margin:0;">Nodular liver, abdominal mass, lymphadenopathy</p>
+    </div>
+  </div>
+
+  
+</div>
+</body>
+</html>

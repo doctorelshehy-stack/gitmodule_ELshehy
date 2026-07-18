@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background: #f0f7f7; overflow:hidden;">
+  <!-- Header bar -->
+  <div style="position:absolute; top:0; left:0; right:0; height:60px; background:#e76f51; z-index:2;"></div>
+  <p style="position:absolute; top:14px; left:60px; font-size:22px; font-weight:700; color:#ffffff; z-index:10;">Acute Cholecystitis</p>
+
+  <!-- Mechanism banner -->
+  <div style="position:absolute; top:72px; left:60px; right:60px; background:#ffffff; padding:10px 20px; border-radius:8px; border-left:4px solid #e76f51; z-index:5;">
+    <p style="font-size:14px; color:#264653; line-height:1.5;">
+      Initially a <span style="font-weight:700; color:#e76f51;">chemical inflammation</span> followed by <span style="font-weight:700; color:#e76f51;">secondary bacterial infection</span>. Occurs when obstruction of the cystic duct persists.
+    </p>
+  </div>
+
+  <!-- Two-column grid -->
+  <div style="position:absolute; top:124px; left:40px; right:40px; bottom:20px; display:grid; grid-template-columns:1fr 1fr; gap:20px; z-index:5;">
+    <!-- Left: Clinical + Investigations -->
+    <div>
+      <p style="font-size:18px; font-weight:700; color:#264653; margin-bottom:10px;">Clinical Picture</p>
+
+      <div style="background:#ffffff; padding:12px 14px; border-radius:8px; margin-bottom:10px;">
+        <div style="display:flex; align-items:center; margin-bottom:6px;">
+          <div style="width:8px; height:8px; background:#f4a261; border-radius:50%; margin-right:10px;"></div>
+          <p style="font-size:13px; color:#264653;">Mild fever, nausea, vomiting</p>
+        </div>
+        <div style="display:flex; align-items:center; margin-bottom:6px;">
+          <div style="width:8px; height:8px; background:#e76f51; border-radius:50%; margin-right:10px;"></div>
+          <p style="font-size:13px; color:#264653;">Acute RUQ pain → radiates to <span style="font-weight:700;">right shoulder</span></p>
+        </div>
+        <div style="display:flex; align-items:center;">
+          <div style="width:8px; height:8px; background:#2a9d8f; border-radius:50%; margin-right:10px;"></div>
+          <p style="font-size:13px; color:#264653;">Localized tenderness in RUQ</p>
+        </div>
+      </div>
+
+      <p style="font-size:18px; font-weight:700; color:#264653; margin-bottom:10px;">Investigations</p>
+      <div style="background:#ffffff; padding:12px 14px; border-radius:8px;">
+        <p style="font-size:13px; color:#264653; margin-bottom:4px;">
+          <span style="font-weight:600;">USG:</span> Tender, thick-walled, edematous GB with adjacent fluid
+        </p>
+        <p style="font-size:13px; color:#264653; margin-bottom:4px;">
+          <span style="font-weight:600;">LFTs:</span> Often mildly abnormal
+        </p>
+        <p style="font-size:13px; color:#264653;">
+          <span style="font-weight:600;">CBC:</span> Leucocytosis
+        </p>
+      </div>
+    </div>
+
+    <!-- Right: Complications + Management -->
+    <div>
+      <p style="font-size:18px; font-weight:700; color:#e76f51; margin-bottom:10px;">Complications</p>
+
+      <div style="display:flex; gap:8px; margin-bottom:16px;">
+        <div style="flex:1; background:#e76f51; padding:10px; border-radius:8px; text-align:center;">
+          <p style="font-size:13px; color:#ffffff; font-weight:600;">Empyema</p>
+          <p style="font-size:11px; color:rgba(255,255,255,0.8);">Mucocele</p>
+        </div>
+        <div style="flex:1; background:#f4a261; padding:10px; border-radius:8px; text-align:center;">
+          <p style="font-size:13px; color:#ffffff; font-weight:600;">Gangrene</p>
+        </div>
+        <div style="flex:1; background:#264653; padding:10px; border-radius:8px; text-align:center;">
+          <p style="font-size:13px; color:#ffffff; font-weight:600;">Fistula</p>
+        </div>
+        <div style="flex:1; background:#e76f51; padding:10px; border-radius:8px; text-align:center;">
+          <p style="font-size:13px; color:#ffffff; font-weight:600;">Perforation</p>
+        </div>
+      </div>
+
+      <p style="font-size:18px; font-weight:700; color:#264653; margin-bottom:10px;">Management</p>
+
+      <div style="background:#ffffff; padding:12px 14px; border-radius:8px; margin-bottom:8px;">
+        <div style="display:flex; align-items:center; margin-bottom:6px;">
+          <div style="min-width:24px; height:24px; background:#2a9d8f; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:10px;">
+            <span style="font-size:11px; color:#ffffff; font-weight:700;">1</span>
+          </div>
+          <p style="font-size:13px; color:#264653;">NSAID or opioid analgesic</p>
+        </div>
+        <div style="display:flex; align-items:center; margin-bottom:6px;">
+          <div style="min-width:24px; height:24px; background:#2a9d8f; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:10px;">
+            <span style="font-size:11px; color:#ffffff; font-weight:700;">2</span>
+          </div>
+          <p style="font-size:13px; color:#264653;">Broad spectrum parenteral antibiotic</p>
+        </div>
+        <div style="display:flex; align-items:center; margin-bottom:6px;">
+          <div style="min-width:24px; height:24px; background:#2a9d8f; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:10px;">
+            <span style="font-size:11px; color:#ffffff; font-weight:700;">3</span>
+          </div>
+          <p style="font-size:13px; color:#264653;">Monitor: tachycardia, fever, tenderness</p>
+        </div>
+        <div style="display:flex; align-items:center;">
+          <div style="min-width:24px; height:24px; background:#e76f51; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:10px;">
+            <span style="font-size:11px; color:#ffffff; font-weight:700;">4</span>
+          </div>
+          <p style="font-size:13px; color:#264653; font-weight:600;">Cholecystectomy during same admission</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:50;" width="48" height="28" viewBox="0 0 48 28" aria-hidden="true">
+  <rect x="0" y="0" width="48" height="28" rx="14" fill="#264653" opacity="0.85"/>
+  <text x="24" y="19" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="14" font-weight="600">10</text>
+</svg>
+</div>
+</body>
+</html>

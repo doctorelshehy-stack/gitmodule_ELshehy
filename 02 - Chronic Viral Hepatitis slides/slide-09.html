@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; color:#264653; position:relative; overflow:hidden; font-family:'Times New Roman',serif;">
+<p style="position:absolute; top:20px; left:50px; font-size:26px; font-weight:700; color:#264653; font-family:'Times New Roman',serif; margin:0; z-index:10;">Chronic Hepatitis B — Clinical Presentations</p>
+<div style="position:absolute; top:60px; left:50px; width:80px; height:4px; background:#2a9d8f; border-radius:2px; z-index:1;"></div>
+<div style="position:absolute; top:76px; left:50px; right:50px; bottom:56px; overflow:hidden; font-size:14px; line-height:1.45; color:#264653;">
+
+<p style="font-size:15px; font-weight:700; color:#264653; margin:0 0 6px 0;">Clinical Presentations of Chronic Hepatitis B</p>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:6px 0 10px 0;">
+
+  <div style="border:2px solid #2a9d8f; border-radius:8px; overflow:hidden;">
+    <div style="background:#2a9d8f; padding:6px 10px;">
+      <p style="margin:0; font-weight:700; font-size:14px; color:#ffffff;">1. Non-Specific Manifestations</p>
+    </div>
+    <div style="padding:8px 10px;">
+      <p style="margin:0; font-size:13px;">Fatigue is the <strong>most common</strong> symptom.</p>
+    </div>
+  </div>
+
+  <div style="border:2px solid #e76f51; border-radius:8px; overflow:hidden;">
+    <div style="background:#e76f51; padding:6px 10px;">
+      <p style="margin:0; font-weight:700; font-size:14px; color:#ffffff;">2. Specific Hepatic Manifestations</p>
+    </div>
+    <div style="padding:8px 10px;">
+      <p style="margin:0 0 2px 0; font-size:12px;">Due to hepatocellular dysfunction or portal hypertension:</p>
+      <ul style="margin:2px 0 0 16px; padding:0; font-size:12px;">
+        <li>Jaundice</li>
+        <li>Ascites</li>
+        <li>Hepatic encephalopathy</li>
+        <li>Spider nevi</li>
+        <li>Palmar erythema</li>
+        <li>Splenomegaly</li>
+        <li>Varices</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="border:2px solid #f4a261; border-radius:8px; overflow:hidden;">
+    <div style="background:#f4a261; padding:6px 10px;">
+      <p style="margin:0; font-weight:700; font-size:14px; color:#ffffff;">3. Extrahepatic Manifestations</p>
+    </div>
+    <div style="padding:8px 10px;">
+      <ul style="margin:2px 0 0 16px; padding:0; font-size:12px;">
+        <li>Cryoglobulinemia</li>
+        <li>Glomerulonephritis</li>
+        <li>Generalized vasculitis</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="border:2px solid #264653; border-radius:8px; overflow:hidden;">
+    <div style="background:#264653; padding:6px 10px;">
+      <p style="margin:0; font-weight:700; font-size:14px; color:#e9c46a;">4. Hepatocellular Carcinoma (HCC)</p>
+    </div>
+    <div style="padding:8px 10px;">
+      <p style="margin:0 0 2px 0; font-weight:700; font-size:12px; color:#264653;">Direct mechanisms:</p>
+      <ul style="margin:2px 0 4px 16px; padding:0; font-size:11px;">
+        <li>HBV DNA integrated into chromosomes of hepatocytes</li>
+        <li>HBV proteins</li>
+      </ul>
+      <p style="margin:0 0 2px 0; font-weight:700; font-size:12px; color:#264653;">Indirect mechanisms:</p>
+      <ul style="margin:2px 0 0 16px; padding:0; font-size:11px;">
+        <li>Inflammation and regeneration associated with chronic HBV infection</li>
+        <li>Cirrhosis associated with chronic HBV infection</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+</div>
+<svg style="position:absolute; right:32px; bottom:24px; width:40px; height:32px; z-index:100;" aria-hidden="true">
+<rect x="0" y="0" width="40" height="32" rx="4" fill="#2a9d8f" opacity="0.85"/>
+<text x="20" y="22" text-anchor="middle" font-family="Times New Roman,serif" font-size="14" font-weight="700" fill="#ffffff">09</text>
+</svg>
+</div>
+</body>
+</html>

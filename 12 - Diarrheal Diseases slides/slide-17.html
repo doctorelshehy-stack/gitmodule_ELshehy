@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+<div style="position:absolute; inset:0; background:#ffffff;">
+  <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:#2a9d8f;"></div>
+  <p style="position:absolute; top:20px; left:40px; font-family:'Times New Roman',serif; font-size:24px; font-weight:700; color:#264653; margin:0;">Treatment of Acute Diarrhea</p>
+  <div style="position:absolute; top:54px; left:40px; width:60px; height:3px; background:#e9c46a; border-radius:2px;"></div>
+
+  <div style="position:absolute; top:76px; left:40px; right:40px; bottom:46px; display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px;">
+    <div style="background:#f8f9fa; padding:12px; border-radius:4px; border-top:3px solid #2a9d8f;">
+      <p style="font-family:'Times New Roman',serif; font-size:13px; font-weight:700; color:#2a9d8f; margin:0 0 4px 0;">1. Fluid &amp; Electrolytes</p>
+      <p style="font-family:'Times New Roman',serif; font-size:11px; color:#264653; margin:0; line-height:1.4;">Assess dehydration and replace fluid and electrolyte deficits. Dehydration is the cause of death in acute diarrhea.</p>
+      <p style="font-family:'Times New Roman',serif; font-size:13px; font-weight:700; color:#2a9d8f; margin:8px 0 4px 0;">2. Diet</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:11px; color:#264653; margin:0; padding-left:14px; line-height:1.4;">
+        <li>Frequent feedings: fruit drinks, tea, bananas, apple, rice, potatoes, noodles, toast, soups</li>
+        <li>Green bananas, pectins decrease diarrhea</li>
+        <li><b>AVOID:</b> Dairy products, caffeinated beverages, alcohol</li>
+      </ul>
+    </div>
+    <div style="background:#f8f9fa; padding:12px; border-radius:4px; border-top:3px solid #f4a261;">
+      <p style="font-family:'Times New Roman',serif; font-size:13px; font-weight:700; color:#f4a261; margin:0 0 4px 0;">3-5. Ancillary Treatment</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:11px; color:#264653; margin:0; padding-left:14px; line-height:1.5;">
+        <li><b>Anxiolytics</b> (e.g., diazepam 2 mg)</li>
+        <li><b>Antiemetics</b> make symptoms more tolerable and are safe</li>
+        <li><b>Zinc supplementation</b> effective in preventing recurrences in malnourished children; improves enterocytes renewal</li>
+      </ul>
+      <p style="font-family:'Times New Roman',serif; font-size:11px; color:#264653; margin:6px 0 0;">Food provides calories necessary to facilitate renewal of enterocytes.</p>
+    </div>
+    <div style="background:#f8f9fa; padding:12px; border-radius:4px; border-top:3px solid #e76f51;">
+      <p style="font-family:'Times New Roman',serif; font-size:13px; font-weight:700; color:#e76f51; margin:0 0 4px 0;">6-7. Antibiotics</p>
+      <p style="font-family:'Times New Roman',serif; font-size:11px; font-weight:700; color:#264653; margin:0 0 3px;">Antibiotic indicated if:</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:11px; color:#264653; margin:0; padding-left:14px; line-height:1.4;">
+        <li>Immunocompromised or elderly</li>
+        <li>Mechanical heart valves</li>
+        <li>Recent vascular grafts</li>
+      </ul>
+      <p style="font-family:'Times New Roman',serif; font-size:11px; font-weight:700; color:#264653; margin:6px 0 3px;">Empiric treatment:</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:11px; color:#264653; margin:0; padding-left:14px; line-height:1.4;">
+        <li><b>Ciprofloxacin</b> (500 mg bid for 3–5 d)</li>
+        <li><b>Metronidazole</b> for suspected giardiasis (250 mg qid for 7 d)</li>
+      </ul>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; width:40px; height:24px;" aria-hidden="true">
+      <rect x="0" y="2" width="40" height="20" rx="10" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="16" text-anchor="middle" fill="#ffffff" font-family="'Times New Roman',serif" font-size="12" font-weight="700">17</text>
+    </svg>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+<div style="position:absolute; inset:0; background:#ffffff;">
+  <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:#2a9d8f;"></div>
+  <p style="position:absolute; top:20px; left:40px; font-family:'Times New Roman',serif; font-size:24px; font-weight:700; color:#264653; margin:0;">5. Enterohemorrhagic E. Coli (EHEC) &amp; HUS</p>
+  <div style="position:absolute; top:54px; left:40px; width:60px; height:3px; background:#e9c46a; border-radius:2px;"></div>
+
+  <div style="position:absolute; top:76px; left:40px; right:40px; bottom:46px; display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+    <div style="background:#f8f9fa; padding:14px; border-radius:4px; border-top:3px solid #e76f51;">
+      <p style="font-family:'Times New Roman',serif; font-size:15px; font-weight:700; color:#e76f51; margin:0 0 6px 0;">EHEC (O157:H7)</p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#264653; margin:0 0 3px;">Sources of infection:</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0; padding-left:16px; line-height:1.5;">
+        <li>Contaminated water &amp; milk</li>
+        <li>Meat products (especially hamburgers incompletely cooked)</li>
+        <li>Lettuce and apple juice</li>
+      </ul>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#264653; margin:6px 0 3px;">Clinical:</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0; padding-left:16px; line-height:1.5;">
+        <li>Abdominal pain and bloody diarrhea <b>without fever</b></li>
+        <li>Enterotoxins have both local effect on the bowel and distant effect on glomerular apparatus, heart and brain</li>
+      </ul>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#e76f51; margin:6px 0 3px;">Antibiotic NOT recommended</p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0;">Due to increased incidence of HUS after antibiotic therapy</p>
+    </div>
+    <div style="background:#f8f9fa; padding:14px; border-radius:4px; border-top:3px solid #e76f51;">
+      <p style="font-family:'Times New Roman',serif; font-size:15px; font-weight:700; color:#e76f51; margin:0 0 6px 0;">Hemolytic-Uremic Syndrome (HUS)</p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0 0 4px;">The major systemic complication</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0; padding-left:16px; line-height:1.6;">
+        <li>Characterized by the triad of <b>acute renal failure, microangiopathic hemolytic anemia and thrombocytopenia</b></li>
+        <li>Occurs in <b>10-15%</b> of sufferers, arising 5-7 days after onset</li>
+        <li>Most likely at extremes of age, high peripheral leucocyte count</li>
+        <li>May be induced by antibiotic therapy</li>
+        <li><b>Treated by:</b> dialysis &amp; plasma exchange</li>
+      </ul>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; width:40px; height:24px;" aria-hidden="true">
+      <rect x="0" y="2" width="40" height="20" rx="10" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="16" text-anchor="middle" fill="#ffffff" font-family="'Times New Roman',serif" font-size="12" font-weight="700">10</text>
+    </svg>
+</div>
+</div>
+</body>
+</html>

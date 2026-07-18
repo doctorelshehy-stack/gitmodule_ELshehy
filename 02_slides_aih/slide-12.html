@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PBC — Clinical Findings</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;background:#fff;overflow:hidden;position:relative;">
+
+  <svg aria-hidden="true" style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:1;" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="960" height="540" fill="#fff"/>
+    <rect x="954" y="0" width="6" height="540" fill="#2a9d8f"/>
+  </svg>
+
+  <p style="position:absolute;top:30px;left:50px;font-family:'Times New Roman',serif;font-size:36px;font-weight:700;color:#264653;z-index:10;margin:0;">
+    PBC — Clinical Findings
+  </p>
+  <div style="position:absolute;top:72px;left:50px;width:80px;height:3px;background:#2a9d8f;z-index:10;"></div>
+
+  <!-- Symptoms -->
+  <div style="position:absolute;top:105px;left:50px;width:420px;z-index:10;font-family:'Times New Roman',serif;">
+    <p style="font-size:18px;font-weight:700;color:#2a9d8f;margin:0 0 8px 0;">Symptoms &amp; Signs</p>
+    <table style="width:100%;border-collapse:collapse;font-size:14px;">
+      <tr style="background:#264653;color:#fff;">
+        <th style="padding:5px 8px;text-align:left;font-weight:700;">Symptom</th>
+        <th style="padding:5px 8px;text-align:left;font-weight:700;">Frequency</th>
+      </tr>
+      <tr style="background:rgba(42,157,143,0.06);">
+        <td style="padding:5px 8px;border-bottom:1px solid #eee;">Fatigue</td>
+        <td style="padding:5px 8px;border-bottom:1px solid #eee;">Very common</td>
+      </tr>
+      <tr>
+        <td style="padding:5px 8px;border-bottom:1px solid #eee;">Pruritus</td>
+        <td style="padding:5px 8px;border-bottom:1px solid #eee;">Very common</td>
+      </tr>
+      <tr style="background:rgba(42,157,143,0.06);">
+        <td style="padding:5px 8px;border-bottom:1px solid #eee;">Dry eyes / Dry mouth</td>
+        <td style="padding:5px 8px;border-bottom:1px solid #eee;">Common (Sjögren overlap)</td>
+      </tr>
+      <tr>
+        <td style="padding:5px 8px;border-bottom:1px solid #eee;">RUQ discomfort</td>
+        <td style="padding:5px 8px;border-bottom:1px solid #eee;">Common</td>
+      </tr>
+      <tr style="background:rgba(42,157,143,0.06);">
+        <td style="padding:5px 8px;border-bottom:1px solid #eee;">Jaundice</td>
+        <td style="padding:5px 8px;border-bottom:1px solid #eee;">Late finding</td>
+      </tr>
+      <tr>
+        <td style="padding:5px 8px;border-bottom:1px solid #eee;">Ascites</td>
+        <td style="padding:5px 8px;border-bottom:1px solid #eee;">Late (portal HTN)</td>
+      </tr>
+      <tr style="background:rgba(42,157,143,0.06);">
+        <td style="padding:5px 8px;">GI bleeding / Encephalopathy</td>
+        <td style="padding:5px 8px;">End-stage</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Diagnostics box -->
+  <div style="position:absolute;top:105px;left:500px;width:420px;z-index:10;font-family:'Times New Roman',serif;">
+    <p style="font-size:18px;font-weight:700;color:#2a9d8f;margin:0 0 8px 0;">Diagnostic Approach</p>
+    <div style="background:rgba(42,157,143,0.06);padding:12px 16px;border-radius:6px;border-left:4px solid #2a9d8f;">
+      <p style="font-size:15px;font-weight:700;color:#264653;margin:0 0 6px 0;">Laboratory</p>
+      <ul style="margin:0;padding-left:18px;font-size:13px;color:#264653;line-height:1.6;">
+        <li>Cholestatic pattern: elevated ALP, GGT</li>
+        <li>AMA positive (95% sensitivity)</li>
+        <li>Elevated IgM</li>
+        <li>Anti-mitochondrial antibodies (M2 subtype)</li>
+      </ul>
+    </div>
+    <div style="margin-top:14px;background:rgba(233,196,106,0.12);padding:12px 16px;border-radius:6px;border-left:4px solid #e9c46a;">
+      <p style="font-size:15px;font-weight:700;color:#264653;margin:0 0 6px 0;">Liver Biopsy</p>
+      <ul style="margin:0;padding-left:18px;font-size:13px;color:#264653;line-height:1.6;">
+        <li>Non-suppurative destructive cholangitis</li>
+        <li>Granulomatous destruction of intrahepatic bile ducts</li>
+        <li>Staging: florid duct lesion → ductopenia → cirrhosis</li>
+      </ul>
+    </div>
+  </div>
+
+  
+  <!-- Informational image -->
+  <img src="imgs/pbc_symptoms.svg" alt="Illustration" style="position:absolute;left:32px;top:430px;width:width:200px;height:auto;z-index:15;border-radius:6px;opacity:0.85;">
+<svg aria-hidden="true" style="position:absolute;right:32px;bottom:24px;width:40px;height:40px;z-index:50;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="40" height="40" rx="20" fill="#2a9d8f"/>
+  <text x="20" y="28" text-anchor="middle" font-family="Times New Roman,serif" font-size="18" font-weight="700" fill="#fff">12</text>
+</svg>
+</div>
+</body>
+</html>

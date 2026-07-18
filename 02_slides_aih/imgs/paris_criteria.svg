@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <rect width="300" height="200" rx="8" fill="#f0f4f4"/>
+  <rect x="0" y="0" width="300" height="36" rx="8" fill="#264653"/>
+  <rect x="0" y="20" width="300" height="16" fill="#264653"/>
+  <text x="150" y="24" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#fff">Paris Criteria Checklist</text>
+  <!-- PBC criteria -->
+  <rect x="15" y="44" width="270" height="52" rx="5" fill="#2a9d8f" opacity="0.08"/>
+  <text x="22" y="58" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#2a9d8f">PBC (need 2 of 3):</text>
+  <circle cx="25" cy="70" r="4" fill="#2a9d8f" opacity="0.6"/>
+  <text x="35" y="74" font-family="Arial,sans-serif" font-size="9" fill="#264653">AMA positive</text>
+  <circle cx="120" cy="70" r="4" fill="#2a9d8f" opacity="0.6"/>
+  <text x="130" y="74" font-family="Arial,sans-serif" font-size="9" fill="#264653">ALP ↑ 2× or GGT ↑ 5×</text>
+  <circle cx="25" cy="88" r="4" fill="#2a9d8f" opacity="0.6"/>
+  <text x="35" y="92" font-family="Arial,sans-serif" font-size="9" fill="#264653">Biopsy: bile duct lesions</text>
+  <!-- AIH criteria -->
+  <rect x="15" y="102" width="270" height="52" rx="5" fill="#e9c46a" opacity="0.1"/>
+  <text x="22" y="116" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#264653">AIH (need 2 of 3):</text>
+  <circle cx="25" cy="128" r="4" fill="#e9c46a"/>
+  <text x="35" y="132" font-family="Arial,sans-serif" font-size="9" fill="#264653">ALT ↑ 5×</text>
+  <circle cx="120" cy="128" r="4" fill="#e9c46a"/>
+  <text x="130" y="132" font-family="Arial,sans-serif" font-size="9" fill="#264653">IgG ↑ 2× or ASMA +</text>
+  <circle cx="25" cy="146" r="4" fill="#e9c46a"/>
+  <text x="35" y="150" font-family="Arial,sans-serif" font-size="9" fill="#264653">Biopsy: interface hepatitis</text>
+  <!-- Accuracy -->
+  <rect x="15" y="162" width="270" height="28" rx="5" fill="#264653"/>
+  <text x="150" y="176" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#e9c46a">92% Sensitivity | 97% Specificity</text>
+  <text x="150" y="186" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.6)">Requires 2 of 3 criteria from EACH domain</text>
+</svg>

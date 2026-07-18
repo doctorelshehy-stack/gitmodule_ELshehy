@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UGIB — Causes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;background:#fff;overflow:hidden;position:relative;">
+
+  
+
+  <p style="position:absolute;top:30px;left:50px;font-family:'Times New Roman',serif;font-size:34px;font-weight:700;color:#003049;z-index:10;margin:0;">
+    UGIB — Causes
+  </p>
+  <div style="position:absolute;top:70px;left:50px;width:80px;height:3px;background:#c1121f;z-index:10;"></div>
+
+  <!-- Three columns: Esophageal, Gastric, Duodenal -->
+  <div style="position:absolute;top:100px;left:50px;width:280px;z-index:10;font-family:'Times New Roman',serif;">
+    <div style="background:rgba(120,0,0,0.06);padding:12px;border-radius:6px;border-left:4px solid #780000;">
+      <p style="font-size:16px;font-weight:700;color:#780000;margin:0 0 8px 0;">Esophageal Causes</p>
+      <ul style="margin:0;padding-left:18px;font-size:13px;color:#003049;line-height:1.8;">
+        <li>Esophageal varices</li>
+        <li>Esophagitis</li>
+        <li>Esophageal ulcer</li>
+        <li>Mallory-Weiss tear</li>
+        <li>Esophageal carcinoma</li>
+      </ul>
+    </div>
+  </div>
+  <div style="position:absolute;top:100px;left:350px;width:280px;z-index:10;font-family:'Times New Roman',serif;">
+    <div style="background:rgba(102,155,188,0.08);padding:12px;border-radius:6px;border-left:4px solid #669bbc;">
+      <p style="font-size:16px;font-weight:700;color:#003049;margin:0 0 8px 0;">Gastric Causes</p>
+      <ul style="margin:0;padding-left:18px;font-size:13px;color:#003049;line-height:1.8;">
+        <li>Gastric ulcer</li>
+        <li>Gastritis</li>
+        <li>Gastric cancer</li>
+        <li>Gastric varices</li>
+        <li>GAVE</li>
+        <li>Portal hypertensive gastropathy</li>
+        <li>Dieulafoy's lesion</li>
+      </ul>
+    </div>
+  </div>
+  <div style="position:absolute;top:100px;left:650px;width:270px;z-index:10;font-family:'Times New Roman',serif;">
+    <div style="background:rgba(192,18,31,0.05);padding:12px;border-radius:6px;border-left:4px solid #c1121f;">
+      <p style="font-size:16px;font-weight:700;color:#c1121f;margin:0 0 8px 0;">Duodenal Causes</p>
+      <ul style="margin:0;padding-left:18px;font-size:13px;color:#003049;line-height:1.8;">
+        <li>Duodenal ulcer</li>
+        <li>Vascular malformation</li>
+        <li>Aorto-enteric fistula</li>
+        <li>Hemobilia</li>
+        <li>Hemosuccus pancreaticus</li>
+        <li>SMA syndrome</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom note -->
+  <div style="position:absolute;top:420px;left:50px;right:50px;z-index:10;font-family:'Times New Roman',serif;background:rgba(253,240,213,0.5);padding:10px 16px;border-radius:4px;">
+    <p style="font-size:14px;color:#003049;margin:0;"><strong style="color:#780000;">Key:</strong> Esophageal variceal bleeding and bleeding from peptic ulcer are the two most common causes of UGIB.</p>
+  </div>
+</div>
+</body>
+</html>

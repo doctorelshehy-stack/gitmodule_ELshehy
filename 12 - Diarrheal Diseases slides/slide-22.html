@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+<div style="position:absolute; inset:0; background:#ffffff;">
+  <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:#2a9d8f;"></div>
+  <p style="position:absolute; top:18px; left:40px; font-family:'Times New Roman',serif; font-size:22px; font-weight:700; color:#264653; margin:0;">Tropical Sprue</p>
+  <div style="position:absolute; top:48px; left:40px; width:60px; height:3px; background:#e9c46a; border-radius:2px;"></div>
+
+  <div style="position:absolute; top:64px; left:40px; right:40px; bottom:44px; display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+    <div style="display:grid; gap:6px; align-content:start;">
+      <div style="background:#f8f9fa; padding:10px; border-radius:4px; border-left:3px solid #2a9d8f;">
+        <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#264653; margin:0 0 3px;">Definition &amp; Historical Background</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0; line-height:1.4;">
+          Sprue = Anglicized form of Dutch "sprouw" (1669). Term "tropical sprue" coined in 1880 by Sir Patrick Manson. Characterized by chronic diarrhea, malaise, weight loss, and malabsorption of carbohydrates, fats, vitamin B12, and folate.
+        </p>
+      </div>
+      <div style="background:#f8f9fa; padding:10px; border-radius:4px; border-left:3px solid #f4a261;">
+        <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#264653; margin:0 0 3px;">Epidemiology</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0; line-height:1.4;">
+          Occurs in tropics within 30° N/S of equator. Common in India, Pakistan, Burma, Indonesia, Malaysia, Singapore, Vietnam. Uncommon in Africa, China, Middle East. Affects indigenous populations and visitors staying &gt;1 month. Incidence declining due to improved hygiene, antibiotics, and serologic tests for celiac disease.
+        </p>
+      </div>
+      <div style="background:#f8f9fa; padding:10px; border-radius:4px; border-left:3px solid #e76f51;">
+        <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#264653; margin:0 0 3px;">Pathogenesis &amp; Causative Organisms</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0; line-height:1.4;">
+          Strong presumption of enteric infection. Supporting facts: (1) Often initiated by acute diarrhea, (2) Epidemic/seasonal epidemiology, (3) Responds to antibiotics. <b>Causative organisms:</b> Bacteria (enterotoxigenic E. coli, K. pneumonia), Protozoa (Cryptosporidium parvum, Isospora belli). No single agent fully proven.
+        </p>
+      </div>
+    </div>
+    <div style="display:grid; gap:6px; align-content:start;">
+      <div style="background:#f8f9fa; padding:10px; border-radius:4px; border-left:3px solid #2a9d8f;">
+        <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#264653; margin:0 0 3px;">Histology</p>
+        <ul style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0; padding-left:14px; line-height:1.4;">
+          <li>Villus blunting and infiltration of lamina propria (more marked than bacterial overgrowth)</li>
+          <li>Delayed small bowel transit</li>
+        </ul>
+      </div>
+      <div style="background:#f8f9fa; padding:10px; border-radius:4px; border-left:3px solid #e76f51;">
+        <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#264653; margin:0 0 3px;">Treatment &amp; Prognosis</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0; line-height:1.4;">
+          <b>Treatment:</b> Broad-spectrum antibiotic (tetracycline), vitamin B12, and folic acid for 6 months.
+        </p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:4px 0 0; line-height:1.4;">
+          <b>Prognosis:</b> Patients improve with treatment; intestinal mucosa reverts toward normal. If no improvement, consider celiac sprue.
+        </p>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; width:40px; height:24px;" aria-hidden="true">
+      <rect x="0" y="2" width="40" height="20" rx="10" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="16" text-anchor="middle" fill="#ffffff" font-family="'Times New Roman',serif" font-size="12" font-weight="700">22</text>
+    </svg>
+</div>
+</div>
+</body>
+</html>

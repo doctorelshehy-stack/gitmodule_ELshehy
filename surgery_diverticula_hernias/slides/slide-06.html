@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Meckel Diverticulum — Rule of 2's</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;background:linear-gradient(135deg,#1b2838 0%,#0d1117 100%);overflow:hidden;position:relative;">
+  <svg aria-hidden="true" style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:1;" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="960" height="540" fill="transparent"/>
+    <rect x="0" y="0" width="12" height="540" fill="#42A5F5" opacity="0.6"/>
+    <rect x="0" y="0" width="960" height="4" fill="#FFC107" opacity="0.5"/>
+    <rect x="0" y="536" width="960" height="4" fill="#FFC107" opacity="0.5"/>
+  </svg>
+
+  <p style="position:absolute;top:40px;left:60px;font-family:'Times New Roman',serif;font-size:36px;font-weight:700;color:#FFC107;z-index:10;margin:0;">Meckel Diverticulum — Rule of 2's</p>
+  <div style="position:absolute;top:100px;left:60px;width:400px;height:3px;background:#42A5F5;z-index:10;"></div>
+  <div style="position:absolute;top:120px;left:60px;width:840px;font-family:'Times New Roman',serif;font-size:17px;color:#fff;z-index:10;line-height:1.75;">
+    <div style="display:flex;gap:16px;">
+      <div style="flex:1;background:rgba(66,165,245,0.1);padding:14px;border-radius:8px;border-top:3px solid #42A5F5;">
+        <div style="color:#42A5F5;font-weight:bold;font-size:22px;">Rule of 2's</div>
+        <div style="margin-top:10px;font-size:20px;">
+          <div>2% of population</div>
+          <div>2% are symptomatic</div>
+          <div>Mostly children &lt; 2 years</div>
+          <div>Males 2× more than females</div>
+          <div>2 feet from ileocecal valve</div>
+          <div>≤ 2 inches long</div>
+          <div>2 types of mucosal lining</div>
+        </div>
+      </div>
+      <div style="flex:1;background:rgba(255,152,0,0.1);padding:14px;border-radius:8px;border-top:3px solid #FF9800;">
+        <div style="color:#FF9800;font-weight:bold;font-size:22px;">Mucosal Types</div>
+        <div style="margin-top:8px;"><strong>I. Native ileal mucosa</strong></div>
+        <div style="margin-top:8px;"><strong>II. Ectopic mucosa:</strong></div>
+        <div style="margin-left:12px;">— <strong>Gastric</strong> (60% — most common)</div>
+        <div style="margin-left:12px;">— Pancreatic</div>
+        <div style="margin-left:12px;">— Colonic</div>
+        <div style="margin-left:12px;">— Duodenal</div>
+        <div style="margin-top:10px;color:#FFC107;font-weight:bold;">Ectopic gastric mucosa → acid secretion → ulceration → bleeding</div>
+      </div>
+      <div style="flex:1;background:rgba(229,57,53,0.1);padding:14px;border-radius:8px;border-top:3px solid #E53935;">
+        <div style="color:#E53935;font-weight:bold;font-size:22px;">Clinical Features</div>
+        <div style="margin-top:8px;"><strong>Asymptomatic:</strong> Most common (incidental finding)</div>
+        <div style="margin-top:6px;"><strong>Symptomatic:</strong></div>
+        <div>• <strong>Lower GI bleeding</strong> (most common feature)</div>
+        <div style="margin-left:12px;">— Hematochezia</div>
+        <div style="margin-left:12px;">— Tarry stools</div>
+        <div style="margin-left:12px;">— Currant jelly stools</div>
+        <div>• Abdominal pain (RLQ)</div>
+        <div>• Nausea + vomiting</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

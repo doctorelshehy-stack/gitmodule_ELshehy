@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script></head><body>
+<div class="slide-content" style="background:#ffffff; overflow:hidden;">
+  <div style="position:absolute; top:0; left:0; right:0; height:56px; background:#264653; z-index:2;"></div>
+  <p style="position:absolute; top:12px; left:50px; font-size:21px; font-weight:700; color:#ffffff; z-index:10;">Short Bowel Syndrome & Radiation Enteritis</p>
+  <div style="position:absolute; top:68px; left:40px; right:40px; bottom:10px; display:grid; grid-template-columns:1fr 1fr; gap:14px; z-index:5;">
+    <div>
+      <p style="font-size:16px; font-weight:700; color:#264653; margin-bottom:8px;">Short Bowel Syndrome (Intestinal Resection)</p>
+      <div style="background:#f0f7f7; padding:10px 14px; border-radius:8px; margin-bottom:8px;">
+        <p style="font-size:12px; color:#264653; line-height:1.5;">
+          Massive resection leaving <span style="font-weight:700;">&lt;1m small bowel</span> in continuity
+        </p>
+        <p style="font-size:12px; color:#264653; line-height:1.5; margin-top:4px;">
+          Jejunal resection better tolerated than ileal (bile salt &amp; B12 absorption site)
+        </p>
+      </div>
+      <p style="font-size:13px; font-weight:600; color:#264653; margin-bottom:6px;">After Ileal Resection:</p>
+      <div style="display:flex; align-items:flex-start; margin-bottom:4px;">
+        <div style="min-width:8px; height:8px; background:#e76f51; border-radius:50%; margin-top:5px; margin-right:8px;"></div>
+        <p style="font-size:12px; color:#264653;"><span style="font-weight:600;">Bile-salt diarrhea:</span> Bile salts → colon → water/electrolyte malabsorption</p>
+      </div>
+      <div style="display:flex; align-items:flex-start; margin-bottom:4px;">
+        <div style="min-width:8px; height:8px; background:#f4a261; border-radius:50%; margin-top:5px; margin-right:8px;"></div>
+        <p style="font-size:12px; color:#264653;"><span style="font-weight:600;">Steatorrhea &amp; gallstones:</span> ↓ micelle formation, lithogenic bile</p>
+      </div>
+      <div style="display:flex; align-items:flex-start; margin-bottom:4px;">
+        <div style="min-width:8px; height:8px; background:#e9c46a; border-radius:50%; margin-top:5px; margin-right:8px;"></div>
+        <p style="font-size:12px; color:#264653;"><span style="font-weight:600;">Oxaluria &amp; oxalate stones:</span> ↑ oxalate absorption in colon</p>
+      </div>
+      <div style="display:flex; align-items:flex-start;">
+        <div style="min-width:8px; height:8px; background:#2a9d8f; border-radius:50%; margin-top:5px; margin-right:8px;"></div>
+        <p style="font-size:12px; color:#264653;"><span style="font-weight:600;">B12 deficiency</span> + gastric hypersecretion</p>
+      </div>
+    </div>
+    <div>
+      <p style="font-size:16px; font-weight:700; color:#264653; margin-bottom:8px;">Radiation Enteritis</p>
+      <div style="background:#f0f7f7; padding:10px 14px; border-radius:8px; margin-bottom:8px;">
+        <p style="font-size:12px; color:#264653; line-height:1.5;">
+          Radiation <span style="font-weight:700;">&gt;40 Gy</span> damages intestine. Ileum &amp; rectum most often involved (pelvic irradiation)
+        </p>
+      </div>
+      <div style="display:flex; gap:6px; margin-bottom:8px;">
+        <div style="flex:1; background:#2a9d8f; padding:8px; border-radius:6px;">
+          <p style="font-size:11px; font-weight:600; color:#ffffff; text-align:center;">Acute</p>
+          <p style="font-size:10px; color:rgba(255,255,255,0.85); text-align:center;">Nausea, vomiting, diarrhea — improves within 6 weeks</p>
+        </div>
+        <div style="flex:1; background:#e76f51; padding:8px; border-radius:6px;">
+          <p style="font-size:11px; font-weight:600; color:#ffffff; text-align:center;">Chronic (&gt;3 months)</p>
+          <p style="font-size:10px; color:rgba(255,255,255,0.85); text-align:center;">Prevalence &gt;15%. Obstruction main symptom</p>
+        </div>
+      </div>
+      <div style="background:#ffffff; border-left:3px solid #f4a261; padding:8px 12px;">
+        <p style="font-size:12px; color:#264653; line-height:1.5;">
+          Chronic effects: muscle atrophy, ulcerative changes (ischemia), fibrotic strictures. Treatment symptomatic. Surgery avoided unless obstruction/perforation.
+        </p>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:50;" width="48" height="28" viewBox="0 0 48 28" aria-hidden="true">
+  <rect x="0" y="0" width="48" height="28" rx="14" fill="#264653" opacity="0.85"/>
+  <text x="24" y="19" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="14" font-weight="600">13</text>
+</svg>
+</div></body></html>

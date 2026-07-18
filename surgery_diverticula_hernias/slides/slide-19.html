@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Summary</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;background:linear-gradient(135deg,#1b2838 0%,#0d1117 100%);overflow:hidden;position:relative;">
+  <svg aria-hidden="true" style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:1;" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="960" height="540" fill="transparent"/>
+    <rect x="0" y="0" width="12" height="540" fill="#42A5F5" opacity="0.6"/>
+    <rect x="0" y="0" width="960" height="4" fill="#FFC107" opacity="0.5"/>
+    <rect x="0" y="536" width="960" height="4" fill="#FFC107" opacity="0.5"/>
+  </svg>
+
+  <p style="position:absolute;top:40px;left:60px;font-family:'Times New Roman',serif;font-size:36px;font-weight:700;color:#FFC107;z-index:10;margin:0;">Summary</p>
+  <div style="position:absolute;top:100px;left:60px;width:400px;height:3px;background:#42A5F5;z-index:10;"></div>
+  <div style="position:absolute;top:120px;left:60px;width:840px;font-family:'Times New Roman',serif;font-size:16px;color:#fff;z-index:10;line-height:1.85;">
+    <div style="display:flex;gap:20px;">
+      <div style="flex:1;">
+        <div style="color:#42A5F5;font-weight:bold;font-size:18px;margin-bottom:8px;">Esophageal Diverticula</div>
+        <div>• Zenker (Killian triangle) most common</div>
+        <div>• Pulsion = false, Traction = true</div>
+        <div>• Barium swallow best test</div>
+        <div>• Endoscopic diverticulostomy + myotomy</div>
+        <div style="color:#42A5F5;font-weight:bold;font-size:18px;margin:12px 0 8px;">Small Bowel Diverticula</div>
+        <div>• Duodenal: periampullary, acquired</div>
+        <div>• Jejunal: silent, 15% complications</div>
+        <div style="color:#42A5F5;font-weight:bold;font-size:18px;margin:12px 0 8px;">Meckel Diverticulum</div>
+        <div>• Rule of 2's, ectopic gastric mucosa (60%)</div>
+        <div>• Lower GI bleeding most common</div>
+        <div>• Littré hernia: Meckel in femoral hernia</div>
+      </div>
+      <div style="flex:1;">
+        <div style="color:#FF9800;font-weight:bold;font-size:18px;margin-bottom:8px;">Colonic Diverticulosis</div>
+        <div>• Western disease, low-fiber diet</div>
+        <div>• Sigmoid most common</div>
+        <div>• Diverticulitis: 4-20% of cases</div>
+        <div>• Hinchey classification (CT-based)</div>
+        <div>• Uncomplicated: oral antibiotics</div>
+        <div>• Abscess ≥4cm: percutaneous drainage</div>
+        <div>• Perforation: Hartmann procedure</div>
+        <div style="color:#FF9800;font-weight:bold;font-size:18px;margin:12px 0 8px;">Abdominal Wall Hernias</div>
+        <div>• 5% of population, 75% inguinal</div>
+        <div>• Components: sac + contents + covering</div>
+        <div>• Strangulation: most serious complication</div>
+        <div>• Femoral: highest strangulation rate (25-30%)</div>
+      </div>
+      <div style="flex:1;">
+        <div style="color:#E53935;font-weight:bold;font-size:18px;margin-bottom:8px;">Inguinal Hernia</div>
+        <div>• Indirect: lateral to epi. vessels (any age)</div>
+        <div>• Direct: medial to epi. vessels (elderly)</div>
+        <div>• Tension-free mesh = standard</div>
+        <div>• Lichtenstein = most common anterior repair</div>
+        <div>• TEP/TAPP = laparoscopic</div>
+        <div style="color:#E53935;font-weight:bold;font-size:18px;margin:12px 0 8px;">Femoral Hernia</div>
+        <div>• All should be repaired</div>
+        <div>• Below inguinal ligament, F>M</div>
+        <div style="color:#E53935;font-weight:bold;font-size:18px;margin:12px 0 8px;">Ventral Hernias</div>
+        <div>• Umbilical: infantile closes by age 2</div>
+        <div>• Incisional: SSI is most common cause</div>
+        <div>• &gt;3cm defects: mesh repair</div>
+        <div>• Spigelian: interparietal, pain without bulge</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

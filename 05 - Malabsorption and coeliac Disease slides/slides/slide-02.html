@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script></head><body>
+<div class="slide-content" style="background:#ffffff; overflow:hidden;">
+  <div style="position:absolute; top:0; left:0; width:50px; height:540px; background:#264653; z-index:2;"></div>
+  <div style="position:absolute; top:0; left:50px; width:4px; height:540px; background:#2a9d8f; z-index:2;"></div>
+  <p style="position:absolute; top:28px; left:72px; font-size:28px; font-weight:700; color:#264653; z-index:10;">Table of Contents</p>
+  <div style="position:absolute; top:68px; left:72px; width:90px; height:3px; background:#2a9d8f; border-radius:1.5px; z-index:1;"></div>
+  
+  <!-- TOC entries -->
+  <div style="position:absolute;top:65px;left:60px;right:40px;bottom:20px;overflow:auto;">
+    <div style="display:flex;flex-direction:column;gap:4px;padding:8px 0;">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">01</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Malabsorption Syndrome</span>
+        <span style="font-size:11px;color:#666;">Definition, causes & clinical picture</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">02</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Causes of Malabsorption</span>
+        <span style="font-size:11px;color:#666;">Small intestinal, pancreatic, mixed</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">03</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Nutritional Manifestations</span>
+        <span style="font-size:11px;color:#666;">Anemia, osteomalacia, vitamin deficiencies</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">04</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Investigations</span>
+        <span style="font-size:11px;color:#666;">Lab, anatomy, absorption tests</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">05</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Coeliac Disease</span>
+        <span style="font-size:11px;color:#666;">Definition & pathophysiology</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">06</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Coeliac — Clinical Subtypes</span>
+        <span style="font-size:11px;color:#666;">Typical, atypical, silent, latent</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">07</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Coeliac — Diagnosis</span>
+        <span style="font-size:11px;color:#666;">Antibodies, HLA, biopsy</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">08</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Coeliac — Complications & Treatment</span>
+        <span style="font-size:11px;color:#666;">Lymphoma, dermatitis, GFD</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">09</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Coeliac — New Treatments</span>
+        <span style="font-size:11px;color:#666;">Immunotherapy & research</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">10</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Short Bowel & Radiation Enteritis</span>
+        <span style="font-size:11px;color:#666;">Resection complications</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">11</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Other Causes</span>
+        <span style="font-size:11px;color:#666;">Parasitic, protein-losing, rare conditions</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">12</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Small Intestine Tumors</span>
+        <span style="font-size:11px;color:#666;">Adenocarcinoma, lymphoma, carcinoid</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">13</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Summary</span>
+        <span style="font-size:11px;color:#666;">Key takeaways</span>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:50;" width="48" height="28" viewBox="0 0 48 28" aria-hidden="true">
+  <rect x="0" y="0" width="48" height="28" rx="14" fill="#264653" opacity="0.85"/>
+  <text x="24" y="19" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="14" font-weight="600">2</text>
+</svg>
+</div></body></html>

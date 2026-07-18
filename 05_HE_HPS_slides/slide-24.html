@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Summary - Key Takeaways</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;position:relative;background:#ffffff;font-family:'Times New Roman',Times,serif;color:#1a1a2e;overflow:hidden;">
+<div style="position:absolute;top:0;left:0;width:960px;height:540px;background:#ffffff;z-index:0;"></div>
+<svg aria-hidden="true" style="position:absolute;top:0;left:0;z-index:1;" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="8" height="540" fill="#264653"/>
+</svg>
+<p style="position:absolute;top:20px;left:44px;z-index:5;font-size:32px;font-weight:700;color:#264653;">Summary & Key Takeaways</p>
+<div style="position:absolute;top:64px;left:44px;width:80px;height:3px;z-index:5;background:#2a9d8f;border-radius:1.5px;"></div>
+
+<div style="position:absolute;top:90px;left:44px;right:44px;z-index:5;">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+    <div style="background:#f8f9fa;padding:16px;border-radius:6px;border-left:4px solid #2a9d8f;">
+      <p style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#2a9d8f;">Hepatic Encephalopathy</p>
+      <ul style="margin:0;padding-left:16px;font-size:12px;color:#1a1a2e;">
+        <li style="margin-bottom:4px;">Neuropsychiatric syndrome due to liver dysfunction and porto-systemic shunting</li>
+        <li style="margin-bottom:4px;">Classified as Type A (acute liver failure), B (bypass), C (cirrhosis)</li>
+        <li style="margin-bottom:4px;">Type C subclassified into episodic, persistent, and minimal HE</li>
+        <li style="margin-bottom:4px;">Ammonia is the key neurotoxin but pathogenesis is multifactorial</li>
+        <li style="margin-bottom:4px;">Common precipitants: GI bleeding, infection, electrolyte disorders, high protein, constipation</li>
+        <li style="margin-bottom:4px;">Diagnosis is clinical — excludes other causes of altered mental status</li>
+        <li style="margin-bottom:4px;">Lactulose is first-line therapy; rifaximin is second-line for refractory cases</li>
+        <li style="margin-bottom:4px;">Treatment of underlying precipitant is paramount</li>
+        <li style="margin-bottom:4px;">Liver transplantation is definitive for refractory HE</li>
+      </ul>
+    </div>
+    <div style="background:#f8f9fa;padding:16px;border-radius:6px;border-left:4px solid #f4a261;">
+      <p style="margin:0 0 8px 0;font-size:16px;font-weight:700;color:#f4a261;">Hepatopulmonary Syndrome</p>
+      <ul style="margin:0;padding-left:16px;font-size:12px;color:#1a1a2e;">
+        <li style="margin-bottom:4px;">Triad: liver disease, IPVDs, and increased A-a gradient</li>
+        <li style="margin-bottom:4px;">Pulse oximetry <96% on room air is an important screening test</li>
+        <li style="margin-bottom:4px;">Contrast echocardiography is the gold standard for detecting IPVDs</li>
+        <li style="margin-bottom:4px;">Platypnea-orthodeoxia is a characteristic symptom</li>
+        <li style="margin-bottom:4px;">Severity staging based on PaO₂: mild (≥80), moderate (60-79), severe (<60)</li>
+        <li style="margin-bottom:4px;">Liver transplantation is the only definitive treatment</li>
+        <li style="margin-bottom:4px;">Severe HPS (PaO₂ <60 mmHg) qualifies for MELD exception points</li>
+        <li style="margin-bottom:4px;">No effective medical therapy currently exists</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div style="position:absolute;top:340px;left:44px;right:44px;z-index:5;">
+  <div style="background:#264653;padding:12px 18px;border-radius:6px;text-align:center;">
+    <p style="margin:0;font-size:15px;color:#e9c46a;font-weight:700;">Both HE and HPS are important complications of advanced liver disease.<br>Early recognition, identification of triggers, and appropriate management improve patient outcomes.</p>
+  </div>
+</div>
+
+<div style="position:absolute;bottom:24px;left:44px;z-index:5;">
+  <p style="margin:0;font-size:12px;color:rgba(26,26,46,0.6);">Tropical Support 41 — Gastroenterology Module | Comprehensive Review</p>
+</div>
+<svg aria-hidden="true" style="position:absolute;right:32px;bottom:24px;z-index:20;" width="40" height="28" viewBox="0 0 40 28">
+      <rect x="0" y="0" width="40" height="28" rx="4" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="19" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" font-family: 'Times New Roman', Times, serif;">24</text>
+    </svg>
+
+</div>
+</body>
+</html>

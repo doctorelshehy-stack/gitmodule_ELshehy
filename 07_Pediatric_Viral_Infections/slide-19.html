@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; color:#264653; position:relative; overflow:hidden; font-family:'Times New Roman',serif;">
+<svg style="position:absolute; top:20px; left:50px; right:50px; z-index:1;" aria-hidden="true">
+<line x1="0" y1="0" x2="860" y2="0" stroke="#2a9d8f" stroke-width="3" opacity="0.5"/>
+</svg>
+<p style="position:absolute; top:28px; left:50px; font-size:13px; color:#2a9d8f; font-family:'Times New Roman',serif; margin:0; z-index:10; letter-spacing:1px;">PEDIATRIC GASTRO-ENTEROLOGY, HEPATOLOGY &amp; INFECTIOUS DISEASES</p>
+
+<p style="position:absolute; top:20px; left:50px; font-size:24px; font-weight:700; color:#264653; font-family:'Times New Roman',serif; margin:0; z-index:10;">Poliomyelitis — Treatment</p>
+<div style="position:absolute; top:56px; left:50px; width:80px; height:4px; background:#2a9d8f; border-radius:2px; z-index:1;"></div>
+<div style="position:absolute; top:72px; left:50px; right:50px; bottom:56px; overflow:hidden; font-size:12px; line-height:1.4; color:#264653;">
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+  <div style="background:rgba(42,157,143,0.1); padding:8px; border-radius:6px;">
+    <p style="margin:0 0 3px 0; font-size:13px; font-weight:700; color:#2a9d8f;">Abortive Polio</p>
+    <p style="margin:0; font-size:11px;">• Isolation • Rest<br>• No IM injection, trauma, or fatigue<br>• Antipyretics &amp; analgesics</p>
+  </div>
+  <div style="background:rgba(233,196,106,0.12); padding:8px; border-radius:6px;">
+    <p style="margin:0 0 3px 0; font-size:13px; font-weight:700; color:#264653;">Non-paralytic Polio</p>
+    <p style="margin:0; font-size:11px;">As abortive + hot moist packs to relieve spasm and pain</p>
+  </div>
+  <div style="background:rgba(231,111,81,0.1); padding:8px; border-radius:6px;">
+    <p style="margin:0 0 3px 0; font-size:13px; font-weight:700; color:#e76f51;">Paralytic (Acute Stage)</p>
+    <p style="margin:0; font-size:11px;">• LL in best position of function<br>• Prostigmine • Hot moist packs<br>• Analgesics + antipyretics<br>• Adequate nutrition, fluids, vitamins<br>• No IM injection<br>• TTT of respiratory polio</p>
+  </div>
+  <div style="background:rgba(244,162,97,0.1); padding:8px; border-radius:6px;">
+    <p style="margin:0 0 3px 0; font-size:13px; font-weight:700; color:#f4a261;">Established &amp; Old Polio</p>
+    <p style="margin:0; font-size:11px;">• Physiotherapy<br>• Surgery</p>
+  </div>
+</div>
+</div>
+
+<svg style="position:absolute; right:32px; bottom:24px; width:40px; height:32px; z-index:100;" aria-hidden="true">
+<rect x="0" y="0" width="40" height="32" rx="4" fill="#2a9d8f" opacity="0.85"/>
+<text x="20" y="22" text-anchor="middle" font-family="Times New Roman,serif" font-size="14" font-weight="700" fill="#ffffff">19</text>
+</svg>
+</div>
+</body>
+</html>

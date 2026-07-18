@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HE - Definition</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;position:relative;background:#ffffff;font-family:'Times New Roman',Times,serif;color:#1a1a2e;overflow:hidden;">
+<div style="position:absolute;top:0;left:0;width:960px;height:540px;background:#ffffff;z-index:0;"></div>
+<svg aria-hidden="true" style="position:absolute;top:0;left:0;z-index:1;" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="8" height="540" fill="#264653"/>
+</svg>
+<p style="position:absolute;top:24px;left:44px;z-index:5;font-size:32px;font-weight:700;color:#264653;">HE — Definition</p>
+<div style="position:absolute;top:72px;left:44px;width:80px;height:3px;z-index:5;background:#2a9d8f;border-radius:1.5px;"></div>
+<div style="position:absolute;top:96px;left:44px;right:44px;z-index:5;">
+  <div style="background:#f8f9fa;padding:20px 24px;border-radius:6px;border-left:4px solid #2a9d8f;">
+    <p style="margin:0 0 8px 0;font-size:16px;color:#1a1a2e;"><strong style="color:#2a9d8f;">Definition:</strong> Hepatic encephalopathy (HE) is a chronically incapacitating syndrome of neuropsychiatric symptoms, which can develop in patients with both acute and chronic liver dysfunction once other known brain diseases have been excluded.</p>
+  </div>
+</div>
+<div style="position:absolute;top:200px;left:44px;right:44px;z-index:5;">
+  <p style="font-size:16px;color:#1a1a2e;margin:0 0 10px 0;"><strong>Key Concept:</strong> HE represents a spectrum of neuropsychiatric abnormalities ranging from subtle cognitive deficits to coma, occurring in the setting of liver insufficiency and/or porto-systemic shunting.</p>
+</div>
+<div style="position:absolute;top:280px;left:44px;right:44px;z-index:5;">
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;">
+    <div style="background:#f8f9fa;padding:14px;border-radius:6px;border-top:3px solid #e76f51;">
+      <p style="margin:0 0 4px 0;font-size:14px;font-weight:700;color:#e76f51;">Type A</p>
+      <p style="margin:0;font-size:12px;color:rgba(26,26,46,0.6);">Acute Liver Failure</p>
+    </div>
+    <div style="background:#f8f9fa;padding:14px;border-radius:6px;border-top:3px solid #f4a261;">
+      <p style="margin:0 0 4px 0;font-size:14px;font-weight:700;color:#f4a261;">Type B</p>
+      <p style="margin:0;font-size:12px;color:rgba(26,26,46,0.6);">Porto-systemic Bypass</p>
+    </div>
+    <div style="background:#f8f9fa;padding:14px;border-radius:6px;border-top:3px solid #2a9d8f;">
+      <p style="margin:0 0 4px 0;font-size:14px;font-weight:700;color:#2a9d8f;">Type C</p>
+      <p style="margin:0;font-size:12px;color:rgba(26,26,46,0.6);">Cirrhosis & Portal HTN</p>
+    </div>
+  </div>
+</div>
+<svg aria-hidden="true" style="position:absolute;right:32px;bottom:24px;z-index:20;" width="40" height="28" viewBox="0 0 40 28">
+      <rect x="0" y="0" width="40" height="28" rx="4" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="19" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" font-family: 'Times New Roman', Times, serif;">04</text>
+    </svg>
+
+</div>
+</body>
+</html>

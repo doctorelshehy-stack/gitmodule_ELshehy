@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; color:#264653; position:relative; overflow:hidden; font-family:'Times New Roman',serif;">
+<p style="position:absolute; top:20px; left:50px; font-size:26px; font-weight:700; color:#264653; font-family:'Times New Roman',serif; margin:0; z-index:10;">HCV — Prevention & Treatment</p>
+<div style="position:absolute; top:60px; left:50px; width:80px; height:4px; background:#2a9d8f; border-radius:2px; z-index:1;"></div>
+<div style="position:absolute; top:76px; left:50px; right:50px; bottom:56px; overflow:hidden; font-size:14px; line-height:1.45; color:#264653;">
+
+<p style="font-size:15px; font-weight:700; color:#264653; margin:0 0 6px 0;">Prevention &amp; Treatment of Chronic Hepatitis C</p>
+
+<div style="background:rgba(231,111,81,0.15); padding:8px 12px; border-radius:6px; border-left:4px solid #e76f51; margin:0 0 10px 0;">
+  <p style="margin:0; font-size:14px; font-weight:700; color:#e76f51;">Prevention</p>
+  <p style="margin:2px 0 0 0; font-size:13px;">Only <strong>general prophylaxis</strong> is possible:</p>
+  <ul style="margin:2px 0 0 18px; padding:0; font-size:13px;">
+    <li>Blood, tissue, and organ screening</li>
+    <li>Safe injection practices</li>
+    <li>Infection control in healthcare settings</li>
+  </ul>
+  <p style="margin:4px 0 0 0; font-size:13px;"><strong>No active or passive immunizing agent (vaccine) is available.</strong></p>
+</div>
+
+<p style="font-size:14px; font-weight:700; color:#264653; margin:8px 0 4px 0;">Treatment — Past vs. Present</p>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:4px 0;">
+  <div style="border:2px solid #e76f51; border-radius:8px; overflow:hidden;">
+    <div style="background:#e76f51; padding:8px 12px;">
+      <p style="margin:0; font-weight:700; font-size:15px; color:#ffffff;">Past (Interferon-based)</p>
+    </div>
+    <div style="padding:10px 12px;">
+      <ul style="margin:2px 0 0 16px; padding:0; font-size:13px;">
+        <li><strong>Interferon</strong> based therapy</li>
+        <li>Low efficacy against the most common HCV genotypes</li>
+        <li>Treatment often was <strong>not curative</strong></li>
+        <li>Patients often experienced <strong>significant side effects</strong></li>
+      </ul>
+    </div>
+  </div>
+  <div style="border:2px solid #2a9d8f; border-radius:8px; overflow:hidden;">
+    <div style="background:#2a9d8f; padding:8px 12px;">
+      <p style="margin:0; font-weight:700; font-size:15px; color:#ffffff;">Present (DAAs)</p>
+    </div>
+    <div style="padding:10px 12px;">
+      <ul style="margin:2px 0 0 16px; padding:0; font-size:13px;">
+        <li><strong>Direct Acting Antivirals (DAAs)</strong></li>
+        <li><strong>Curative (95%)</strong> for most patients and most genotypes</li>
+        <li>Provide improved patient quality of life</li>
+        <li><strong>Fewer side effects</strong></li>
+        <li><strong>Shorter treatment duration</strong> (8–24 weeks)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div style="background:rgba(233,196,106,0.2); padding:6px 12px; border-radius:6px; margin:6px 0;">
+  <p style="margin:0; font-size:12px; color:#264653;"><strong>Key breakthrough:</strong> The advent of DAAs revolutionized HCV treatment, transforming it from a difficult-to-treat infection with poor outcomes to a highly curable disease with minimal side effects.</p>
+</div>
+
+</div>
+<svg style="position:absolute; right:32px; bottom:24px; width:40px; height:32px; z-index:100;" aria-hidden="true">
+<rect x="0" y="0" width="40" height="32" rx="4" fill="#2a9d8f" opacity="0.85"/>
+<text x="20" y="22" text-anchor="middle" font-family="Times New Roman,serif" font-size="14" font-weight="700" fill="#ffffff">19</text>
+</svg>
+</div>
+</body>
+</html>

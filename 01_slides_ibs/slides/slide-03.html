@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script></head><body>
+<div class="slide-content" style="background:#ffffff; overflow:hidden;">
+  <svg style="position:absolute; top:0; left:0; width:960px; height:80px;" aria-hidden="true">
+    <rect x="0" y="0" width="960" height="80" fill="#1b2838"/>
+    <rect x="0" y="80" width="960" height="4" fill="#1565C0"/>
+  </svg>
+  <div style="position:absolute; top:20px; left:60px; z-index:10;">
+    <p style="font-family:'Times New Roman',serif; font-size:28px; font-weight:700; color:#ffffff; margin:0;">Aerophagia, Functional Vomiting &amp; Rumination</p>
+  </div>
+  <div style="position:absolute; top:100px; left:60px; width:840px; z-index:10;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+      <div>
+        <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#1565C0; margin:0 0 6px 0;">Aerophagia</p>
+        <div style="background:#f0f4f8; padding:12px; border-radius:8px; border-left:4px solid #1565C0; margin-bottom:10px;">
+          <ul style="margin:0; padding-left:16px;">
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:4px 0;">Repetitive pattern of swallowing/ingesting air and belching</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:4px 0;">Usually unconscious, unrelated to meals</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:4px 0;">No investigation required</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:4px 0;"><strong>Treatment:</strong> Explanation + reassurance</li>
+          </ul>
+        </div>
+        <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#FF9800; margin:0 0 6px 0;">Rumination Syndrome</p>
+        <div style="background:#f0f4f8; padding:12px; border-radius:8px; border-left:4px solid #FF9800;">
+          <ul style="margin:0; padding-left:16px;">
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:4px 0;">Persistent/recurrent effortless regurgitation of recently ingested food</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:4px 0;">Re-mastication and re-swallowing (not preceded by retching)</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:4px 0;">No nausea, vomiting, abdominal discomfort, heartburn</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:4px 0;">Regurgitant has pleasant taste; stops when material becomes acidic</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:4px 0;">Common in individuals with learning difficulties</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:4px 0;">Medical, behavioral, nutritional approaches with varying success</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#E53935; margin:0 0 6px 0;">Functional Vomiting</p>
+        <div style="background:#f0f4f8; padding:12px; border-radius:8px; border-left:4px solid #E53935; margin-bottom:10px;">
+          <p style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:0 0 6px 0;">Rare in clinical practice. Characterized by:</p>
+          <ol style="margin:0; padding-left:16px;">
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:3px 0;">Frequent vomiting ≥1 day/week</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:3px 0;">No eating disorder, rumination, or major psychiatric disease</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:3px 0;">No self-induced or medication-induced vomiting</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:3px 0;">No organic abnormalities in gut, CNS, or metabolic disease</li>
+          </ol>
+        </div>
+        <p style="font-family:'Times New Roman',serif; font-size:13px; font-weight:700; color:#1b2838; margin:0 0 6px 0;">Investigation &amp; Treatment:</p>
+        <div style="background:#fff8e1; padding:12px; border-radius:8px; border-left:4px solid #FFC107;">
+          <ul style="margin:0; padding-left:16px;">
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:4px 0;">Often not required — always exclude non-GI disorders</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:4px 0;"><strong>Treatment:</strong> Anti-nausea drugs, antidepressants</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:4px 0;">Behavioral therapy and psychotherapy helpful</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:4px 0;">Dietary changes occasionally help</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:100;" width="40" height="40" aria-hidden="true">
+  <circle cx="20" cy="20" r="18" fill="#1b2838" stroke="#1565C0" stroke-width="2"/>
+  <text x="20" y="25" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="16" font-weight="bold">03</text>
+</svg>
+</div>
+</body></html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; color:#264653; position:relative; overflow:hidden; font-family:'Times New Roman',serif;">
+
+<svg style="position:absolute; top:0; right:0; width:400px; height:540px; z-index:0;" aria-hidden="true">
+<rect x="0" y="0" width="400" height="540" fill="#2a9d8f" opacity="0.08"/>
+</svg>
+<svg style="position:absolute; top:-60px; right:-60px; width:280px; height:280px; z-index:0;" aria-hidden="true">
+<circle cx="140" cy="140" r="140" fill="#e9c46a" opacity="0.12"/>
+</svg>
+<svg style="position:absolute; bottom:-40px; left:-40px; width:200px; height:200px; z-index:0;" aria-hidden="true">
+<circle cx="100" cy="100" r="100" fill="#f4a261" opacity="0.08"/>
+</svg>
+
+<div style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:5;">
+
+<div style="position:absolute; top:120px; left:70px; width:100px; height:6px; background:#e9c46a; border-radius:3px;"></div>
+
+<p style="position:absolute; top:120px; left:70px; font-size:22px; font-weight:400; color:#2a9d8f; font-family:'Times New Roman',serif; margin:0; letter-spacing:2px; text-transform:uppercase;">Tropical Medicine &amp; Gastro-enterology</p>
+
+<p style="position:absolute; top:170px; left:70px; font-size:52px; font-weight:700; color:#264653; font-family:'Times New Roman',serif; margin:0; line-height:1.2;">Chronic Viral</p>
+<p style="position:absolute; top:234px; left:70px; font-size:48px; font-weight:700; color:#e76f51; font-family:'Times New Roman',serif; margin:0; line-height:1.2;">Hepatitis</p>
+
+<div style="position:absolute; top:310px; left:70px; width:160px; height:1px; background:#264653; opacity:0.25;"></div>
+
+<p style="position:absolute; top:340px; left:70px; font-size:18px; color:#264653; font-family:'Times New Roman',serif; margin:0; opacity:0.8;">Dr. Hossam Seleema, Dr. Randa Mohamed Seddik</p>
+<p style="position:absolute; top:368px; left:70px; font-size:15px; color:#264653; font-family:'Times New Roman',serif; margin:0; opacity:0.65;">Assistant Professors of Tropical Medicine and Infectious Diseases</p>
+
+<svg style="position:absolute; top:100px; right:70px; width:200px; height:200px; z-index:10;" aria-hidden="true">
+<circle cx="100" cy="100" r="95" fill="none" stroke="#2a9d8f" stroke-width="2" opacity="0.3"/>
+<circle cx="100" cy="100" r="80" fill="none" stroke="#e76f51" stroke-width="1.5" opacity="0.2"/>
+<polygon points="60,60 140,60 160,100 155,140 140,160 100,170 60,160 45,140 40,100" fill="#264653" opacity="0.08" stroke="#2a9d8f" stroke-width="1.5"/>
+</svg>
+
+</div>
+</div>
+</body>
+</html>

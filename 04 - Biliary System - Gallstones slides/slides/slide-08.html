@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background: #ffffff; overflow:hidden;">
+  <!-- Header bar -->
+  <div style="position:absolute; top:0; left:0; right:0; height:60px; background:#264653; z-index:2;"></div>
+  <p style="position:absolute; top:14px; left:60px; font-size:22px; font-weight:700; color:#ffffff; z-index:10;">Management of Gallstone Disease</p>
+
+  <!-- Two-column grid -->
+  <div style="position:absolute; top:80px; left:40px; right:40px; bottom:80px; display:grid; grid-template-columns:1fr 1fr; gap:20px; z-index:5;">
+    <!-- Left: Asymptomatic -->
+    <div>
+      <svg width="100%" height="48" viewBox="0 0 430 48" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <rect x="0" y="0" width="430" height="48" rx="6" fill="#2a9d8f"/>
+        <text x="20" y="32" fill="#ffffff" font-family="Times New Roman, serif" font-size="17" font-weight="700">Asymptomatic Gallstones</text>
+      </svg>
+      <div style="background:#f0f7f7; padding:16px; border-radius:0 0 8px 8px; margin-top:-1px;">
+        <div style="display:flex; align-items:flex-start; margin-bottom:10px;">
+          <div style="width:8px; height:8px; background:#2a9d8f; border-radius:50%; margin-top:6px; margin-right:10px; flex-shrink:0;"></div>
+          <p style="font-size:13px; color:#264653; line-height:1.6;">2/3 of gallstones are asymptomatic (discovered incidentally by ultrasonography)</p>
+        </div>
+        <div style="display:flex; align-items:flex-start; margin-bottom:10px;">
+          <div style="width:8px; height:8px; background:#e9c46a; border-radius:50%; margin-top:6px; margin-right:10px; flex-shrink:0;"></div>
+          <p style="font-size:13px; color:#264653; line-height:1.6;">Yearly risk of developing biliary pain is <span style="font-weight:700;">14%</span></p>
+        </div>
+        <div style="display:flex; align-items:flex-start; margin-bottom:10px;">
+          <div style="width:8px; height:8px; background:#f4a261; border-radius:50%; margin-top:6px; margin-right:10px; flex-shrink:0;"></div>
+          <p style="font-size:13px; color:#264653; line-height:1.6;">Patients seldom develop complications</p>
+        </div>
+        <div style="display:flex; align-items:flex-start;">
+          <div style="width:8px; height:8px; background:#e76f51; border-radius:50%; margin-top:6px; margin-right:10px; flex-shrink:0;"></div>
+          <p style="font-size:13px; color:#264653; line-height:1.6;">GB cancer risk &lt; 0.01% — less than cholecystectomy mortality</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Symptomatic -->
+    <div>
+      <svg width="100%" height="48" viewBox="0 0 430 48" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <rect x="0" y="0" width="430" height="48" rx="6" fill="#e76f51"/>
+        <text x="20" y="32" fill="#ffffff" font-family="Times New Roman, serif" font-size="17" font-weight="700">Symptomatic Gallstones</text>
+      </svg>
+      <div style="background:#f0f7f7; padding:16px; border-radius:0 0 8px 8px; margin-top:-1px;">
+        <div style="display:flex; align-items:flex-start; margin-bottom:10px;">
+          <div style="width:8px; height:8px; background:#e76f51; border-radius:50%; margin-top:6px; margin-right:10px; flex-shrink:0;"></div>
+          <p style="font-size:13px; color:#264653; line-height:1.6;">Annual complication rate: <span style="font-weight:700;">12%</span></p>
+        </div>
+        <div style="display:flex; align-items:flex-start; margin-bottom:10px;">
+          <div style="width:8px; height:8px; background:#e76f51; border-radius:50%; margin-top:6px; margin-right:10px; flex-shrink:0;"></div>
+          <p style="font-size:13px; color:#264653; line-height:1.6;">50% chance of further biliary colic episode</p>
+        </div>
+        <div style="display:flex; align-items:flex-start; margin-bottom:10px;">
+          <div style="width:8px; height:8px; background:#f4a261; border-radius:50%; margin-top:6px; margin-right:10px; flex-shrink:0;"></div>
+          <p style="font-size:13px; color:#264653; line-height:1.6;"><span style="font-weight:700;">Treatment should be offered</span></p>
+        </div>
+        <div style="display:flex; align-items:flex-start;">
+          <div style="width:8px; height:8px; background:#e9c46a; border-radius:50%; margin-top:6px; margin-right:10px; flex-shrink:0;"></div>
+          <p style="font-size:13px; color:#264653; line-height:1.6;"><span style="font-weight:700;">Cholecystectomy</span> = optimal management (removes stones + GB)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom highlight -->
+  <div style="position:absolute; bottom:30px; left:40px; right:40px; z-index:5;">
+    <div style="background:#264653; padding:12px 20px; border-radius:8px;">
+      <p style="font-size:15px; color:#ffffff; text-align:center; font-weight:600;">
+        Cholecystectomy = optimal management — removes both gallstones and gallbladder, preventing recurrent disease
+      </p>
+    </div>
+  </div>
+
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:50;" width="48" height="28" viewBox="0 0 48 28" aria-hidden="true">
+  <rect x="0" y="0" width="48" height="28" rx="14" fill="#264653" opacity="0.85"/>
+  <text x="24" y="19" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="14" font-weight="600">8</text>
+</svg>
+</div>
+</body>
+</html>

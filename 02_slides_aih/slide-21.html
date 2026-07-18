@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Prognosis Summary</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;background:#fff;overflow:hidden;position:relative;">
+
+  <svg aria-hidden="true" style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:1;" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="960" height="540" fill="#fff"/>
+    <rect x="0" y="0" width="6" height="540" fill="#2a9d8f"/>
+    <rect x="954" y="0" width="6" height="540" fill="#264653"/>
+  </svg>
+
+  <p style="position:absolute;top:30px;left:50px;font-family:'Times New Roman',serif;font-size:36px;font-weight:700;color:#264653;z-index:10;margin:0;">
+    Prognosis &amp; Key Outcomes
+  </p>
+  <div style="position:absolute;top:72px;left:50px;width:80px;height:3px;background:#2a9d8f;z-index:10;"></div>
+
+  <!-- AIH prognosis -->
+  <div style="position:absolute;top:100px;left:50px;width:280px;z-index:10;font-family:'Times New Roman',serif;">
+    <div style="background:rgba(42,157,143,0.06);padding:14px;border-radius:6px;border-left:4px solid #2a9d8f;height:310px;">
+      <p style="font-size:17px;font-weight:700;color:#2a9d8f;margin:0 0 8px 0;">Autoimmune Hepatitis</p>
+      <ul style="margin:0;padding-left:18px;font-size:13px;color:#264653;line-height:1.8;">
+        <li>60–85% achieve remission</li>
+        <li>Normalization of enzymes &amp; IgG</li>
+        <li>Remission at 18–24 months</li>
+        <li>80% respond to steroids</li>
+        <li>10% fail → ESLD</li>
+        <li>40% have cirrhosis at presentation</li>
+        <li>5-year mortality: 58%</li>
+        <li>3% present with acute liver failure</li>
+        <li>40% untreated die within 6 months</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PBC prognosis -->
+  <div style="position:absolute;top:100px;left:350px;width:280px;z-index:10;font-family:'Times New Roman',serif;">
+    <div style="background:rgba(233,196,106,0.1);padding:14px;border-radius:6px;border-left:4px solid #e9c46a;height:310px;">
+      <p style="font-size:17px;font-weight:700;color:#264653;margin:0 0 8px 0;">Primary Biliary Cirrhosis</p>
+      <ul style="margin:0;padding-left:18px;font-size:13px;color:#264653;line-height:1.8;">
+        <li>Progressive disease</li>
+        <li>UDCA is main treatment</li>
+        <li>May progress to cirrhosis &amp; ESLD</li>
+        <li>Most patients initially asymptomatic</li>
+        <li>Eventually develop fatigue &amp; pruritus</li>
+        <li>AMA 95% sensitive</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PSC prognosis -->
+  <div style="position:absolute;top:100px;left:650px;width:270px;z-index:10;font-family:'Times New Roman',serif;">
+    <div style="background:rgba(231,111,81,0.08);padding:14px;border-radius:6px;border-left:4px solid #e76f51;height:310px;">
+      <p style="font-size:17px;font-weight:700;color:#e76f51;margin:0 0 8px 0;">Primary Sclerosing Cholangitis</p>
+      <ul style="margin:0;padding-left:18px;font-size:13px;color:#264653;line-height:1.8;">
+        <li>Progressive → secondary biliary cirrhosis</li>
+        <li>Portal HTN, varices, ascites</li>
+        <li>10–15% develop cholangiocarcinoma</li>
+        <li>70–90% have IBD</li>
+        <li>Small duct PSC may progress to classic PSC</li>
+        <li>LT may be needed in ESLD</li>
+      </ul>
+    </div>
+  </div>
+
+  
+  <!-- Informational image -->
+  <img src="imgs/prognosis.svg" alt="Illustration" style="position:absolute;right:520px;top:440px;width:width:240px;height:auto;z-index:15;border-radius:6px;opacity:0.85;">
+<svg aria-hidden="true" style="position:absolute;right:32px;bottom:24px;width:40px;height:40px;z-index:50;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="40" height="40" rx="20" fill="#2a9d8f"/>
+  <text x="20" y="28" text-anchor="middle" font-family="Times New Roman,serif" font-size="18" font-weight="700" fill="#fff">21</text>
+</svg>
+</div>
+</body>
+</html>

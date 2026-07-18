@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; color:#264653; position:relative; overflow:hidden; font-family:'Times New Roman',serif;">
+
+<svg style="position:absolute; top:0; right:0; width:300px; height:540px; z-index:0;" aria-hidden="true">
+<rect x="0" y="0" width="300" height="540" fill="#2a9d8f" opacity="0.04"/>
+</svg>
+
+<p style="position:absolute; top:22px; left:50px; font-size:26px; font-weight:700; color:#264653; font-family:'Times New Roman',serif; margin:0; z-index:10;">Table of Contents</p>
+<div style="position:absolute; top:60px; left:50px; width:80px; height:4px; background:#2a9d8f; border-radius:2px; z-index:1;"></div>
+
+
+<div style="position:absolute; top:82px; left:50px; right:50px; display:flex; align-items:center;">
+  <span style="font-size:22px; font-weight:700; color:#2a9d8f; width:44px; flex-shrink:0;">01</span>
+  <span style="font-size:17px; color:#264653;">Segmental Anatomy of the Liver</span>
+</div><div style="position:absolute; top:120px; left:50px; right:50px; height:1px; background:#264653; opacity:0.08;"></div>
+<div style="position:absolute; top:128px; left:50px; right:50px; display:flex; align-items:center;">
+  <span style="font-size:22px; font-weight:700; color:#2a9d8f; width:44px; flex-shrink:0;">02</span>
+  <span style="font-size:17px; color:#264653;">Definition of Acute Viral Hepatitis</span>
+</div><div style="position:absolute; top:166px; left:50px; right:50px; height:1px; background:#264653; opacity:0.08;"></div>
+<div style="position:absolute; top:174px; left:50px; right:50px; display:flex; align-items:center;">
+  <span style="font-size:22px; font-weight:700; color:#2a9d8f; width:44px; flex-shrink:0;">03</span>
+  <span style="font-size:17px; color:#264653;">Epidemiology</span>
+</div><div style="position:absolute; top:212px; left:50px; right:50px; height:1px; background:#264653; opacity:0.08;"></div>
+<div style="position:absolute; top:220px; left:50px; right:50px; display:flex; align-items:center;">
+  <span style="font-size:22px; font-weight:700; color:#2a9d8f; width:44px; flex-shrink:0;">04</span>
+  <span style="font-size:17px; color:#264653;">Causes – The Five Hepatitis Viruses</span>
+</div><div style="position:absolute; top:258px; left:50px; right:50px; height:1px; background:#264653; opacity:0.08;"></div>
+<div style="position:absolute; top:266px; left:50px; right:50px; display:flex; align-items:center;">
+  <span style="font-size:22px; font-weight:700; color:#2a9d8f; width:44px; flex-shrink:0;">05</span>
+  <span style="font-size:17px; color:#264653;">Symptoms of Acute Viral Hepatitis</span>
+</div><div style="position:absolute; top:304px; left:50px; right:50px; height:1px; background:#264653; opacity:0.08;"></div>
+<div style="position:absolute; top:312px; left:50px; right:50px; display:flex; align-items:center;">
+  <span style="font-size:22px; font-weight:700; color:#2a9d8f; width:44px; flex-shrink:0;">06</span>
+  <span style="font-size:17px; color:#264653;">Diagnosis &amp; Laboratory Tests</span>
+</div><div style="position:absolute; top:350px; left:50px; right:50px; height:1px; background:#264653; opacity:0.08;"></div>
+<div style="position:absolute; top:358px; left:50px; right:50px; display:flex; align-items:center;">
+  <span style="font-size:22px; font-weight:700; color:#2a9d8f; width:44px; flex-shrink:0;">07</span>
+  <span style="font-size:17px; color:#264653;">Prevention – Vaccines &amp; Immune Globulin</span>
+</div><div style="position:absolute; top:396px; left:50px; right:50px; height:1px; background:#264653; opacity:0.08;"></div>
+<div style="position:absolute; top:404px; left:50px; right:50px; display:flex; align-items:center;">
+  <span style="font-size:22px; font-weight:700; color:#2a9d8f; width:44px; flex-shrink:0;">08</span>
+  <span style="font-size:17px; color:#264653;">Treatment – Supportive Care &amp; Severe Cases</span>
+</div><div style="position:absolute; top:442px; left:50px; right:50px; height:1px; background:#264653; opacity:0.08;"></div>
+<div style="position:absolute; top:450px; left:50px; right:50px; display:flex; align-items:center;">
+  <span style="font-size:22px; font-weight:700; color:#2a9d8f; width:44px; flex-shrink:0;">09</span>
+  <span style="font-size:17px; color:#264653;">Summary &amp; Review Questions</span>
+</div>
+
+<svg style="position:absolute; right:32px; bottom:24px; width:40px; height:32px; z-index:100;" aria-hidden="true">
+<rect x="0" y="0" width="40" height="32" rx="4" fill="#2a9d8f" opacity="0.85"/>
+<text x="20" y="22" text-anchor="middle" font-family="Times New Roman,serif" font-size="14" font-weight="700" fill="#ffffff">02</text>
+</svg>
+</div>
+</body>
+</html>

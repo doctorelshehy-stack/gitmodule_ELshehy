@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; color:#264653; position:relative; overflow:hidden; font-family:'Times New Roman',serif;">
+<p style="position:absolute; top:20px; left:50px; font-size:26px; font-weight:700; color:#264653; font-family:'Times New Roman',serif; margin:0; z-index:10;">Summary &amp; Key Takeaways</p>
+<div style="position:absolute; top:60px; left:50px; width:80px; height:4px; background:#2a9d8f; border-radius:2px; z-index:1;"></div>
+<div style="position:absolute; top:76px; left:50px; right:50px; bottom:56px; overflow:hidden; font-size:14px; line-height:1.45; color:#264653;">
+
+<p style="font-size:16px; font-weight:700; color:#264653; margin:0 0 8px 0;">Key Takeaways</p>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:6px 0 12px 0;">
+  <div style="background:#264653; color:#ffffff; padding:10px 14px; border-radius:6px;">
+    <p style="margin:0 0 3px 0; font-weight:700; font-size:14px; color:#e9c46a;">01 Liver Anatomy</p>
+    <p style="margin:0; font-size:12px; opacity:0.9;">Couinaud's 8 segments; Cantlie's line divides functional right/left lobes; Segment I (caudate) drains directly to IVC.</p>
+  </div>
+  <div style="background:#2a9d8f; color:#ffffff; padding:10px 14px; border-radius:6px;">
+    <p style="margin:0 0 3px 0; font-weight:700; font-size:14px; color:#e9c46a;">02 Definition</p>
+    <p style="margin:0; font-size:12px; opacity:0.9;">Acute = inflammation &lt;6 months with LFT normalization. Caused by 5 hepatotropic viruses.</p>
+  </div>
+  <div style="background:#f4a261; color:#ffffff; padding:10px 14px; border-radius:6px;">
+    <p style="margin:0 0 3px 0; font-weight:700; font-size:14px;">03 Symptoms</p>
+    <p style="margin:0; font-size:12px; opacity:0.9;">Flu-like to fulminant liver failure; prodrome 3-10 days; jaundice; recovery 4-8 weeks; chronic risk with HBV/HCV.</p>
+  </div>
+  <div style="background:#e76f51; color:#ffffff; padding:10px 14px; border-radius:6px;">
+    <p style="margin:0 0 3px 0; font-weight:700; font-size:14px;">04 Diagnosis</p>
+    <p style="margin:0; font-size:12px; opacity:0.9;">Serology (IgM/IgG), antigens, PCR for viral DNA/RNA. HAV: IgM anti-HAV. HBV: HBsAg, HBcAb, DNA. HCV: RNA by PCR. HEV: IgM/IgG, PCR.</p>
+  </div>
+  <div style="background:#2a9d8f; color:#ffffff; padding:10px 14px; border-radius:6px;">
+    <p style="margin:0 0 3px 0; font-weight:700; font-size:14px; color:#e9c46a;">05 Prevention</p>
+    <p style="margin:0; font-size:12px; opacity:0.9;">Vaccines for HAV &amp; HBV; HEV vaccine in China only; immune globulin for post-exposure; hand hygiene; safe sex; needle safety.</p>
+  </div>
+  <div style="background:#264653; color:#ffffff; padding:10px 14px; border-radius:6px;">
+    <p style="margin:0 0 3px 0; font-weight:700; font-size:14px; color:#e9c46a;">06 Treatment</p>
+    <p style="margin:0; font-size:12px; opacity:0.9;">Supportive care for most; hospitalization for severe; ICU + antivirals for fulminant HBV; liver transplantation for refractory cases.</p>
+  </div>
+</div>
+
+<div style="text-align:center; padding:10px; margin:6px 0;">
+  <p style="margin:0; font-size:18px; font-weight:700; color:#2a9d8f;">Thank You</p>
+  <p style="margin:4px 0 0 0; font-size:14px; color:#264653; opacity:0.7;">Dr. Hossam Seleema — Assistant Professor of Tropical Medicine and Infectious Diseases</p>
+</div>
+
+</div>
+<svg style="position:absolute; right:32px; bottom:24px; width:40px; height:32px; z-index:100;" aria-hidden="true">
+<rect x="0" y="0" width="40" height="32" rx="4" fill="#2a9d8f" opacity="0.85"/>
+<text x="20" y="22" text-anchor="middle" font-family="Times New Roman,serif" font-size="14" font-weight="700" fill="#ffffff">18</text>
+</svg>
+</div>
+</body>
+</html>

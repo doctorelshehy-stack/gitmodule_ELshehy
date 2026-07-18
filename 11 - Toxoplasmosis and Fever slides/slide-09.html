@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+<div style="position:absolute; inset:0; background:#ffffff;">
+  <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:#2a9d8f;"></div>
+  <p style="position:absolute; top:24px; left:40px; font-family:'Times New Roman',serif; font-size:28px; font-weight:700; color:#264653; margin:0;">Fever: Types &amp; Patterns</p>
+  <div style="position:absolute; top:64px; left:40px; width:60px; height:3px; background:#e9c46a; border-radius:2px;"></div>
+
+  <div style="position:absolute; top:90px; left:40px; right:40px; bottom:50px; display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+    <div style="background:#f8f9fa; padding:14px; border-radius:4px; border-left:4px solid #2a9d8f;">
+      <p style="font-family:'Times New Roman',serif; font-size:15px; font-weight:700; color:#264653; margin:0 0 6px 0;">Intermittent Fever</p>
+      <p style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:0; line-height:1.5;">
+        Fever that touches normal for a few hours during the day.
+      </p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; color:#2a9d8f; margin:4px 0 0 0;">
+        <b>Seen in:</b> malaria, acute pyelonephritis, local boils and furuncles.
+      </p>
+    </div>
+    <div style="background:#f8f9fa; padding:14px; border-radius:4px; border-left:4px solid #e76f51;">
+      <p style="font-family:'Times New Roman',serif; font-size:15px; font-weight:700; color:#264653; margin:0 0 6px 0;">Remittent Fever</p>
+      <p style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:0; line-height:1.5;">
+        Fever that fluctuates more than 1.5-degree F in 24 hours <b>without</b> touching normal.
+      </p>
+    </div>
+    <div style="background:#f8f9fa; padding:14px; border-radius:4px; border-left:4px solid #f4a261;">
+      <p style="font-family:'Times New Roman',serif; font-size:15px; font-weight:700; color:#264653; margin:0 0 6px 0;">Continuous Fever</p>
+      <p style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:0; line-height:1.5;">
+        Fever that does not touch normal and fluctuates less than 1.5-degree F in a day.
+      </p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; color:#f4a261; margin:4px 0 0 0;">
+        <b>Seen in:</b> enteric fever, Bacterial endocarditis, viral pneumonia.
+      </p>
+    </div>
+    <div style="background:#f8f9fa; padding:14px; border-radius:4px; border-left:4px solid #e9c46a;">
+      <p style="font-family:'Times New Roman',serif; font-size:15px; font-weight:700; color:#264653; margin:0 0 6px 0;">Relapsing Fever</p>
+      <p style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:0; line-height:1.5;">
+        Period of fever alternating with period of normal temperature.
+      </p>
+    </div>
+  </div>
+
+  <div style="position:absolute; bottom:55px; left:40px; right:40px; background:#264653; padding:10px 16px; border-radius:4px;">
+    <p style="font-family:'Times New Roman',serif; font-size:12px; color:#ffffff; margin:0; text-align:center;">
+      <b>Pattern Key:</b> A&amp;B — Continuous fever | C — Remittent | D — Intermittent | E — Relapsing fever
+    </p>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; width:40px; height:24px;" aria-hidden="true">
+      <rect x="0" y="2" width="40" height="20" rx="10" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="16" text-anchor="middle" fill="#ffffff" font-family="'Times New Roman',serif" font-size="12" font-weight="700">09</text>
+    </svg>
+</div>
+</div>
+</body>
+</html>

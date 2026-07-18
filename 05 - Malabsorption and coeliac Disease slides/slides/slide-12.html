@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script></head><body>
+<div class="slide-content" style="background:#f0f7f7; overflow:hidden;">
+  <div style="position:absolute; top:0; left:0; right:0; height:56px; background:#e76f51; z-index:2;"></div>
+  <p style="position:absolute; top:12px; left:50px; font-size:21px; font-weight:700; color:#ffffff; z-index:10;">Coeliac Disease — New Treatment Modalities</p>
+  <div style="margin-top:56px; margin-left:50px; margin-right:50px; margin-bottom:10px; padding-top:12px; z-index:5; display:flex; flex-direction:column; height:calc(540px - 56px - 10px);">
+    <p style="font-size:14px; color:#264653; margin-bottom:12px; font-style:italic;">Based on current insights into disease pathogenesis:</p>
+    <div style="display:flex; gap:10px; margin-bottom:10px;">
+      <div style="flex:1; background:#ffffff; padding:10px 12px; border-radius:8px; border-top:3px solid #e76f51;">
+        <p style="font-size:12px; font-weight:700; color:#e76f51; margin-bottom:4px;">Fontolizumab</p>
+        <p style="font-size:11px; color:#264653; line-height:1.4;">Humanised anti-IFN-γ antibody. Safety &amp; activity in moderate-severe Crohn's</p>
+      </div>
+      <div style="flex:1; background:#ffffff; padding:10px 12px; border-radius:8px; border-top:3px solid #f4a261;">
+        <p style="font-size:12px; font-weight:700; color:#f4a261; margin-bottom:4px;">Infliximab</p>
+        <p style="font-size:11px; color:#264653; line-height:1.4;">Long-term for life-threatening type I refractory coeliac disease</p>
+      </div>
+      <div style="flex:1; background:#ffffff; padding:10px 12px; border-radius:8px; border-top:3px solid #2a9d8f;">
+        <p style="font-size:12px; font-weight:700; color:#2a9d8f; margin-bottom:4px;">Alemtuzumab</p>
+        <p style="font-size:11px; color:#264653; line-height:1.4;">For refractory CD at risk for EATCL</p>
+      </div>
+      <div style="flex:1; background:#ffffff; padding:10px 12px; border-radius:8px; border-top:3px solid #e9c46a;">
+        <p style="font-size:12px; font-weight:700; color:#264653; margin-bottom:4px;">IL-10</p>
+        <p style="font-size:11px; color:#264653; line-height:1.4;">Recombinant human IL-10 suppresses gliadin-dependent T cell activation</p>
+      </div>
+    </div>
+    <p style="font-size:15px; font-weight:700; color:#264653; margin-bottom:10px;">Research Focus Areas</p>
+    <div style="display:flex; gap:8px;">
+      <div style="flex:1; background:#264653; padding:10px; border-radius:8px;">
+        <p style="font-size:11px; font-weight:600; color:#ffffff; text-align:center;">Engineering gluten-free grains</p>
+      </div>
+      <div style="flex:1; background:#2a9d8f; padding:10px; border-radius:8px;">
+        <p style="font-size:11px; font-weight:600; color:#ffffff; text-align:center;">Exogenous endopeptidases to degrade gliadin</p>
+      </div>
+      <div style="flex:1; background:#f4a261; padding:10px; border-radius:8px;">
+        <p style="font-size:11px; font-weight:600; color:#ffffff; text-align:center;">Zonulin receptor blockage</p>
+      </div>
+      <div style="flex:1; background:#e76f51; padding:10px; border-radius:8px;">
+        <p style="font-size:11px; font-weight:600; color:#ffffff; text-align:center;">tTG2 inhibitors</p>
+      </div>
+    </div>
+    <div style="display:flex; gap:8px; margin-top:8px;">
+      <div style="flex:1; background:#e9c46a; padding:10px; border-radius:8px;">
+        <p style="font-size:11px; font-weight:600; color:#264653; text-align:center;">HLA-DQ2 antagonists</p>
+      </div>
+      <div style="flex:1; background:#264653; padding:10px; border-radius:8px;">
+        <p style="font-size:11px; font-weight:600; color:#ffffff; text-align:center;">Cytokine modulation</p>
+      </div>
+      <div style="flex:1; background:#2a9d8f; padding:10px; border-radius:8px;">
+        <p style="font-size:11px; font-weight:600; color:#ffffff; text-align:center;">Oral tolerance induction to gluten</p>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:50;" width="48" height="28" viewBox="0 0 48 28" aria-hidden="true">
+  <rect x="0" y="0" width="48" height="28" rx="14" fill="#264653" opacity="0.85"/>
+  <text x="24" y="19" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="14" font-weight="600">12</text>
+</svg>
+</div></body></html>

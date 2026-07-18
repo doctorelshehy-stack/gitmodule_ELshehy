@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HPS - Imaging Techniques</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;position:relative;background:#ffffff;font-family:'Times New Roman',Times,serif;color:#1a1a2e;overflow:hidden;">
+<div style="position:absolute;top:0;left:0;width:960px;height:540px;background:#ffffff;z-index:0;"></div>
+<svg aria-hidden="true" style="position:absolute;top:0;left:0;z-index:1;" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="8" height="540" fill="#264653"/>
+</svg>
+<p style="position:absolute;top:20px;left:44px;z-index:5;font-size:32px;font-weight:700;color:#264653;">HPS — Imaging Techniques</p>
+<div style="position:absolute;top:64px;left:44px;width:80px;height:3px;z-index:5;background:#2a9d8f;border-radius:1.5px;"></div>
+
+<p style="position:absolute;top:82px;left:44px;z-index:5;font-size:14px;color:rgba(26,26,46,0.6);">Imaging studies for HPS aim to demonstrate intrapulmonary vasodilation (IPVD) and exclude underlying cardiopulmonary disease:</p>
+
+<div style="position:absolute;top:108px;left:44px;right:44px;z-index:5;">
+  <div style="display:grid;grid-template-columns:1fr 2fr;gap:10px;margin-bottom:10px;align-items:start;">
+    <div style="background:#f8f9fa;padding:10px 14px;border-radius:4px;font-weight:700;color:#2a9d8f;font-size:13px;">1) Chest X-Ray</div>
+    <div style="background:#f8f9fa;padding:10px 14px;border-radius:4px;font-size:12px;color:#1a1a2e;">To exclude significant pulmonary disease or pleural effusion. In HPS, CXR may be normal or show nonspecific findings.</div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 2fr;gap:10px;margin-bottom:10px;">
+    <div style="background:#f8f9fa;padding:10px 14px;border-radius:4px;font-weight:700;color:#f4a261;font-size:13px;">2) High-Resolution CT Chest</div>
+    <div style="background:#f8f9fa;padding:10px 14px;border-radius:4px;font-size:12px;color:#1a1a2e;">Useful in selected cases. Can show dilated peripheral pulmonary vessels and an increased pulmonary artery-to-bronchus ratio (indicating vasodilation). Also excludes interstitial lung disease and emphysema.</div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 2fr;gap:10px;margin-bottom:10px;">
+    <div style="background:#f8f9fa;padding:10px 14px;border-radius:4px;font-weight:700;color:#e76f51;font-size:13px;">3) Contrast Echocardiography</div>
+    <div style="background:#f8f9fa;padding:10px 14px;border-radius:4px;font-size:12px;color:#1a1a2e;">The gold standard for detecting IPVDs. Agitated saline or indocyanine green is injected IV to produce microbubbles. In the presence of a right-to-left shunt, microbubbles appear in the right atrium/ventricle and then in the left atrium/ventricle. Timing of appearance differentiates intracardiac (within 3 beats) vs intrapulmonary (3-6 beats) shunting.</div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 2fr;gap:10px;margin-bottom:10px;">
+    <div style="background:#f8f9fa;padding:10px 14px;border-radius:4px;font-weight:700;color:#2a9d8f;font-size:13px;">4) Nuclear Scanning</div>
+    <div style="background:#f8f9fa;padding:10px 14px;border-radius:4px;font-size:12px;color:#1a1a2e;">Technetium-99m-labeled macroaggregated albumin (MAA) scanning. Normally, labeled albumin particles are trapped in the pulmonary capillary bed. In HPS, particles pass through dilated pulmonary vessels and are detected in the brain/kidneys, confirming right-to-left shunting. Allows quantification of shunt fraction.</div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 2fr;gap:10px;">
+    <div style="background:#f8f9fa;padding:10px 14px;border-radius:4px;font-weight:700;color:#e76f51;font-size:13px;">5) Pulmonary Angiography</div>
+    <div style="background:#f8f9fa;padding:10px 14px;border-radius:4px;font-size:12px;color:#1a1a2e;">Invasive diagnostic tool with limited experience in HPS. Can be useful to exclude conditions that mimic HPS such as pulmonary embolization. May demonstrate two patterns: Type 1 (diffuse, fine spider-like vessels) and Type 2 (focal, discrete arteriovenous communications).</div>
+  </div>
+</div>
+
+<svg aria-hidden="true" style="position:absolute;right:32px;bottom:24px;z-index:20;" width="40" height="28" viewBox="0 0 40 28">
+      <rect x="0" y="0" width="40" height="28" rx="4" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="19" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" font-family: 'Times New Roman', Times, serif;">21</text>
+    </svg>
+
+</div>
+</body>
+</html>

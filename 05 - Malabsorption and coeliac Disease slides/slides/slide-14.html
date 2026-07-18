@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script></head><body>
+<div class="slide-content" style="background:#f0f7f7; overflow:hidden;">
+  <div style="position:absolute; top:0; left:0; right:0; height:56px; background:#264653; z-index:2;"></div>
+  <p style="position:absolute; top:12px; left:50px; font-size:21px; font-weight:700; color:#ffffff; z-index:10;">Other Causes & Small Intestine Tumors</p>
+  <div style="position:absolute; top:68px; left:40px; right:40px; bottom:10px; display:grid; grid-template-columns:1fr 1fr; gap:14px; z-index:5;">
+    <div>
+      <p style="font-size:15px; font-weight:700; color:#264653; margin-bottom:8px;">Other Causes of Malabsorption</p>
+      <div style="background:#ffffff; padding:8px 12px; border-radius:8px; margin-bottom:6px;">
+        <p style="font-size:12px; color:#264653;"><span style="font-weight:600; color:#2a9d8f;">Parasitic:</span> Giardia intestinalis → diarrhea + steatorrhea. Cryptosporidiosis in HIV</p>
+      </div>
+      <div style="background:#ffffff; padding:8px 12px; border-radius:8px; margin-bottom:6px;">
+        <p style="font-size:12px; color:#264653;"><span style="font-weight:600; color:#f4a261;">Protein-losing enteropathy:</span> Hypoalbuminemia, peripheral edema</p>
+      </div>
+      <div style="background:#ffffff; padding:8px 12px; border-radius:8px; margin-bottom:6px;">
+        <p style="font-size:12px; color:#264653;"><span style="font-weight:600; color:#e9c46a;">Eosinophilic gastroenteritis:</span> Associated with asthma, eczema. Steroid treatment</p>
+      </div>
+      <div style="background:#ffffff; padding:8px 12px; border-radius:8px; margin-bottom:6px;">
+        <p style="font-size:12px; color:#264653;"><span style="font-weight:600; color:#e76f51;">Intestinal lymphangiectasia:</span> Hypoproteinaemia, ankle edema. Low-fat diet</p>
+      </div>
+      <div style="background:#ffffff; padding:8px 12px; border-radius:8px;">
+        <p style="font-size:12px; color:#264653;"><span style="font-weight:600; color:#264653;">Abetalipoproteinaemia:</span> Rare. Acanthocytosis, retinitis pigmentosa. Vit E injections</p>
+      </div>
+    </div>
+    <div>
+      <p style="font-size:15px; font-weight:700; color:#264653; margin-bottom:8px;">Small Intestine Tumors</p>
+      <div style="background:#ffffff; padding:8px 12px; border-radius:8px; margin-bottom:6px;">
+        <p style="font-size:12px; color:#264653;">
+          Only <span style="font-weight:700;">3-6%</span> of GI tumors, &lt;1% malignancies. Fluidity, sterility, rapid transit = protection
+        </p>
+      </div>
+      <div style="display:flex; gap:6px; margin-bottom:8px;">
+        <div style="flex:1; background:#e76f51; padding:8px; border-radius:6px;">
+          <p style="font-size:11px; font-weight:600; color:#ffffff; text-align:center;">Adenocarcinoma</p>
+          <p style="font-size:10px; color:rgba(255,255,255,0.85); text-align:center;">Most common. Duodenum/jejunum</p>
+        </div>
+        <div style="flex:1; background:#2a9d8f; padding:8px; border-radius:6px;">
+          <p style="font-size:11px; font-weight:600; color:#ffffff; text-align:center;">Lymphoma</p>
+          <p style="font-size:10px; color:rgba(255,255,255,0.85); text-align:center;">Ileum. B-cell (MALT) or T-cell</p>
+        </div>
+        <div style="flex:1; background:#f4a261; padding:8px; border-radius:6px;">
+          <p style="font-size:11px; font-weight:600; color:#ffffff; text-align:center;">Carcinoid</p>
+          <p style="font-size:10px; color:rgba(255,255,255,0.85); text-align:center;">10% of SI neoplasms</p>
+        </div>
+      </div>
+      <div style="background:#264653; padding:10px 12px; border-radius:8px;">
+        <p style="font-size:13px; font-weight:700; color:#e9c46a; margin-bottom:4px;">Carcinoid Syndrome (5% with liver mets)</p>
+        <ul style="margin:0; padding-left:14px;">
+          <li style="font-size:11px; color:rgba(255,255,255,0.85); margin-bottom:2px;">Flushing, diarrhea, abdominal pain</li>
+          <li style="font-size:11px; color:rgba(255,255,255,0.85); margin-bottom:2px;">Cardiac: pulmonary stenosis, tricuspid incompetence (50%)</li>
+          <li style="font-size:11px; color:rgba(255,255,255,0.85); margin-bottom:2px;">Urine 5-HIAA elevated</li>
+          <li style="font-size:11px; color:rgba(255,255,255,0.85);">Treatment: Octreotide, Lanreotide</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:50;" width="48" height="28" viewBox="0 0 48 28" aria-hidden="true">
+  <rect x="0" y="0" width="48" height="28" rx="14" fill="#264653" opacity="0.85"/>
+  <text x="24" y="19" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="14" font-weight="600">14</text>
+</svg>
+</div></body></html>

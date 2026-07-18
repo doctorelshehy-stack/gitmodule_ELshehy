@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background: #ffffff; overflow:hidden;">
+  <!-- Left accent bar -->
+  <div style="position:absolute; top:0; left:0; width:54px; height:540px; background:#264653; z-index:2;"></div>
+  <div style="position:absolute; top:0; left:54px; width:4px; height:540px; background:#2a9d8f; z-index:2;"></div>
+
+  <!-- Header -->
+  <p style="position:absolute; top:36px; left:80px; font-size:32px; font-weight:700; color:#264653; z-index:10;">Table of Contents</p>
+  <div style="position:absolute; top:80px; left:80px; width:100px; height:3px; background:#2a9d8f; border-radius:1.5px; z-index:1;"></div>
+
+  <!-- TOC entries -->
+  <div style="position:absolute;top:65px;left:60px;right:40px;bottom:20px;overflow:auto;">
+    <div style="display:flex;flex-direction:column;gap:4px;padding:8px 0;">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">01</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Introduction & Bile Composition</span>
+        <span style="font-size:11px;color:#666;">Normal bile components and overview</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">02</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Types of Gallstones</span>
+        <span style="font-size:11px;color:#666;">Cholesterol, Black pigment, Brown pigment</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">03</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Risk Factors</span>
+        <span style="font-size:11px;color:#666;">13 factors for cholesterol gallstone formation</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">04</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Clinical Presentations</span>
+        <span style="font-size:11px;color:#666;">8 presentations from asymptomatic to cancer</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">05</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Investigations</span>
+        <span style="font-size:11px;color:#666;">USG, ERCP, MRCP, CT and more</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">06</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Management</span>
+        <span style="font-size:11px;color:#666;">Cholecystectomy and treatment approaches</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">07</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Chronic Cholecystitis</span>
+        <span style="font-size:11px;color:#666;">Biliary colic, Murphy's sign, treatment</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">08</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Acute Cholecystitis</span>
+        <span style="font-size:11px;color:#666;">Chemical & bacterial inflammation</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">09</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">Acute Cholangitis</span>
+        <span style="font-size:11px;color:#666;">Charcot's triad and urgent treatment</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="min-width:28px;font-size:13px;font-weight:700;color:#2a9d8f;">10</span>
+        <span style="font-size:13px;font-weight:600;color:#264653;">PTC</span>
+        <span style="font-size:11px;color:#666;">Percutaneous transhepatic cholangiography</span>
+      </div>
+    </div>
+  </div>
+
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:50;" width="48" height="28" viewBox="0 0 48 28" aria-hidden="true">
+  <rect x="0" y="0" width="48" height="28" rx="14" fill="#264653" opacity="0.85"/>
+  <text x="24" y="19" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="14" font-weight="600">2</text>
+</svg>
+</div>
+</body>
+</html>

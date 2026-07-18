@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background: #ffffff; overflow:hidden;">
+  <!-- Header bar -->
+  <div style="position:absolute; top:0; left:0; right:0; height:60px; background:#264653; z-index:2;"></div>
+  <p style="position:absolute; top:14px; left:60px; font-size:22px; font-weight:700; color:#ffffff; z-index:10;">Clinical Presentations</p>
+
+  <!-- 4x2 card grid -->
+  <div style="position:absolute; top:80px; left:40px; right:40px; bottom:80px; display:grid; grid-template-columns:repeat(4, 1fr); grid-template-rows:1fr 1fr; gap:12px; z-index:5;">
+
+    <!-- Row 1 -->
+    <div>
+      <svg width="100%" height="50" viewBox="0 0 205 50" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <rect x="0" y="0" width="205" height="50" rx="6" fill="#2a9d8f"/>
+        <text x="18" y="32" fill="#ffffff" font-family="Times New Roman, serif" font-size="24" font-weight="700">1</text>
+        <text x="45" y="32" fill="#ffffff" font-family="Times New Roman, serif" font-size="15" font-weight="600">Asymptomatic</text>
+      </svg>
+      <p style="font-size:13px; color:#555; margin-top:6px; padding-left:4px;">Discovered incidentally</p>
+    </div>
+
+    <div>
+      <svg width="100%" height="50" viewBox="0 0 205 50" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <rect x="0" y="0" width="205" height="50" rx="6" fill="#2a9d8f"/>
+        <text x="18" y="32" fill="#ffffff" font-family="Times New Roman, serif" font-size="24" font-weight="700">2</text>
+        <text x="45" y="32" fill="#ffffff" font-family="Times New Roman, serif" font-size="15" font-weight="600">Chronic Calcular Cholecystitis</text>
+      </svg>
+      <p style="font-size:13px; color:#555; margin-top:6px; padding-left:4px;">Biliary colic episodes</p>
+    </div>
+
+    <div>
+      <svg width="100%" height="50" viewBox="0 0 205 50" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <rect x="0" y="0" width="205" height="50" rx="6" fill="#e9c46a"/>
+        <text x="18" y="32" fill="#ffffff" font-family="Times New Roman, serif" font-size="24" font-weight="700">3</text>
+        <text x="45" y="32" fill="#ffffff" font-family="Times New Roman, serif" font-size="15" font-weight="600">Acute Cholecystitis</text>
+      </svg>
+      <p style="font-size:13px; color:#555; margin-top:6px; padding-left:4px;">Chemical + bacterial infection</p>
+    </div>
+
+    <div>
+      <svg width="100%" height="50" viewBox="0 0 205 50" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <rect x="0" y="0" width="205" height="50" rx="6" fill="#f4a261"/>
+        <text x="18" y="32" fill="#ffffff" font-family="Times New Roman, serif" font-size="24" font-weight="700">4</text>
+        <text x="45" y="32" fill="#ffffff" font-family="Times New Roman, serif" font-size="15" font-weight="600">Cholestasis</text>
+      </svg>
+      <p style="font-size:13px; color:#555; margin-top:6px; padding-left:4px;">Bile flow obstruction</p>
+    </div>
+
+    <!-- Row 2 -->
+    <div>
+      <svg width="100%" height="50" viewBox="0 0 205 50" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <rect x="0" y="0" width="205" height="50" rx="6" fill="#e76f51"/>
+        <text x="18" y="32" fill="#ffffff" font-family="Times New Roman, serif" font-size="24" font-weight="700">5</text>
+        <text x="45" y="32" fill="#ffffff" font-family="Times New Roman, serif" font-size="15" font-weight="600">Acute Cholangitis</text>
+      </svg>
+      <p style="font-size:13px; color:#555; margin-top:6px; padding-left:4px;">Charcot's triad</p>
+    </div>
+
+    <div>
+      <svg width="100%" height="50" viewBox="0 0 205 50" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <rect x="0" y="0" width="205" height="50" rx="6" fill="#f4a261"/>
+        <text x="18" y="32" fill="#ffffff" font-family="Times New Roman, serif" font-size="24" font-weight="700">6</text>
+        <text x="45" y="32" fill="#ffffff" font-family="Times New Roman, serif" font-size="15" font-weight="600">Acute Pancreatitis</text>
+      </svg>
+      <p style="font-size:13px; color:#555; margin-top:6px; padding-left:4px;">CBD stone obstruction</p>
+    </div>
+
+    <div>
+      <svg width="100%" height="50" viewBox="0 0 205 50" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <rect x="0" y="0" width="205" height="50" rx="6" fill="#e76f51"/>
+        <text x="18" y="32" fill="#ffffff" font-family="Times New Roman, serif" font-size="24" font-weight="700">7</text>
+        <text x="45" y="32" fill="#ffffff" font-family="Times New Roman, serif" font-size="15" font-weight="600">Gall Stone Ileus</text>
+      </svg>
+      <p style="font-size:13px; color:#555; margin-top:6px; padding-left:4px;">Bowel obstruction</p>
+    </div>
+
+    <div>
+      <svg width="100%" height="50" viewBox="0 0 205 50" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <rect x="0" y="0" width="205" height="50" rx="6" fill="#264653"/>
+        <text x="18" y="32" fill="#ffffff" font-family="Times New Roman, serif" font-size="24" font-weight="700">8</text>
+        <text x="45" y="32" fill="#ffffff" font-family="Times New Roman, serif" font-size="15" font-weight="600">GB Adenocarcinoma</text>
+      </svg>
+      <p style="font-size:13px; color:#555; margin-top:6px; padding-left:4px;">Malignant transformation</p>
+    </div>
+
+  </div>
+
+  <!-- Note -->
+  <div style="position:absolute; bottom:40px; left:60px; right:60px; z-index:5;">
+    <div style="background:#f0f7f7; padding:10px 16px; border-radius:6px; border-left:4px solid #e9c46a;">
+      <p style="font-size:13px; color:#264653;">
+        <span style="font-weight:700;">Important:</span> 2/3 of gallstones are asymptomatic (discovered incidentally). Yearly risk of developing biliary pain is 14%.
+      </p>
+    </div>
+  </div>
+
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:50;" width="48" height="28" viewBox="0 0 48 28" aria-hidden="true">
+  <rect x="0" y="0" width="48" height="28" rx="14" fill="#264653" opacity="0.85"/>
+  <text x="24" y="19" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="14" font-weight="600">6</text>
+</svg>
+</div>
+</body>
+</html>

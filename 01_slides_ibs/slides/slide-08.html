@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script></head><body>
+<div class="slide-content" style="background:#ffffff; overflow:hidden;">
+  <svg style="position:absolute; top:0; left:0; width:960px; height:80px;" aria-hidden="true">
+    <rect x="0" y="0" width="960" height="80" fill="#1b2838"/>
+    <rect x="0" y="80" width="960" height="4" fill="#1565C0"/>
+  </svg>
+  <div style="position:absolute; top:20px; left:60px; z-index:10;">
+    <p style="font-family:'Times New Roman',serif; font-size:28px; font-weight:700; color:#ffffff; margin:0;">IBS — Dietary Management</p>
+  </div>
+  <div style="position:absolute; top:100px; left:60px; width:840px; z-index:10;">
+    <p style="font-family:'Times New Roman',serif; font-size:14px; color:#1b2838; margin:0 0 10px 0;">Management consists primarily of <strong>psychological support</strong> and <strong>dietary measures</strong>. Pharmacologic treatment is adjunctive and directed at symptoms.</p>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+      <div>
+        <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#1565C0; margin:0 0 8px 0;">Dietary Measures</p>
+        <div style="background:#f0f4f8; padding:12px; border-radius:8px; border-left:4px solid #1565C0;">
+          <ul style="margin:0; padding-left:16px;">
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:5px 0;"><strong>Fiber supplementation:</strong> may improve constipation and diarrhea</li>
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:5px 0;"><strong>Judicious water intake:</strong> recommended for constipation-predominant</li>
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:5px 0;"><strong>Caffeine avoidance:</strong> may limit anxiety and symptom exacerbation</li>
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:5px 0;"><strong>Legume avoidance:</strong> may decrease abdominal bloating</li>
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:5px 0;"><strong>FODMAPs restriction:</strong> fermentable oligosaccharides, disaccharides, monosaccharides, and polyols — limit or avoid</li>
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:5px 0;"><strong>Probiotics:</strong> being studied for decreasing IBS symptoms</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#FF9800; margin:0 0 8px 0;">Psychological Interventions</p>
+        <div style="background:#f0f4f8; padding:12px; border-radius:8px; border-left:4px solid #FF9800; margin-bottom:10px;">
+          <p style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:0 0 6px 0;">ACG conclusions:</p>
+          <ul style="margin:0; padding-left:16px;">
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:5px 0;"><strong>Effective:</strong> Psychological interventions, cognitive-behavioral therapy, dynamic psychotherapy, hypnotherapy — more effective than placebo</li>
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:5px 0;"><strong>Not effective:</strong> Relaxation therapy — no more effective than usual care</li>
+          </ul>
+        </div>
+        <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#FFC107; margin:0 0 8px 0;">Key Point</p>
+        <div style="background:#fff8e1; padding:12px; border-radius:8px; border-left:4px solid #FFC107;">
+          <p style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:0; line-height:1.5;">Evidence is mixed regarding long-term improvement in GI symptoms with successful treatment of psychiatric comorbidities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:100;" width="40" height="40" aria-hidden="true">
+  <circle cx="20" cy="20" r="18" fill="#1b2838" stroke="#1565C0" stroke-width="2"/>
+  <text x="20" y="25" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="16" font-weight="bold">08</text>
+</svg>
+</div>
+</body></html>

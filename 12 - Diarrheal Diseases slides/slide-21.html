@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+<div style="position:absolute; inset:0; background:#ffffff;">
+  <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:#2a9d8f;"></div>
+  <p style="position:absolute; top:18px; left:40px; font-family:'Times New Roman',serif; font-size:22px; font-weight:700; color:#264653; margin:0;">SIBO — Small Intestinal Bacterial Overgrowth</p>
+  <div style="position:absolute; top:48px; left:40px; width:60px; height:3px; background:#e9c46a; border-radius:2px;"></div>
+
+  <div style="position:absolute; top:64px; left:40px; right:40px; bottom:44px; display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+    <div style="background:#f8f9fa; padding:10px; border-radius:4px; border-top:3px solid #2a9d8f;">
+      <p style="font-family:'Times New Roman',serif; font-size:13px; font-weight:700; color:#264653; margin:0 0 4px 0;">Pathophysiology</p>
+      <p style="font-family:'Times New Roman',serif; font-size:11px; color:#264653; margin:0; line-height:1.4;">
+        SIBO causes malabsorption of foodstuffs, including fats and carbohydrates due to alteration of gut flora.
+      </p>
+      <ul style="font-family:'Times New Roman',serif; font-size:11px; color:#264653; margin:4px 0 0; padding-left:14px; line-height:1.3;">
+        <li>Normal → gut flora: lactobacilli, enterococci, gram-positive facultative anaerobes</li>
+        <li>SIBO → flora partially replaced with colonic bacteria (coliforms and anaerobes: Bacteroides and Clostridium)</li>
+        <li>→ Increased amidase and protease → altered bile salts absorption</li>
+        <li>→ Impaired micelle production → fat malabsorption</li>
+        <li>→ Increased proteases → reduce villous surface enzymes (disaccharidases) → carbohydrate malabsorption</li>
+      </ul>
+      <p style="font-family:'Times New Roman',serif; font-size:11px; font-weight:700; color:#2a9d8f; margin:6px 0 2px 0;">Predisposing factors:</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:11px; color:#264653; margin:0; padding-left:14px; line-height:1.3;">
+        <li>Increased GI pH: PPI therapy, gastrectomy, atrophic gastritis</li>
+        <li>GI stasis or delayed gastric emptying: structural (stenosis, bypass) or functional (pseudo-obstruction, diabetic enteropathy)</li>
+      </ul>
+    </div>
+    <div style="background:#f8f9fa; padding:10px; border-radius:4px; border-top:3px solid #e76f51;">
+      <p style="font-family:'Times New Roman',serif; font-size:13px; font-weight:700; color:#e76f51; margin:0 0 4px 0;">Investigations</p>
+      <div style="background:#ffffff; padding:6px 8px; border-radius:4px; margin-bottom:4px;">
+        <p style="font-family:'Times New Roman',serif; font-size:11px; font-weight:700; color:#264653; margin:0 0 2px;">1. Small-bowel aspiration &amp; quantitative culture (Gold-standard)</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0;">Bacterial overgrowth diagnosed when &gt;10⁵ CFU/ml in proximal jejunum. Complex test — not used routinely.</p>
+      </div>
+      <div style="background:#ffffff; padding:6px 8px; border-radius:4px; margin-bottom:4px;">
+        <p style="font-family:'Times New Roman',serif; font-size:11px; font-weight:700; color:#264653; margin:0 0 2px;">2. ¹⁴C/¹³C D-xylose breath test (Most clinically-applied)</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0;">Administration of 1g of ¹⁴C-labelled D-xylose. Positive = detection of ¹⁴C in exhaled breath.</p>
+      </div>
+      <div style="background:#ffffff; padding:6px 8px; border-radius:4px; margin-bottom:4px;">
+        <p style="font-family:'Times New Roman',serif; font-size:11px; font-weight:700; color:#264653; margin:0 0 2px;">3. Hydrogen breath test</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0;">10g lactulose challenge. Positive: &gt;20ppm H₂ in first 90 min (early peak), double peak, or sustained increase &gt;10ppm over baseline.</p>
+      </div>
+      <div style="background:#ffffff; padding:6px 8px; border-radius:4px;">
+        <p style="font-family:'Times New Roman',serif; font-size:11px; font-weight:700; color:#264653; margin:0 0 2px;">4. Therapeutic trial with antibiotics</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0;">Used when pre-test probability is high and breath test negative/unavailable.</p>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; width:40px; height:24px;" aria-hidden="true">
+      <rect x="0" y="2" width="40" height="20" rx="10" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="16" text-anchor="middle" fill="#ffffff" font-family="'Times New Roman',serif" font-size="12" font-weight="700">21</text>
+    </svg>
+</div>
+</div>
+</body>
+</html>

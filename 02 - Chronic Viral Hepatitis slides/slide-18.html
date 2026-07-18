@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; color:#264653; position:relative; overflow:hidden; font-family:'Times New Roman',serif;">
+<p style="position:absolute; top:20px; left:50px; font-size:26px; font-weight:700; color:#264653; font-family:'Times New Roman',serif; margin:0; z-index:10;">Chronic Hepatitis C — Diagnosis</p>
+<div style="position:absolute; top:60px; left:50px; width:80px; height:4px; background:#2a9d8f; border-radius:2px; z-index:1;"></div>
+<div style="position:absolute; top:76px; left:50px; right:50px; bottom:56px; overflow:hidden; font-size:14px; line-height:1.45; color:#264653;">
+
+<p style="font-size:15px; font-weight:700; color:#264653; margin:0 0 6px 0;">Diagnosis of Chronic Hepatitis C</p>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:6px 0 10px 0;">
+
+  <div style="border:2px solid #2a9d8f; border-radius:8px; overflow:hidden; grid-column:1/2;">
+    <div style="background:#2a9d8f; padding:6px 10px;">
+      <p style="margin:0; font-weight:700; font-size:14px; color:#ffffff;">1. Serology</p>
+    </div>
+    <div style="padding:8px 10px;">
+      <p style="margin:0 0 3px 0; font-weight:700; font-size:13px; color:#2a9d8f;">HCV Antibody (Anti-HCV)</p>
+      <ul style="margin:2px 0 6px 16px; padding:0; font-size:12px;">
+        <li><strong>ELISA</strong> used to diagnose hepatitis C infection.</li>
+        <li><strong>Not useful in the acute phase</strong> as it takes at least <strong>4 weeks</strong> to appear.</li>
+        <li>Cannot distinguish acute from chronic infection.</li>
+      </ul>
+      <p style="margin:0 0 3px 0; font-weight:700; font-size:13px; color:#2a9d8f;">HCV Core Antigen</p>
+      <ul style="margin:2px 0 0 16px; padding:0; font-size:12px;">
+        <li>An <strong>EIA for HCV antigen</strong> is available.</li>
+        <li>Used in the same capacity as HCV-RNA.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="border:2px solid #e76f51; border-radius:8px; overflow:hidden; grid-column:2/2;">
+    <div style="background:#e76f51; padding:6px 10px;">
+      <p style="margin:0; font-weight:700; font-size:14px; color:#ffffff;">2. PCR — HCV RNA</p>
+    </div>
+    <div style="padding:8px 10px;">
+      <p style="margin:0; font-size:14px;"><strong>Most accurate marker</strong> for HCV infection.</p>
+      <ul style="margin:4px 0 0 16px; padding:0; font-size:12px;">
+        <li>Detects viral RNA</li>
+        <li>Confirms active infection</li>
+        <li>Used to monitor treatment response</li>
+        <li>Sustained virologic response (SVR) = cure</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="border:2px solid #f4a261; border-radius:8px; overflow:hidden;">
+    <div style="background:#f4a261; padding:6px 10px;">
+      <p style="margin:0; font-weight:700; font-size:14px; color:#ffffff;">3. Liver Chemistry Tests</p>
+    </div>
+    <div style="padding:8px 10px;">
+      <p style="margin:0; font-size:13px;">Key tests: <strong>AST, ALT, P.T.</strong> (prothrombin time).</p>
+    </div>
+  </div>
+
+  <div style="border:2px solid #264653; border-radius:8px; overflow:hidden;">
+    <div style="background:#264653; padding:6px 10px;">
+      <p style="margin:0; font-weight:700; font-size:14px; color:#e9c46a;">4. Liver Biopsy</p>
+    </div>
+    <div style="padding:8px 10px;">
+      <p style="margin:0; font-size:13px;">Used to determine:</p>
+      <ul style="margin:2px 0 0 16px; padding:0; font-size:12px;">
+        <li><strong>Grade</strong> — degree of inflammation</li>
+        <li><strong>Stage</strong> — degree of fibrosis</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<div style="background:rgba(233,196,106,0.2); padding:6px 12px; border-radius:6px;">
+  <p style="margin:0; font-size:12px; color:#264653;"><strong>Note:</strong> Anti-HCV by ELISA is the initial screening test. Positive results are confirmed by HCV RNA PCR. HCV core antigen can be used as an alternative to PCR in some settings.</p>
+</div>
+
+</div>
+<svg style="position:absolute; right:32px; bottom:24px; width:40px; height:32px; z-index:100;" aria-hidden="true">
+<rect x="0" y="0" width="40" height="32" rx="4" fill="#2a9d8f" opacity="0.85"/>
+<text x="20" y="22" text-anchor="middle" font-family="Times New Roman,serif" font-size="14" font-weight="700" fill="#ffffff">18</text>
+</svg>
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background: #f0f7f7; overflow:hidden; padding: 74px 40px 10px 40px;">
+  <!-- Header bar -->
+  <div style="position:absolute; top:0; left:0; right:0; height:60px; background:#264653; z-index:2;"></div>
+  <p style="position:absolute; top:14px; left:60px; font-size:22px; font-weight:700; color:#ffffff; z-index:10;">Risk Factors for Cholesterol Gallstones</p>
+
+  <!-- Banner -->
+  <div style="background:#e9c46a; padding:6px 20px; border-radius:4px; z-index:5; margin-bottom:9px; display:inline-block;">
+    <span style="font-size:15px; font-weight:700; color:#264653;">13 Known Risk Factors</span>
+  </div>
+
+  <!-- Two-column grid -->
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; z-index:5;">
+    <!-- Left column -->
+    <div>
+      <div style="display:flex; align-items:flex-start; margin-bottom:10px;">
+        <div style="min-width:32px; height:32px; background:#2a9d8f; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:10px; margin-top:1px;">
+          <span style="font-size:13px; font-weight:700; color:#ffffff;">01</span>
+        </div>
+        <span style="font-size:14px; color:#264653; line-height:1.5;">Age > 40 years</span>
+      </div>
+      <div style="display:flex; align-items:flex-start; margin-bottom:10px;">
+        <div style="min-width:32px; height:32px; background:#2a9d8f; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:10px; margin-top:1px;">
+          <span style="font-size:13px; font-weight:700; color:#ffffff;">02</span>
+        </div>
+        <span style="font-size:14px; color:#264653; line-height:1.5;">Female sex (2× risk than men)</span>
+      </div>
+      <div style="display:flex; align-items:flex-start; margin-bottom:10px;">
+        <div style="min-width:32px; height:32px; background:#2a9d8f; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:10px; margin-top:1px;">
+          <span style="font-size:13px; font-weight:700; color:#ffffff;">03</span>
+        </div>
+        <span style="font-size:14px; color:#264653; line-height:1.5;">Oral contraception</span>
+      </div>
+      <div style="display:flex; align-items:flex-start; margin-bottom:10px;">
+        <div style="min-width:32px; height:32px; background:#2a9d8f; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:10px; margin-top:1px;">
+          <span style="font-size:13px; font-weight:700; color:#ffffff;">04</span>
+        </div>
+        <span style="font-size:14px; color:#264653; line-height:1.5;">High fat, low fiber diet</span>
+      </div>
+      <div style="display:flex; align-items:flex-start; margin-bottom:10px;">
+        <div style="min-width:32px; height:32px; background:#2a9d8f; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:10px; margin-top:1px;">
+          <span style="font-size:13px; font-weight:700; color:#ffffff;">05</span>
+        </div>
+        <span style="font-size:14px; color:#264653; line-height:1.5;">Obesity</span>
+      </div>
+      <div style="display:flex; align-items:flex-start; margin-bottom:10px;">
+        <div style="min-width:32px; height:32px; background:#2a9d8f; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:10px; margin-top:1px;">
+          <span style="font-size:13px; font-weight:700; color:#ffffff;">06</span>
+        </div>
+        <span style="font-size:14px; color:#264653; line-height:1.5;">Pregnancy (increased in multipara)</span>
+      </div>
+    </div>
+
+    <!-- Right column -->
+    <div>
+      <div style="display:flex; align-items:flex-start; margin-bottom:10px;">
+        <div style="min-width:32px; height:32px; background:#f4a261; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:10px; margin-top:1px;">
+          <span style="font-size:13px; font-weight:700; color:#ffffff;">07</span>
+        </div>
+        <span style="font-size:14px; color:#264653; line-height:1.5;">Hyperlipidaemia / Anti-hyperlipidaemic drugs (clofibrate)</span>
+      </div>
+      <div style="display:flex; align-items:flex-start; margin-bottom:10px;">
+        <div style="min-width:32px; height:32px; background:#f4a261; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:10px; margin-top:1px;">
+          <span style="font-size:13px; font-weight:700; color:#ffffff;">08</span>
+        </div>
+        <span style="font-size:14px; color:#264653; line-height:1.5;">Bile salt loss (ileal disease or resection)</span>
+      </div>
+      <div style="display:flex; align-items:flex-start; margin-bottom:10px;">
+        <div style="min-width:32px; height:32px; background:#f4a261; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:10px; margin-top:1px;">
+          <span style="font-size:13px; font-weight:700; color:#ffffff;">09</span>
+        </div>
+        <span style="font-size:14px; color:#264653; line-height:1.5;">Cystic fibrosis</span>
+      </div>
+      <div style="display:flex; align-items:flex-start; margin-bottom:10px;">
+        <div style="min-width:32px; height:32px; background:#f4a261; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:10px; margin-top:1px;">
+          <span style="font-size:13px; font-weight:700; color:#ffffff;">10</span>
+        </div>
+        <span style="font-size:14px; color:#264653; line-height:1.5;">Gall bladder dysmotility</span>
+      </div>
+      <div style="display:flex; align-items:flex-start; margin-bottom:10px;">
+        <div style="min-width:32px; height:32px; background:#f4a261; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:10px; margin-top:1px;">
+          <span style="font-size:13px; font-weight:700; color:#ffffff;">11</span>
+        </div>
+        <span style="font-size:14px; color:#264653; line-height:1.5;">Prolonged fasting / TPN</span>
+      </div>
+      <div style="display:flex; align-items:flex-start; margin-bottom:10px;">
+        <div style="min-width:32px; height:32px; background:#f4a261; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:10px; margin-top:1px;">
+          <span style="font-size:13px; font-weight:700; color:#ffffff;">12</span>
+        </div>
+        <span style="font-size:14px; color:#264653; line-height:1.5;">Liver cirrhosis</span>
+      </div>
+      <div style="display:flex; align-items:flex-start; margin-bottom:10px;">
+        <div style="min-width:32px; height:32px; background:#f4a261; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:10px; margin-top:1px;">
+          <span style="font-size:13px; font-weight:700; color:#ffffff;">13</span>
+        </div>
+        <span style="font-size:14px; color:#264653; line-height:1.5;">Biliary sludge</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Center divider (decorative) -->
+  <div style="position:absolute; top:110px; left:478px; width:2px; height:400px; background:#2a9d8f; opacity:0.2; z-index:1;"></div>
+
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:50;" width="48" height="28" viewBox="0 0 48 28" aria-hidden="true">
+  <rect x="0" y="0" width="48" height="28" rx="14" fill="#264653" opacity="0.85"/>
+  <text x="24" y="19" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="14" font-weight="600">5</text>
+</svg>
+</div>
+</body>
+</html>

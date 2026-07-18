@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Section - Hepatic Encephalopathy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;position:relative;background:#264653;font-family:'Times New Roman',Times,serif;color:#1a1a2e;overflow:hidden;">
+<div style="position:absolute;top:0;left:0;width:960px;height:540px;background:#264653;z-index:0;"></div>
+<svg aria-hidden="true" style="position:absolute;top:0;left:0;z-index:1;" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="12" height="540" fill="#e9c46a"/>
+  <rect x="80" y="180" width="80" height="5" rx="2.5" fill="#e9c46a"/>
+</svg>
+<p style="position:absolute;top:80px;left:80px;z-index:5;font-size:80px;font-weight:700;color:#e9c46a;">05</p>
+<p style="position:absolute;top:200px;left:80px;z-index:5;font-size:40px;font-weight:700;color:#ffffff;">Hepatic Encephalopathy</p>
+<p style="position:absolute;top:260px;left:80px;z-index:5;font-size:18px;color:#2a9d8f;">Definition · Classification · Etiology · Pathogenesis · Diagnosis · Treatment</p>
+<svg aria-hidden="true" style="position:absolute;right:32px;bottom:24px;z-index:20;" width="40" height="28" viewBox="0 0 40 28">
+      <rect x="0" y="0" width="40" height="28" rx="4" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="19" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" font-family: 'Times New Roman', Times, serif;">03</text>
+    </svg>
+
+</div>
+</body>
+</html>

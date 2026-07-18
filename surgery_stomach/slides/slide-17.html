@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Carcinoma — Diagnosis</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;background:linear-gradient(135deg,#1b2838 0%,#0d1117 100%);overflow:hidden;position:relative;">
+  <!-- Background decorations -->
+  <svg aria-hidden="true" style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:1;" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="960" height="540" fill="transparent"/>
+    <rect x="0" y="0" width="12" height="540" fill="#42A5F5" opacity="0.6"/>
+    <rect x="0" y="0" width="960" height="4" fill="#FFC107" opacity="0.5"/>
+    <rect x="0" y="536" width="960" height="4" fill="#FFC107" opacity="0.5"/>
+  </svg>
+
+  <p style="position:absolute;top:40px;left:60px;font-family:'Times New Roman',serif;font-size:36px;font-weight:700;color:#FFC107;z-index:10;margin:0;">Carcinoma — Diagnosis</p>
+  <div style="position:absolute;top:100px;left:60px;width:400px;height:3px;background:#42A5F5;z-index:10;"></div>
+  <div style="position:absolute;top:120px;left:60px;width:840px;font-family:'Times New Roman',serif;font-size:16px;color:#fff;z-index:10;line-height:1.7;">
+    <div style="display:flex;gap:20px;">
+      <div style="flex:1;">
+        <div style="color:#42A5F5;font-weight:bold;font-size:20px;margin-bottom:6px;">Diagnostic Modalities</div>
+        <div style="background:rgba(66,165,245,0.1);padding:10px;border-radius:8px;margin-bottom:8px;">
+          <div><strong>Gastroscopic Biopsy (Gold Standard)</strong></div>
+          <div>• Flexible upper endoscopy</div>
+          <div>• Multiple biopsies around ulcer crater</div>
+          <div>• Note size, location, morphology</div>
+        </div>
+        <div style="background:rgba(255,152,0,0.1);padding:10px;border-radius:8px;margin-bottom:8px;">
+          <div><strong>Barium Radiography</strong></div>
+          <div>• Double-contrast: 90% accuracy</div>
+          <div>• Cannot distinguish benign from malignant</div>
+        </div>
+        <div style="background:rgba(229,57,53,0.1);padding:10px;border-radius:8px;margin-bottom:8px;">
+          <div><strong>CT Scan</strong></div>
+          <div>• Detects intraluminal tumors</div>
+          <div>• Thickened gastric wall</div>
+          <div>• Direct invasion assessment</div>
+          <div>• Enlarged lymph nodes</div>
+        </div>
+      </div>
+      <div style="flex:1;">
+        <div style="color:#42A5F5;font-weight:bold;font-size:20px;margin-bottom:6px;">Additional Studies</div>
+        <div style="background:rgba(66,165,245,0.1);padding:10px;border-radius:8px;margin-bottom:8px;">
+          <div><strong>PET Scan</strong></div>
+          <div>• Detecting metastatic disease</div>
+          <div>• Measuring response to chemotherapy</div>
+        </div>
+        <div style="background:rgba(255,152,0,0.1);padding:10px;border-radius:8px;margin-bottom:8px;">
+          <div><strong>Endoscopic Ultrasound (EUS)</strong></div>
+          <div>• Staging assistance</div>
+          <div>• Gastric wall invasion depth</div>
+          <div>• Local nodal status</div>
+        </div>
+        <div style="background:rgba(229,57,53,0.1);padding:10px;border-radius:8px;margin-bottom:8px;">
+          <div><strong>Laparoscopy</strong></div>
+          <div>• Recommended with lymphadenopathy on CT</div>
+          <div>• Tumors at GEJ or diffuse</div>
+        </div>
+        <div style="background:rgba(255,193,7,0.1);padding:10px;border-radius:8px;">
+          <div><strong>Tumor Markers</strong></div>
+          <div>• CEA, CA199, CA72-4, α-fetoprotein</div>
+          <div>• Not useful for diagnosis (15-60% elevated)</div>
+          <div>• Used for: recurrence detection, residual tumor</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; color:#264653; position:relative; overflow:hidden; font-family:'Times New Roman',serif;">
+<p style="position:absolute; top:20px; left:50px; font-size:26px; font-weight:700; color:#264653; font-family:'Times New Roman',serif; margin:0; z-index:10;">Prevention — Vaccines</p>
+<div style="position:absolute; top:60px; left:50px; width:80px; height:4px; background:#2a9d8f; border-radius:2px; z-index:1;"></div>
+<div style="position:absolute; top:76px; left:50px; right:50px; bottom:56px; overflow:hidden; font-size:14px; line-height:1.45; color:#264653;">
+
+<p style="font-size:14px; font-weight:700; color:#264653; margin:0 0 4px 0;">Prevention of Acute Viral Hepatitis — Vaccines</p>
+
+<p style="margin:0 0 4px 0; font-size:13px;">Because treatments for viral hepatitis are only partially effective, <strong>preventing viral hepatitis is very important</strong>.</p>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:4px 0;">
+  <div style="background:#2a9d8f; color:#ffffff; padding:8px; border-radius:6px;">
+    <p style="margin:0 0 2px 0; font-size:18px; font-weight:700; color:#e9c46a;">✓</p>
+    <p style="margin:0; font-weight:700; font-size:13px;">Vaccines Available</p>
+    <ul style="margin:2px 0 2px 18px; padding:0;"><li style="margin-bottom:1px;">Hepatitis A vaccine</li><li style="margin-bottom:1px;">Hepatitis B vaccine</li></ul>
+  </div>
+  <div style="background:#e76f51; color:#ffffff; padding:8px; border-radius:6px;">
+    <p style="margin:0 0 2px 0; font-size:18px; font-weight:700;">✗</p>
+    <p style="margin:0; font-weight:700; font-size:13px;">No Vaccines Available</p>
+    <ul style="margin:2px 0 2px 18px; padding:0;"><li style="margin-bottom:1px;">Hepatitis C</li><li style="margin-bottom:1px;">Hepatitis D</li></ul>
+  </div>
+</div>
+
+<div style="background:rgba(233,196,106,0.2); padding:6px 10px; border-radius:6px; margin:4px 0;">
+  <p style="margin:0 0 2px 0; font-size:12px; color:#264653;"><strong>Hepatitis E vaccine</strong> is currently available only in <strong>China</strong>.</p>
+  <p style="margin:0; font-size:12px; color:#264653;">Vaccination against <strong>HBV</strong> also reduces the risk of infection with <strong>HDV</strong>.</p>
+</div>
+
+<p style="margin:0 0 2px 0; font-size:13px; font-weight:700; color:#264653;">Vaccination Schedule &amp; Recommendations:</p>
+<ul style="margin:2px 0 4px 18px; padding:0;"><li style="margin-bottom:1px;">Hepatitis vaccines are given by <strong>injection into muscle</strong>.</li><li style="margin-bottom:1px;">Routine vaccination (HAV and HBV) recommended for <strong>all children</strong> and for <strong>adults at high risk</strong>.</li><li style="margin-bottom:1px;">Protection requires <strong>several weeks</strong> for the vaccine to reach its full effect as the immune system gradually creates antibodies.</li><li style="margin-bottom:1px;">Post-exposure for HAV (unvaccinated): single dose of HAV vaccine <strong>or</strong> injection of standard immune globulin (depending on age and health).</li></ul>
+
+</div>
+<svg style="position:absolute; right:32px; bottom:24px; width:40px; height:32px; z-index:100;" aria-hidden="true">
+<rect x="0" y="0" width="40" height="32" rx="4" fill="#2a9d8f" opacity="0.85"/>
+<text x="20" y="22" text-anchor="middle" font-family="Times New Roman,serif" font-size="14" font-weight="700" fill="#ffffff">14</text>
+</svg>
+</div>
+</body>
+</html>

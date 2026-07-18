@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>html,body{margin:0;padding:0;width:100%;height:100%;overflow:hidden;display:flex;justify-content:center;align-items:center;background:#000;}.slide-content{width:960px;height:540px;position:relative;transform-origin:center center;}</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960,sy=window.innerHeight/540,sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script></head><body>
+<div class="slide-content" style="background:#f0f7f7;overflow:hidden;">
+<div style="position:absolute;top:0;left:0;right:0;height:52px;background:#264653;z-index:2;"></div><p style="position:absolute;top:10px;left:50px;font-size:20px;font-weight:700;color:#ffffff;z-index:10;">Small Intestine Tumor Types</p>
+<div style="margin-top:68px;padding:0 30px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;z-index:5;">
+<div>
+<svg width="100%" height="36" viewBox="0 0 290 36" preserveAspectRatio="none" aria-hidden="true"><rect x="0" y="0" width="290" height="36" rx="6" fill="#e76f51"/><text x="145" y="24" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="13" font-weight="700">Adenocarcinoma</text></svg>
+<div style="background:#ffffff;padding:8px 10px;border-radius:0 0 6px 6px;margin-top:-1px;">
+<ul style="margin:0;padding-left:14px;">
+<li style="font-size:11px;color:#264653;margin-bottom:2px;"><span style="font-weight:600;">Most common</span> SI malignancy</li>
+<li style="font-size:11px;color:#264653;margin-bottom:2px;">Found in <span style="font-weight:700;">duodenum</span> (periampullary) &amp; jejunum</li>
+<li style="font-size:11px;color:#264653;">Increased in coeliac disease</li>
+</ul>
+</div>
+</div>
+<div>
+<svg width="100%" height="36" viewBox="0 0 290 36" preserveAspectRatio="none" aria-hidden="true"><rect x="0" y="0" width="290" height="36" rx="6" fill="#2a9d8f"/><text x="145" y="24" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="13" font-weight="700">Lymphoma</text></svg>
+<div style="background:#ffffff;padding:8px 10px;border-radius:0 0 6px 6px;margin-top:-1px;">
+<ul style="margin:0;padding-left:14px;">
+<li style="font-size:11px;color:#264653;margin-bottom:2px;">Most frequent in <span style="font-weight:700;">ileum</span></li>
+<li style="font-size:11px;color:#264653;margin-bottom:2px;">B-cell type = MALT (common in developed)</li>
+<li style="font-size:11px;color:#264653;margin-bottom:2px;">T-cell = ulcerated plaques/strictures in proximal bowel</li>
+<li style="font-size:11px;color:#264653;">Burkitt-like in N. Africa/Middle East (terminal ileum)</li>
+</ul>
+</div>
+</div>
+<div>
+<svg width="100%" height="36" viewBox="0 0 290 36" preserveAspectRatio="none" aria-hidden="true"><rect x="0" y="0" width="290" height="36" rx="6" fill="#f4a261"/><text x="145" y="24" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="13" font-weight="700">Other Tumors</text></svg>
+<div style="background:#ffffff;padding:8px 10px;border-radius:0 0 6px 6px;margin-top:-1px;">
+<ul style="margin:0;padding-left:14px;">
+<li style="font-size:11px;color:#264653;margin-bottom:2px;"><span style="font-weight:600;">Lipomas</span></li>
+<li style="font-size:11px;color:#264653;margin-bottom:2px;"><span style="font-weight:600;">Stromal tumors</span></li>
+<li style="font-size:11px;color:#264653;margin-bottom:2px;"><span style="font-weight:600;">Adenomas</span></li>
+<li style="font-size:11px;color:#264653;"><span style="font-weight:600;">FAP</span> → may progress to adenocarcinoma</li>
+</ul>
+</div>
+</div>
+</div>
+<svg style="position:absolute;right:28px;bottom:20px;z-index:50;" width="44" height="26" viewBox="0 0 44 26" aria-hidden="true"><rect x="0" y="0" width="44" height="26" rx="13" fill="#264653" opacity="0.85"/><text x="22" y="18" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="13" font-weight="600">11</text></svg>
+</div></body></html>

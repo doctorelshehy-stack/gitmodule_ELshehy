@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+<div style="position:absolute; inset:0; background:#ffffff;">
+  <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:#2a9d8f;"></div>
+  <p style="position:absolute; top:20px; left:40px; font-family:'Times New Roman',serif; font-size:24px; font-weight:700; color:#264653; margin:0;">4. Shigellosis (Bacillary Dysentery)</p>
+  <div style="position:absolute; top:54px; left:40px; width:60px; height:3px; background:#e9c46a; border-radius:2px;"></div>
+
+  <div style="position:absolute; top:76px; left:40px; right:40px; bottom:46px; display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px;">
+    <div style="background:#f8f9fa; padding:14px; border-radius:4px; border-top:3px solid #e76f51;">
+      <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#e76f51; margin:0 0 6px 0;">Four Main Groups</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0; padding-left:16px; line-height:1.6;">
+        <li>Sh. dysenteriae</li>
+        <li>Sh. flexneri</li>
+        <li>Sh. Boydii</li>
+        <li>Sh. sonnei</li>
+      </ul>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#e76f51; margin:8px 0 3px 0;">Disease Severity:</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0; padding-left:16px; line-height:1.5;">
+        <li>Sh. sonnei → mild (may escape detection)</li>
+        <li>Sh. Flexneri → more severe</li>
+        <li>Sh. dysenteriae → fulminating, death within 48 hours</li>
+      </ul>
+    </div>
+    <div style="background:#f8f9fa; padding:14px; border-radius:4px; border-top:3px solid #f4a261;">
+      <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#f4a261; margin:0 0 6px 0;">Clinical Features</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0; padding-left:16px; line-height:1.6;">
+        <li>Fever with chills</li>
+        <li>Abdominal cramps</li>
+        <li>Diarrhea often with blood and mucus</li>
+        <li>Headache, malaise</li>
+      </ul>
+    </div>
+    <div style="background:#f8f9fa; padding:14px; border-radius:4px; border-top:3px solid #2a9d8f;">
+      <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#2a9d8f; margin:0 0 6px 0;">Treatment</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0; padding-left:16px; line-height:1.6;">
+        <li>Oral rehydration therapy or, if severe, IV replacement of fluids and electrolytes</li>
+        <li><b>Ciprofloxacin</b> 500 mg Twice for 3 days</li>
+        <li>Increasing resistance noted → <b>Azithromycin</b>, 500 mg orally on day 1 and 250 mg orally once for 4 days for resistant strains</li>
+      </ul>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; width:40px; height:24px;" aria-hidden="true">
+      <rect x="0" y="2" width="40" height="20" rx="10" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="16" text-anchor="middle" fill="#ffffff" font-family="'Times New Roman',serif" font-size="12" font-weight="700">08</text>
+    </svg>
+</div>
+</div>
+</body>
+</html>

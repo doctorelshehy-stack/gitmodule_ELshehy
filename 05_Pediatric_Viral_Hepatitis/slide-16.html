@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; color:#264653; position:relative; overflow:hidden; font-family:'Times New Roman',serif;">
+
+<svg style="position:absolute; top:20px; left:50px; right:50px; z-index:1;" aria-hidden="true">
+<line x1="0" y1="0" x2="860" y2="0" stroke="#2a9d8f" stroke-width="3" opacity="0.5"/>
+</svg>
+<p style="position:absolute; top:28px; left:50px; font-size:13px; color:#2a9d8f; font-family:'Times New Roman',serif; margin:0; z-index:10; letter-spacing:1px;">PEDIATRIC GASTRO-ENTEROLOGY, HEPATOLOGY &amp; INFECTIOUS DISEASES</p>
+
+
+<svg style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:0;" aria-hidden="true">
+<rect x="0" y="0" width="100%" height="100%" fill="#264653"/>
+</svg>
+
+<p style="position:absolute; top:30px; left:50px; font-size:28px; font-weight:700; color:#e9c46a; font-family:'Times New Roman',serif; margin:0; z-index:10;">Key Points &amp; Summary</p>
+<div style="position:absolute; top:70px; left:50px; width:80px; height:4px; background:#e9c46a; border-radius:2px; z-index:10;"></div>
+
+<div style="position:absolute; top:86px; left:50px; right:50px; bottom:56px; overflow:hidden; font-size:13px; line-height:1.5; color:#ffffff; z-index:10;">
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+  <div style="background:rgba(255,255,255,0.08); padding:10px; border-radius:6px; border-left:3px solid #2a9d8f;">
+    <p style="margin:0 0 4px 0; font-size:14px; font-weight:700; color:#e9c46a;">HAV — Enteric, Self-Limited</p>
+    <p style="margin:0; font-size:11px;">Fecal-oral. 0.1% mortality. Inactivated vaccine (2 doses, 6mo). No chronicity.</p>
+  </div>
+  <div style="background:rgba(255,255,255,0.08); padding:10px; border-radius:6px; border-left:3px solid #f4a261;">
+    <p style="margin:0 0 4px 0; font-size:14px; font-weight:700; color:#e9c46a;">HBV — Blood-borne, Chronic Risk</p>
+    <p style="margin:0; font-size:11px;">1% mortality. Recombinant vaccine (3 doses). 90% chronicity in neonates.</p>
+  </div>
+  <div style="background:rgba(255,255,255,0.08); padding:10px; border-radius:6px; border-left:3px solid #e76f51;">
+    <p style="margin:0 0 4px 0; font-size:14px; font-weight:700; color:#e9c46a;">HCV — Blood-borne, No Vaccine</p>
+    <p style="margin:0; font-size:11px;">1–2% mortality. 55–85% become chronic. High mutation rate prevents vaccine.</p>
+  </div>
+  <div style="background:rgba(255,255,255,0.08); padding:10px; border-radius:6px; border-left:3px solid #e9c46a;">
+    <p style="margin:0 0 4px 0; font-size:14px; font-weight:700; color:#e9c46a;">HDV — Satellite, Most Severe</p>
+    <p style="margin:0; font-size:11px;">2–20% mortality. Requires HBV. HBV vaccine protects against HDV.</p>
+  </div>
+  <div style="background:rgba(255,255,255,0.08); padding:10px; border-radius:6px; border-left:3px solid #2a9d8f;">
+    <p style="margin:0 0 4px 0; font-size:14px; font-weight:700; color:#e9c46a;">HEV — Enteric, Waterborne</p>
+    <p style="margin:0; font-size:11px;">1–2% mortality. No widely available vaccine. Severe in pregnancy.</p>
+  </div>
+  <div style="background:rgba(255,255,255,0.08); padding:10px; border-radius:6px; border-left:3px solid #264653;">
+    <p style="margin:0 0 4px 0; font-size:14px; font-weight:700; color:#e9c46a;">Non-Hepatotropic Viruses</p>
+    <p style="margin:0; font-size:11px;">CMV, EBV, Rubella, HIV — hepatitis as part of clinical presentation.</p>
+  </div>
+</div>
+
+<p style="font-size:12px; margin:12px 0 0 0; text-align:center; opacity:0.7;">Source: Pediatric Gastro-Enterology, Hepatology &amp; Infectious Diseases Module — Page 38</p>
+
+</div>
+
+<svg style="position:absolute; right:32px; bottom:24px; width:40px; height:32px; z-index:100;" aria-hidden="true">
+<rect x="0" y="0" width="40" height="32" rx="4" fill="#2a9d8f" opacity="0.85"/>
+<text x="20" y="22" text-anchor="middle" font-family="Times New Roman,serif" font-size="14" font-weight="700" fill="#ffffff">16</text>
+</svg>
+</div>
+</body>
+</html>

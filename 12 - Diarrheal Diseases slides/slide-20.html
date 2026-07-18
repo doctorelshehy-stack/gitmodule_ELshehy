@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+<div style="position:absolute; inset:0; background:#ffffff;">
+  <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:#2a9d8f;"></div>
+  <p style="position:absolute; top:20px; left:40px; font-family:'Times New Roman',serif; font-size:24px; font-weight:700; color:#264653; margin:0;">Chronic Diarrhea: Definition &amp; Causative Agents</p>
+  <div style="position:absolute; top:54px; left:40px; width:60px; height:3px; background:#e9c46a; border-radius:2px;"></div>
+
+  <div style="position:absolute; top:76px; left:40px; right:40px; bottom:46px; display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+    <div style="background:#f8f9fa; padding:14px; border-radius:4px; border-top:3px solid #2a9d8f;">
+      <p style="font-family:'Times New Roman',serif; font-size:15px; font-weight:700; color:#264653; margin:0 0 6px 0;">Key Facts — Definition</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0; padding-left:16px; line-height:1.6;">
+        <li>Stool consistency is determined by the relationship between faecal water and the water-holding capacity of insoluble faecal solids</li>
+        <li>Normal stool output over 24 h: <b>&lt;200g</b></li>
+        <li>Diarrhea = alteration of stool volume or consistency or both</li>
+        <li><b>Consistency:</b> Passage of loose or liquid stool with urgent need to evacuate or feelings of abdominal discomfort, or increased frequency</li>
+        <li><b>Volume:</b> Stool weight &gt;200g/24h on average, 2–3 days</li>
+      </ul>
+    </div>
+    <div style="background:#f8f9fa; padding:14px; border-radius:4px; border-top:3px solid #e76f51;">
+      <p style="font-family:'Times New Roman',serif; font-size:15px; font-weight:700; color:#e76f51; margin:0 0 6px 0;">Causative Agents of Chronic Infectious Diarrhea</p>
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:6px;">
+        <div style="background:#ffffff; padding:8px; border-radius:4px; border-top:2px solid #e76f51;">
+          <p style="font-family:'Times New Roman',serif; font-size:11px; font-weight:700; color:#e76f51; margin:0 0 3px;">Bacteria (rare)</p>
+          <ul style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0; padding-left:14px; line-height:1.4;">
+            <li>SIBO</li>
+            <li>Salmonella, Shigella</li>
+            <li>Yersinia</li>
+            <li>Campylobacter</li>
+            <li>E. coli (enteroinvasive)</li>
+            <li>Clostridium difficile</li>
+          </ul>
+        </div>
+        <div style="background:#ffffff; padding:8px; border-radius:4px; border-top:2px solid #f4a261;">
+          <p style="font-family:'Times New Roman',serif; font-size:11px; font-weight:700; color:#f4a261; margin:0 0 3px;">Parasites</p>
+          <ul style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0; padding-left:14px; line-height:1.4;">
+            <li>Giardia</li>
+            <li>Cryptosporidium</li>
+            <li>Entamoeba histolytica</li>
+            <li>Strongyloidiasis</li>
+          </ul>
+        </div>
+        <div style="background:#ffffff; padding:8px; border-radius:4px; border-top:2px solid #2a9d8f;">
+          <p style="font-family:'Times New Roman',serif; font-size:11px; font-weight:700; color:#2a9d8f; margin:0 0 3px;">Viruses (IC)</p>
+          <ul style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0; padding-left:14px; line-height:1.4;">
+            <li>Norovirus</li>
+            <li>Cytomegalovirus</li>
+            <li>HIV</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; width:40px; height:24px;" aria-hidden="true">
+      <rect x="0" y="2" width="40" height="20" rx="10" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="16" text-anchor="middle" fill="#ffffff" font-family="'Times New Roman',serif" font-size="12" font-weight="700">20</text>
+    </svg>
+</div>
+</div>
+</body>
+</html>

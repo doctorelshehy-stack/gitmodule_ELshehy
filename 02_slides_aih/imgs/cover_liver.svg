@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" rx="12" fill="#264653"/>
+  <!-- Liver shape using M/L/H/V commands only -->
+  <path d="M180 80 L200 60 L230 70 L260 80 L290 100 L310 130 L320 160 L320 190 L310 210 L280 230 L240 240 L190 240 L150 230 L120 210 L100 180 L90 150 L90 120 L100 100 L120 85 L150 75 Z" fill="rgba(231,111,81,0.85)" stroke="#e76f51" stroke-width="2"/>
+  <!-- Shield overlay -->
+  <path d="M200 110 L260 130 L260 180 L200 210 L140 180 L140 130 Z" fill="none" stroke="#e9c46a" stroke-width="3"/>
+  <circle cx="200" cy="155" r="12" fill="#e9c46a" opacity="0.8"/>
+  <!-- Small decorative dots -->
+  <circle cx="100" cy="60" r="4" fill="#2a9d8f" opacity="0.5"/>
+  <circle cx="310" cy="60" r="3" fill="#2a9d8f" opacity="0.4"/>
+  <circle cx="60" cy="200" r="5" fill="#2a9d8f" opacity="0.3"/>
+  <circle cx="340" cy="220" r="4" fill="#2a9d8f" opacity="0.4"/>
+  <!-- Shield icon -->
+  <rect x="170" y="260" width="60" height="4" rx="2" fill="#e9c46a" opacity="0.6"/>
+  <rect x="180" y="272" width="40" height="3" rx="1.5" fill="#e9c46a" opacity="0.4"/>
+</svg>

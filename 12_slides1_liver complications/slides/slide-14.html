@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script></head><body>
+<div class="slide-content" style="background:#ffffff; overflow:hidden;">
+  <svg style="position:absolute; top:0; left:0; width:960px; height:80px;" aria-hidden="true">
+    <rect x="0" y="0" width="960" height="80" fill="#0d2137"/>
+    <rect x="0" y="80" width="960" height="4" fill="#1565C0"/>
+  </svg>
+  <div style="position:absolute; top:20px; left:60px; z-index:10;">
+    <p style="font-family:'Times New Roman',serif; font-size:28px; font-weight:700; color:#ffffff; margin:0;">Nutrition &amp; Medications in Cirrhosis</p>
+  </div>
+  <div style="position:absolute; top:100px; left:60px; width:840px; z-index:10;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+      <div>
+        <p style="font-family:'Times New Roman',serif; font-size:15px; font-weight:700; color:#1565C0; margin:0 0 8px 0;">Nutrition</p>
+        <div style="background:#f0f4f8; padding:12px; border-radius:8px; border-left:4px solid #1565C0;">
+          <ul style="margin:0; padding-left:16px;">
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#0d2137; margin:5px 0;">Monitor and supplement fat-soluble vitamins</li>
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#0d2137; margin:5px 0;">Supplement zinc</li>
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#0d2137; margin:5px 0;">Maintain adequate caloric intake</li>
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#0d2137; margin:5px 0;">High-protein diet (unless encephalopathy)</li>
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#0d2137; margin:5px 0;">Avoid hepatotoxins — alcohol cessation critical</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <p style="font-family:'Times New Roman',serif; font-size:15px; font-weight:700; color:#E53935; margin:0 0 8px 0;">Medications — Important Rules</p>
+        <div style="background:#f0f4f8; padding:12px; border-radius:8px; border-left:4px solid #E53935; margin-bottom:10px;">
+          <ul style="margin:0; padding-left:16px;">
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#0d2137; margin:5px 0;"><strong>Acetaminophen:</strong> Safe up to 2 g/day</li>
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#0d2137; margin:5px 0;"><strong style="color:#E53935;">AVOID ASA/NSAIDs</strong> (risk of GI bleeding, renal impairment)</li>
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#0d2137; margin:5px 0;"><strong style="color:#E53935;">Aminoglycosides contraindicated</strong></li>
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#0d2137; margin:5px 0;"><strong>Oral hypoglycemics:</strong> if compensated; <strong>insulin</strong> if decompensated</li>
+          </ul>
+        </div>
+        <p style="font-family:'Times New Roman',serif; font-size:15px; font-weight:700; color:#FF9800; margin:0 0 8px 0;">Fetor Hepaticus</p>
+        <div style="background:#fff8e1; padding:12px; border-radius:8px; border-left:4px solid #FFC107;">
+          <p style="font-family:'Times New Roman',serif; font-size:12px; color:#0d2137; margin:0; line-height:1.5;">Results from portosystemic shunting of blood, which allows mercaptans to pass directly to the lungs. A sweet, musty breath odor in advanced liver disease.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:100;" width="40" height="40" aria-hidden="true">
+  <circle cx="20" cy="20" r="18" fill="#0d2137" stroke="#1565C0" stroke-width="2"/>
+  <text x="20" y="25" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="16" font-weight="bold">14</text>
+</svg>
+</div>
+</body></html>

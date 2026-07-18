@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pancreas & Appendix — Cover</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;background:linear-gradient(135deg,#1b2838 0%,#0d1117 100%);overflow:hidden;position:relative;">
+  <svg aria-hidden="true" style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:1;" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="960" height="540" fill="transparent"/>
+    <rect x="0" y="0" width="12" height="540" fill="#42A5F5" opacity="0.6"/>
+    <rect x="0" y="0" width="960" height="4" fill="#FFC107" opacity="0.5"/>
+    <rect x="0" y="536" width="960" height="4" fill="#FFC107" opacity="0.5"/>
+  </svg>
+
+  <p style="position:absolute;top:120px;left:80px;right:80px;font-family:'Times New Roman',serif;font-size:64px;font-weight:700;color:#fff;z-index:10;margin:0;line-height:1.2;">Pancreas & Appendix</p>
+  <p style="position:absolute;top:195px;left:80px;right:80px;font-family:'Times New Roman',serif;font-size:64px;font-weight:700;color:#FFC107;z-index:10;margin:0;line-height:1.2;">Surgical Overview</p>
+  <p style="position:absolute;top:290px;left:80px;right:80px;font-family:'Times New Roman',serif;font-size:28px;font-weight:400;color:#42A5F5;z-index:10;margin:0;">Acute & Chronic Pancreatitis, Pancreatic Cysts & Tumors,<br>Appendicitis, Appendiceal Mass & Tumors</p>
+  <div style="position:absolute;top:385px;left:80px;width:120px;height:4px;background:#FF9800;z-index:10;border-radius:2px;"></div>
+  <p style="position:absolute;top:415px;left:80px;right:80px;font-family:'Times New Roman',serif;font-size:18px;font-weight:400;color:rgba(255,255,255,0.6);z-index:10;margin:0;">Surgery &nbsp;·&nbsp; Gastroenterology &nbsp;·&nbsp; 2026</p>
+
+</div>
+</body>
+</html>

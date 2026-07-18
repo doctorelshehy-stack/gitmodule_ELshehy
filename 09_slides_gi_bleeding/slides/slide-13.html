@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script></head><body>
+<div class="slide-content" style="background:#ffffff; overflow:hidden;">
+  <svg style="position:absolute; top:0; left:0; width:960px; height:80px;" aria-hidden="true">
+    <rect x="0" y="0" width="960" height="80" fill="#264653"/>
+    <rect x="0" y="80" width="960" height="4" fill="#2a9d8f"/>
+  </svg>
+  <div style="position:absolute; top:20px; left:60px; z-index:10;">
+    <p style="font-family:'Times New Roman',serif; font-size:28px; font-weight:700; color:#ffffff; margin:0;">Hemostasis by Cause</p>
+  </div>
+  <div style="position:absolute; top:110px; left:60px; width:840px; z-index:10;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+      <!-- Diverticular -->
+      <div style="background:#f8f9fa; border-radius:8px; padding:14px; border-left:4px solid #2a9d8f;">
+        <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#2a9d8f; margin:0 0 8px 0;">Diverticular Bleeding</p>
+        <ul style="margin:0; padding-left:18px;">
+          <li style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:4px 0;">Colonoscopy with bipolar probe coagulation</li>
+          <li style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:4px 0;">Epinephrine injection</li>
+          <li style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:4px 0;">Metallic clips</li>
+          <li style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:4px 0;">If recurrent: resection of affected bowel segment</li>
+        </ul>
+      </div>
+      <!-- Angiodysplasia -->
+      <div style="background:#f8f9fa; border-radius:8px; padding:14px; border-left:4px solid #e9c46a;">
+        <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#f4a261; margin:0 0 8px 0;">Angiodysplasia</p>
+        <ul style="margin:0; padding-left:18px;">
+          <li style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:4px 0;">Thermal therapy:
+            <ul style="margin:2px 0 0 0; padding-left:14px;">
+              <li style="font-family:'Times New Roman',serif; font-size:11px; color:#264653; margin:2px 0;">Electrocoagulation</li>
+              <li style="font-family:'Times New Roman',serif; font-size:11px; color:#264653; margin:2px 0;">Argon plasma coagulation (APC)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- Ischemic colitis -->
+      <div style="background:#f8f9fa; border-radius:8px; padding:14px; border-left:4px solid #e76f51;">
+        <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#e76f51; margin:0 0 8px 0;">Ischemic Colitis</p>
+        <ul style="margin:0; padding-left:18px;">
+          <li style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:4px 0;">Conservative management</li>
+          <li style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:4px 0;">NPO (nothing by mouth)</li>
+          <li style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:4px 0;">IV hydration</li>
+        </ul>
+      </div>
+      <!-- Unknown source -->
+      <div style="background:#f8f9fa; border-radius:8px; padding:14px; border-left:4px solid #264653;">
+        <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#264653; margin:0 0 8px 0;">Unknown Bleeding Source</p>
+        <ul style="margin:0; padding-left:18px;">
+          <li style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:4px 0;">Vasoconstrictive agents: Vasopressin (Pitressin)</li>
+          <li style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:4px 0;">If vasopressin unsuccessful/contraindicated:</li>
+          <li style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:4px 0; padding-left:12px;">→ Interventional radiology with super selective embolization</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:100;" width="40" height="40" aria-hidden="true">
+  <circle cx="20" cy="20" r="18" fill="#264653" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="20" y="25" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="16" font-weight="bold">13</text>
+</svg>
+</div>
+</body></html>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <rect width="300" height="200" rx="8" fill="#f0f4f4"/>
+  <rect x="0" y="0" width="300" height="36" rx="8" fill="#264653"/>
+  <rect x="0" y="20" width="300" height="16" fill="#264653"/>
+  <text x="150" y="24" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#fff">IgG4-Related Disease</text>
+  <!-- Protein icon -->
+  <circle cx="40" cy="65" r="8" fill="#2a9d8f" opacity="0.4"/>
+  <circle cx="55" cy="60" r="8" fill="#2a9d8f" opacity="0.5"/>
+  <circle cx="48" cy="78" r="8" fill="#2a9d8f" opacity="0.6"/>
+  <circle cx="65" cy="75" r="8" fill="#2a9d8f" opacity="0.3"/>
+  <text x="90" y="70" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#264653">IgG4 Protein &gt; 280 mg/dL</text>
+  <!-- Organ involvement -->
+  <rect x="15" y="98" width="270" height="22" rx="4" fill="#e9c46a" opacity="0.15"/>
+  <text x="150" y="113" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#264653">Liver: sclerosing cholangitis</text>
+  <rect x="15" y="124" width="270" height="22" rx="4" fill="#f4a261" opacity="0.15"/>
+  <text x="150" y="139" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#264653">Pancreas: IgG4-related pancreatitis</text>
+  <!-- Clinical triad -->
+  <rect x="15" y="158" width="270" height="32" rx="4" fill="#e76f51" opacity="0.08"/>
+  <text x="150" y="172" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#264653">Triad: Jaundice + Weight loss + Abdominal pain</text>
+  <text x="150" y="184" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#264653">Male &gt; Female | 5th-6th decade</text>
+</svg>

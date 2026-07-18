@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Liver Diseases — Table of Contents</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;background:#fff;overflow:hidden;position:relative;">
+
+  <!-- Background accent -->
+  <svg aria-hidden="true" style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:1;" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="960" height="540" fill="#fff"/>
+    <rect x="0" y="0" width="8" height="540" fill="#264653"/>
+    <rect x="0" y="0" width="960" height="4" fill="#2a9d8f"/>
+  </svg>
+
+  <!-- Title -->
+  <p style="position:absolute;top:30px;left:60px;font-family:'Times New Roman',serif;font-size:40px;font-weight:700;color:#264653;z-index:10;margin:0;">
+    Table of Contents
+  </p>
+  <div style="position:absolute;top:78px;left:60px;width:80px;height:4px;background:#2a9d8f;z-index:10;border-radius:2px;"></div>
+
+  <!-- TOC Items - Two columns -->
+  <div style="position:absolute;top:110px;left:60px;width:420px;z-index:10;font-family:'Times New Roman',serif;">
+    <p style="font-size:22px;font-weight:700;color:#2a9d8f;margin:0 0 6px 0;">01</p>
+    <p style="font-size:17px;font-weight:400;color:#264653;margin:0 0 20px 0;">Autoimmune Hepatitis</p>
+
+    <p style="font-size:22px;font-weight:700;color:#2a9d8f;margin:0 0 6px 0;">02</p>
+    <p style="font-size:17px;font-weight:400;color:#264653;margin:0 0 20px 0;">IgG4-Hepatopathy &amp; Sclerosing Cholangitis</p>
+
+    <p style="font-size:22px;font-weight:700;color:#2a9d8f;margin:0 0 6px 0;">03</p>
+    <p style="font-size:17px;font-weight:400;color:#264653;margin:0 0 20px 0;">Primary Biliary Cirrhosis</p>
+
+    <p style="font-size:22px;font-weight:700;color:#2a9d8f;margin:0 0 6px 0;">04</p>
+    <p style="font-size:17px;font-weight:400;color:#264653;margin:0 0 20px 0;">Primary Sclerosing Cholangitis</p>
+  </div>
+
+  <div style="position:absolute;top:110px;left:500px;width:420px;z-index:10;font-family:'Times New Roman',serif;">
+    <p style="font-size:22px;font-weight:700;color:#2a9d8f;margin:0 0 6px 0;">05</p>
+    <p style="font-size:17px;font-weight:400;color:#264653;margin:0 0 20px 0;">Small Duct PSC &amp; IgG4-Associated Cholangitis</p>
+
+    <p style="font-size:22px;font-weight:700;color:#2a9d8f;margin:0 0 6px 0;">06</p>
+    <p style="font-size:17px;font-weight:400;color:#264653;margin:0 0 20px 0;">Hepatic Arterial &amp; Ischemic Disease</p>
+
+    <p style="font-size:22px;font-weight:700;color:#2a9d8f;margin:0 0 6px 0;">07</p>
+    <p style="font-size:17px;font-weight:400;color:#264653;margin:0 0 20px 0;">Budd-Chiari Syndrome &amp; Veno-Occlusive Disease</p>
+
+    <p style="font-size:22px;font-weight:700;color:#2a9d8f;margin:0 0 6px 0;">08</p>
+    <p style="font-size:17px;font-weight:400;color:#264653;margin:0 0 20px 0;">Portal Vein Thrombosis</p>
+  </div>
+
+  <!-- Decorative SVG -->
+  <svg aria-hidden="true" style="position:absolute;bottom:30px;right:30px;width:60px;height:60px;z-index:2;" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="30,0 60,30 30,60 0,30" fill="none" stroke="#2a9d8f" stroke-width="2" opacity="0.3"/>
+  </svg>
+
+  <svg aria-hidden="true" style="position:absolute;right:32px;bottom:24px;width:40px;height:40px;z-index:50;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="40" height="40" rx="20" fill="#2a9d8f"/>
+  <text x="20" y="28" text-anchor="middle" font-family="Times New Roman,serif" font-size="18" font-weight="700" fill="#fff">02</text>
+</svg>
+</div>
+</body>
+</html>

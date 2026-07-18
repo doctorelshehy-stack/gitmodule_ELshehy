@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script></head><body>
+<div class="slide-content" style="background:#ffffff; overflow:hidden;">
+  <svg style="position:absolute; top:0; left:0; width:960px; height:80px;" aria-hidden="true">
+    <rect x="0" y="0" width="960" height="80" fill="#1b2838"/>
+    <rect x="0" y="80" width="960" height="4" fill="#1565C0"/>
+  </svg>
+  <div style="position:absolute; top:20px; left:60px; z-index:10;">
+    <p style="font-family:'Times New Roman',serif; font-size:28px; font-weight:700; color:#ffffff; margin:0;">Complications — Renal &amp; Neurological</p>
+  </div>
+  <div style="position:absolute; top:100px; left:60px; width:840px; z-index:10;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+      <div>
+        <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#FF9800; margin:0 0 8px 0;">Renal</p>
+        <div style="background:#f0f4f8; padding:12px; border-radius:8px; border-left:4px solid #FF9800; margin-bottom:10px;">
+          <ul style="margin:0; padding-left:16px;">
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:5px 0;"><strong>Acute kidney injury</strong> is common and associated with increased mortality</li>
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:5px 0;">Causes are multifactorial:
+              <ul style="margin:2px 0; padding-left:16px;">
+                <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:2px 0;">Acute tubular necrosis</li>
+                <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:2px 0;">Drug toxicity (nephrotoxic drugs)</li>
+              </ul>
+            </li>
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:5px 0;">Management: stop nephrotoxic drugs, optimise haemodynamic status</li>
+          </ul>
+        </div>
+        <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#E53935; margin:0 0 8px 0;">Key Warning</p>
+        <div style="background:#f0f4f8; padding:10px; border-radius:6px; border-left:3px solid #E53935;">
+          <p style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:0; line-height:1.5;"><strong>Strategies for HE in chronic liver disease (non-absorbable antibiotics, lactulose) are inappropriate in ALF.</strong></p>
+        </div>
+      </div>
+      <div>
+        <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#E53935; margin:0 0 8px 0;">Neurological</p>
+        <div style="background:#f0f4f8; padding:12px; border-radius:8px; border-left:4px solid #E53935; margin-bottom:10px;">
+          <ul style="margin:0; padding-left:16px;">
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:5px 0;"><strong>Severe HE</strong> is a poor prognostic indicator</li>
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:5px 0;">Associated with risk of <strong>cerebral oedema (CO)</strong> and <strong>intracranial hypertension</strong></li>
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:5px 0;">HE results from cerebral effects of high circulating <strong>neurotoxins</strong> and systemic inflammatory response</li>
+          </ul>
+        </div>
+        <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#1565C0; margin:0 0 8px 0;">Neurological Management</p>
+        <div style="background:#f0f4f8; padding:12px; border-radius:8px; border-left:4px solid #1565C0;">
+          <ul style="margin:0; padding-left:16px;">
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:5px 0;">Prevention of infection</li>
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:5px 0;">Control of circulating ammonia concentration</li>
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:5px 0;">Maintenance of stable cerebral perfusion &amp; metabolism</li>
+            <li style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; margin:5px 0;">Achieved with: <strong>sedation, avoidance of fever, RRT</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:100;" width="40" height="40" aria-hidden="true">
+  <circle cx="20" cy="20" r="18" fill="#1b2838" stroke="#1565C0" stroke-width="2"/>
+  <text x="20" y="25" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="16" font-weight="bold">07</text>
+</svg>
+</div>
+</body></html>

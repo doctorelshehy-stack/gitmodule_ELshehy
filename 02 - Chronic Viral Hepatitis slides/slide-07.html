@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; color:#264653; position:relative; overflow:hidden; font-family:'Times New Roman',serif;">
+<p style="position:absolute; top:20px; left:50px; font-size:26px; font-weight:700; color:#264653; font-family:'Times New Roman',serif; margin:0; z-index:10;">Chronic Hepatitis B — Epidemiology</p>
+<div style="position:absolute; top:60px; left:50px; width:80px; height:4px; background:#2a9d8f; border-radius:2px; z-index:1;"></div>
+<div style="position:absolute; top:76px; left:50px; right:50px; bottom:56px; overflow:hidden; font-size:14px; line-height:1.45; color:#264653;">
+
+<p style="font-size:16px; font-weight:700; color:#264653; margin:0 0 6px 0;">Chronic Hepatitis B — Epidemiology</p>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:6px 0 10px 0;">
+  <div style="background:#264653; color:#ffffff; padding:14px; border-radius:8px; text-align:center;">
+    <p style="margin:0 0 6px 0; font-size:32px; font-weight:700; color:#e9c46a;">240</p>
+    <p style="margin:0; font-size:14px; opacity:0.9;">Estimated million persons worldwide <strong>chronically infected</strong> with HBV</p>
+  </div>
+  <div style="background:#e76f51; color:#ffffff; padding:14px; border-radius:8px; text-align:center;">
+    <p style="margin:0 0 6px 0; font-size:32px; font-weight:700; color:#e9c46a;">780,000+</p>
+    <p style="margin:0; font-size:14px; opacity:0.9;">Deaths every year due to consequences of hepatitis B</p>
+  </div>
+</div>
+
+<div style="background:rgba(42,157,143,0.15); padding:10px 14px; border-radius:6px; margin:4px 0 8px 0;">
+  <p style="margin:0 0 4px 0; font-weight:700; font-size:14px; color:#2a9d8f;">Sequelae Risk</p>
+  <p style="margin:0; font-size:14px;">Of those chronically infected, <strong>15%–40%</strong> will develop <strong>serious sequelae</strong> during their lifetime (cirrhosis, liver cancer).</p>
+</div>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:4px 0;">
+  <div style="border:2px solid #f4a261; border-radius:8px; padding:10px;">
+    <p style="margin:0 0 4px 0; font-weight:700; font-size:14px; color:#f4a261;">Global Prevalence Trend</p>
+    <p style="margin:0; font-size:13px;">Despite HBV vaccines available for <strong>three decades</strong>, global prevalence has declined only slightly:</p>
+    <div style="display:flex; justify-content:space-around; margin:6px 0 0 0;">
+      <div style="text-align:center;">
+        <p style="margin:0; font-size:18px; font-weight:700; color:#e76f51;">4.2%</p>
+        <p style="margin:0; font-size:11px;">1990</p>
+      </div>
+      <div style="font-size:24px; color:#2a9d8f;">→</div>
+      <div style="text-align:center;">
+        <p style="margin:0; font-size:18px; font-weight:700; color:#2a9d8f;">3.7%</p>
+        <p style="margin:0; font-size:11px;">2005</p>
+      </div>
+    </div>
+  </div>
+  <div style="border:2px solid #2a9d8f; border-radius:8px; padding:10px;">
+    <p style="margin:0 0 4px 0; font-weight:700; font-size:14px; color:#2a9d8f;">High Prevalence Populations</p>
+    <p style="margin:0; font-size:13px;">Perinatal transmission is the <strong>main means of transmission</strong> in high prevalence populations.</p>
+  </div>
+</div>
+
+</div>
+<svg style="position:absolute; right:32px; bottom:24px; width:40px; height:32px; z-index:100;" aria-hidden="true">
+<rect x="0" y="0" width="40" height="32" rx="4" fill="#2a9d8f" opacity="0.85"/>
+<text x="20" y="22" text-anchor="middle" font-family="Times New Roman,serif" font-size="14" font-weight="700" fill="#ffffff">07</text>
+</svg>
+</div>
+</body>
+</html>

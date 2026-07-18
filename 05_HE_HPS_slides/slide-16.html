@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HE - Complete Treatment Summary</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;position:relative;background:#ffffff;font-family:'Times New Roman',Times,serif;color:#1a1a2e;overflow:hidden;">
+<div style="position:absolute;top:0;left:0;width:960px;height:540px;background:#ffffff;z-index:0;"></div>
+<svg aria-hidden="true" style="position:absolute;top:0;left:0;z-index:1;" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="8" height="540" fill="#264653"/>
+</svg>
+<p style="position:absolute;top:16px;left:44px;z-index:5;font-size:28px;font-weight:700;color:#264653;">HE — Complete Treatment Summary</p>
+<div style="position:absolute;top:56px;left:44px;width:80px;height:3px;z-index:5;background:#2a9d8f;border-radius:1.5px;"></div>
+
+<div style="position:absolute;top:76px;left:44px;right:44px;z-index:5;">
+  <table style="width:100%;font-size:12px;border-collapse:collapse;">
+    <tr style="background:#264653;color:#ffffff;">
+      <th style="padding:6px 10px;text-align:left;font-weight:700;">Category</th>
+      <th style="padding:6px 10px;text-align:left;font-weight:700;">Management</th>
+    </tr>
+    <tr style="background:#f8f9fa;">
+      <td style="padding:6px 10px;border-bottom:1px solid #e0e0e0;font-weight:700;color:#2a9d8f;">General Treatment</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #e0e0e0;">
+        <ul style="margin:0;padding-left:14px;">
+          <li>Adequate caloric intake: 35-45 kcal/kg/day</li>
+          <li>Protein intake: 1-1.5 g protein/kg of bodyweight</li>
+          <li>Vegetable protein may be superior to animal protein (better tolerance, less ammonia production)</li>
+          <li>High fiber diet encouraged to promote regular bowel movements</li>
+          <li>Lactulose 15-30 cm³ q4-6 hours to ensure 2-3 bowel movements/day</li>
+          <li>Rifaximin 550 mg PO BID (for refractory or recurrent HE)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:6px 10px;border-bottom:1px solid #e0e0e0;font-weight:700;color:#f4a261;">Treatment of Cause</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #e0e0e0;">
+        <ul style="margin:0;padding-left:14px;">
+          <li>Infection: Start appropriate antibiotics based on suspected source and culture results</li>
+          <li>GI Bleeding due to esophageal varices: Band ligation or injection sclerotherapy</li>
+          <li>Constipation: Increase lactulose dose, consider enemas</li>
+          <li>Electrolyte imbalance: Correct hyponatremia, hypokalemia cautiously</li>
+          <li>Renal failure: Identify and treat prerenal causes, adjust medications</li>
+        </ul>
+      </td>
+    </tr>
+    <tr style="background:#f8f9fa;">
+      <td style="padding:6px 10px;font-weight:700;color:#e76f51;">Treatment of Complications</td>
+      <td style="padding:6px 10px;">
+        <ul style="margin:0;padding-left:14px;">
+          <li><strong>Surgical:</strong> Embolization of large portosystemic collaterals in patients with spontaneous chronic incapacitating encephalopathy</li>
+          <li><strong>Liver transplantation:</strong> Definitive treatment for refractory HE in suitable candidates. HE improves or resolves in most patients after transplant.</li>
+          <li><strong>TIPS reduction/occlusion:</strong> If HE is due to TIPS and refractory to medical therapy</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div style="position:absolute;top:390px;left:44px;right:44px;z-index:5;">
+  <div style="background:#f8f9fa;padding:10px 16px;border-radius:6px;border-left:4px solid #264653;">
+    <p style="margin:0;font-size:13px;color:#1a1a2e;"><strong>Nutritional Note:</strong> Historically, protein restriction was recommended for HE, but current evidence supports maintaining adequate protein intake (1-1.5 g/kg/day) to prevent catabolism and muscle wasting. Muscle tissue is a major site of ammonia clearance via glutamine synthetase. Malnutrition worsens HE outcomes.</p>
+  </div>
+</div>
+<svg aria-hidden="true" style="position:absolute;right:32px;bottom:24px;z-index:20;" width="40" height="28" viewBox="0 0 40 28">
+      <rect x="0" y="0" width="40" height="28" rx="4" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="19" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" font-family: 'Times New Roman', Times, serif;">16</text>
+    </svg>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Summary & Key Takeaways</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;position:relative;background:#f8f9fa;font-family: 'Times New Roman', Times, serif;color:#1a1a2e;overflow:hidden;">
+
+<div style="position:absolute;top:0;left:0;width:960px;height:540px;background:#ffffff;z-index:0;"></div>
+<svg aria-hidden="true" style="position:absolute;top:0;left:0;z-index:1;" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="960" height="6" fill="#264653"/>
+</svg>
+<p style="position:absolute;top:14px;left:60px;z-index:5;font-family: 'Times New Roman', Times, serif;font-size:26px;font-weight:700;color:#264653;">Summary &amp; Key Takeaways</p>
+<div style="position:absolute;top:58px;left:60px;width:70px;height:3px;z-index:5;background:#e9c46a;border-radius:1.5px;"></div>
+
+<div style="position:absolute;top:84px;left:60px;right:60px;z-index:5;display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+  <!-- TB Peritonitis Summary -->
+  <div style="background:#edf2f4;border-radius:10px;padding:14px 16px;border-top:3px solid #264653;">
+    <p style="font-family: 'Times New Roman', Times, serif;font-size:16px;font-weight:700;color:#264653;margin:0 0 8px 0;">TB Peritonitis</p>
+    <ul style="font-family: 'Times New Roman', Times, serif;font-size:12px;color:#1a1a2e;margin:0;padding-left:18px;line-height:1.7;">
+      <li>Caused by M. tuberculosis complex (several species)</li>
+      <li>Risk factors: cirrhosis, CRF, malignancy, anti-TNF, DM, immunosuppression, HIV, PD</li>
+      <li>5 routes: reactivation, hematogeneous, direct spread, LN rupture, PD contamination</li>
+      <li>Forms: wet (ascites), encysted (loculated), fibrotic (masses), overlap</li>
+      <li>Presentation: abdominal pain, swelling, fever, night sweats, weight loss</li>
+      <li>Ascitic fluid: high protein &gt;3g, SAAG &lt;1.1, ADA &gt;39, lymphocytes</li>
+      <li>Gold standard: laparoscopy + peritoneal biopsy (granuloma)</li>
+      <li>Treatment: 4-drug regimen (2 mo RIPE + 4 mo RI)</li>
+    </ul>
+  </div>
+
+  <!-- HRS Summary -->
+  <div style="background:#edf2f4;border-radius:10px;padding:14px 16px;border-top:3px solid #2a9d8f;">
+    <p style="font-family: 'Times New Roman', Times, serif;font-size:16px;font-weight:700;color:#264653;margin:0 0 8px 0;">Hepatorenal Syndrome</p>
+    <ul style="font-family: 'Times New Roman', Times, serif;font-size:12px;color:#1a1a2e;margin:0;padding-left:18px;line-height:1.7;">
+      <li>Functional renal failure in severe liver disease — no identifiable renal pathology</li>
+      <li>20% of cirrhotics develop HRS in 1 year; median survival &lt;2 weeks without LT</li>
+      <li>Type 1: rapid (&lt;2 wks), 80% mortality; Type 2: slower, ~6 mo survival</li>
+      <li>Pathogenesis: portal HTN → vasodilators → splanchnic vasodilation → ↓ effective volume → RAAS/SNS activation → renal vasoconstriction → ↓ GFR</li>
+      <li>Diagnosis: SCr &gt;1.5, no shock/sepsis/fluid loss, no improvement after volume expansion</li>
+      <li>Treatment: terlipressin + albumin, midodrine + octreotide + albumin</li>
+      <li>TIPS (better in type 2), MARS for type 1</li>
+      <li>Prevention: albumin after large volume paracentesis &amp; in SBP</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Closing message -->
+<div style="position:absolute;bottom:36px;left:60px;right:60px;z-index:5;text-align:center;">
+  <svg aria-hidden="true" style="display:block;margin:0 auto 8px auto;" width="60" height="3" viewBox="0 0 60 3">
+    <rect x="0" y="0" width="60" height="3" rx="1.5" fill="#e9c46a"/>
+  </svg>
+  <p style="font-family: 'Times New Roman', Times, serif;font-size:16px;color:#264653;font-weight:700;margin:0 0 4px 0;">Tropical Support — Gastroenterology Module</p>
+  <p style="font-family: 'Times New Roman', Times, serif;font-size:13px;color:#555555;margin:0;">Comprehensive Review — File 04 of Support 41</p>
+</div>
+
+<svg aria-hidden="true" style="position:absolute;right:32px;bottom:24px;z-index:20;" width="40" height="28" viewBox="0 0 40 28">
+      <rect x="0" y="0" width="40" height="28" rx="4" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="19" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" font-family: 'Times New Roman', Times, serif;>17</text>
+    </svg>
+</div>
+</body>
+</html>

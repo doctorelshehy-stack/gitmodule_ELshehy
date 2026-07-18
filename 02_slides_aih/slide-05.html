@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AIH — Etiology &amp; Clinical Findings</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;background:#fff;overflow:hidden;position:relative;">
+
+  <svg aria-hidden="true" style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:1;" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="960" height="540" fill="#fff"/>
+    <rect x="954" y="0" width="6" height="540" fill="#2a9d8f"/>
+  </svg>
+
+  <p style="position:absolute;top:30px;left:50px;font-family:'Times New Roman',serif;font-size:36px;font-weight:700;color:#264653;z-index:10;margin:0;">
+    AIH — Etiology &amp; Clinical Findings
+  </p>
+  <div style="position:absolute;top:72px;left:50px;width:80px;height:3px;background:#2a9d8f;z-index:10;"></div>
+
+  <!-- Etiology -->
+  <div style="position:absolute;top:100px;left:50px;width:420px;z-index:10;font-family:'Times New Roman',serif;">
+    <p style="font-size:20px;font-weight:700;color:#2a9d8f;margin:0 0 10px 0;">Etiology &amp; Pathogenesis</p>
+    <ul style="margin:0;padding-left:20px;font-size:14px;color:#264653;line-height:1.8;">
+      <li>Heterogenous chronic inflammatory hepatic disorder</li>
+      <li>Circulating autoantibodies (ANA, ASMA, anti-LKM)</li>
+      <li>Elevated serum gamma globulin</li>
+      <li>Pathogenesis: unclear — maybe genetic predisposition</li>
+      <li>Immunologic process against hepatocytes</li>
+      <li>Precipitated by: stress, toxins, drugs, infections</li>
+    </ul>
+  </div>
+
+  <!-- Clinical Findings - Symptoms -->
+  <div style="position:absolute;top:100px;left:500px;width:420px;z-index:10;font-family:'Times New Roman',serif;">
+    <p style="font-size:20px;font-weight:700;color:#2a9d8f;margin:0 0 10px 0;">Clinical Findings</p>
+    <p style="font-size:16px;font-weight:700;color:#f4a261;margin:0 0 6px 0;">Symptoms</p>
+    <ul style="margin:0;padding-left:20px;font-size:14px;color:#264653;line-height:1.7;">
+      <li>Common in females, 4th–5th decade</li>
+      <li>Fatigue (87% of patients)</li>
+      <li>Dark urine &amp; light-colored stools</li>
+      <li>RUQ abdominal pain</li>
+      <li>Anorexia</li>
+    </ul>
+    <p style="font-size:16px;font-weight:700;color:#f4a261;margin:12px 0 6px 0;">Signs</p>
+    <ul style="margin:0;padding-left:20px;font-size:14px;color:#264653;line-height:1.7;">
+      <li>Enlarged tender liver, Jaundice</li>
+      <li>Spider angiomata, Encephalopathy</li>
+      <li>Ascites, Palpable spleen</li>
+    </ul>
+  </div>
+
+  <!-- Associated autoimmune disorders -->
+  <div style="position:absolute;top:410px;left:50px;width:870px;z-index:10;font-family:'Times New Roman',serif;">
+    <p style="font-size:15px;font-weight:700;color:#e76f51;margin:0 0 4px 0;">Associated Autoimmune Disorders</p>
+    <p style="font-size:13px;color:#264653;margin:0;">Thyroiditis, RA, HA, IT, UC, IDDM, Sjögren syndrome, Graves disease, Dermatitis herpetiformis, Vitiligo, Myasthenia gravis, Pernicious anemia, Celiac disease</p>
+  </div>
+
+  
+  <!-- Informational image -->
+  <img src="imgs/aih_symptoms.svg" alt="Illustration" style="position:absolute;left:32px;top:440px;width:width:160px;height:auto;z-index:15;border-radius:6px;opacity:0.85;">
+<svg aria-hidden="true" style="position:absolute;right:32px;bottom:24px;width:40px;height:40px;z-index:50;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="40" height="40" rx="20" fill="#2a9d8f"/>
+  <text x="20" y="28" text-anchor="middle" font-family="Times New Roman,serif" font-size="18" font-weight="700" fill="#fff">05</text>
+</svg>
+</div>
+</body>
+</html>

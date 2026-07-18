@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; color:#264653; position:relative; overflow:hidden; font-family:'Times New Roman',serif;">
+<svg style="position:absolute; top:20px; left:50px; right:50px; z-index:1;" aria-hidden="true">
+<line x1="0" y1="0" x2="860" y2="0" stroke="#2a9d8f" stroke-width="3" opacity="0.5"/>
+</svg>
+<p style="position:absolute; top:28px; left:50px; font-size:13px; color:#2a9d8f; font-family:'Times New Roman',serif; margin:0; z-index:10; letter-spacing:1px;">PEDIATRIC GASTRO-ENTEROLOGY, HEPATOLOGY &amp; INFECTIOUS DISEASES</p>
+
+<p style="position:absolute; top:20px; left:50px; font-size:24px; font-weight:700; color:#264653; font-family:'Times New Roman',serif; margin:0; z-index:10;">German Measles (Rubella)</p>
+<div style="position:absolute; top:56px; left:50px; width:80px; height:4px; background:#f4a261; border-radius:2px; z-index:1;"></div>
+<div style="position:absolute; top:72px; left:50px; right:50px; bottom:56px; overflow:hidden; font-size:11px; line-height:1.35; color:#264653;">
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:0 0 6px 0;">
+  <div style="background:rgba(244,162,97,0.1); padding:6px; border-radius:4px;">
+    <p style="margin:0; font-size:12px; font-weight:700; color:#f4a261;">Causative Agent</p>
+    <p style="margin:2px 0 0 0;">Rubella virus (RNA virus)</p>
+  </div>
+  <div style="background:rgba(42,157,143,0.1); padding:6px; border-radius:4px;">
+    <p style="margin:0; font-size:12px; font-weight:700; color:#2a9d8f;">Incubation</p>
+    <p style="margin:2px 0 0 0;">2–3 weeks</p>
+  </div>
+  <div style="background:rgba(233,196,106,0.12); padding:6px; border-radius:4px;">
+    <p style="margin:0; font-size:12px; font-weight:700; color:#264653;">Transmission</p>
+    <p style="margin:2px 0 0 0;">Droplet, transplacental</p>
+  </div>
+  <div style="background:rgba(231,111,81,0.1); padding:6px; border-radius:4px;">
+    <p style="margin:0; font-size:12px; font-weight:700; color:#e76f51;">Infectivity</p>
+    <p style="margin:2px 0 0 0;">7d before rash to 5d after. Congenital: up to 2 years</p>
+  </div>
+</div>
+<p style="font-size:12px; font-weight:700; color:#f4a261; margin:0 0 3px 0;">Prodrome</p>
+<p style="font-size:11px; margin:0;">Very short, mild URI, fever (&lt;38.5°C), malaise, anorexia, headache. Tender lymphadenopathy: sub-occipital, post-auricular, posterior cervical (may persist after rash).</p>
+<p style="font-size:12px; font-weight:700; color:#f4a261; margin:4px 0 3px 0;">Eruptive Stage</p>
+<p style="font-size:11px; margin:0;">Maculo-papular, erythematous, discrete rash. Starts on face → LL in 24h → clears by day 3. No desquamation or pigmentation. Mild itching.</p>
+<p style="font-size:11px; margin:3px 0 0 0; font-weight:700; color:#2a9d8f;">Single attack gives solid, life-long immunity</p>
+<p style="font-size:12px; font-weight:700; color:#f4a261; margin:4px 0 3px 0;">Complications</p>
+<p style="font-size:11px; margin:0;">Encephalitis (1/6000), neuritis, arthritis</p>
+<p style="font-size:12px; font-weight:700; color:#f4a261; margin:4px 0 3px 0;">Prevention</p>
+<p style="font-size:11px; margin:0;">Avoid contact in pregnancy. Active: live attenuated rubella virus (SC ½ ml) or MMR at 15 months. Passive: ISG ¼–½ ml/kg within 1 week after exposure.</p>
+<p style="font-size:12px; font-weight:700; color:#f4a261; margin:4px 0 3px 0;">Treatment</p>
+<p style="font-size:11px; margin:0;">Symptomatic. Isolation: avoid contact with pregnant females during infectivity.</p>
+</div>
+
+<svg style="position:absolute; right:32px; bottom:24px; width:40px; height:32px; z-index:100;" aria-hidden="true">
+<rect x="0" y="0" width="40" height="32" rx="4" fill="#2a9d8f" opacity="0.85"/>
+<text x="20" y="22" text-anchor="middle" font-family="Times New Roman,serif" font-size="14" font-weight="700" fill="#ffffff">08</text>
+</svg>
+</div>
+</body>
+</html>

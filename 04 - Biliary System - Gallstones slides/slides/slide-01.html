@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background: #264653; overflow:hidden;">
+  <!-- Background SVG decoration -->
+  <svg style="position:absolute; top:0; left:0; width:960px; height:540px; z-index:0;" viewBox="0 0 960 540" aria-hidden="true">
+    <!-- Large circle top-right -->
+    <circle cx="780" cy="-80" r="320" fill="#2a9d8f" opacity="0.12"/>
+    <!-- Smaller circle -->
+    <circle cx="850" cy="120" r="140" fill="#e9c46a" opacity="0.10"/>
+    <!-- Diagonal band -->
+    <rect x="-50" y="380" width="1100" height="220" fill="#2a9d8f" opacity="0.08" transform="rotate(-8 480 490)"/>
+    <!-- Accent bar left -->
+    <rect x="0" y="0" width="8" height="540" fill="#2a9d8f"/>
+    <!-- Small decorative circles -->
+    <circle cx="100" cy="460" r="40" fill="#e9c46a" opacity="0.15"/>
+    <circle cx="200" cy="500" r="20" fill="#e76f51" opacity="0.10"/>
+  </svg>
+
+  <!-- Gold accent bar -->
+  <div style="position:absolute; top:140px; left:70px; width:80px; height:5px; background:#e9c46a; border-radius:2px; z-index:5;"></div>
+
+  <!-- Title -->
+  <p style="position:absolute; top:158px; left:70px; font-size:52px; font-weight:700; color:#ffffff; z-index:10; line-height:1.15; letter-spacing:-0.5px;">
+    Biliary System
+  </p>
+  <p style="position:absolute; top:228px; left:70px; font-size:42px; font-weight:700; color:#e9c46a; z-index:10; line-height:1.15;">
+    Gallstones
+  </p>
+
+  <!-- Subtitle -->
+  <p style="position:absolute; top:300px; left:70px; font-size:20px; color:#ffffff; opacity:0.85; z-index:10; max-width:520px; line-height:1.5;">
+    Classification, Risk Factors, Clinical Presentations,<br>Investigations &amp; Management
+  </p>
+
+  <!-- Bottom info bar -->
+  <div style="position:absolute; bottom:0; left:0; right:0; height:56px; background:rgba(0,0,0,0.25); z-index:5;"></div>
+  <p style="position:absolute; bottom:16px; left:70px; font-size:14px; color:#e9c46a; z-index:10; font-style:italic;">
+    Gastro-enterology &amp; Internal Medicine
+  </p>
+  <p style="position:absolute; bottom:16px; right:70px; font-size:14px; color:rgba(255,255,255,0.6); z-index:10;">
+    GALL BLADDER STONES
+  </p>
+
+  <!-- Liver icon (SVG) -->
+  <svg style="position:absolute; right:80px; top:100px; z-index:2;" width="200" height="260" viewBox="0 0 200 260" aria-hidden="true">
+    <!-- Stylized liver/gallbladder -->
+    <ellipse cx="100" cy="100" rx="80" ry="55" fill="#2a9d8f" opacity="0.2"/>
+    <ellipse cx="100" cy="95" rx="70" ry="45" fill="#2a9d8f" opacity="0.3"/>
+    <!-- Gallbladder -->
+    <path d="M 110 130 Q 110 180 100 200 Q 90 180 90 130 Z" fill="#e9c46a" opacity="0.5"/>
+    <ellipse cx="100" cy="125" rx="14" ry="18" fill="#e9c46a" opacity="0.6"/>
+    <!-- Stone inside -->
+    <circle cx="100" cy="145" r="6" fill="#e76f51" opacity="0.7"/>
+    <circle cx="95" cy="155" r="4" fill="#e76f51" opacity="0.6"/>
+    <circle cx="106" cy="158" r="3" fill="#e76f51" opacity="0.5"/>
+    <!-- Duct -->
+    <line x1="100" y1="200" x2="100" y2="240" stroke="#2a9d8f" stroke-width="4" opacity="0.4"/>
+  </svg>
+</div>
+</body>
+</html>

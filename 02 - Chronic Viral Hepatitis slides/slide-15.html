@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; color:#264653; position:relative; overflow:hidden; font-family:'Times New Roman',serif;">
+<p style="position:absolute; top:20px; left:50px; font-size:26px; font-weight:700; color:#264653; font-family:'Times New Roman',serif; margin:0; z-index:10;">Chronic Hepatitis C — Causative Agent & Epidemiology</p>
+<div style="position:absolute; top:60px; left:50px; width:80px; height:4px; background:#2a9d8f; border-radius:2px; z-index:1;"></div>
+<div style="position:absolute; top:76px; left:50px; right:50px; bottom:56px; overflow:hidden; font-size:14px; line-height:1.45; color:#264653;">
+
+<p style="font-size:16px; font-weight:700; color:#264653; margin:0 0 6px 0;">HCV — The Causative Agent &amp; Epidemiology</p>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:6px 0 10px 0;">
+
+  <div style="border:2px solid #2a9d8f; border-radius:8px; overflow:hidden;">
+    <div style="background:#2a9d8f; padding:8px 12px;">
+      <p style="margin:0; font-weight:700; font-size:15px; color:#ffffff;">Causative Agent</p>
+    </div>
+    <div style="padding:10px 12px;">
+      <ul style="margin:2px 0 4px 16px; padding:0; font-size:13px;">
+        <li><strong>Hepatitis C virus (HCV)</strong> — an <strong>RNA virus</strong></li>
+        <li>Genus <em>Hepacivirus</em> in the family <strong>Flaviviridae</strong></li>
+        <li>In addition to replicating in the liver, the virus can multiply in <strong>lymphocytes</strong></li>
+        <li>There are <strong>6 genotypes</strong></li>
+        <li><strong>Genotype 4</strong> is the most common cause in <strong>Egypt</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="border:2px solid #e76f51; border-radius:8px; overflow:hidden;">
+    <div style="background:#e76f51; padding:8px 12px;">
+      <p style="margin:0; font-weight:700; font-size:15px; color:#ffffff;">Epidemiology</p>
+    </div>
+    <div style="padding:10px 12px; text-align:center;">
+      <p style="margin:0 0 4px 0; font-size:36px; font-weight:700; color:#e76f51;">180</p>
+      <p style="margin:0; font-size:13px;">Estimated million persons worldwide <strong>chronically infected</strong> with HCV</p>
+    </div>
+  </div>
+
+</div>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:4px 0;">
+  <div style="background:rgba(42,157,143,0.12); padding:8px; border-radius:6px;">
+    <p style="margin:0; font-weight:700; font-size:13px; color:#2a9d8f;">HCV Genotypes</p>
+    <p style="margin:2px 0 0 0; font-size:12px;">6 genotypes worldwide. Genotype distribution varies geographically and influences treatment response.</p>
+  </div>
+  <div style="background:rgba(231,111,81,0.12); padding:8px; border-radius:6px;">
+    <p style="margin:0; font-weight:700; font-size:13px; color:#e76f51;">Egypt Specific</p>
+    <p style="margin:2px 0 0 0; font-size:12px;">Genotype 4 is the predominant genotype in Egypt, historically linked to past schistosomiasis treatment campaigns using parenteral antimony.</p>
+  </div>
+</div>
+
+</div>
+<svg style="position:absolute; right:32px; bottom:24px; width:40px; height:32px; z-index:100;" aria-hidden="true">
+<rect x="0" y="0" width="40" height="32" rx="4" fill="#2a9d8f" opacity="0.85"/>
+<text x="20" y="22" text-anchor="middle" font-family="Times New Roman,serif" font-size="14" font-weight="700" fill="#ffffff">15</text>
+</svg>
+</div>
+</body>
+</html>

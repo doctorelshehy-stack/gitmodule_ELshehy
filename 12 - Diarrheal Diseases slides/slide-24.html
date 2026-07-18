@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+<div style="position:absolute; inset:0; background:#ffffff;">
+  <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:#2a9d8f;"></div>
+  <p style="position:absolute; top:16px; left:40px; font-family:'Times New Roman',serif; font-size:20px; font-weight:700; color:#264653; margin:0;">Whipple Disease &amp; Presentation Summary</p>
+  <div style="position:absolute; top:44px; left:40px; width:50px; height:2px; background:#e9c46a; border-radius:2px;"></div>
+
+  <div style="position:absolute; top:54px; left:40px; right:40px; bottom:44px; display:grid; grid-template-columns:1.3fr 1fr; gap:8px;">
+    <div style="display:grid; gap:4px; align-content:start;">
+      <div style="background:#f8f9fa; padding:8px; border-radius:4px; border-left:3px solid #e76f51;">
+        <p style="font-family:'Times New Roman',serif; font-size:11px; font-weight:700; color:#e76f51; margin:0 0 2px;">Whipple Disease</p>
+        <p style="font-family:'Times New Roman',serif; font-size:9px; color:#264653; margin:0; line-height:1.3;">
+          <b>Definition:</b> Multisystemic disease caused by <b>Tropheryma whipplei</b> (gram-positive bacterium). Affects small intestine (malabsorption), joints, CNS, CVS (culture-negative endocarditis).<br>
+          <b>Epidemiology:</b> Extremely rare, more common in white middle/old-aged males.<br>
+          <b>Route:</b> Unknown but occupational exposure to animals documented.<br>
+          <b>Pathogenesis:</b> Macrophages infiltrate lamina propria → disrupted villous function → malabsorption.<br>
+          <b>Prognosis:</b> Untreated → mortality ~100% after 1 year. Treated for 1 year → good prognosis (70% remission). Relapse in 30-40%.
+        </p>
+      </div>
+      <div style="background:#f8f9fa; padding:8px; border-radius:4px; border-left:3px solid #2a9d8f;">
+        <p style="font-family:'Times New Roman',serif; font-size:11px; font-weight:700; color:#2a9d8f; margin:0 0 2px;">Investigations &amp; Treatment</p>
+        <p style="font-family:'Times New Roman',serif; font-size:9px; color:#264653; margin:0; line-height:1.3;">
+          <b>Investigations:</b> Sudan stain of stool, serum carotene, 72-h fecal fat, PCR (rpoB gene), serologic tests (shouldn't be used). <b>Histology:</b> Lamina propria full of PAS-positive macrophages. <b>Imaging:</b> CT, small-bowel series, brain MRI for CNS disease.<br>
+          <b>Treatment:</b> Induction with IV ceftriaxone 2 g once daily OR penicillin G IV for 14 days. Maintenance for 1 year with oral double-strength TMP-SMX twice daily. Alternatives: streptomycin, penicillin V, amoxycillin, chloramphenicol.
+        </p>
+      </div>
+    </div>
+    <div style="background:#264653; border-radius:4px; padding:12px; display:flex; flex-direction:column; justify-content:center;">
+      <p style="font-family:'Times New Roman',serif; font-size:16px; font-weight:700; color:#e9c46a; margin:0 0 8px; text-align:center;">Presentation Summary</p>
+      <div style="display:grid; gap:4px;">
+        <div style="background:rgba(42,157,143,0.2); padding:6px 10px; border-radius:3px;">
+          <p style="font-family:'Times New Roman',serif; font-size:9px; font-weight:700; color:#e9c46a; margin:0;">Acute Diarrhea</p>
+          <p style="font-family:'Times New Roman',serif; font-size:8px; color:#ffffff; margin:0;">Viral (rotavirus, norovirus) → Bacterial (Salmonella, Campylobacter, Shigella, E. coli, C. difficile, Cholera) → Protozoal (Giardia) → AIDS-associated</p>
+        </div>
+        <div style="background:rgba(42,157,143,0.2); padding:6px 10px; border-radius:3px;">
+          <p style="font-family:'Times New Roman',serif; font-size:9px; font-weight:700; color:#e9c46a; margin:0;">Chronic Diarrhea</p>
+          <p style="font-family:'Times New Roman',serif; font-size:8px; color:#ffffff; margin:0;">SIBO → Tropical Sprue → Intestinal TB → Whipple Disease</p>
+        </div>
+      </div>
+      <p style="font-family:'Times New Roman',serif; font-size:10px; color:#e9c46a; opacity:0.6; margin:10px 0 0; text-align:center;">Tropical Support 41 Book — Complete Reference</p>
+      <p style="font-family:'Times New Roman',serif; font-size:9px; color:#ffffff; opacity:0.4; margin:2px 0 0; text-align:center;">Dr. Moemenah El Hamouly &amp; Dr. Ahmed Ragab</p>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; width:40px; height:24px;" aria-hidden="true">
+      <rect x="0" y="2" width="40" height="20" rx="10" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="16" text-anchor="middle" fill="#ffffff" font-family="'Times New Roman',serif" font-size="12" font-weight="700">24</text>
+    </svg>
+</div>
+</div>
+</body>
+</html>

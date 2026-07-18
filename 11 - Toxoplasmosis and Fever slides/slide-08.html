@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+<div style="position:absolute; inset:0; background:#ffffff;">
+  <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:#2a9d8f;"></div>
+  <p style="position:absolute; top:24px; left:40px; font-family:'Times New Roman',serif; font-size:28px; font-weight:700; color:#264653; margin:0;">Fever: Introduction &amp; Definition</p>
+  <div style="position:absolute; top:64px; left:40px; width:60px; height:3px; background:#e9c46a; border-radius:2px;"></div>
+
+  <div style="position:absolute; top:90px; left:40px; right:40px; bottom:50px; display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+    <div style="background:#f8f9fa; padding:16px; border-radius:4px; border-top:3px solid #2a9d8f;">
+      <p style="font-family:'Times New Roman',serif; font-size:16px; font-weight:700; color:#264653; margin:0 0 8px 0;">Introduction</p>
+      <p style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:0 0 6px 0; line-height:1.6;">
+        Normal Body Temperature — 36.6 To 37.2 °C.
+      </p>
+      <p style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:0 0 6px 0; line-height:1.6;">
+        Regulated by <b>thermosensitive neurons</b> in the preoptic and anterior hypothalamus.
+      </p>
+      <p style="font-family:'Times New Roman',serif; font-size:13px; font-weight:700; color:#2a9d8f; margin:8px 0 4px 0;">Thermoregulatory responses:</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:0; padding-left:18px; line-height:1.6;">
+        <li>Redirecting blood to or from cutaneous vascular beds</li>
+        <li>Increased or decreased sweating</li>
+        <li>Extra cellular fluid regulation</li>
+        <li>Behavioral responses</li>
+      </ul>
+      <p style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:6px 0 0 0; line-height:1.5;">
+        Circadian rhythm or diurnal variation results in lower body temperature in early morning.
+      </p>
+    </div>
+    <div style="background:#f8f9fa; padding:16px; border-radius:4px; border-top:3px solid #e76f51;">
+      <p style="font-family:'Times New Roman',serif; font-size:16px; font-weight:700; color:#264653; margin:0 0 8px 0;">Definition of Fever</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:0; padding-left:18px; line-height:1.8;">
+        <li>Fever is a <b>controlled increase</b> in body temperature above the normal hypothalamic set point.</li>
+        <li><b>Rectal temperature &gt;38 °C</b></li>
+        <li><b>Hyperpyrexia</b> is &gt; 40°C</li>
+      </ul>
+      
+      <div style="margin-top:14px; padding:10px; background:#ffffff; border-radius:4px; border:1px solid #e9c46a;">
+        <p style="font-family:'Times New Roman',serif; font-size:13px; font-weight:700; color:#264653; margin:0 0 4px 0;">Temperature Measurement Reference</p>
+        <p style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0; line-height:1.6;">
+          Skin temperature is <b>0.4 °C (0.7°F) lower</b> than oral temperature<br>
+          Rectal or eardrum temperature is <b>0.4 °C (0.7°F) higher</b> than oral temperature<br>
+          Oral temperature is the reference and fever is diagnosed when it exceeds <b>(37.8°C)</b>.
+        </p>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; width:40px; height:24px;" aria-hidden="true">
+      <rect x="0" y="2" width="40" height="20" rx="10" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="16" text-anchor="middle" fill="#ffffff" font-family="'Times New Roman',serif" font-size="12" font-weight="700">08</text>
+    </svg>
+</div>
+</div>
+</body>
+</html>

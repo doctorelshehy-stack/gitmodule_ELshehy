@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HE - Etiology</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;position:relative;background:#ffffff;font-family:'Times New Roman',Times,serif;color:#1a1a2e;overflow:hidden;">
+<div style="position:absolute;top:0;left:0;width:960px;height:540px;background:#ffffff;z-index:0;"></div>
+<svg aria-hidden="true" style="position:absolute;top:0;left:0;z-index:1;" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="8" height="540" fill="#264653"/>
+</svg>
+<p style="position:absolute;top:20px;left:44px;z-index:5;font-size:32px;font-weight:700;color:#264653;">HE — Etiology</p>
+<div style="position:absolute;top:64px;left:44px;width:80px;height:3px;z-index:5;background:#2a9d8f;border-radius:1.5px;"></div>
+
+<div style="position:absolute;top:90px;left:44px;right:44px;z-index:5;">
+  <div style="background:#f8f9fa;padding:16px 20px;border-radius:6px;border-left:4px solid #2a9d8f;margin-bottom:14px;">
+    <p style="margin:0 0 6px 0;font-size:15px;color:#1a1a2e;">The etiology of HE is primarily due to <strong>accumulation of toxins in the serum</strong> due to liver dysfunction. The major factors leading to HE are:</p>
+    <ul style="margin:0;padding-left:20px;font-size:14px;color:#1a1a2e;">
+      <li style="margin-bottom:4px;">Reduction in hepatic function and hepatic mass</li>
+      <li style="margin-bottom:4px;">Development of porto-systemic collaterals which lead to circulatory bypass of the liver</li>
+      <li style="margin-bottom:4px;">Failure of the liver to detoxify gut-derived neurotoxins</li>
+    </ul>
+  </div>
+</div>
+
+<div style="position:absolute;top:210px;left:44px;right:44px;z-index:5;">
+  <p style="font-size:16px;font-weight:700;color:#264653;margin:0 0 8px 0;">Key Toxins Implicated in HE Pathogenesis:</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div style="background:#f8f9fa;padding:12px 16px;border-radius:6px;">
+      <p style="margin:0;font-size:13px;"><strong style="color:#2a9d8f;">Ammonia</strong> — The toxin most frequently implicated in pathogenesis of HE. Produced in the gut from protein breakdown and nitrogenous waste. Normally detoxified by the liver via the urea cycle.</p>
+    </div>
+    <div style="background:#f8f9fa;padding:12px 16px;border-radius:6px;">
+      <p style="margin:0;font-size:13px;"><strong style="color:#f4a261;">GABA</strong> — The principal neuro-inhibitory neurotransmitter GABA is increased in the CSF of patients with encephalopathy, contributing to neural inhibition.</p>
+    </div>
+    <div style="background:#f8f9fa;padding:12px 16px;border-radius:6px;">
+      <p style="margin:0;font-size:13px;"><strong style="color:#2a9d8f;">Endogenous Benzodiazepines</strong> — Increased levels of endogenous benzodiazepine-like compounds found in CNS, potentiate GABA-A receptor activity.</p>
+    </div>
+    <div style="background:#f8f9fa;padding:12px 16px;border-radius:6px;">
+      <p style="margin:0;font-size:13px;"><strong style="color:#e76f51;">Other Toxins</strong> — Manganese deposition in basal ganglia, oxygen free radicals, circulating opioid peptides, and nitric oxide all contribute to CNS dysfunction.</p>
+    </div>
+  </div>
+</div>
+
+<div style="position:absolute;top:390px;left:44px;right:44px;z-index:5;">
+  <p style="margin:0;font-size:12px;font-style:italic;color:rgba(26,26,46,0.6);">These compounds gain access to systemic circulation due to decreased hepatic function or portal-systemic shunts. Once in brain tissue, they produce alterations of neurotransmission that affect consciousness, behavior, motor dysfunction and extrapyramidal symptoms.</p>
+</div>
+<svg aria-hidden="true" style="position:absolute;right:32px;bottom:24px;z-index:20;" width="40" height="28" viewBox="0 0 40 28">
+      <rect x="0" y="0" width="40" height="28" rx="4" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="19" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" font-family: 'Times New Roman', Times, serif;">07</text>
+    </svg>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Budd-Chiari Syndrome</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;background:#fff;overflow:hidden;position:relative;">
+
+  <svg aria-hidden="true" style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:1;" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="960" height="540" fill="#fff"/>
+    <rect x="0" y="0" width="6" height="540" fill="#264653"/>
+  </svg>
+
+  <p style="position:absolute;top:30px;left:50px;font-family:'Times New Roman',serif;font-size:36px;font-weight:700;color:#264653;z-index:10;margin:0;">
+    Budd-Chiari Syndrome
+  </p>
+  <div style="position:absolute;top:72px;left:50px;width:80px;height:3px;background:#2a9d8f;z-index:10;"></div>
+
+  <p style="position:absolute;top:95px;left:50px;right:50px;font-family:'Times New Roman',serif;font-size:15px;color:#264653;z-index:10;margin:0;">
+    Thrombosis of the larger hepatic veins and sometimes the inferior vena cava.
+  </p>
+
+  <!-- Causes -->
+  <div style="position:absolute;top:130px;left:50px;width:280px;z-index:10;font-family:'Times New Roman',serif;">
+    <p style="font-size:17px;font-weight:700;color:#2a9d8f;margin:0 0 6px 0;">Causes</p>
+    <ul style="margin:0;padding-left:18px;font-size:13px;color:#264653;line-height:1.7;">
+      <li>Myelofibrosis</li>
+      <li>Primary proliferative polycythaemia</li>
+      <li>Paroxysmal nocturnal hemoglobinuria</li>
+      <li>AT-III, Protein C/S deficiency</li>
+      <li>Pregnancy / OCP use</li>
+      <li>Tumors (liver, kidney, adrenal)</li>
+      <li>Congenital venous webs</li>
+      <li>IVC stenosis</li>
+      <li>~50% idiopathic (falling with JAK2 mutation detection)</li>
+    </ul>
+  </div>
+
+  <!-- Clinical -->
+  <div style="position:absolute;top:130px;left:350px;width:280px;z-index:10;font-family:'Times New Roman',serif;">
+    <p style="font-size:17px;font-weight:700;color:#2a9d8f;margin:0 0 6px 0;">Clinical Features</p>
+    <p style="font-size:14px;font-weight:700;color:#f4a261;margin:0 0 4px 0;">Acute occlusion</p>
+    <ul style="margin:0;padding-left:18px;font-size:13px;color:#264653;line-height:1.6;">
+      <li>RUQ abdominal pain</li>
+      <li>Marked ascites</li>
+      <li>Acute liver failure (rare)</li>
+    </ul>
+    <p style="font-size:14px;font-weight:700;color:#f4a261;margin:10px 0 4px 0;">Gradual occlusion</p>
+    <ul style="margin:0;padding-left:18px;font-size:13px;color:#264653;line-height:1.6;">
+      <li>Gross ascites</li>
+      <li>RUQ discomfort</li>
+      <li>Hepatomegaly (tender)</li>
+      <li>Peripheral edema (IVC obstruction)</li>
+      <li>Cirrhosis &amp; portal HTN (chronic)</li>
+    </ul>
+  </div>
+
+  <!-- Management -->
+  <div style="position:absolute;top:130px;left:650px;width:270px;z-index:10;font-family:'Times New Roman',serif;">
+    <p style="font-size:17px;font-weight:700;color:#2a9d8f;margin:0 0 6px 0;">Management</p>
+    <ul style="margin:0;padding-left:18px;font-size:13px;color:#264653;line-height:1.7;">
+      <li>Treat predisposing causes</li>
+      <li>Thrombolysis (acute) — streptokinase → heparin → oral anticoagulation</li>
+      <li>Ascites: medical management (limited success)</li>
+      <li>Extensive occlusion: <strong>covered TIPSS</strong> + anticoagulation</li>
+    </ul>
+    <div style="margin-top:12px;background:rgba(42,157,143,0.06);padding:10px;border-radius:4px;border-left:4px solid #e9c46a;">
+      <p style="font-size:13px;color:#264653;margin:0;"><strong>Pathophysiology:</strong> Centrilobular congestion → centrilobular fibrosis → cirrhosis</p>
+    </div>
+  </div>
+
+  
+  <!-- Informational image -->
+  <img src="imgs/budd_chiari.svg" alt="Illustration" style="position:absolute;left:32px;top:450px;width:width:200px;height:auto;z-index:15;border-radius:6px;opacity:0.85;">
+<svg aria-hidden="true" style="position:absolute;right:32px;bottom:24px;width:40px;height:40px;z-index:50;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="40" height="40" rx="20" fill="#2a9d8f"/>
+  <text x="20" y="28" text-anchor="middle" font-family="Times New Roman,serif" font-size="18" font-weight="700" fill="#fff">18</text>
+</svg>
+</div>
+</body>
+</html>

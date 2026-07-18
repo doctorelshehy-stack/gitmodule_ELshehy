@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script></head><body>
+<div class="slide-content" style="background:#ffffff; overflow:hidden;">
+  <svg style="position:absolute; top:0; left:0; width:960px; height:80px;" aria-hidden="true">
+    <rect x="0" y="0" width="960" height="80" fill="#264653"/>
+    <rect x="0" y="80" width="960" height="4" fill="#2a9d8f"/>
+  </svg>
+  <div style="position:absolute; top:20px; left:60px; z-index:10;">
+    <p style="font-family:'Times New Roman',serif; font-size:28px; font-weight:700; color:#ffffff; margin:0;">Diagnosis — Colonoscopy</p>
+  </div>
+  <div style="position:absolute; top:110px; left:60px; width:840px; z-index:10;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px;">
+      <div>
+        <p style="font-family:'Times New Roman',serif; font-size:18px; font-weight:700; color:#2a9d8f; margin:0 0 12px 0;">Fiberoptic Flexible Colonoscopy</p>
+        <p style="font-family:'Times New Roman',serif; font-size:14px; color:#264653; line-height:1.6; margin:0 0 12px 0;">The <strong>initial diagnostic method of choice</strong> in most patients who are hemodynamically stable.</p>
+        <div style="background:#f8f9fa; padding:14px; border-radius:8px; margin-bottom:12px;">
+          <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#264653; margin:0 0 8px 0;">Key Points:</p>
+          <ul style="margin:0; padding-left:20px;">
+            <li style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:4px 0;">Performed following rapid bowel preparation ("prep")</li>
+            <li style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:4px 0;">Uses volume cathartic agents</li>
+            <li style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:4px 0;">Higher diagnostic and therapeutic yields compared to unprepped evaluation</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <svg width="380" height="280" aria-hidden="true">
+          <rect x="10" y="10" width="360" height="260" rx="8" fill="#f8f9fa" stroke="#2a9d8f" stroke-width="1"/>
+          <text x="190" y="40" text-anchor="middle" font-family="Times New Roman, serif" font-size="14" fill="#264653" font-weight="bold">Diagnostic Flowchart</text>
+          <!-- Box 1 -->
+          <rect x="120" y="55" width="160" height="36" rx="4" fill="#2a9d8f" opacity="0.2" stroke="#2a9d8f" stroke-width="1"/>
+          <text x="200" y="78" text-anchor="middle" font-family="Times New Roman, serif" font-size="11" fill="#264653">Hemodynamically Stable?</text>
+          <!-- Arrow down -->
+          <line x1="200" y1="91" x2="200" y2="110" stroke="#264653" stroke-width="1.5" marker-end="url(#arrow)"/>
+          <!-- Box 2 -->
+          <rect x="120" y="110" width="160" height="36" rx="4" fill="#2a9d8f" opacity="0.3" stroke="#2a9d8f" stroke-width="1"/>
+          <text x="200" y="133" text-anchor="middle" font-family="Times New Roman, serif" font-size="11" fill="#264653">Yes → Colonoscopy</text>
+          <!-- Arrow down -->
+          <line x1="200" y1="146" x2="200" y2="165" stroke="#264653" stroke-width="1.5"/>
+          <!-- Box 3 -->
+          <rect x="120" y="165" width="160" height="36" rx="4" fill="#f4a261" opacity="0.2" stroke="#f4a261" stroke-width="1"/>
+          <text x="200" y="188" text-anchor="middle" font-family="Times New Roman, serif" font-size="11" fill="#264653">Identify Bleeding Site?</text>
+          <!-- Arrow down -->
+          <line x1="200" y1="201" x2="200" y2="220" stroke="#264653" stroke-width="1.5"/>
+          <!-- Box 4 -->
+          <rect x="120" y="220" width="160" height="36" rx="4" fill="#e9c46a" opacity="0.3" stroke="#e9c46a" stroke-width="1.5"/>
+          <text x="200" y="243" text-anchor="middle" font-family="Times New Roman, serif" font-size="11" fill="#264653">Yes → Hemostasis</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:100;" width="40" height="40" aria-hidden="true">
+  <circle cx="20" cy="20" r="18" fill="#264653" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="20" y="25" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="16" font-weight="bold">08</text>
+</svg>
+</div>
+</body></html>

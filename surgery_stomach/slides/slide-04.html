@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gastritis — Diagnosis & Treatment</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;background:linear-gradient(135deg,#1b2838 0%,#0d1117 100%);overflow:hidden;position:relative;">
+  <!-- Background decorations -->
+  <svg aria-hidden="true" style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:1;" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="960" height="540" fill="transparent"/>
+    <rect x="0" y="0" width="12" height="540" fill="#42A5F5" opacity="0.6"/>
+    <rect x="0" y="0" width="960" height="4" fill="#FFC107" opacity="0.5"/>
+    <rect x="0" y="536" width="960" height="4" fill="#FFC107" opacity="0.5"/>
+  </svg>
+
+  <p style="position:absolute;top:40px;left:60px;font-family:'Times New Roman',serif;font-size:36px;font-weight:700;color:#FFC107;z-index:10;margin:0;">Gastritis — Diagnosis & Treatment</p>
+  <div style="position:absolute;top:100px;left:60px;width:400px;height:3px;background:#42A5F5;z-index:10;"></div>
+  <div style="position:absolute;top:120px;left:60px;width:420px;font-family:'Times New Roman',serif;font-size:18px;color:#fff;z-index:10;line-height:1.8;">
+    <div style="color:#42A5F5;font-weight:bold;font-size:22px;margin-bottom:8px;">Diagnosis</div>
+    <div>• Based on clinical history</div>
+    <div>• EGD and biopsy of gastric mucosa</div>
+    <div>• H. pylori investigations</div>
+    <div style="color:#42A5F5;font-weight:bold;font-size:22px;margin:12px 0 8px;">Autoimmune Gastritis Diagnosis</div>
+    <div>1) Antiparietal and anti-IF antibodies</div>
+    <div>2) Achlorhydria (basal and stimulated)</div>
+    <div>3) Hypergastrinemia</div>
+    <div>4) Low serum B12 (&lt;100 pg/mL)</div>
+    <div>5) Schilling test: abnormal, corrected by IF</div>
+    <div style="color:#FF9800;font-weight:bold;font-size:22px;margin:12px 0 8px;">Treatment — Acute</div>
+    <div>• Remove irritant</div>
+    <div>• Antacids, H2 antagonists, PPI</div>
+    <div>• Anti-nausea medications</div>
+    <div>• H. pylori: antibiotics for up to 2 weeks</div>
+  </div>
+  <div style="position:absolute;top:120px;right:60px;width:380px;font-family:'Times New Roman',serif;font-size:18px;color:#fff;z-index:10;line-height:1.8;">
+    <div style="color:#FF9800;font-weight:bold;font-size:22px;margin-bottom:8px;">Treatment — Chronic</div>
+    <div>• Eradication of causative infection (H. pylori)</div>
+    <div>• Pernicious anemia: vitamin B12 injections</div>
+    <div>• Severe changes: annual upper endoscopy</div>
+    <div style="color:#E53935;font-weight:bold;font-size:22px;margin:12px 0 8px;">Prognosis</div>
+    <div>• Most improve quickly once treatment begun</div>
+    <div style="background:rgba(66,165,245,0.15);padding:12px;border-radius:8px;border-left:4px solid #42A5F5;margin:12px 0;">
+      <div><strong>Remember:</strong></div>
+      <div>• Painless hematemesis → portal hypertension</div>
+      <div>• Painful hematemesis → Mallory-Weiss</div>
+      <div>• Chronic gastritis → ↑ risk of gastric cancer</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

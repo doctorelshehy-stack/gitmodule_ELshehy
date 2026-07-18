@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; color:#264653; position:relative; overflow:hidden; font-family:'Times New Roman',serif;">
+<svg style="position:absolute; top:20px; left:50px; right:50px; z-index:1;" aria-hidden="true">
+<line x1="0" y1="0" x2="860" y2="0" stroke="#2a9d8f" stroke-width="3" opacity="0.5"/>
+</svg>
+<p style="position:absolute; top:28px; left:50px; font-size:13px; color:#2a9d8f; font-family:'Times New Roman',serif; margin:0; z-index:10; letter-spacing:1px;">PEDIATRIC GASTRO-ENTEROLOGY, HEPATOLOGY &amp; INFECTIOUS DISEASES</p>
+
+<svg style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:0;" aria-hidden="true">
+<rect x="0" y="0" width="100%" height="100%" fill="#264653"/>
+</svg>
+<p style="position:absolute; top:25px; left:50px; font-size:26px; font-weight:700; color:#e9c46a; font-family:'Times New Roman',serif; margin:0; z-index:10;">Key Points &amp; Summary</p>
+<div style="position:absolute; top:60px; left:50px; width:80px; height:4px; background:#e9c46a; border-radius:2px; z-index:10;"></div>
+<div style="position:absolute; top:74px; left:50px; right:50px; bottom:46px; overflow:hidden; font-size:10px; line-height:1.3; color:#fff; z-index:10;">
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:5px;">
+  <div style="background:rgba(255,255,255,0.08); padding:5px; border-radius:4px; border-left:3px solid #e76f51;">
+    <p style="margin:0 0 1px 0; font-size:11px; font-weight:700; color:#e9c46a;">Amoebiasis</p>
+    <p style="margin:0; font-size:9px;">E. histolytica. Cyst = infective. Fecal-oral. Acute dysentery (blood + mucus + tenesmus). Metronidazole 10 days. Diloxanide for cyst passers.</p>
+  </div>
+  <div style="background:rgba(255,255,255,0.08); padding:5px; border-radius:4px; border-left:3px solid #f4a261;">
+    <p style="margin:0 0 1px 0; font-size:11px; font-weight:700; color:#e9c46a;">Giardiasis</p>
+    <p style="margin:0; font-size:9px;">G. lamblia. Watery diarrhea, greasy floating stools, failure to thrive. Furazolidone (DOC children). Tinidazole single dose.</p>
+  </div>
+  <div style="background:rgba(255,255,255,0.08); padding:5px; border-radius:4px; border-left:3px solid #2a9d8f;">
+    <p style="margin:0 0 1px 0; font-size:11px; font-weight:700; color:#e9c46a;">Ascariasis</p>
+    <p style="margin:0; font-size:9px;">Most prevalent helminth. Loeffler syndrome (pulmonary). Intestinal obstruction. Mebendazole × 3 days. Piperazine × 2 days.</p>
+  </div>
+  <div style="background:rgba(255,255,255,0.08); padding:5px; border-radius:4px; border-left:3px solid #e9c46a;">
+    <p style="margin:0 0 1px 0; font-size:11px; font-weight:700; color:#e9c46a;">Hookworm</p>
+    <p style="margin:0; font-size:9px;">Iron deficiency anaemia (0.5–1 ml blood/day/worm). Ground itch. Loeffler. Iron replacement + anti-helminthic.</p>
+  </div>
+  <div style="background:rgba(255,255,255,0.08); padding:5px; border-radius:4px; border-left:3px solid #e76f51;">
+    <p style="margin:0 0 1px 0; font-size:11px; font-weight:700; color:#e9c46a;">Tapeworms</p>
+    <p style="margin:0; font-size:9px;">T. saginata (beef), T. solium (pork → cysticercosis), H. nana (most common in Egypt). Niclosamide or Praziquantel.</p>
+  </div>
+  <div style="background:rgba(255,255,255,0.08); padding:5px; border-radius:4px; border-left:3px solid #f4a261;">
+    <p style="margin:0 0 1px 0; font-size:11px; font-weight:700; color:#e9c46a;">Schistosomiasis</p>
+    <p style="margin:0; font-size:9px;">Most important in Egypt. S. haematobium (urinary), S. mansoni (intestinal). Hepato-splenic → portal HTN. Praziquantel DOC.</p>
+  </div>
+  <div style="background:rgba(255,255,255,0.08); padding:5px; border-radius:4px; border-left:3px solid #2a9d8f; grid-column:1/3;">
+    <p style="margin:0 0 1px 0; font-size:11px; font-weight:700; color:#e9c46a;">Immunization</p>
+    <p style="margin:0; font-size:9px;">Egypt EPI: Birth (OPV0 + Hep B) → BCG → 2/4/6 mo (DPT + OPV + Hep B) → 9 mo (Measles + Vit A) → 12 mo (MMR) → 18 mo (boosters). Cold chain: 2–8°C. DPT contraindicated in severe reactions/CNS disease. NOT contraindicated in mild illness/antibiotics.</p>
+  </div>
+</div>
+<p style="font-size:9px; margin:6px 0 0 0; text-align:center; opacity:0.7;">Source: Paediatric Gastro-enterology, Hepatology &amp; Infectious Diseases Module — Pages 71–87</p>
+</div>
+
+<svg style="position:absolute; right:32px; bottom:24px; width:40px; height:32px; z-index:100;" aria-hidden="true">
+<rect x="0" y="0" width="40" height="32" rx="4" fill="#2a9d8f" opacity="0.85"/>
+<text x="20" y="22" text-anchor="middle" font-family="Times New Roman,serif" font-size="14" font-weight="700" fill="#ffffff">22</text>
+</svg>
+</div>
+</body>
+</html>

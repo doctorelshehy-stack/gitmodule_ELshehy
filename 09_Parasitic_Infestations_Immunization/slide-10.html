@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; color:#264653; position:relative; overflow:hidden; font-family:'Times New Roman',serif;">
+<svg style="position:absolute; top:20px; left:50px; right:50px; z-index:1;" aria-hidden="true">
+<line x1="0" y1="0" x2="860" y2="0" stroke="#2a9d8f" stroke-width="3" opacity="0.5"/>
+</svg>
+<p style="position:absolute; top:28px; left:50px; font-size:13px; color:#2a9d8f; font-family:'Times New Roman',serif; margin:0; z-index:10; letter-spacing:1px;">PEDIATRIC GASTRO-ENTEROLOGY, HEPATOLOGY &amp; INFECTIOUS DISEASES</p>
+
+<p style="position:absolute; top:20px; left:50px; font-size:24px; font-weight:700; color:#264653; font-family:'Times New Roman',serif; margin:0; z-index:10;">Ascariasis — Complete</p>
+<div style="position:absolute; top:56px; left:50px; width:80px; height:4px; background:#f4a261; border-radius:2px; z-index:1;"></div>
+<div style="position:absolute; top:72px; left:50px; right:50px; bottom:56px; overflow:hidden; font-size:11px; line-height:1.35; color:#264653;">
+<p style="font-size:11px; margin:0 0 3px 0;">Most prevalent human helminthic infection worldwide. Pre-school &amp; early school age mostly affected.</p>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:6px; margin:0 0 5px 0;">
+  <div style="background:rgba(244,162,97,0.1); padding:6px; border-radius:4px;">
+    <p style="margin:0; font-size:11px; font-weight:700; color:#f4a261;">Transmission</p>
+    <p style="margin:2px 0 0 0; font-size:10px;">Hand-to-mouth (soil contact). Contaminated vegetables, flies. Infective stage: mature egg with larva.</p>
+  </div>
+  <div style="background:rgba(42,157,143,0.1); padding:6px; border-radius:4px;">
+    <p style="margin:0; font-size:11px; font-weight:700; color:#2a9d8f;">Diagnosis</p>
+    <p style="margin:2px 0 0 0; font-size:10px;">Direct faecal smear → ova</p>
+  </div>
+</div>
+<p style="font-size:12px; font-weight:700; color:#f4a261; margin:0 0 3px 0;">Clinical Picture</p>
+<p style="font-size:11px; margin:0;">• Majority asymptomatic</p>
+<p style="font-size:11px; margin:2px 0 0 0;">• <strong>Loeffler-like syndrome:</strong> cough + blood-stained sputum, dyspnoea + wheezing (asthma) + eosinophilia. CXR: transient pulmonary infiltrates</p>
+<p style="font-size:11px; margin:2px 0 0 0;">• Vague abdominal complaints: pain, distention</p>
+<p style="font-size:11px; margin:2px 0 0 0;">• Malabsorption: steatorrhoea, diminished vit-A absorption</p>
+<p style="font-size:11px; margin:2px 0 0 0;">• Growth retardation in children</p>
+<p style="font-size:11px; margin:2px 0 0 0;">• Adult worms may be passed in stools</p>
+<p style="font-size:11px; margin:2px 0 0 0;">• Intestinal obstruction in heavy infestation (mass of worms)</p>
+<p style="font-size:11px; margin:2px 0 0 0;">• Migration → biliary obstruction, appendicitis</p>
+<p style="font-size:12px; font-weight:700; color:#f4a261; margin:4px 0 3px 0;">Treatment</p>
+<p style="font-size:11px; margin:0;">• Mebendazole / Flubendazole: 100 mg/day × 3 days all ages PO</p>
+<p style="font-size:11px; margin:2px 0 0 0;">• Pyrantel pamoate: 10 mg/kg single dose</p>
+<p style="font-size:11px; margin:2px 0 0 0;">• Levamisole: single dose (as enterobius)</p>
+<p style="font-size:11px; margin:2px 0 0 0;">• Piperazine: 50–75 mg/kg/day × 2 days</p>
+</div>
+
+<svg style="position:absolute; right:32px; bottom:24px; width:40px; height:32px; z-index:100;" aria-hidden="true">
+<rect x="0" y="0" width="40" height="32" rx="4" fill="#2a9d8f" opacity="0.85"/>
+<text x="20" y="22" text-anchor="middle" font-family="Times New Roman,serif" font-size="14" font-weight="700" fill="#ffffff">10</text>
+</svg>
+</div>
+</body>
+</html>

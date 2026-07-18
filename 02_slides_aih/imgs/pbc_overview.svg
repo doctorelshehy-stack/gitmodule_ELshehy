@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <rect width="300" height="200" rx="8" fill="#f0f4f4"/>
+  <rect x="0" y="0" width="300" height="36" rx="8" fill="#264653"/>
+  <rect x="0" y="20" width="300" height="16" fill="#264653"/>
+  <text x="150" y="24" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#fff">Primary Biliary Cirrhosis</text>
+  <!-- Bile duct straws -->
+  <rect x="30" y="48" width="8" height="60" rx="2" fill="#2a9d8f" opacity="0.6"/>
+  <rect x="50" y="48" width="8" height="55" rx="2" fill="#2a9d8f" opacity="0.4"/>
+  <rect x="70" y="48" width="8" height="65" rx="2" fill="#2a9d8f" opacity="0.5"/>
+  <rect x="90" y="48" width="8" height="50" rx="2" fill="#e76f51" opacity="0.5"/>
+  <rect x="110" y="48" width="8" height="45" rx="2" fill="#e76f51" opacity="0.6"/>
+  <text x="145" y="62" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#264653">Immune attack on bile ducts</text>
+  <text x="145" y="78" font-family="Arial,sans-serif" font-size="10" fill="#264653">T-cell mediated destruction</text>
+  <text x="145" y="92" font-family="Arial,sans-serif" font-size="10" fill="#264653">Bile builds up → Liver injury</text>
+  <!-- Stats -->
+  <rect x="15" y="110" width="270" height="22" rx="4" fill="#2a9d8f" opacity="0.1"/>
+  <text x="150" y="125" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#264653">AMA test: 95% sensitive</text>
+  <rect x="15" y="136" width="270" height="22" rx="4" fill="#e9c46a" opacity="0.1"/>
+  <text x="150" y="151" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#264653">Middle-aged women (10% male)</text>
+  <rect x="15" y="162" width="270" height="28" rx="4" fill="#f4a261" opacity="0.1"/>
+  <text x="150" y="176" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#264653">Treatment: UDCA</text>
+  <text x="150" y="186" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#264653">Progressive → cirrhosis → ESLD</text>
+</svg>

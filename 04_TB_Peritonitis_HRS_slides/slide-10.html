@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HRS - Classification</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;position:relative;background:#f8f9fa;font-family: 'Times New Roman', Times, serif;color:#1a1a2e;overflow:hidden;">
+
+<div style="position:absolute;top:0;left:0;width:960px;height:540px;background:#ffffff;z-index:0;"></div>
+<svg aria-hidden="true" style="position:absolute;top:0;left:0;z-index:1;" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="960" height="6" fill="#264653"/>
+</svg>
+<p style="position:absolute;top:10px;left:60px;z-index:5;font-family: 'Times New Roman', Times, serif;font-size:13px;font-weight:700;color:#2a9d8f;letter-spacing:1px;">SECTION 02 — HEPATORENAL SYNDROME</p>
+<p style="position:absolute;top:23px;left:60px;z-index:5;font-family: 'Times New Roman', Times, serif;font-size:27px;font-weight:700;color:#264653;">Classification</p>
+<div style="position:absolute;top:86px;left:60px;width:70px;height:3px;z-index:5;background:#e9c46a;border-radius:1.5px;"></div>
+
+<div style="position:absolute;top:110px;left:60px;right:60px;z-index:5;display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+  <!-- Type 1 -->
+  <div style="background:#e76f51;border-radius:10px;padding:16px;">
+    <p style="font-family: 'Times New Roman', Times, serif;font-size:20px;font-weight:700;color:#ffffff;margin:0 0 8px 0;">Type 1</p>
+    <ul style="font-family: 'Times New Roman', Times, serif;font-size:13px;color:rgba(255,255,255,0.95);margin:0;padding-left:18px;line-height:1.6;">
+      <li>Rapidly progressive (&lt;2 weeks) reduction of renal functions with doubling of the initial SCr to greater than 2.5 mg/dl or a 50% reduction in the initial 24-h creatinine clearance to less than 20 ml/min</li>
+      <li>80% mortality with only 10% surviving more than 3 months</li>
+    </ul>
+  </div>
+
+  <!-- Type 2 -->
+  <div style="background:#2a9d8f;border-radius:10px;padding:16px;">
+    <p style="font-family: 'Times New Roman', Times, serif;font-size:20px;font-weight:700;color:#ffffff;margin:0 0 8px 0;">Type 2</p>
+    <ul style="font-family: 'Times New Roman', Times, serif;font-size:13px;color:rgba(255,255,255,0.95);margin:0;padding-left:18px;line-height:1.6;">
+      <li>Patients satisfy the criteria of diagnosis but the renal failure does not progress rapidly</li>
+      <li>These patients usually have relatively preserved hepatic functions with refractory ascites</li>
+      <li>Survival is reduced compared with cirrhotics with ascites but normal renal function</li>
+      <li>Median survival for untreated type 2 approximately 6 months</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Comparison bar -->
+<svg aria-hidden="true" style="position:absolute;bottom:36px;left:60px;z-index:5;" width="840" height="50" viewBox="0 0 840 50">
+  <rect x="0" y="5" width="400" height="40" rx="6" fill="#e76f51" opacity="0.85"/>
+  <text x="200" y="30" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700" font-family: 'Times New Roman', Times, serif;>Type 1: Rapid (&lt;2 wks), 80% mortality</text>
+  <rect x="440" y="5" width="400" height="40" rx="6" fill="#2a9d8f" opacity="0.85"/>
+  <text x="640" y="30" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700" font-family: 'Times New Roman', Times, serif;>Type 2: Slow progression, ~6 mo survival</text>
+</svg>
+
+<svg aria-hidden="true" style="position:absolute;right:32px;bottom:24px;z-index:20;" width="40" height="28" viewBox="0 0 40 28">
+      <rect x="0" y="0" width="40" height="28" rx="4" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="19" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" font-family: 'Times New Roman', Times, serif;>10</text>
+    </svg>
+</div>
+</body>
+</html>

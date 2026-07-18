@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; color:#264653; position:relative; overflow:hidden; font-family:'Times New Roman',serif;">
+<p style="position:absolute; top:20px; left:50px; font-size:26px; font-weight:700; color:#264653; font-family:'Times New Roman',serif; margin:0; z-index:10;">Summary & Key Takeaways</p>
+<div style="position:absolute; top:60px; left:50px; width:80px; height:4px; background:#2a9d8f; border-radius:2px; z-index:1;"></div>
+<div style="position:absolute; top:76px; left:50px; right:50px; bottom:56px; overflow:hidden; font-size:14px; line-height:1.45; color:#264653;">
+
+<p style="font-size:16px; font-weight:700; color:#264653; margin:0 0 8px 0;">Key Takeaways — Chronic Viral Hepatitis</p>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:4px 0 10px 0;">
+  <div style="background:#264653; color:#ffffff; padding:8px 12px; border-radius:6px;">
+    <p style="margin:0 0 2px 0; font-weight:700; font-size:13px; color:#e9c46a;">01 Definition</p>
+    <p style="margin:0; font-size:11px; opacity:0.9;">Hepatic inflammation ≥ 6 months. Old classification: CPH, CAH, CLH. New: based on history, grade, stage.</p>
+  </div>
+  <div style="background:#2a9d8f; color:#ffffff; padding:8px 12px; border-radius:6px;">
+    <p style="margin:0 0 2px 0; font-weight:700; font-size:13px; color:#e9c46a;">02 HBV</p>
+    <p style="margin:0; font-size:11px; opacity:0.9;">DNA virus (Hepadnaviridae). 3 antigens: HBsAg, HBcAg, HBeAg. 240M chronic carriers. 15-40% develop serious sequelae.</p>
+  </div>
+  <div style="background:#f4a261; color:#ffffff; padding:8px 12px; border-radius:6px;">
+    <p style="margin:0 0 2px 0; font-weight:700; font-size:13px;">03 HBV Transmission</p>
+    <p style="margin:0; font-size:11px; opacity:0.9;">Parenteral, sexual, perinatal (vertical). Risk of chronicity: 80-90% infants, 30-50% children, &lt;5% adults.</p>
+  </div>
+  <div style="background:#e76f51; color:#ffffff; padding:8px 12px; border-radius:6px;">
+    <p style="margin:0 0 2px 0; font-weight:700; font-size:13px;">04 HBV Diagnosis</p>
+    <p style="margin:0; font-size:11px; opacity:0.9;">Serology (HBsAg, anti-HBs, anti-HBc IgM/IgG, HBeAg) → PCR → Liver biopsy (grade & stage).</p>
+  </div>
+  <div style="background:#2a9d8f; color:#ffffff; padding:8px 12px; border-radius:6px;">
+    <p style="margin:0 0 2px 0; font-weight:700; font-size:13px; color:#e9c46a;">05 HBV Prevention & Treatment</p>
+    <p style="margin:0; font-size:11px; opacity:0.9;">Vaccine + HBIG. Treatment: interferons, nucleos(t)ide analogues (lamivudine, adefovir, tenofovir, entecavir).</p>
+  </div>
+  <div style="background:#264653; color:#ffffff; padding:8px 12px; border-radius:6px;">
+    <p style="margin:0 0 2px 0; font-weight:700; font-size:13px; color:#e9c46a;">06 HCV</p>
+    <p style="margin:0; font-size:11px; opacity:0.9;">RNA virus (Flaviviridae). 6 genotypes. 180M carriers. 85% chronicity. No vaccine. DAAs curative (95%).</p>
+  </div>
+</div>
+
+<div style="text-align:center; padding:8px; margin:4px 0;">
+  <p style="margin:0; font-size:18px; font-weight:700; color:#2a9d8f;">Thank You</p>
+  <p style="margin:4px 0 0 0; font-size:14px; color:#264653; opacity:0.7;">Dr. Hossam Seleema &amp; Dr. Randa Mohamed Seddik</p>
+</div>
+
+</div>
+<svg style="position:absolute; right:32px; bottom:24px; width:40px; height:32px; z-index:100;" aria-hidden="true">
+<rect x="0" y="0" width="40" height="32" rx="4" fill="#2a9d8f" opacity="0.85"/>
+<text x="20" y="22" text-anchor="middle" font-family="Times New Roman,serif" font-size="14" font-weight="700" fill="#ffffff">20</text>
+</svg>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gastritis — Acute & Chronic</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;background:linear-gradient(135deg,#1b2838 0%,#0d1117 100%);overflow:hidden;position:relative;">
+  <!-- Background decorations -->
+  <svg aria-hidden="true" style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:1;" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="960" height="540" fill="transparent"/>
+    <rect x="0" y="0" width="12" height="540" fill="#42A5F5" opacity="0.6"/>
+    <rect x="0" y="0" width="960" height="4" fill="#FFC107" opacity="0.5"/>
+    <rect x="0" y="536" width="960" height="4" fill="#FFC107" opacity="0.5"/>
+  </svg>
+
+  <p style="position:absolute;top:40px;left:60px;font-family:'Times New Roman',serif;font-size:36px;font-weight:700;color:#FFC107;z-index:10;margin:0;">Gastritis — Acute & Chronic</p>
+  <div style="position:absolute;top:100px;left:60px;width:400px;height:3px;background:#42A5F5;z-index:10;"></div>
+  <div style="position:absolute;top:120px;left:60px;font-family:'Times New Roman',serif;font-size:18px;color:#fff;z-index:10;line-height:1.8;">
+    <div style="color:#42A5F5;font-weight:bold;font-size:22px;margin-bottom:8px;">Definition</div>
+    <div>• Inflammation or erosion of the stomach lining</div>
+    <div style="color:#42A5F5;font-weight:bold;font-size:22px;margin:16px 0 8px;">Acute Gastritis</div>
+    <div>• Sudden onset of gastric mucosa inflammation</div>
+    <div>• Small, shallow breaks (acute erosions)</div>
+    <div>• Tiny areas of bleeding</div>
+    <div style="color:#FF9800;font-weight:bold;font-size:22px;margin:16px 0 8px;">Causes — Acute</div>
+    <div>• NSAIDs, poisons, certain infections (H. pylori)</div>
+    <div>• Irritants that overwhelm mucus lining</div>
+    <div style="color:#42A5F5;font-weight:bold;font-size:22px;margin:16px 0 8px;">Clinical Features — Acute</div>
+    <div>• Upper abdominal pain, nausea, vomiting, bloating</div>
+    <div>• Heartburn, hiccups, loss of appetite</div>
+    <div>• Hematemesis or melena</div>
+  </div>
+  <div style="position:absolute;top:120px;right:60px;width:380px;font-family:'Times New Roman',serif;font-size:18px;color:#fff;z-index:10;line-height:1.8;">
+    <div style="color:#42A5F5;font-weight:bold;font-size:22px;margin-bottom:8px;">Chronic Gastritis</div>
+    <div>• Persistent, low-grade inflammation</div>
+    <div>• Mucosa becomes thinner as cells are destroyed</div>
+    <div>• Very common, especially in less developed countries</div>
+    <div>• May progress to metaplasia → ↑ risk of gastric cancer</div>
+    <div style="color:#FF9800;font-weight:bold;font-size:22px;margin:16px 0 8px;">Causes — Chronic</div>
+    <div>• H. pylori infection</div>
+    <div>• Auto-immune disease</div>
+    <div>• Crohn's disease</div>
+    <div>• Bile reflux</div>
+    <div style="color:#FF9800;font-weight:bold;font-size:22px;margin:16px 0 8px;">Clinical Features — Chronic</div>
+    <div>• Often causes no symptoms</div>
+    <div>• Severe damage → loss of acid production</div>
+    <div>• Digestive upsets, tiredness, anemia</div>
+    <div>• Loss of intrinsic factor → B12 deficiency</div>
+    <div>• Pernicious anemia with numbness/tingling</div>
+  </div>
+
+</div>
+</body>
+</html>

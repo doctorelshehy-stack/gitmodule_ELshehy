@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background: #ffffff; overflow:hidden;">
+  <!-- Header bar -->
+  <div style="position:absolute; top:0; left:0; right:0; height:60px; background:#264653; z-index:2;"></div>
+  <p style="position:absolute; top:14px; left:60px; font-size:22px; font-weight:700; color:#ffffff; z-index:10;">Types of Gallstones</p>
+
+  <!-- Three-column grid -->
+  <div style="position:absolute; top:80px; left:40px; right:40px; bottom:20px; display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; z-index:5;">
+    <!-- Column 1: Cholesterol Stones -->
+    <div>
+      <svg width="100%" height="60" viewBox="0 0 280 60" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <rect x="0" y="0" width="280" height="60" rx="8" fill="#2a9d8f"/>
+        <text x="140" y="38" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="16" font-weight="700">Cholesterol Stones</text>
+      </svg>
+      <div style="background:#f0f7f7; border-radius:0 0 8px 8px; padding:16px; margin-top:-2px;">
+        <div style="display:flex; align-items:center; margin-bottom:10px;">
+          <div style="width:48px; height:48px; background:#2a9d8f; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:12px;">
+            <span style="font-size:22px; font-weight:700; color:#ffffff;">80%</span>
+          </div>
+          <span style="font-size:14px; color:#264653; font-weight:600;">of all GB stones</span>
+        </div>
+        <p style="font-size:13px; color:#264653; line-height:1.6; margin-bottom:6px;">
+          <span style="font-weight:600;">Mechanism:</span> Supersaturation of bile with cholesterol
+        </p>
+        <p style="font-size:13px; color:#264653; line-height:1.6; margin-bottom:6px;">
+          <span style="font-weight:600;">Contributing factor:</span> Decreased GB motility
+        </p>
+        <p style="font-size:13px; color:#264653; line-height:1.6;">
+          Most common type worldwide, associated with obesity and high-fat diets
+        </p>
+      </div>
+    </div>
+
+    <!-- Column 2: Black Pigment Stones -->
+    <div>
+      <svg width="100%" height="60" viewBox="0 0 280 60" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <rect x="0" y="0" width="280" height="60" rx="8" fill="#264653"/>
+        <text x="140" y="38" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="16" font-weight="700">Black Pigment Stones</text>
+      </svg>
+      <div style="background:#f0f7f7; border-radius:0 0 8px 8px; padding:16px; margin-top:-2px;">
+        <p style="font-size:13px; color:#264653; line-height:1.6; margin-bottom:8px;">
+          <span style="font-weight:600;">Composition:</span> 70% Calcium bilirubinate
+        </p>
+        <p style="font-size:13px; color:#264653; line-height:1.6; margin-bottom:10px;">
+          <span style="font-weight:600;">Associated with:</span>
+        </p>
+        <ul style="margin:0; padding-left:18px;">
+          <li style="font-size:13px; color:#264653; margin-bottom:4px;">Sickle cell anaemia</li>
+          <li style="font-size:13px; color:#264653; margin-bottom:4px;">Hereditary spherocytosis</li>
+          <li style="font-size:13px; color:#264653; margin-bottom:4px;">Thalassaemia</li>
+          <li style="font-size:13px; color:#264653;">Liver cirrhosis</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Column 3: Brown Pigment Stones -->
+    <div>
+      <svg width="100%" height="60" viewBox="0 0 280 60" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <rect x="0" y="0" width="280" height="60" rx="8" fill="#e76f51"/>
+        <text x="140" y="38" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="16" font-weight="700">Brown Pigment Stones</text>
+      </svg>
+      <div style="background:#f0f7f7; border-radius:0 0 8px 8px; padding:16px; margin-top:-2px;">
+        <p style="font-size:13px; color:#264653; line-height:1.6; margin-bottom:8px;">
+          <span style="font-weight:600;">Incidence:</span> &lt; 5% of all stones
+        </p>
+        <p style="font-size:13px; color:#264653; line-height:1.6; margin-bottom:8px;">
+          <span style="font-weight:600;">Location:</span> Intrahepatic &amp; extrahepatic bile ducts + GB
+        </p>
+        <p style="font-size:13px; color:#264653; line-height:1.6; margin-bottom:6px;">
+          <span style="font-weight:600;">Cause:</span> Stasis + infection
+        </p>
+        <p style="font-size:12px; color:#f4a261; line-height:1.5;">
+          E. coli &amp; Klebsiella → β-glucuronidase → converts conjugated bilirubin to insoluble unconjugated state
+        </p>
+        <p style="font-size:12px; color:#888; margin-top:6px;">
+          Soft, earthy, brown stones
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:50;" width="48" height="28" viewBox="0 0 48 28" aria-hidden="true">
+  <rect x="0" y="0" width="48" height="28" rx="14" fill="#264653" opacity="0.85"/>
+  <text x="24" y="19" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="14" font-weight="600">4</text>
+</svg>
+</div>
+</body>
+</html>

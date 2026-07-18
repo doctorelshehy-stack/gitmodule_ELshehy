@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script></head><body>
+<div class="slide-content" style="background:#ffffff; overflow:hidden;">
+  <svg style="position:absolute; top:0; left:0; width:960px; height:80px;" aria-hidden="true">
+    <rect x="0" y="0" width="960" height="80" fill="#264653"/>
+    <rect x="0" y="80" width="960" height="4" fill="#2a9d8f"/>
+  </svg>
+  <div style="position:absolute; top:20px; left:60px; z-index:10;">
+    <p style="font-family:'Times New Roman',serif; font-size:28px; font-weight:700; color:#ffffff; margin:0;">Blood Tests &amp; Recurrent Bleeding Workup</p>
+  </div>
+  <div style="position:absolute; top:110px; left:60px; width:840px; z-index:10;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+      <!-- Blood Tests -->
+      <div>
+        <p style="font-family:'Times New Roman',serif; font-size:16px; font-weight:700; color:#2a9d8f; margin:0 0 12px 0;">Routine Blood Tests</p>
+        <div style="background:#f8f9fa; padding:14px; border-radius:8px;">
+          <ul style="margin:0; padding-left:20px;">
+            <li style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:6px 0;">Complete Blood Cell (CBC) count</li>
+            <li style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:6px 0;">Serum electrolytes levels</li>
+            <li style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:6px 0;">Coagulation profile:
+              <ul style="margin:4px 0 0 0; padding-left:16px;">
+                <li style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:2px 0;">aPTT (activated partial thromboplastin time)</li>
+                <li style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:2px 0;">PT (prothrombin time)</li>
+                <li style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:2px 0;">Platelet count</li>
+                <li style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:2px 0;">Bleeding time (if bleeding disorders or antiplatelet use)</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Recurrent Workup -->
+      <div>
+        <p style="font-family:'Times New Roman',serif; font-size:16px; font-weight:700; color:#e76f51; margin:0 0 12px 0;">Recurrent LGIB Workup</p>
+        <p style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; line-height:1.5; margin:0 0 10px 0;">For patients with multiple episodes without known source:</p>
+        <div style="background:#f8f9fa; padding:14px; border-radius:8px;">
+          <ol style="margin:0; padding-left:20px;">
+            <li style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:6px 0;">Elective mesenteric angiography</li>
+            <li style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:6px 0;">Upper and lower endoscopy</li>
+            <li style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:6px 0;">Meckel scanning</li>
+            <li style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:6px 0;">Upper GI series with small bowel</li>
+            <li style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:6px 0;">Enteroclysis</li>
+          </ol>
+        </div>
+        <p style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:10px 0 0 0; background:#fef9ef; padding:8px 12px; border-radius:4px; border-left:3px solid #e76f51;">Rarely: Exploratory laparotomy and intraoperative push enteroscopy in truly hemodynamically unstable patients.</p>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:100;" width="40" height="40" aria-hidden="true">
+  <circle cx="20" cy="20" r="18" fill="#264653" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="20" y="25" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="16" font-weight="bold">10</text>
+</svg>
+</div>
+</body></html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>html,body{margin:0;padding:0;width:100%;height:100%;overflow:hidden;display:flex;justify-content:center;align-items:center;background:#000;}.slide-content{width:960px;height:540px;position:relative;transform-origin:center center;}</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960,sy=window.innerHeight/540,sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script></head><body>
+<div class="slide-content" style="background:#f0f7f7;overflow:hidden;">
+<div style="position:absolute;top:0;left:0;right:0;height:52px;background:#264653;z-index:2;"></div><p style="position:absolute;top:10px;left:50px;font-size:20px;font-weight:700;color:#ffffff;z-index:10;">Short Bowel Syndrome (Intestinal Resection)</p>
+<div style="padding:62px 50px 20px 50px;display:flex;flex-direction:column;gap:10px;">
+<div style="background:#ffffff;padding:10px 16px;border-radius:8px;border-left:4px solid #e76f51;">
+<p style="font-size:13px;color:#264653;line-height:1.5;">Massive resection leaving <span style="font-weight:700;color:#e76f51;">&lt;1m of small bowel</span> in continuity → Short Bowel Syndrome. Jejunal resection tolerated better than ileal resection.</p>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+<div>
+<p style="font-size:15px;font-weight:700;color:#e76f51;margin-bottom:8px;">After Ileal Resection</p>
+<div style="background:#ffffff;border-left:4px solid #e76f51;padding:8px 12px;margin-bottom:5px;border-radius:0 6px 6px 0;">
+<p style="font-size:12px;font-weight:600;color:#e76f51;margin-bottom:2px;">1. Bile-Salt Diarrhea</p>
+<p style="font-size:11px;color:#264653;line-height:1.4;">Bile salts + fatty acids enter colon → water/electrolyte malabsorption</p></div>
+<div style="background:#ffffff;border-left:4px solid #f4a261;padding:8px 12px;margin-bottom:5px;border-radius:0 6px 6px 0;">
+<p style="font-size:12px;font-weight:600;color:#f4a261;margin-bottom:2px;">2. Steatorrhea &amp; Gallstones</p>
+<p style="font-size:11px;color:#264653;line-height:1.4;">Loss >⅓ bile salts → ↓micelle formation → steatorrhea + lithogenic bile</p></div>
+<div style="background:#ffffff;border-left:4px solid #2a9d8f;padding:8px 12px;margin-bottom:5px;border-radius:0 6px 6px 0;">
+<p style="font-size:12px;font-weight:600;color:#2a9d8f;margin-bottom:2px;">3. Oxaluria &amp; Oxalate Stones</p>
+<p style="font-size:11px;color:#264653;line-height:1.4;">Bile salts in colon → ↑oxalate absorption → urinary stones</p></div>
+<div style="background:#ffffff;border-left:4px solid #264653;padding:8px 12px;border-radius:0 6px 6px 0;">
+<p style="font-size:12px;font-weight:600;color:#264653;margin-bottom:2px;">4. Vitamin B12 Deficiency</p>
+<p style="font-size:11px;color:#264653;line-height:1.4;">Ileum is the site of B12 absorption</p></div>
+</div>
+<div>
+<p style="font-size:15px;font-weight:700;color:#264653;margin-bottom:8px;">Additional Features</p>
+<div style="background:#ffffff;padding:10px 14px;border-radius:8px;margin-bottom:8px;">
+<p style="font-size:13px;font-weight:600;color:#2a9d8f;margin-bottom:4px;">Jejunal Resection</p>
+<p style="font-size:12px;color:#264653;line-height:1.4;">May lead to gastric hypersecretion with high gastrin levels</p></div>
+<div style="background:#ffffff;padding:10px 14px;border-radius:8px;margin-bottom:8px;">
+<p style="font-size:13px;font-weight:600;color:#f4a261;margin-bottom:4px;">Ileocaecal Valve Removal</p>
+<p style="font-size:12px;color:#264653;line-height:1.4;">Increases incidence of diarrhea</p></div>
+<div style="background:#2a9d8f;padding:10px 14px;border-radius:8px;">
+<p style="font-size:12px;color:#ffffff;line-height:1.4;"><span style="font-weight:600;">Adaptation:</span> Structural and functional intestinal adaptation occurs over ~1 year</p></div>
+</div>
+</div>
+</div>
+<svg style="position:absolute;right:28px;bottom:20px;z-index:50;" width="44" height="26" viewBox="0 0 44 26" aria-hidden="true"><rect x="0" y="0" width="44" height="26" rx="13" fill="#264653" opacity="0.85"/><text x="22" y="18" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="13" font-weight="600">3</text></svg>
+</div></body></html>

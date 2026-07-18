@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+<div style="position:absolute; inset:0; background:#ffffff;">
+  <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:#2a9d8f;"></div>
+  <p style="position:absolute; top:24px; left:40px; font-family:'Times New Roman',serif; font-size:28px; font-weight:700; color:#264653; margin:0;">Toxoplasmosis: Organism &amp; Transmission</p>
+  <div style="position:absolute; top:64px; left:40px; width:60px; height:3px; background:#e9c46a; border-radius:2px;"></div>
+
+  <div style="position:absolute; top:90px; left:40px; right:40px; bottom:50px; display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+    <div style="background:#f8f9fa; border-left:4px solid #2a9d8f; padding:18px;">
+      <p style="font-family:'Times New Roman',serif; font-size:18px; font-weight:700; color:#264653; margin:0 0 10px 0;">Causative Organism</p>
+      <p style="font-family:'Times New Roman',serif; font-size:14px; color:#264653; margin:0; line-height:1.6;">
+        Toxoplasmosis is caused by the intracellular parasite <b>Toxoplasma gondii</b>; cats and their prey are the definitive hosts.
+      </p>
+      <svg style="margin-top:12px;" width="60" height="60" aria-hidden="true">
+        <circle cx="30" cy="30" r="25" fill="none" stroke="#2a9d8f" stroke-width="2" opacity="0.6"/>
+        <circle cx="30" cy="30" r="12" fill="none" stroke="#e9c46a" stroke-width="2" opacity="0.8"/>
+        <circle cx="30" cy="30" r="4" fill="#e76f51" opacity="0.7"/>
+      </svg>
+    </div>
+    <div style="background:#f8f9fa; border-left:4px solid #e76f51; padding:18px;">
+      <p style="font-family:'Times New Roman',serif; font-size:18px; font-weight:700; color:#264653; margin:0 0 10px 0;">Route of Transmission</p>
+      <p style="font-family:'Times New Roman',serif; font-size:14px; color:#264653; margin:0 0 8px 0; line-height:1.6;">
+        The primary route of transmission to humans is ingestion of tissue cysts from soil, food or water contaminated by cat feces.
+      </p>
+      <p style="font-family:'Times New Roman',serif; font-size:14px; color:#e76f51; margin:0; line-height:1.6;">
+        <b>Pregnancy transmission:</b> Roughly one-third of women who contract T. gondii during pregnancy transmit the parasite to the fetus, with a 65% risk of transmission if maternal infection is acquired in the third trimester.
+      </p>
+    </div>
+  </div>
+  
+  <div style="position:absolute; bottom:55px; left:40px; right:40px; display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px;">
+    <div style="background:#264653; color:#ffffff; padding:10px 14px; border-radius:4px; text-align:center;">
+      <p style="font-family:'Times New Roman',serif; font-size:13px; margin:0;">Definitive hosts: <b>Cats &amp; their prey</b></p>
+    </div>
+    <div style="background:#264653; color:#ffffff; padding:10px 14px; border-radius:4px; text-align:center;">
+      <p style="font-family:'Times New Roman',serif; font-size:13px; margin:0;">Transmission: <b>Ingestion of tissue cysts</b></p>
+    </div>
+    <div style="background:#264653; color:#ffffff; padding:10px 14px; border-radius:4px; text-align:center;">
+      <p style="font-family:'Times New Roman',serif; font-size:13px; margin:0;">3rd trimester risk: <b>65% transmission</b></p>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; width:40px; height:24px;" aria-hidden="true">
+      <rect x="0" y="2" width="40" height="20" rx="10" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="16" text-anchor="middle" fill="#ffffff" font-family="'Times New Roman',serif" font-size="12" font-weight="700">04</text>
+    </svg>
+</div>
+</div>
+</body>
+</html>

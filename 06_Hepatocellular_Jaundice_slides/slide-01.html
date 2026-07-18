@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cover — Hepatocellular Jaundice</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;position:relative;background:#f8f9fa;font-family:'Times New Roman',Times,serif;color:#1a1a2e;overflow:hidden;">
+<div style="position:absolute;top:0;left:0;width:960px;height:540px;background:#264653;z-index:0;"></div>
+<div style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:1;background:radial-gradient(ellipse at 70% 50%, rgba(42,157,143,0.3) 0%, transparent 70%);"></div>
+<svg aria-hidden="true" style="position:absolute;top:0;left:0;z-index:2;" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="12" height="540" fill="#e9c46a"/>
+  <circle cx="820" cy="80" r="120" fill="none" stroke="#2a9d8f" stroke-width="1" opacity="0.3"/>
+  <circle cx="820" cy="80" r="180" fill="none" stroke="#2a9d8f" stroke-width="0.5" opacity="0.15"/>
+  <rect x="70" y="130" width="80" height="5" rx="2.5" fill="#e9c46a"/>
+  <line x1="70" y1="400" x2="400" y2="400" stroke="#2a9d8f" stroke-width="0.5" opacity="0.3"/>
+</svg>
+<p style="position:absolute;top:100px;left:70px;z-index:5;font-family:'Times New Roman',Times,serif;font-size:28px;color:#e9c46a;font-weight:400;letter-spacing:2px;opacity:0.9;">TROPICAL SUPPORT 41</p>
+<p style="position:absolute;top:150px;left:70px;z-index:5;font-family:'Times New Roman',Times,serif;font-size:48px;color:#ffffff;font-weight:700;line-height:1.1;">Hepatocellular<br><span style="color:#e9c46a;">Jaundice</span></p>
+<p style="position:absolute;top:280px;left:70px;z-index:5;font-family:'Times New Roman',Times,serif;font-size:18px;color:#2a9d8f;font-weight:400;">Gastroenterology Module — Tropical Medicine</p>
+<p style="position:absolute;top:320px;left:70px;z-index:5;font-family:'Times New Roman',Times,serif;font-size:14px;color:rgba(255,255,255,0.6);">Dr. Ayman Saker — Comprehensive Review with Clinical Management Guidelines</p>
+<svg aria-hidden="true" style="position:absolute;bottom:40px;right:50px;z-index:5;" width="60" height="60" viewBox="0 0 60 60">
+  <circle cx="30" cy="30" r="28" fill="none" stroke="#e9c46a" stroke-width="1.5" opacity="0.5"/>
+  <text x="30" y="35" text-anchor="middle" fill="#e9c46a" font-size="14" font-weight="700" font-family:'Times New Roman',Times,serif;" opacity="0.8">06</text>
+</svg>
+</div>
+</body>
+</html>

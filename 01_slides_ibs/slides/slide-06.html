@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script></head><body>
+<div class="slide-content" style="background:#ffffff; overflow:hidden;">
+  <svg style="position:absolute; top:0; left:0; width:960px; height:80px;" aria-hidden="true">
+    <rect x="0" y="0" width="960" height="80" fill="#1b2838"/>
+    <rect x="0" y="80" width="960" height="4" fill="#1565C0"/>
+  </svg>
+  <div style="position:absolute; top:20px; left:60px; z-index:10;">
+    <p style="font-family:'Times New Roman',serif; font-size:28px; font-weight:700; color:#ffffff; margin:0;">IBS — Alarm Features &amp; Diagnosis</p>
+  </div>
+  <div style="position:absolute; top:100px; left:60px; width:840px; z-index:10;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+      <div>
+        <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#E53935; margin:0 0 6px 0;">Alarm Features (NOT Consistent with IBS)</p>
+        <div style="background:#f0f4f8; padding:12px; border-radius:8px; border-left:4px solid #E53935; margin-bottom:10px;">
+          <ul style="margin:0; padding-left:16px;">
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:3px 0;">Onset in middle age or older</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:3px 0;">Acute symptoms (IBS is chronic)</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:3px 0;">Progressive symptoms</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:3px 0;"><strong>Nocturnal symptoms</strong></li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:3px 0;">Anorexia or weight loss</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:3px 0;">Fever</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:3px 0;">Rectal bleeding</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:3px 0;">Painless diarrhea</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:3px 0;">Steatorrhea</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:3px 0;">History of gluten intolerance</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#1565C0; margin:0 0 6px 0;">Rome III Diagnostic Criteria</p>
+        <div style="background:#f0f4f8; padding:12px; border-radius:8px; border-left:4px solid #1565C0; margin-bottom:10px;">
+          <p style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:0 0 6px 0;">Recurrent abdominal pain/discomfort ≥3 days/month for 3 months, with ≥2 of:</p>
+          <ul style="margin:0; padding-left:16px;">
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:3px 0;">Relieved by defecation</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:3px 0;">Onset associated with change in stool frequency</li>
+            <li style="font-family:'Times New Roman',serif; font-size:11px; color:#1b2838; margin:3px 0;">Onset associated with change in stool form/appearance</li>
+          </ul>
+          <p style="font-family:'Times New Roman',serif; font-size:11px; font-weight:700; color:#1b2838; margin:6px 0 4px 0;">Supporting symptoms:</p>
+          <ul style="margin:0; padding-left:16px;">
+            <li style="font-family:'Times New Roman',serif; font-size:10px; color:#1b2838; margin:2px 0;">Altered stool frequency, form, passage (straining/urgency)</li>
+            <li style="font-family:'Times New Roman',serif; font-size:10px; color:#1b2838; margin:2px 0;">Mucorrhea, abdominal bloating/distention</li>
+          </ul>
+        </div>
+        <p style="font-family:'Times New Roman',serif; font-size:12px; color:#1b2838; background:#fff8e1; padding:10px; border-radius:6px; border-left:3px solid #FFC107; margin:0;">ACG does not recommend lab testing or imaging in patients &lt;50 years with typical IBS symptoms and without alarm features (weight loss, iron deficiency anemia, family history of IBD, celiac, colorectal cancer).</p>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:100;" width="40" height="40" aria-hidden="true">
+  <circle cx="20" cy="20" r="18" fill="#1b2838" stroke="#1565C0" stroke-width="2"/>
+  <text x="20" y="25" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="16" font-weight="bold">06</text>
+</svg>
+</div>
+</body></html>

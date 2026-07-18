@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>html,body{margin:0;padding:0;width:100%;height:100%;overflow:hidden;display:flex;justify-content:center;align-items:center;background:#000;}.slide-content{width:960px;height:540px;position:relative;transform-origin:center center;}</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960,sy=window.innerHeight/540,sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script></head><body>
+<div class="slide-content" style="background:#f0f7f7;overflow:hidden;">
+<div style="position:absolute;top:0;left:0;right:0;height:52px;background:#264653;z-index:2;"></div><p style="position:absolute;top:10px;left:50px;font-size:20px;font-weight:700;color:#ffffff;z-index:10;">Peutz-Jeghers Syndrome</p>
+<div style="margin-top:62px;padding:0 50px;z-index:5;">
+<div style="background:#ffffff;padding:10px 16px;border-radius:8px;border-left:4px solid #e76f51;">
+<p style="font-size:13px;color:#264653;line-height:1.5;">Mucocutaneous pigmentation + GI polyps. <span style="font-weight:700;">Autosomal dominant</span> inheritance.</p></div>
+</div>
+<div style="margin-top:12px;padding:0 40px;display:grid;grid-template-columns:1fr 1fr;gap:16px;z-index:5;">
+<div>
+<p style="font-size:15px;font-weight:700;color:#e76f51;margin-bottom:8px;">Clinical Features</p>
+<div style="background:#ffffff;padding:10px 14px;border-radius:8px;">
+<div style="display:flex;align-items:flex-start;margin-bottom:8px;">
+<div style="min-width:8px;height:8px;background:#e76f51;border-radius:50%;margin-top:5px;margin-right:10px;"></div>
+<div><p style="font-size:12px;font-weight:600;color:#e76f51;margin-bottom:2px;">Pigmentation</p>
+<p style="font-size:11px;color:#264653;">Circumoral <span style="font-weight:700;">(95%)</span>, hands (70%), feet (60%). Brown buccal pigment is characteristic.</p></div></div>
+<div style="display:flex;align-items:flex-start;margin-bottom:8px;">
+<div style="min-width:8px;height:8px;background:#f4a261;border-radius:50%;margin-top:5px;margin-right:10px;"></div>
+<div><p style="font-size:12px;font-weight:600;color:#f4a261;margin-bottom:2px;">GI Polyps</p>
+<p style="font-size:11px;color:#264653;">Hamartomas — anywhere in GI tract, most frequent in <span style="font-weight:700;">small bowel</span>. May bleed.</p></div></div>
+<div style="display:flex;align-items:flex-start;">
+<div style="min-width:8px;height:8px;background:#264653;border-radius:50%;margin-top:5px;margin-right:10px;"></div>
+<div><p style="font-size:12px;font-weight:600;color:#264653;margin-bottom:2px;">Intussusception</p>
+<p style="font-size:11px;color:#264653;">Occurs in <span style="font-weight:700;">50%</span> of patients → bowel obstruction</p></div></div>
+</div>
+</div>
+<div>
+<p style="font-size:15px;font-weight:700;color:#2a9d8f;margin-bottom:8px;">Treatment</p>
+<div style="background:#ffffff;padding:10px 14px;border-radius:8px;margin-bottom:8px;">
+<ul style="margin:0;padding-left:16px;">
+<li style="font-size:12px;color:#264653;margin-bottom:4px;"><span style="font-weight:700;">Endoscopic polypectomy</span> — first line</li>
+<li style="font-size:12px;color:#264653;margin-bottom:4px;">Bowel resection avoided — only for gangrenous intussusception</li>
+<li style="font-size:12px;color:#264653;">Yearly <span style="font-weight:700;">pan-endoscopy</span> — high malignancy risk</li>
+</ul></div>
+<div style="background:#e76f51;padding:10px 14px;border-radius:8px;">
+<p style="font-size:12px;color:#ffffff;line-height:1.4;"><span style="font-weight:600;">Malignancy Risk:</span> Adenocarcinoma can develop. Regular surveillance is essential.</p></div>
+</div>
+</div>
+<svg style="position:absolute;right:28px;bottom:20px;z-index:50;" width="44" height="26" viewBox="0 0 44 26" aria-hidden="true"><rect x="0" y="0" width="44" height="26" rx="13" fill="#264653" opacity="0.85"/><text x="22" y="18" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="13" font-weight="600">13</text></svg>
+</div></body></html>

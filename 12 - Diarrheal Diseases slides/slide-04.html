@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+<div style="position:absolute; inset:0; background:#ffffff;">
+  <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:#2a9d8f;"></div>
+  <p style="position:absolute; top:20px; left:40px; font-family:'Times New Roman',serif; font-size:24px; font-weight:700; color:#264653; margin:0;">Definition &amp; Classification of Diarrhea</p>
+  <div style="position:absolute; top:54px; left:40px; width:60px; height:3px; background:#e9c46a; border-radius:2px;"></div>
+
+  <div style="position:absolute; top:72px; left:40px; right:40px; bottom:46px; display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+    <div style="background:#f8f9fa; padding:14px; border-radius:4px; border-top:3px solid #2a9d8f;">
+      <p style="font-family:'Times New Roman',serif; font-size:15px; font-weight:700; color:#264653; margin:0 0 6px 0;">Definition (WHO)</p>
+      <p style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:0; line-height:1.5;">
+        Diarrhea is defined by the World Health Organization as having <b>3 or more loose or liquid stools per day</b>, or as having more stools than is normal for that person.
+      </p>
+      <ul style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:6px 0 0 0; padding-left:16px; line-height:1.5;">
+        <li>Usually a symptom of infection in GIT</li>
+        <li>Can be caused by bacterial, viral and parasitic organisms</li>
+        <li>More dangerous in extremes of age</li>
+        <li>For adults: stool weight <b>&gt;200 g/d</b> can be considered diarrheal</li>
+      </ul>
+    </div>
+    <div style="background:#f8f9fa; padding:14px; border-radius:4px; border-top:3px solid #e76f51;">
+      <p style="font-family:'Times New Roman',serif; font-size:15px; font-weight:700; color:#264653; margin:0 0 6px 0;">Classification by Duration</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:0; padding-left:18px; line-height:1.8;">
+        <li><b>Acute:</b> &lt;2 weeks</li>
+        <li><b>Persistent:</b> 2–4 weeks</li>
+        <li><b>Chronic:</b> &gt;4 weeks</li>
+      </ul>
+      <p style="font-family:'Times New Roman',serif; font-size:15px; font-weight:700; color:#264653; margin:12px 0 6px 0;">Classification by Blood</p>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+        <div style="background:#ffffff; padding:8px; border-radius:4px; border-left:3px solid #e76f51;">
+          <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#e76f51; margin:0 0 3px 0;">Bloody</p>
+          <ul style="font-family:'Times New Roman',serif; font-size:11px; color:#264653; margin:0; padding-left:14px; line-height:1.4;">
+            <li>Must evaluate ALL causes</li>
+            <li>Must do: C&amp;S + Sigmoidoscopy</li>
+            <li>May need CT</li>
+          </ul>
+        </div>
+        <div style="background:#ffffff; padding:8px; border-radius:4px; border-left:3px solid #2a9d8f;">
+          <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#2a9d8f; margin:0 0 3px 0;">Non-bloody</p>
+          <ul style="font-family:'Times New Roman',serif; font-size:11px; color:#264653; margin:0; padding-left:14px; line-height:1.4;">
+            <li>Most are viral causes</li>
+            <li>Most resolve without treatment</li>
+            <li>If fever, pus, dehydration → evaluate</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; width:40px; height:24px;" aria-hidden="true">
+      <rect x="0" y="2" width="40" height="20" rx="10" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="16" text-anchor="middle" fill="#ffffff" font-family="'Times New Roman',serif" font-size="12" font-weight="700">04</text>
+    </svg>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; color:#264653; position:relative; overflow:hidden; font-family:'Times New Roman',serif;">
+
+<svg style="position:absolute; top:20px; left:50px; right:50px; z-index:1;" aria-hidden="true">
+<line x1="0" y1="0" x2="860" y2="0" stroke="#2a9d8f" stroke-width="3" opacity="0.5"/>
+</svg>
+<p style="position:absolute; top:28px; left:50px; font-size:13px; color:#2a9d8f; font-family:'Times New Roman',serif; margin:0; z-index:10; letter-spacing:1px;">PEDIATRIC GASTRO-ENTEROLOGY, HEPATOLOGY &amp; INFECTIOUS DISEASES</p>
+
+
+<p style="position:absolute; top:20px; left:50px; font-size:26px; font-weight:700; color:#264653; font-family:'Times New Roman',serif; margin:0; z-index:10;">HAV Vaccine — Detailed Information</p>
+<div style="position:absolute; top:60px; left:50px; width:80px; height:4px; background:#2a9d8f; border-radius:2px; z-index:1;"></div>
+<div style="position:absolute; top:76px; left:50px; right:50px; bottom:56px; overflow:hidden; font-size:13px; line-height:1.45; color:#264653;">
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:0 0 10px 0;">
+  <div style="background:rgba(42,157,143,0.1); padding:10px; border-radius:6px;">
+    <p style="margin:0 0 4px 0; font-size:14px; font-weight:700; color:#2a9d8f;">Vaccine Type</p>
+    <p style="margin:0; font-size:12px;">Inactivated (killed) virus vaccine</p>
+  </div>
+  <div style="background:rgba(233,196,106,0.12); padding:10px; border-radius:6px;">
+    <p style="margin:0 0 4px 0; font-size:14px; font-weight:700; color:#264653;">Route &amp; Dose</p>
+    <p style="margin:0; font-size:12px;">Intramuscular (IM), 0.5 ml per dose</p>
+  </div>
+  <div style="background:rgba(244,162,97,0.12); padding:10px; border-radius:6px;">
+    <p style="margin:0 0 4px 0; font-size:14px; font-weight:700; color:#f4a261;">Schedule</p>
+    <p style="margin:0; font-size:12px;">2 doses with 6 months interval</p>
+  </div>
+  <div style="background:rgba(231,111,81,0.1); padding:10px; border-radius:6px;">
+    <p style="margin:0 0 4px 0; font-size:14px; font-weight:700; color:#e76f51;">Indication</p>
+    <p style="margin:0; font-size:12px;">Travelers to endemic areas, high-risk groups</p>
+  </div>
+</div>
+
+<p style="font-size:14px; font-weight:700; color:#2a9d8f; margin:0 0 4px 0;">Key Points</p>
+<p style="font-size:12px; margin:0;">• Provides active immunization against Hepatitis A</p>
+<p style="font-size:12px; margin:2px 0 0 0;">• Safe and well-tolerated in children &gt;1 year of age</p>
+<p style="font-size:12px; margin:2px 0 0 0;">• Seroprotection rate: &gt;95% after 2 doses</p>
+<p style="font-size:12px; margin:2px 0 0 0;">• No risk of transmission (inactivated virus)</p>
+<p style="font-size:12px; margin:2px 0 0 0;">• Can be given simultaneously with other vaccines</p>
+
+</div>
+
+<svg style="position:absolute; right:32px; bottom:24px; width:40px; height:32px; z-index:100;" aria-hidden="true">
+<rect x="0" y="0" width="40" height="32" rx="4" fill="#2a9d8f" opacity="0.85"/>
+<text x="20" y="22" text-anchor="middle" font-family="Times New Roman,serif" font-size="14" font-weight="700" fill="#ffffff">14</text>
+</svg>
+</div>
+</body>
+</html>

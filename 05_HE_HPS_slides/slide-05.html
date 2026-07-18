@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HE - Disease Classification</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;position:relative;background:#ffffff;font-family:'Times New Roman',Times,serif;color:#1a1a2e;overflow:hidden;">
+<div style="position:absolute;top:0;left:0;width:960px;height:540px;background:#ffffff;z-index:0;"></div>
+<svg aria-hidden="true" style="position:absolute;top:0;left:0;z-index:1;" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="8" height="540" fill="#264653"/>
+</svg>
+<p style="position:absolute;top:20px;left:44px;z-index:5;font-size:32px;font-weight:700;color:#264653;">HE — Disease Classification</p>
+<div style="position:absolute;top:64px;left:44px;width:80px;height:3px;z-index:5;background:#2a9d8f;border-radius:1.5px;"></div>
+
+<div style="position:absolute;top:88px;left:44px;right:44px;z-index:5;">
+  <p style="font-size:16px;font-weight:700;color:#264653;margin:0 0 8px 0;">Classification by Type of Liver Dysfunction:</p>
+  <ul style="margin:0;padding-left:20px;font-size:14px;color:#1a1a2e;">
+    <li style="margin-bottom:6px;"><strong>Type A</strong> — Acute liver failure: develops rapidly in patients with no prior history of liver disease who develop massive hepatic necrosis.</li>
+    <li style="margin-bottom:6px;"><strong>Type B</strong> — Porto-systemic bypass: occurs in patients with porto-systemic shunts and no intrinsic hepatocellular disease (e.g., congenital porto-systemic shunt, TIPS).</li>
+    <li style="margin-bottom:6px;"><strong>Type C</strong> — Cirrhosis and portal hypertension: the most common form, occurring in patients with chronic liver disease and cirrhosis.</li>
+  </ul>
+</div>
+
+<div style="position:absolute;top:200px;left:44px;right:44px;z-index:5;">
+  <p style="font-size:16px;font-weight:700;color:#264653;margin:0 0 8px 0;">Severity Grading (West Haven Criteria):</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div style="background:#f8f9fa;padding:10px 14px;border-radius:4px;">
+      <p style="margin:0;font-size:13px;"><strong style="color:#2a9d8f;">Grade 0</strong> — Minimal HE: no clinical symptoms, subtle cognitive deficits on psychometric testing</p>
+    </div>
+    <div style="background:#f8f9fa;padding:10px 14px;border-radius:4px;">
+      <p style="margin:0;font-size:13px;"><strong style="color:#f4a261;">Grade 1</strong> — Mild: trivial lack of awareness, euphoria or anxiety, shortened attention span, impaired addition/subtraction</p>
+    </div>
+    <div style="background:#f8f9fa;padding:10px 14px;border-radius:4px;">
+      <p style="margin:0;font-size:13px;"><strong style="color:#f4a261;">Grade 2</strong> — Moderate: lethargy or apathy, minimal disorientation, inappropriate behavior, slurred speech, asterixis</p>
+    </div>
+    <div style="background:#f8f9fa;padding:10px 14px;border-radius:4px;">
+      <p style="margin:0;font-size:13px;"><strong style="color:#e76f51;">Grade 3</strong> — Severe: somnolence to semi-stupor, gross disorientation, confusion, incomprehensible speech, hyperreflexia</p>
+    </div>
+    <div style="background:#f8f9fa;padding:10px 14px;border-radius:4px;">
+      <p style="margin:0;font-size:13px;"><strong style="color:#e76f51;">Grade 4</strong> — Coma: unconscious, no response to verbal or painful stimuli, decerebrate or decorticate posturing</p>
+    </div>
+  </div>
+</div>
+<svg aria-hidden="true" style="position:absolute;right:32px;bottom:24px;z-index:20;" width="40" height="28" viewBox="0 0 40 28">
+      <rect x="0" y="0" width="40" height="28" rx="4" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="19" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" font-family: 'Times New Roman', Times, serif;">05</text>
+    </svg>
+
+</div>
+</body>
+</html>

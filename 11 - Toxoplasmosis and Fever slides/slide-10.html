@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+<div style="position:absolute; inset:0; background:#ffffff;">
+  <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:#2a9d8f;"></div>
+  <p style="position:absolute; top:24px; left:40px; font-family:'Times New Roman',serif; font-size:28px; font-weight:700; color:#264653; margin:0;">Fever: Temperature Measurement Details</p>
+  <div style="position:absolute; top:64px; left:40px; width:60px; height:3px; background:#e9c46a; border-radius:2px;"></div>
+
+  <div style="position:absolute; top:90px; left:40px; right:40px; bottom:50px; display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+    <div style="background:#f8f9fa; padding:18px; border-radius:4px; border-top:3px solid #2a9d8f;">
+      <p style="font-family:'Times New Roman',serif; font-size:16px; font-weight:700; color:#264653; margin:0 0 10px 0;">Site Temperature Differences</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:14px; color:#264653; margin:0; padding-left:18px; line-height:2.0;">
+        <li><b>Skin temperature</b> is 0.4 °C (0.7°F) <b>lower</b> than oral temperature</li>
+        <li><b>Rectal or eardrum temperature</b> is 0.4 °C (0.7°F) <b>higher</b> than oral temperature</li>
+        <li><b>Oral temperature</b> is the reference and fever is diagnosed when it exceeds <b>(37.8°C)</b></li>
+      </ul>
+      
+      <div style="margin-top:14px; padding:12px; background:#ffffff; border-radius:4px; border:1px dashed #2a9d8f;">
+        <p style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:0; text-align:center;">
+          <b>Summary:</b> Oral (ref) → Fever &gt;37.8°C &nbsp;|&nbsp; Rectal &gt;38°C &nbsp;|&nbsp; Hyperpyrexia &gt;40°C
+        </p>
+      </div>
+    </div>
+    <div style="background:#f8f9fa; padding:18px; border-radius:4px; border-top:3px solid #f4a261;">
+      <p style="font-family:'Times New Roman',serif; font-size:16px; font-weight:700; color:#264653; margin:0 0 10px 0;">Why Fever Becomes More Pronounced at Night?</p>
+      <p style="font-family:'Times New Roman',serif; font-size:14px; color:#264653; margin:0; line-height:1.6;">
+        Cortisol is closely linked to your immune system function. Cortisol is <b>higher during the day</b>, and these higher levels suppress your immune activity to a large degree. When cortisol levels go down at night, your immune system is more active in fighting illness or infection. This is why fevers spike at night.
+      </p>
+      <svg style="margin-top:10px;" width="100%" height="40" aria-hidden="true">
+        <rect x="40" y="5" width="200" height="12" rx="6" fill="#e9c46a" opacity="0.4"/>
+        <text x="140" y="15" text-anchor="middle" fill="#264653" font-family="'Times New Roman',serif" font-size="10">Day — High Cortisol</text>
+        <rect x="40" y="25" width="100" height="12" rx="6" fill="#e76f51" opacity="0.5"/>
+        <text x="90" y="35" text-anchor="middle" fill="#264653" font-family="'Times New Roman',serif" font-size="10">Night — Fever Spike</text>
+      </svg>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; width:40px; height:24px;" aria-hidden="true">
+      <rect x="0" y="2" width="40" height="20" rx="10" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="16" text-anchor="middle" fill="#ffffff" font-family="'Times New Roman',serif" font-size="12" font-weight="700">10</text>
+    </svg>
+</div>
+</div>
+</body>
+</html>

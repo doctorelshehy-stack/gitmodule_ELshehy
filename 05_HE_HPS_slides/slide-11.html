@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HE - Physical Examination</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;position:relative;background:#ffffff;font-family:'Times New Roman',Times,serif;color:#1a1a2e;overflow:hidden;">
+<div style="position:absolute;top:0;left:0;width:960px;height:540px;background:#ffffff;z-index:0;"></div>
+<svg aria-hidden="true" style="position:absolute;top:0;left:0;z-index:1;" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="8" height="540" fill="#264653"/>
+</svg>
+<p style="position:absolute;top:20px;left:44px;z-index:5;font-size:32px;font-weight:700;color:#264653;">HE — Physical Examination</p>
+<div style="position:absolute;top:64px;left:44px;width:80px;height:3px;z-index:5;background:#2a9d8f;border-radius:1.5px;"></div>
+
+<div style="position:absolute;top:90px;left:44px;right:44px;z-index:5;">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+    <div style="background:#f8f9fa;padding:16px;border-radius:6px;border-top:3px solid #264653;">
+      <p style="margin:0 0 8px 0;font-size:15px;font-weight:700;color:#264653;">Stigmata of Chronic Liver Disease</p>
+      <p style="margin:0 0 6px 0;font-size:13px;color:#1a1a2e;">Physical signs indicating underlying cirrhosis:</p>
+      <ul style="margin:0;padding-left:16px;font-size:13px;color:#1a1a2e;">
+        <li style="margin-bottom:3px;">Jaundice (yellow discoloration of skin and sclera)</li>
+        <li style="margin-bottom:3px;">Muscle wasting and sarcopenia</li>
+        <li style="margin-bottom:3px;">Gynecomastia (in male patients)</li>
+        <li style="margin-bottom:3px;">Ascites (abdominal distension with shifting dullness)</li>
+        <li style="margin-bottom:3px;">Spider angiomata (spider nevi on chest and upper body)</li>
+        <li style="margin-bottom:3px;">Leg edema (pitting edema of lower extremities)</li>
+        <li style="margin-bottom:3px;">Splenomegaly (palpable spleen)</li>
+      </ul>
+    </div>
+    <div style="background:#f8f9fa;padding:16px;border-radius:6px;border-top:3px solid #2a9d8f;">
+      <p style="margin:0 0 8px 0;font-size:15px;font-weight:700;color:#2a9d8f;">Neurological Examination</p>
+      <p style="margin:0 0 6px 0;font-size:13px;color:#1a1a2e;">Characteristic neurological findings:</p>
+      <ul style="margin:0;padding-left:16px;font-size:13px;color:#1a1a2e;">
+        <li style="margin-bottom:3px;"><strong>Fetor Hepaticus:</strong> A peculiar musty smell of the breath, caused by gut-derived methanethiol (a sulfur-containing compound not cleared by the failing liver).</li>
+        <li style="margin-bottom:3px;"><strong>Asterixis:</strong> Bilateral asynchronous flapping tremor of the outstretched hands due to hyperactive deep tendon reflexes — manifestation of stage 2 HE (also called "liver flap").</li>
+        <li style="margin-bottom:3px;">Hyperreflexia and hypertonia</li>
+        <li style="margin-bottom:3px;">Clonus may be present in comatose patients</li>
+        <li style="margin-bottom:3px;">Disorientation to time, place, and person</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div style="position:absolute;top:340px;left:44px;right:44px;z-index:5;">
+  <div style="background:#f8f9fa;padding:10px 16px;border-radius:4px;border:1px solid #2a9d8f;">
+    <p style="margin:0;font-size:13px;color:#1a1a2e;"><strong>Neurological Assessment Tools:</strong> The West Haven Criteria (grades 0-4) is the most widely used clinical grading system. The Glasgow Coma Scale is useful for objective assessment of consciousness level. For minimal HE, specialized psychometric testing (PHES battery, EncephalApp Stroop test) is required.</p>
+  </div>
+</div>
+<svg aria-hidden="true" style="position:absolute;right:32px;bottom:24px;z-index:20;" width="40" height="28" viewBox="0 0 40 28">
+      <rect x="0" y="0" width="40" height="28" rx="4" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="19" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" font-family: 'Times New Roman', Times, serif;">11</text>
+    </svg>
+
+</div>
+</body>
+</html>

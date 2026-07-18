@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HE - Pathology & Pathogenesis</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;position:relative;background:#ffffff;font-family:'Times New Roman',Times,serif;color:#1a1a2e;overflow:hidden;">
+<div style="position:absolute;top:0;left:0;width:960px;height:540px;background:#ffffff;z-index:0;"></div>
+<svg aria-hidden="true" style="position:absolute;top:0;left:0;z-index:1;" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="8" height="540" fill="#264653"/>
+</svg>
+<p style="position:absolute;top:20px;left:44px;z-index:5;font-size:32px;font-weight:700;color:#264653;">HE — Pathology / Pathogenesis</p>
+<div style="position:absolute;top:64px;left:44px;width:80px;height:3px;z-index:5;background:#2a9d8f;border-radius:1.5px;"></div>
+
+<div style="position:absolute;top:90px;left:44px;right:44px;z-index:5;">
+  <div style="background:#f8f9fa;padding:16px 20px;border-radius:6px;border-left:4px solid #264653;margin-bottom:14px;">
+    <p style="margin:0;font-size:14px;color:#1a1a2e;"><strong>Pathophysiological Sequence:</strong> Nitrogenous substances derived from the gut adversely affect brain function. These compounds gain access to the systemic circulation as a result of decreased hepatic function or portal-systemic shunts. Once in brain tissue, they produce alterations of neurotransmission that affect consciousness and behavior, leading to motor dysfunction and extrapyramidal symptoms exhibited in HE.</p>
+  </div>
+</div>
+
+<div style="position:absolute;top:190px;left:44px;right:44px;z-index:5;">
+  <p style="font-size:16px;font-weight:700;color:#264653;margin:0 0 10px 0;">Key Pathogenic Mechanisms:</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div style="background:#f8f9fa;padding:12px 16px;border-radius:6px;">
+      <p style="margin:0 0 4px 0;font-size:13px;font-weight:700;color:#2a9d8f;">Ammonia Hypothesis</p>
+      <p style="margin:0;font-size:12px;color:#1a1a2e;">Ammonia crosses the blood-brain barrier, is converted to glutamine in astrocytes, causing osmotic swelling and cerebral edema. Impairs postsynaptic inhibition and alters excitatory/inhibitory neurotransmission.</p>
+    </div>
+    <div style="background:#f8f9fa;padding:12px 16px;border-radius:6px;">
+      <p style="margin:0 0 4px 0;font-size:13px;font-weight:700;color:#f4a261;">GABAergic Tone</p>
+      <p style="margin:0;font-size:12px;color:#1a1a2e;">Increased GABAergic tone due to elevated endogenous benzodiazepine receptor ligands. The principal neuro-inhibitory neurotransmitter GABA is increased in the CSF of encephalopathic patients.</p>
+    </div>
+    <div style="background:#f8f9fa;padding:12px 16px;border-radius:6px;">
+      <p style="margin:0 0 4px 0;font-size:13px;font-weight:700;color:#e76f51;">Manganese Deposition</p>
+      <p style="margin:0;font-size:12px;color:#1a1a2e;">Manganese accumulates in the basal ganglia (pallidum) due to decreased biliary excretion, causing parkinsonian-like extrapyramidal symptoms and contributing to neurodegeneration.</p>
+    </div>
+    <div style="background:#f8f9fa;padding:12px 16px;border-radius:6px;">
+      <p style="margin:0 0 4px 0;font-size:13px;font-weight:700;color:#2a9d8f;">Oxidative & Inflammatory</p>
+      <p style="margin:0;font-size:12px;color:#1a1a2e;">Oxygen free radicals, circulating opioid peptides, and nitric oxide contribute to neuronal dysfunction. Systemic inflammation synergistically worsens ammonia neurotoxicity.</p>
+    </div>
+  </div>
+</div>
+
+<div style="position:absolute;top:400px;left:44px;right:44px;z-index:5;">
+  <div style="background:#fff3cd;padding:8px 14px;border-radius:4px;border:1px solid #ffc107;">
+    <p style="margin:0;font-size:12px;color:#856404;"><strong>Key Point:</strong> The pathogenesis of HE is multifactorial — no single toxin explains all features. Multiple synergistic mechanisms contribute to the neuropsychiatric manifestations.</p>
+  </div>
+</div>
+<svg aria-hidden="true" style="position:absolute;right:32px;bottom:24px;z-index:20;" width="40" height="28" viewBox="0 0 40 28">
+      <rect x="0" y="0" width="40" height="28" rx="4" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="19" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" font-family: 'Times New Roman', Times, serif;">08</text>
+    </svg>
+
+</div>
+</body>
+</html>

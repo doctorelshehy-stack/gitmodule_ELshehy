@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script></head><body>
+<div class="slide-content" style="background:#264653; overflow:hidden;">
+  <svg style="position:absolute; top:0; left:0; width:960px; height:540px;" aria-hidden="true">
+    <rect x="0" y="0" width="960" height="540" fill="#264653"/>
+    <circle cx="850" cy="100" r="200" fill="#2a9d8f" opacity="0.15"/>
+    <circle cx="120" cy="450" r="160" fill="#e9c46a" opacity="0.12"/>
+    <rect x="60" y="180" width="6" height="180" rx="3" fill="#2a9d8f"/>
+  </svg>
+  <div style="position:absolute; top:120px; left:100px; z-index:10;">
+    <p style="font-family:'Times New Roman',serif; font-size:56px; font-weight:700; color:#ffffff; margin:0; line-height:1.15;">GI Bleeding</p>
+    <p style="font-family:'Times New Roman',serif; font-size:56px; font-weight:700; color:#2a9d8f; margin:0; line-height:1.15;">Upper &amp; Lower</p>
+    <div style="width:120px; height:4px; background:#e9c46a; border-radius:2px; margin-top:20px;"></div>
+    <p style="font-family:'Times New Roman',serif; font-size:20px; color:#f4a261; margin-top:24px;">Gastroenterology — Internal Medicine</p>
+    <p style="font-family:'Times New Roman',serif; font-size:16px; color:#e9c46a; opacity:0.8; margin-top:8px;">Support 40 Internal GIT</p>
+  </div>
+  <div style="position:absolute; bottom:0; left:0; width:960px; height:6px; background:linear-gradient(to right, #2a9d8f, #e9c46a, #e76f51);"></div>
+</div>
+</body></html>

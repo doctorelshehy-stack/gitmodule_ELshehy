@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background: #f0f7f7; overflow:hidden;">
+  <!-- Header bar -->
+  <div style="position:absolute; top:0; left:0; right:0; height:60px; background:#264653; z-index:2;"></div>
+  <p style="position:absolute; top:14px; left:60px; font-size:22px; font-weight:700; color:#ffffff; z-index:10;">Investigations of GB Stones</p>
+
+  <!-- 3x2 card grid -->
+  <div style="position:absolute; top:76px; left:35px; right:35px; bottom:20px; display:grid; grid-template-columns:repeat(3, 1fr); grid-template-rows:auto auto; gap:12px; z-index:5;">
+
+    <!-- Row 1, Card 1: Ultrasonography -->
+    <div style="background:#ffffff; border-radius:8px; padding:12px 14px; border-top:4px solid #2a9d8f;">
+      <p style="font-size:15px; font-weight:700; color:#264653; margin-bottom:5px;">Ultrasonography</p>
+      <p style="font-size:11px; color:#2a9d8f; font-weight:600; margin-bottom:5px;">DEFINITIVE INVESTIGATION</p>
+      <p style="font-size:11px; color:#555; line-height:1.5;">
+        Visualizes radio-lucent &amp; radio-opaque stones, intrahepatic biliary dilatation, hepatic &amp; extrahepatic lesions
+      </p>
+      <div style="margin-top:6px; padding:3px 8px; background:#2a9d8f; border-radius:4px; display:inline-block;">
+        <span style="font-size:10px; color:#ffffff; font-weight:600;">95% sensitivity &amp; specificity</span>
+      </div>
+    </div>
+
+    <!-- Row 1, Card 2: Oral Cholecystogram -->
+    <div style="background:#ffffff; border-radius:8px; padding:12px 14px; border-top:4px solid #e9c46a;">
+      <p style="font-size:15px; font-weight:700; color:#264653; margin-bottom:5px;">Oral Cholecystogram</p>
+      <p style="font-size:11px; color:#555; line-height:1.5;">
+        Visualizes both radio-lucent and radio-opaque stones as multiple filling defects in contrast media
+      </p>
+    </div>
+
+    <!-- Row 1, Card 3: Plain X-ray -->
+    <div style="background:#ffffff; border-radius:8px; padding:12px 14px; border-top:4px solid #f4a261;">
+      <p style="font-size:15px; font-weight:700; color:#264653; margin-bottom:5px;">Plain X-ray</p>
+      <p style="font-size:11px; color:#555; line-height:1.5;">
+        Only 10% of gallstones are radio-opaque. Limited diagnostic value.
+      </p>
+    </div>
+
+    <!-- Row 2, Card 1: MRCP -->
+    <div style="background:#ffffff; border-radius:8px; padding:12px 14px; border-top:4px solid #e76f51;">
+      <p style="font-size:15px; font-weight:700; color:#264653; margin-bottom:5px;">MRCP</p>
+      <p style="font-size:11px; color:#555; line-height:1.5;">
+        Imaging of biliary tree with <span style="font-weight:700;">90% sensitivity &amp; specificity</span> compared to ERCP
+      </p>
+    </div>
+
+    <!-- Row 2, Card 2: ERCP -->
+    <div style="background:#ffffff; border-radius:8px; padding:12px 14px; border-top:4px solid #264653;">
+      <p style="font-size:15px; font-weight:700; color:#264653; margin-bottom:5px;">ERCP</p>
+      <p style="font-size:11px; color:#555; line-height:1.5;">
+        Diagnosis of stones &amp; obstructive lesions in CBD and pancreatic duct. Also therapeutic.
+      </p>
+    </div>
+
+    <!-- Row 2, Card 3: Multislice CT Abdomen -->
+    <div style="background:#ffffff; border-radius:8px; padding:12px 14px; border-top:4px solid #2a9d8f;">
+      <p style="font-size:15px; font-weight:700; color:#264653; margin-bottom:5px;">Multislice CT Abdomen</p>
+      <p style="font-size:11px; color:#555; line-height:1.5;">
+        Cross-sectional imaging for comprehensive evaluation of biliary system and complications
+      </p>
+    </div>
+
+  </div>
+
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:50;" width="48" height="28" viewBox="0 0 48 28" aria-hidden="true">
+  <rect x="0" y="0" width="48" height="28" rx="14" fill="#264653" opacity="0.85"/>
+  <text x="24" y="19" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="14" font-weight="600">7</text>
+</svg>
+</div>
+</body>
+</html>

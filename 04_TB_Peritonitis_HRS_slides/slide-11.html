@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HRS - Pathogenesis</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;position:relative;background:#f8f9fa;font-family: 'Times New Roman', Times, serif;color:#1a1a2e;overflow:hidden;">
+
+<div style="position:absolute;top:0;left:0;width:960px;height:540px;background:#ffffff;z-index:0;"></div>
+<svg aria-hidden="true" style="position:absolute;top:0;left:0;z-index:1;" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="960" height="6" fill="#264653"/>
+</svg>
+<p style="position:absolute;top:14px;left:60px;z-index:5;font-family: 'Times New Roman', Times, serif;font-size:13px;font-weight:700;color:#2a9d8f;letter-spacing:1px;">SECTION 02 — HEPATORENAL SYNDROME</p>
+<p style="position:absolute;top:19px;left:60px;z-index:5;font-family: 'Times New Roman', Times, serif;font-size:24px;font-weight:700;color:#264653;">Pathogenesis</p>
+<div style="position:absolute;top:76px;left:60px;width:60px;height:3px;z-index:5;background:#e9c46a;border-radius:1.5px;"></div>
+
+<!-- Pathogenesis text -->
+<div style="position:absolute;top:92px;left:60px;right:60px;z-index:5;background:#edf2f4;border-radius:6px;padding:8px 12px;">
+  <p style="font-family: 'Times New Roman', Times, serif;font-size:11px;color:#1a1a2e;margin:0;line-height:1.4;">Type 1 HRS can be precipitated by hypovolemia, GI bleeding, SBP, sepsis, large volume paracentesis, or receipt of nephrotoxic agents such as NSAIDs or radiographic contrast. Although the mechanism is unclear, patients develop renovascular vasoconstriction and alteration of intra-renal blood flow.</p>
+</div>
+
+<!-- SVG Pathogenesis Flowchart (from image transcription) -->
+<svg aria-hidden="true" style="position:absolute;top:150px;left:30px;z-index:5;" width="900" height="380" viewBox="0 0 900 380">
+  <!-- Portal HTN -->
+  <rect x="330" y="5" width="240" height="28" rx="6" fill="#264653"/>
+  <text x="450" y="24" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700" font-family: 'Times New Roman', Times, serif;>Portal Hypertension</text>
+
+  <line x1="450" y1="33" x2="450" y2="46" stroke="#2a9d8f" stroke-width="1.5"/>
+  <polygon points="446,44 450,51 454,44" fill="#2a9d8f"/>
+
+  <!-- Vasodilators -->
+  <rect x="260" y="48" width="380" height="28" rx="6" fill="#2a9d8f"/>
+  <text x="450" y="67" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="600" font-family: 'Times New Roman', Times, serif;>Release of Vasodilators (e.g. NO) by Splanchnic Vasculature</text>
+
+  <line x1="450" y1="76" x2="450" y2="89" stroke="#2a9d8f" stroke-width="1.5"/>
+  <polygon points="446,87 450,94 454,87" fill="#2a9d8f"/>
+
+  <!-- Splanchnic vasodilation -->
+  <rect x="300" y="90" width="300" height="28" rx="6" fill="#f4a261"/>
+  <text x="450" y="109" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="600" font-family: 'Times New Roman', Times, serif;>Splanchnic Vasodilation</text>
+
+  <line x1="450" y1="118" x2="450" y2="131" stroke="#f4a261" stroke-width="1.5"/>
+  <polygon points="446,129 450,136 454,129" fill="#f4a261"/>
+
+  <!-- Effective circulating volume -->
+  <rect x="280" y="132" width="340" height="28" rx="6" fill="#e76f51"/>
+  <text x="450" y="151" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="600" font-family: 'Times New Roman', Times, serif;>↓ Effective Circulating Volume</text>
+
+  <line x1="450" y1="160" x2="450" y2="173" stroke="#e76f51" stroke-width="1.5"/>
+  <polygon points="446,171 450,178 454,171" fill="#e76f51"/>
+
+  <!-- Two branches -->
+  <line x1="450" y1="178" x2="280" y2="195" stroke="#1a1a2e" stroke-width="1"/>
+  <line x1="450" y1="178" x2="620" y2="195" stroke="#1a1a2e" stroke-width="1"/>
+  <polygon points="277,193 283,197 283,193" fill="#1a1a2e"/>
+  <polygon points="617,193 623,197 617,197" fill="#1a1a2e"/>
+
+  <!-- RAAS -->
+  <rect x="100" y="194" width="360" height="28" rx="6" fill="#e76f51" opacity="0.8"/>
+  <text x="280" y="213" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="600" font-family: 'Times New Roman', Times, serif;>Activation of Renin-Angiotensin-Aldosterone System</text>
+
+  <!-- SNS -->
+  <rect x="480" y="194" width="360" height="28" rx="6" fill="#e76f51" opacity="0.8"/>
+  <text x="660" y="213" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="600" font-family: 'Times New Roman', Times, serif;>Activation of Sympathetic Nervous System</text>
+
+  <!-- Arrow down from RAAS -->
+  <line x1="280" y1="222" x2="280" y2="240" stroke="#e76f51" stroke-width="1"/>
+  <polygon points="276,238 280,245 284,238" fill="#e76f51"/>
+  <rect x="100" y="242" width="360" height="28" rx="6" fill="#f4a261"/>
+  <text x="280" y="261" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="600" font-family: 'Times New Roman', Times, serif;>↑ Na⁺ and H₂O Retention</text>
+
+  <!-- Arrow down from SNS -->
+  <line x1="660" y1="222" x2="660" y2="240" stroke="#e76f51" stroke-width="1"/>
+  <polygon points="656,238 660,245 664,238" fill="#e76f51"/>
+  <rect x="480" y="242" width="360" height="28" rx="6" fill="#f4a261"/>
+  <text x="660" y="261" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="600" font-family: 'Times New Roman', Times, serif;>Renal Vasoconstriction</text>
+
+  <!-- Converge -->
+  <line x1="280" y1="270" x2="350" y2="290" stroke="#1a1a2e" stroke-width="1"/>
+  <line x1="660" y1="270" x2="550" y2="290" stroke="#1a1a2e" stroke-width="1"/>
+  <line x1="350" y1="290" x2="550" y2="290" stroke="#1a1a2e" stroke-width="1"/>
+  <line x1="450" y1="290" x2="450" y2="302" stroke="#e76f51" stroke-width="1.5"/>
+  <polygon points="446,300 450,307 454,300" fill="#e76f51"/>
+
+  <!-- Final: ↓ renal function -->
+  <rect x="220" y="304" width="460" height="32" rx="6" fill="#e76f51"/>
+  <text x="450" y="325" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700" font-family: 'Times New Roman', Times, serif;>↓ Renal Function (↓ GFR) → HRS</text>
+
+  <!-- Footnote -->
+  <text x="450" y="360" text-anchor="middle" fill="#555555" font-size="9" font-style="italic" font-family: 'Times New Roman', Times, serif;>* Other contributors: hypoalbuminemia and cirrhotic cardiomyopathy</text>
+
+  <!-- Additional pathway -->
+  <text x="450" y="378" text-anchor="middle" fill="#555555" font-size="9" font-family: 'Times New Roman', Times, serif;>Progressive: ↓ SVR → cardiac output compensation fails → further ↓ arterial blood flow → ATN</text>
+</svg>
+
+<svg aria-hidden="true" style="position:absolute;right:32px;bottom:24px;z-index:20;" width="40" height="28" viewBox="0 0 40 28">
+      <rect x="0" y="0" width="40" height="28" rx="4" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="19" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" font-family: 'Times New Roman', Times, serif;>11</text>
+    </svg>
+</div>
+</body>
+</html>

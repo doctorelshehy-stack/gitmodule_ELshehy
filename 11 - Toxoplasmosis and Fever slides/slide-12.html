@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+<div style="position:absolute; inset:0; background:#ffffff;">
+  <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:#2a9d8f;"></div>
+  <p style="position:absolute; top:24px; left:40px; font-family:'Times New Roman',serif; font-size:28px; font-weight:700; color:#264653; margin:0;">Fever: Critical &amp; Maximum Levels</p>
+  <div style="position:absolute; top:64px; left:40px; width:60px; height:3px; background:#e9c46a; border-radius:2px;"></div>
+
+  <div style="position:absolute; top:90px; left:40px; right:40px; bottom:50px; display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px;">
+    <div style="background:#f8f9fa; padding:18px; border-radius:4px; border-top:3px solid #e9c46a; text-align:center;">
+      <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#264653; margin:0 0 8px 0;">What is the emergency level?</p>
+      <p style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:0; line-height:1.5;">
+        Fever itself is not considered dangerous as it is one way the body fights against infection. However, fever is considered dangerous in adults when your body temperature is greater than <b>105.8°F (41°C)</b>. A temperature that high can be damaging to body organs and particularly dangerous for someone with a heart or lung disorder.
+      </p>
+    </div>
+    <div style="background:#f8f9fa; padding:18px; border-radius:4px; border-top:3px solid #f4a261; text-align:center;">
+      <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#264653; margin:0 0 8px 0;">What is the critical level?</p>
+      <p style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:0; line-height:1.5;">
+        <b>44 °C (111.2 °F)</b> or more — Almost certainly death will occur; however, people have been known to survive up to <b>46.5 °C (115.7 °F)</b>. Normally death, or there may be serious brain damage, convulsions, and shock. Cardio-respiratory collapse will likely occur.
+      </p>
+    </div>
+    <div style="background:#f8f9fa; padding:18px; border-radius:4px; border-top:3px solid #e76f51; text-align:center;">
+      <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#264653; margin:0 0 8px 0;">What is the maximum level?</p>
+      <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:100px;">
+        <p style="font-family:'Times New Roman',serif; font-size:36px; font-weight:700; color:#e76f51; margin:0;">46.5 °C</p>
+        <p style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:4px 0 0 0;">(115.7 °F) — highest recorded survival</p>
+        <p style="font-family:'Times New Roman',serif; font-size:13px; color:#264653; margin:8px 0 0 0; line-height:1.4;">Normally death, or there may be serious brain damage, convulsions, and shock. Cardio-respiratory collapse will likely occur.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="position:absolute; bottom:55px; left:40px; right:40px; display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:8px;">
+    <div style="background:#2a9d8f; color:#ffffff; padding:6px; border-radius:4px; text-align:center;">
+      <p style="font-family:'Times New Roman',serif; font-size:11px; font-weight:700; margin:0;">Normal</p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; margin:2px 0 0 0;">36.6–37.2 °C</p>
+    </div>
+    <div style="background:#e9c46a; color:#264653; padding:6px; border-radius:4px; text-align:center;">
+      <p style="font-family:'Times New Roman',serif; font-size:11px; font-weight:700; margin:0;">Fever</p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; margin:2px 0 0 0;">&gt;38 °C (Rectal)</p>
+    </div>
+    <div style="background:#f4a261; color:#264653; padding:6px; border-radius:4px; text-align:center;">
+      <p style="font-family:'Times New Roman',serif; font-size:11px; font-weight:700; margin:0;">Dangerous</p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; margin:2px 0 0 0;">&gt;41 °C</p>
+    </div>
+    <div style="background:#e76f51; color:#ffffff; padding:6px; border-radius:4px; text-align:center;">
+      <p style="font-family:'Times New Roman',serif; font-size:11px; font-weight:700; margin:0;">Critical</p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; margin:2px 0 0 0;">&ge;44 °C</p>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; width:40px; height:24px;" aria-hidden="true">
+      <rect x="0" y="2" width="40" height="20" rx="10" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="16" text-anchor="middle" fill="#ffffff" font-family="'Times New Roman',serif" font-size="12" font-weight="700">12</text>
+    </svg>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+<div style="position:absolute; inset:0; background:#ffffff;">
+  <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:#2a9d8f;"></div>
+  <p style="position:absolute; top:24px; left:40px; font-family:'Times New Roman',serif; font-size:28px; font-weight:700; color:#264653; margin:0;">FUO: Approach — History &amp; Physical Exam</p>
+  <div style="position:absolute; top:64px; left:40px; width:60px; height:3px; background:#e9c46a; border-radius:2px;"></div>
+
+  <div style="position:absolute; top:90px; left:40px; right:40px; bottom:50px; display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+    <div style="background:#f8f9fa; padding:16px; border-radius:4px; border-top:3px solid #2a9d8f;">
+      <p style="font-family:'Times New Roman',serif; font-size:16px; font-weight:700; color:#264653; margin:0 0 8px 0;">A) History</p>
+      <p style="font-family:'Times New Roman',serif; font-size:13px; font-weight:700; color:#2a9d8f; margin:0 0 4px 0;">Specifics should include:</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0; padding-left:16px; line-height:1.6;">
+        <li>Duration and characteristics of the fever (number of spikes per day, timing, whether temperature returns to normal or below normal)</li>
+        <li>Travel history or exposure to people who have traveled to regions endemic for particular diseases (typhoid, malaria, tuberculosis, RMSF)</li>
+        <li>Exposure to any animals (cat-scratch disease, rat-bite fever, leptospirosis)</li>
+        <li>Exposure to unpasteurized dairy products (brucellosis)</li>
+        <li>Presence of rashes, conjunctivitis, mucous membrane changes, and arthritis (juvenile arthritis, Kawasaki syndrome, SLE)</li>
+        <li>Presence of associated cough, weight loss, or lymphadenopathy (lymphoma, leukemia, neuroblastoma)</li>
+      </ul>
+    </div>
+    <div style="background:#f8f9fa; padding:16px; border-radius:4px; border-top:3px solid #e76f51;">
+      <p style="font-family:'Times New Roman',serif; font-size:16px; font-weight:700; color:#264653; margin:0 0 8px 0;">B) Physical Examination</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0; padding-left:16px; line-height:1.6;">
+        <li>Rectal temperature, respiratory rate, heart rate, and blood pressure measurements should be obtained.</li>
+        <li>Inspection of the pharynx for hyperemia and exudate, of the tympanic membranes for chronic otitis media, and auscultation of the chest for localized wheezing are all important.</li>
+        <li>In the older child, an examination of the teeth to exclude dental caries and periodontal disease should be included.</li>
+        <li>A new cardiac murmur may be a clue to rheumatic fever or infective endocarditis.</li>
+        <li>Lymphadenopathy, especially if generalized, may suggest a viral infection, such as infectious mononucleosis, cytomegalovirus infection, toxoplasmosis, or HIV infection.</li>
+        <li>Joints must be examined meticulously for swelling, restricted range of motion, and tenderness.</li>
+        <li>Skin rashes may suggest a viral disease or an autoimmune disease such as juvenile idiopathic arthritis.</li>
+      </ul>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; width:40px; height:24px;" aria-hidden="true">
+      <rect x="0" y="2" width="40" height="20" rx="10" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="16" text-anchor="middle" fill="#ffffff" font-family="'Times New Roman',serif" font-size="12" font-weight="700">16</text>
+    </svg>
+</div>
+</div>
+</body>
+</html>

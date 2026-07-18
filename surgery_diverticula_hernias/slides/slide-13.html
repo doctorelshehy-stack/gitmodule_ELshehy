@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Strangulation — Clinical Comparison</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;background:linear-gradient(135deg,#1b2838 0%,#0d1117 100%);overflow:hidden;position:relative;">
+  <svg aria-hidden="true" style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:1;" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="960" height="540" fill="transparent"/>
+    <rect x="0" y="0" width="12" height="540" fill="#42A5F5" opacity="0.6"/>
+    <rect x="0" y="0" width="960" height="4" fill="#FFC107" opacity="0.5"/>
+    <rect x="0" y="536" width="960" height="4" fill="#FFC107" opacity="0.5"/>
+  </svg>
+
+  <p style="position:absolute;top:40px;left:60px;font-family:'Times New Roman',serif;font-size:36px;font-weight:700;color:#FFC107;z-index:10;margin:0;">Strangulation — Clinical Comparison</p>
+  <div style="position:absolute;top:100px;left:60px;width:400px;height:3px;background:#42A5F5;z-index:10;"></div>
+  <div style="position:absolute;top:130px;left:60px;width:840px;font-family:'Times New Roman',serif;font-size:18px;color:#fff;z-index:10;">
+    <table style="width:100%;border-collapse:collapse;">
+      <thead>
+        <tr style="background:rgba(66,165,245,0.2);">
+          <th style="padding:10px;text-align:left;border-bottom:2px solid #42A5F5;width:25%;">Feature</th>
+          <th style="padding:10px;text-align:center;border-bottom:2px solid #42A5F5;width:25%;">Irreducible</th>
+          <th style="padding:10px;text-align:center;border-bottom:2px solid #42A5F5;width:25%;">Obstructed</th>
+          <th style="padding:10px;text-align:center;border-bottom:2px solid #E53935;width:25%;color:#E53935;">Strangulated</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+          <td style="padding:10px;color:#FFC107;font-weight:bold;">Irreducibility</td>
+          <td style="padding:10px;text-align:center;">Not</td>
+          <td style="padding:10px;text-align:center;">Not</td>
+          <td style="padding:10px;text-align:center;font-weight:bold;">Not</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.03);">
+          <td style="padding:10px;color:#FFC107;font-weight:bold;">Consistency</td>
+          <td style="padding:10px;text-align:center;">Soft</td>
+          <td style="padding:10px;text-align:center;">Soft</td>
+          <td style="padding:10px;text-align:center;color:#E53935;font-weight:bold;">TENSE</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+          <td style="padding:10px;color:#FFC107;font-weight:bold;">Tenderness</td>
+          <td style="padding:10px;text-align:center;">Not tender</td>
+          <td style="padding:10px;text-align:center;">Not tender</td>
+          <td style="padding:10px;text-align:center;color:#E53935;font-weight:bold;">TENDER</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.03);">
+          <td style="padding:10px;color:#FFC107;font-weight:bold;">Impulse on Cough</td>
+          <td style="padding:10px;text-align:center;color:#42A5F5;">Positive ✓</td>
+          <td style="padding:10px;text-align:center;color:#E53935;">Negative ✗</td>
+          <td style="padding:10px;text-align:center;color:#E53935;">Negative ✗</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="position:absolute;top:340px;left:60px;width:840px;font-family:'Times New Roman',serif;font-size:16px;color:#fff;z-index:10;line-height:1.75;">
+    <div style="background:rgba(229,57,53,0.15);padding:12px;border-radius:8px;border-left:4px solid #E53935;">
+      <div style="color:#E53935;font-weight:bold;font-size:18px;">Strangulated Hernia — Treatment</div>
+      <div style="margin-top:6px;"><strong>Urgent surgical interference!</strong></div>
+      <div style="margin-top:4px;"><strong>Pre-op:</strong> NG tube, IV fluids, analgesia, antibiotics</div>
+      <div style="margin-top:4px;"><strong>Operative Principles:</strong></div>
+      <div>1. Open sac fundus first → evacuate toxic fluid</div>
+      <div>2. Divide constricting ring</div>
+      <div>3. Pull out contents → assess viability</div>
+      <div>4. Gangrenous content → excise (small bowel/omentum)</div>
+      <div>5. Colonic gangrene → diverting colostomy</div>
+      <div>6. Suspicious bowel → warm packs + high O₂ + re-evaluate (peristalsis matters more than color)</div>
+      <div>7. Hernioplasty unless contaminated → herniorrhaphy</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

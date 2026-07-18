@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script></head><body>
+<div class="slide-content" style="background:#0d2137; overflow:hidden;">
+  <svg style="position:absolute; top:0; left:0; width:960px; height:540px;" aria-hidden="true">
+    <rect x="0" y="0" width="960" height="540" fill="#0d2137"/>
+    <circle cx="820" cy="100" r="220" fill="#1565C0" opacity="0.1"/>
+    <circle cx="140" cy="440" r="180" fill="#FFC107" opacity="0.08"/>
+    <rect x="60" y="170" width="6" height="200" rx="3" fill="#1565C0"/>
+  </svg>
+  <div style="position:absolute; top:100px; left:100px; z-index:10;">
+    <p style="font-family:'Times New Roman',serif; font-size:54px; font-weight:700; color:#ffffff; margin:0; line-height:1.1;">Portal Hypertension<br>&amp; Complications</p>
+    <div style="width:120px; height:4px; background:#FFC107; border-radius:2px; margin-top:20px;"></div>
+    <p style="font-family:'Times New Roman',serif; font-size:20px; color:#42A5F5; margin-top:20px;">Varices, Encephalopathy, Hepatorenal Syndrome &amp; More</p>
+    <p style="font-family:'Times New Roman',serif; font-size:16px; color:#FFC107; opacity:0.8; margin-top:12px;">Gastroenterology — Internal Medicine</p>
+    <p style="font-family:'Times New Roman',serif; font-size:14px; color:#ffffff; opacity:0.5; margin-top:6px;">Support 40 Internal GIT</p>
+  </div>
+  <div style="position:absolute; bottom:0; left:0; width:960px; height:6px; background:linear-gradient(to right, #1565C0, #FFC107, #E53935);"></div>
+</div>
+</body></html>

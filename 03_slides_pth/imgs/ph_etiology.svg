@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <rect width="300" height="200" rx="8" fill="#f5f0e8"/>
+  <rect x="0" y="0" width="300" height="34" rx="8" fill="#003049"/>
+  <rect x="0" y="18" width="300" height="16" fill="#003049"/>
+  <text x="150" y="22" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#fff">Etiology of Portal Hypertension</text>
+  <rect x="10" y="44" width="280" height="38" rx="4" fill="#780000" opacity="0.08"/>
+  <rect x="10" y="44" width="4" height="38" rx="2" fill="#780000"/>
+  <text x="22" y="58" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#780000">Prehepatic</text>
+  <text x="22" y="74" font-family="Arial,sans-serif" font-size="10" fill="#003049">PV/SV thrombosis | Stenosis | Compression | AV fistula</text>
+  <rect x="10" y="88" width="280" height="38" rx="4" fill="#669bbc" opacity="0.12"/>
+  <rect x="10" y="88" width="4" height="38" rx="2" fill="#669bbc"/>
+  <text x="22" y="102" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#003049">Intrahepatic</text>
+  <text x="22" y="118" font-family="Arial,sans-serif" font-size="10" fill="#003049">Cirrhosis | Schistosomiasis | HCC | Fibrosis</text>
+  <rect x="10" y="132" width="280" height="38" rx="4" fill="#c1121f" opacity="0.06"/>
+  <rect x="10" y="132" width="4" height="38" rx="2" fill="#c1121f"/>
+  <text x="22" y="146" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#c1121f">Post-hepatic</text>
+  <text x="22" y="162" font-family="Arial,sans-serif" font-size="10" fill="#003049">Budd-Chiari | IVC thrombosis | Pericarditis</text>
+  <rect x="10" y="178" width="280" height="16" rx="4" fill="#003049" opacity="0.08"/>
+  <text x="150" y="190" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#003049">Gradient &gt;10–12 mmHg = Portal HTN</text>
+</svg>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HE - Clinical Diagnosis & History</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;position:relative;background:#ffffff;font-family:'Times New Roman',Times,serif;color:#1a1a2e;overflow:hidden;">
+<div style="position:absolute;top:0;left:0;width:960px;height:540px;background:#ffffff;z-index:0;"></div>
+<svg aria-hidden="true" style="position:absolute;top:0;left:0;z-index:1;" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="8" height="540" fill="#264653"/>
+</svg>
+<p style="position:absolute;top:20px;left:44px;z-index:5;font-size:32px;font-weight:700;color:#264653;">HE — Clinical Diagnosis & History</p>
+<div style="position:absolute;top:64px;left:44px;width:80px;height:3px;z-index:5;background:#2a9d8f;border-radius:1.5px;"></div>
+
+<div style="position:absolute;top:88px;left:44px;right:44px;z-index:5;">
+  <div style="background:#f8f9fa;padding:14px 18px;border-radius:6px;border-left:4px solid #264653;margin-bottom:12px;">
+    <p style="margin:0;font-size:14px;color:#1a1a2e;">The diagnosis of HE is a <strong>clinical diagnosis</strong> based on symptoms reported by patients and more often their caregivers. There is no single laboratory test that definitively confirms HE — it remains a diagnosis of exclusion after other causes of altered mental status are ruled out.</p>
+  </div>
+</div>
+
+<div style="position:absolute;top:180px;left:44px;right:44px;z-index:5;">
+  <p style="font-size:16px;font-weight:700;color:#264653;margin:0 0 8px 0;">Key Historical Features:</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div>
+      <ul style="margin:0;padding-left:18px;font-size:13px;color:#1a1a2e;">
+        <li style="margin-bottom:5px;">History of confusion and disorientation</li>
+        <li style="margin-bottom:5px;">Lethargy and excessive sleepiness</li>
+        <li style="margin-bottom:5px;">Memory loss and forgetfulness</li>
+        <li style="margin-bottom:5px;">Slowness to respond (bradyphrenia)</li>
+        <li style="margin-bottom:5px;">Personality change with increased aggression</li>
+      </ul>
+    </div>
+    <div>
+      <ul style="margin:0;padding-left:18px;font-size:13px;color:#1a1a2e;">
+        <li style="margin-bottom:5px;">Reversal of day and night sleep pattern</li>
+        <li style="margin-bottom:5px;">History of poor compliance with lactulose treatment</li>
+        <li style="margin-bottom:5px;">Overconsumption of proteins in diet</li>
+        <li style="margin-bottom:5px;">Recent GI bleeding or infection</li>
+        <li style="margin-bottom:5px;">Recent diuretic adjustments or dehydration</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div style="position:absolute;top:340px;left:44px;right:44px;z-index:5;">
+  <div style="background:#fff3cd;padding:10px 16px;border-radius:4px;border:1px solid #ffc107;">
+    <p style="margin:0;font-size:13px;color:#856404;"><strong>Key Diagnostic Point:</strong> In patients with recurrent admissions for HE, a history of poor compliance with lactulose or overconsumption of proteins is often elicited. In a comatose patient, the presence of clonus may be a sign of HE though it is non-specific.</p>
+  </div>
+</div>
+
+<div style="position:absolute;top:400px;left:44px;right:44px;z-index:5;">
+  <p style="font-size:12px;font-style:italic;color:rgba(26,26,46,0.6);margin:0;">The diagnosis requires exclusion of other causes of altered mental status including metabolic encephalopathies, intracranial pathology, drug intoxication, and psychiatric disorders.</p>
+</div>
+<svg aria-hidden="true" style="position:absolute;right:32px;bottom:24px;z-index:20;" width="40" height="28" viewBox="0 0 40 28">
+      <rect x="0" y="0" width="40" height="28" rx="4" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="19" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" font-family: 'Times New Roman', Times, serif;">10</text>
+    </svg>
+
+</div>
+</body>
+</html>

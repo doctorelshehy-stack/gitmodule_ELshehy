@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+<div style="position:absolute; inset:0; background:#ffffff;">
+  <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:#2a9d8f;"></div>
+  <p style="position:absolute; top:18px; left:40px; font-family:'Times New Roman',serif; font-size:22px; font-weight:700; color:#264653; margin:0;">Intestinal Tuberculosis</p>
+  <div style="position:absolute; top:48px; left:40px; width:60px; height:3px; background:#e9c46a; border-radius:2px;"></div>
+
+  <div style="position:absolute; top:64px; left:40px; right:40px; bottom:44px; display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+    <div style="display:grid; gap:6px; align-content:start;">
+      <div style="background:#f8f9fa; padding:10px; border-radius:4px; border-left:3px solid #e76f51;">
+        <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#e76f51; margin:0 0 3px;">Causative Organism &amp; Epidemiology</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0; line-height:1.4;">
+          <b>M. tuberculosis</b> (most cases), <b>M. bovis</b> (contaminated dairy products). Accounts for 1-3% of TB worldwide. <b>High risk:</b> HIV infection (most important), malignancies (especially lymphoma), glucocorticoids or anti-TNF agents.
+        </p>
+      </div>
+      <div style="background:#f8f9fa; padding:10px; border-radius:4px; border-left:3px solid #2a9d8f;">
+        <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#2a9d8f; margin:0 0 3px;">Route, Pathology &amp; Clinical</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0; line-height:1.4;">
+          <b>Route:</b> Direct penetration of intestinal mucosa by swallowed organisms (sputum or contaminated milk/food). <b>Sites:</b> Ileum and cecum most common (75%). Ileocecal valve involvement → incompetence (distinguishes from Crohn). <b>Gross types:</b> Ulcerative (60%), Hypertrophic (10%), Ulcerohypertrophic (30%).
+        </p>
+      </div>
+      <div style="background:#f8f9fa; padding:10px; border-radius:4px; border-left:3px solid #f4a261;">
+        <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#f4a261; margin:0 0 3px;">Clinical Presentations</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0; line-height:1.4;">
+          Acute, chronic, or acute-on-chronic (resembles intestinal Crohn's): TB toxemia (night fever, sweating, weight loss), chronic abdominal pain (80-90%), diarrhea/constipation, blood in stool, palpable abdominal mass (25-50%), perianal disease with fistula.
+        </p>
+      </div>
+    </div>
+    <div style="display:grid; gap:6px; align-content:start;">
+      <div style="background:#f8f9fa; padding:10px; border-radius:4px; border-left:3px solid #2a9d8f;">
+        <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#2a9d8f; margin:0 0 3px;">Investigations</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; font-weight:700; color:#264653; margin:0 0 2px;">Laboratory:</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0; line-height:1.3;">Mild anemia, high ESR/CRP, +ve tuberculin test, +ve Quantiferon Gold, PCR in tissue/ascites</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; font-weight:700; color:#264653; margin:4px 0 2px;">Imaging:</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0; line-height:1.3;">Abd U/S (bowel thickening, lymphadenopathy, ascites), CT (intestinal mass, bowel thickening), Barium study</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; font-weight:700; color:#264653; margin:4px 0 2px;">Biopsy:</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0;">Characteristic tuberculoma</p>
+      </div>
+      <div style="background:#f8f9fa; padding:10px; border-radius:4px; border-left:3px solid #e76f51;">
+        <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#e76f51; margin:0 0 3px;">Complications &amp; Treatment</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; font-weight:700; color:#264653; margin:0 0 2px;">Complications:</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0; line-height:1.3;">Intestinal hemorrhage, fistula formation, perforation (uncommon), intestinal obstruction (common — segmental stenotic disease), malabsorption (proximal SIBO)</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; font-weight:700; color:#264653; margin:4px 0 2px;">Treatment:</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0;">Anti-tuberculous drugs. Surgical intervention may be required to relieve obstruction.</p>
+      </div>
+      <div style="background:#f8f9fa; padding:10px; border-radius:4px; border-left:3px solid #264653;">
+        <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#264653; margin:0 0 3px;">Barium Study (Imaging Findings)</p>
+        <p style="font-family:'Times New Roman',serif; font-size:10px; color:#264653; margin:0; line-height:1.4;">
+          • Pulled up caecum<br>
+          • Obtuse ileocecal angle; straightening (<b>Goose neck</b>)<br>
+          • <b>Steirlin sign</b>: Hurrying of barium due to rapid flow and lack of barium in inflamed site<br>
+          • <b>Flelschner sign (Inverted umbrella sign)</b>: Narrow ileum with thickened ileocecal valve<br>
+          • <b>Napkin lesions</b><br>
+          • <b>Chicken intestine</b>: Hypersegmentation<br>
+          • <b>Mega Ileum</b>: Dilatation of proximal ileum
+        </p>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; width:40px; height:24px;" aria-hidden="true">
+      <rect x="0" y="2" width="40" height="20" rx="10" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="16" text-anchor="middle" fill="#ffffff" font-family="'Times New Roman',serif" font-size="12" font-weight="700">23</text>
+    </svg>
+</div>
+</div>
+</body>
+</html>

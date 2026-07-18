@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; color:#264653; position:relative; overflow:hidden; font-family:'Times New Roman',serif;">
+<p style="position:absolute; top:20px; left:50px; font-size:26px; font-weight:700; color:#264653; font-family:'Times New Roman',serif; margin:0; z-index:10;">Symptoms of Acute Viral Hepatitis (Part 2)</p>
+<div style="position:absolute; top:60px; left:50px; width:80px; height:4px; background:#2a9d8f; border-radius:2px; z-index:1;"></div>
+<div style="position:absolute; top:76px; left:50px; right:50px; bottom:56px; overflow:hidden; font-size:14px; line-height:1.45; color:#264653;">
+
+<p style="margin:0 0 4px 0; font-size:14px;">Sometimes, after <strong>3 to 10 days</strong>, the following develop:</p>
+<ul style="margin:2px 0 6px 20px; padding:0;"><li style="margin-bottom:2px;">Dark urine</li><li style="margin-bottom:2px;">Pale stool</li><li style="margin-bottom:2px;">Jaundice (yellowish discoloration of the skin and whites of the eyes) - sometimes accompanied by itching</li><li style="margin-bottom:2px;">The liver may be enlarged and tender</li></ul>
+
+<div style="background:rgba(233,196,106,0.2); padding:8px 12px; border-radius:6px; margin:4px 0;">
+  <p style="margin:0; font-size:13px; color:#264653;"><strong>Clinical course:</strong> Most of the initial symptoms usually disappear within a week, and people feel better even though the jaundice may worsen.</p>
+</div>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:4px 0;">
+  <div style="background:rgba(231,111,81,0.15); padding:8px 10px; border-radius:6px;">
+    <p style="margin:0 0 2px 0; font-weight:700; font-size:13px; color:#e76f51;">Fulminant Hepatitis</p>
+    <p style="margin:0; font-size:12px;">Rarely develops. Severe hepatitis with signs of liver failure. Can occur in HAV, but more likely in HBV (especially with HDV co-infection).</p>
+  </div>
+  <div style="background:rgba(42,157,143,0.15); padding:8px 10px; border-radius:6px;">
+    <p style="margin:0 0 2px 0; font-weight:700; font-size:13px; color:#2a9d8f;">Recovery</p>
+    <p style="margin:0; font-size:12px;">People usually recover in <strong>4 to 8 weeks</strong>, even without treatment. However, some people infected with HBV or HCV develop <strong>chronic infections</strong>.</p>
+  </div>
+</div>
+
+<table style="width:100%; border-collapse:collapse; margin:2px 0; font-size:11px;">
+  <tr style="background:#264653; color:#ffffff;">
+    <td style="padding:4px 8px; border:1px solid #264653;"><strong>Feature</strong></td>
+    <td style="padding:4px 8px; border:1px solid #264653;"><strong>Detail</strong></td>
+  </tr>
+  <tr>
+    <td style="padding:3px 8px; border:1px solid #264653; opacity:0.8;">Prodrome</td>
+    <td style="padding:3px 8px; border:1px solid #264653; opacity:0.8;">3-10 days: poor appetite, malaise, N/V, fever</td>
+  </tr>
+  <tr>
+    <td style="padding:5px 10px; border:1px solid #264653; opacity:0.8;">Icteric phase</td>
+    <td style="padding:5px 10px; border:1px solid #264653; opacity:0.8;">Dark urine, pale stool, jaundice, itching</td>
+  </tr>
+  <tr>
+    <td style="padding:5px 10px; border:1px solid #264653; opacity:0.8;">Convalescence</td>
+    <td style="padding:5px 10px; border:1px solid #264653; opacity:0.8;">4-8 weeks; symptoms resolve</td>
+  </tr>
+</table>
+
+</div>
+<svg style="position:absolute; right:32px; bottom:24px; width:40px; height:32px; z-index:100;" aria-hidden="true">
+<rect x="0" y="0" width="40" height="32" rx="4" fill="#2a9d8f" opacity="0.85"/>
+<text x="20" y="22" text-anchor="middle" font-family="Times New Roman,serif" font-size="14" font-weight="700" fill="#ffffff">10</text>
+</svg>
+</div>
+</body>
+</html>

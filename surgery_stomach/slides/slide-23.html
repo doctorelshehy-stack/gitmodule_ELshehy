@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Obesity Management</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;background:linear-gradient(135deg,#1b2838 0%,#0d1117 100%);overflow:hidden;position:relative;">
+  <!-- Background decorations -->
+  <svg aria-hidden="true" style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:1;" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="960" height="540" fill="transparent"/>
+    <rect x="0" y="0" width="12" height="540" fill="#42A5F5" opacity="0.6"/>
+    <rect x="0" y="0" width="960" height="4" fill="#FFC107" opacity="0.5"/>
+    <rect x="0" y="536" width="960" height="4" fill="#FFC107" opacity="0.5"/>
+  </svg>
+
+  <p style="position:absolute;top:40px;left:60px;font-family:'Times New Roman',serif;font-size:36px;font-weight:700;color:#FFC107;z-index:10;margin:0;">Obesity Management</p>
+  <div style="position:absolute;top:100px;left:60px;width:400px;height:3px;background:#42A5F5;z-index:10;"></div>
+  <div style="position:absolute;top:120px;left:60px;width:420px;font-family:'Times New Roman',serif;font-size:16px;color:#fff;z-index:10;line-height:1.7;">
+    <div style="color:#42A5F5;font-weight:bold;font-size:20px;margin-bottom:6px;">1) Behavioral Treatment</div>
+    <div>• Monitor and modify food intake</div>
+    <div>• Increase physical activity (60-90 min/day)</div>
+    <div>• Low-fat diet rich in complex carbs</div>
+    <div>• Eat breakfast daily</div>
+    <div>• Weigh frequently (at least weekly)</div>
+    <div style="color:#42A5F5;font-weight:bold;font-size:20px;margin:12px 0 6px;">2) Pharmacotherapy</div>
+    <div>• BMI ≥ 30, or BMI ≥ 27 with obesity-related condition</div>
+    <div style="margin-left:12px;">(hypertension, type 2 DM, dyslipidemia)</div>
+    <div style="margin-top:8px;">
+      <div><strong>Orlistat</strong></div>
+      <div style="margin-left:12px;">• Inactivates gastric/pancreatic lipases</div>
+      <div style="margin-left:12px;">• Reduces fat absorption by ~30%</div>
+      <div style="margin-left:12px;">• Side effects: cramps, gas, diarrhea, oily spotting</div>
+    </div>
+    <div style="margin-top:8px;">
+      <div><strong>Lorcaserin</strong></div>
+      <div style="margin-left:12px;">• Serotonin 2C receptor agonist</div>
+      <div style="margin-left:12px;">• Reduces appetite, promotes satiety</div>
+    </div>
+  </div>
+  <div style="position:absolute;top:120px;right:60px;width:380px;font-family:'Times New Roman',serif;font-size:16px;color:#fff;z-index:10;line-height:1.7;">
+    <div style="color:#FF9800;font-weight:bold;font-size:20px;margin-bottom:6px;">3) Endo-luminal Management</div>
+    <div>• Space-occupying devices (intra-gastric balloon)</div>
+    <div>• Gastric restrictive methods (transoral gastroplasty)</div>
+    <div>• Malabsorptive procedures (DJ bypass liner)</div>
+    <div>• Regulating gastric emptying (Botox injections)</div>
+    <div>• Aspiration therapy</div>
+    <div style="color:#FF9800;font-weight:bold;font-size:20px;margin:12px 0 6px;">Intra-gastric Balloon</div>
+    <div>• Endoscopic placement</div>
+    <div>• Creates feeling of satiety</div>
+    <div style="margin-top:8px;"><strong>Indications:</strong></div>
+    <div>• BMI &gt;35: refused or high-risk for surgery</div>
+    <div>• BMI 29-35: no surgical indications</div>
+    <div style="color:#E53935;font-weight:bold;font-size:20px;margin:12px 0 6px;">Disadvantages</div>
+    <div>• Stomach discomfort, cramping, nausea</div>
+    <div>• Acute pancreatitis</div>
+    <div>• Regurgitation, heartburn</div>
+    <div>• Balloon perforation</div>
+    <div>• Intestinal obstruction</div>
+  </div>
+
+</div>
+</body>
+</html>

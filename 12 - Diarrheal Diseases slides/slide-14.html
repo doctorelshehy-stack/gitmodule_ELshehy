@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+<div style="position:absolute; inset:0; background:#ffffff;">
+  <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:#2a9d8f;"></div>
+  <p style="position:absolute; top:20px; left:40px; font-family:'Times New Roman',serif; font-size:24px; font-weight:700; color:#264653; margin:0;">Systemic Manifestations &amp; Diagnostic Approach</p>
+  <div style="position:absolute; top:54px; left:40px; width:60px; height:3px; background:#e9c46a; border-radius:2px;"></div>
+
+  <div style="position:absolute; top:76px; left:40px; right:40px; bottom:46px; display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+    <div style="background:#f8f9fa; padding:14px; border-radius:4px; border-top:3px solid #e76f51;">
+      <p style="font-family:'Times New Roman',serif; font-size:15px; font-weight:700; color:#e76f51; margin:0 0 6px 0;">Systemic Manifestations</p>
+      <p style="font-family:'Times New Roman',serif; font-size:13px; font-weight:700; color:#264653; margin:0 0 4px;">Reiter's syndrome:</p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0 0 8px;">Arthritis, urethritis, and conjunctivitis may follow infections by <b>Salmonella, Campylobacter, Shigella, and Yersinia</b>.</p>
+      <p style="font-family:'Times New Roman',serif; font-size:13px; font-weight:700; color:#264653; margin:0 0 4px;">Hemolytic-uremic syndrome:</p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0;">Enterohemorrhagic <b>E. coli (O157:H7)</b> and <b>Shigella</b>.</p>
+    </div>
+    <div style="background:#f8f9fa; padding:14px; border-radius:4px; border-top:3px solid #2a9d8f;">
+      <p style="font-family:'Times New Roman',serif; font-size:15px; font-weight:700; color:#2a9d8f; margin:0 0 6px 0;">Approach to Acute Diarrhea</p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0 0 4px;">The cornerstone of diagnosis in those suspected of acute infectious diarrhea is <b>microbiologic analysis of the stool</b>.</p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#264653; margin:6px 0 3px 0;">Workup includes:</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0; padding-left:16px; line-height:1.5;">
+        <li>Direct inspection for ova and parasites, fecal WBCs</li>
+        <li>Cultures for bacterial and viral pathogens</li>
+        <li>Immunoassays for: bacterial toxins (C. difficile), viral antigens (rotavirus), and protozoal antigens (Giardia, E. histolytica)</li>
+      </ul>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:6px 0 0;">If stool studies are unrevealing → flexible sigmoidoscopy with biopsies and upper endoscopy with duodenal aspirates and biopsies.</p>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; width:40px; height:24px;" aria-hidden="true">
+      <rect x="0" y="2" width="40" height="20" rx="10" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="16" text-anchor="middle" fill="#ffffff" font-family="'Times New Roman',serif" font-size="12" font-weight="700">14</text>
+    </svg>
+</div>
+</div>
+</body>
+</html>

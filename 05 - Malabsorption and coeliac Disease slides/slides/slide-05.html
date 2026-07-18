@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script></head><body>
+<div class="slide-content" style="background:#f0f7f7; overflow:hidden;">
+  <div style="position:absolute; top:0; left:0; right:0; height:56px; background:#264653; z-index:2;"></div>
+  <p style="position:absolute; top:12px; left:50px; font-size:21px; font-weight:700; color:#ffffff; z-index:10;">Nutritional Manifestations of Malabsorption</p>
+  <div style="position:absolute; top:64px; left:40px; right:40px; bottom:10px; display:grid; grid-template-columns:1fr 1fr; gap:14px; z-index:5;">
+    <div>
+      <div style="background:#ffffff; border-left:4px solid #e76f51; padding:7px 12px; margin-bottom:5px; border-radius:0 6px 6px 0;">
+        <p style="font-size:13px; font-weight:700; color:#e76f51;">Anemia</p>
+        <p style="font-size:11px; color:#264653; line-height:1.4;">Blood loss or malabsorption of iron, B12 or folic acid</p>
+      </div>
+      <div style="background:#ffffff; border-left:4px solid #2a9d8f; padding:7px 12px; margin-bottom:5px; border-radius:0 6px 6px 0;">
+        <p style="font-size:13px; font-weight:700; color:#2a9d8f;">Edema</p>
+        <p style="font-size:11px; color:#264653; line-height:1.4;">Hypoproteinemia from protein malabsorption or protein-losing enteropathy</p>
+      </div>
+      <div style="background:#ffffff; border-left:4px solid #e9c46a; padding:7px 12px; margin-bottom:5px; border-radius:0 6px 6px 0;">
+        <p style="font-size:13px; font-weight:700; color:#264653;">Cholesterol GB Stones</p>
+        <p style="font-size:11px; color:#264653; line-height:1.4;">Bile acid malabsorption → supersaturated bile → stones</p>
+      </div>
+      <div style="background:#ffffff; border-left:4px solid #f4a261; padding:7px 12px; margin-bottom:5px; border-radius:0 6px 6px 0;">
+        <p style="font-size:13px; font-weight:700; color:#f4a261;">Osteomalacia</p>
+        <p style="font-size:11px; color:#264653; line-height:1.4;">Malabsorption of Calcium and Vitamin D</p>
+      </div>
+      <div style="background:#ffffff; border-left:4px solid #264653; padding:7px 12px; border-radius:0 6px 6px 0;">
+        <p style="font-size:13px; font-weight:700; color:#264653;">Vitamin A Deficiency</p>
+        <p style="font-size:11px; color:#264653; line-height:1.4;">Night blindness</p>
+      </div>
+    </div>
+    <div>
+      <p style="font-size:16px; font-weight:700; color:#264653; margin-bottom:10px;">Extra-Intestinal Manifestations (IBD)</p>
+      <div style="background:#ffffff; padding:12px 14px; border-radius:8px; margin-bottom:10px;">
+        <p style="font-size:13px; font-weight:600; color:#2a9d8f; margin-bottom:4px;">Joint Complications (~20% of IBD patients)</p>
+        <ul style="margin:0; padding-left:16px;">
+          <li style="font-size:12px; color:#264653; margin-bottom:2px;">Axial (central) arthritis</li>
+          <li style="font-size:12px; color:#264653;">Peripheral arthritis</li>
+        </ul>
+      </div>
+      <div style="background:#ffffff; padding:12px 14px; border-radius:8px;">
+        <p style="font-size:13px; font-weight:600; color:#f4a261; margin-bottom:4px;">Ophthalmologic (3-4% of IBD)</p>
+        <ul style="margin:0; padding-left:16px;">
+          <li style="font-size:12px; color:#264653; margin-bottom:2px;">Episcleritis — burning eyes, scleral injection</li>
+          <li style="font-size:12px; color:#264653; margin-bottom:2px;">Parallels disease course</li>
+          <li style="font-size:12px; color:#264653;">Resolves with IBD treatment + topical steroids</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; z-index:50;" width="48" height="28" viewBox="0 0 48 28" aria-hidden="true">
+  <rect x="0" y="0" width="48" height="28" rx="14" fill="#264653" opacity="0.85"/>
+  <text x="24" y="19" text-anchor="middle" fill="#ffffff" font-family="Times New Roman, serif" font-size="14" font-weight="600">5</text>
+</svg>
+</div></body></html>

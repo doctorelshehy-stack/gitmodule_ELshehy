@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; color:#264653; position:relative; overflow:hidden; font-family:'Times New Roman',serif;">
+
+<svg style="position:absolute; top:20px; left:50px; right:50px; z-index:1;" aria-hidden="true">
+<line x1="0" y1="0" x2="860" y2="0" stroke="#2a9d8f" stroke-width="3" opacity="0.5"/>
+</svg>
+<p style="position:absolute; top:28px; left:50px; font-size:13px; color:#2a9d8f; font-family:'Times New Roman',serif; margin:0; z-index:10; letter-spacing:1px;">PEDIATRIC GASTRO-ENTEROLOGY, HEPATOLOGY &amp; INFECTIOUS DISEASES</p>
+
+
+<p style="position:absolute; top:20px; left:50px; font-size:26px; font-weight:700; color:#264653; font-family:'Times New Roman',serif; margin:0; z-index:10;">Hepatitis E Virus (HEV)</p>
+<div style="position:absolute; top:60px; left:50px; width:80px; height:4px; background:#264653; border-radius:2px; z-index:1;"></div>
+<div style="position:absolute; top:76px; left:50px; right:50px; bottom:56px; overflow:hidden; font-size:13px; line-height:1.45; color:#264653;">
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:0 0 8px 0;">
+  <div>
+    <p style="font-size:14px; font-weight:700; color:#264653; margin:0 0 4px 0;">Virology</p>
+    <p style="font-size:12px; margin:0;">• Hepeviridae family</p>
+    <p style="font-size:12px; margin:0;">• Non-enveloped, single-stranded RNA</p>
+    <p style="font-size:12px; margin:0;">• 4 genotypes (1–4)</p>
+    <p style="font-size:12px; margin:0;">• Genotypes 1 &amp; 2: human-only (waterborne)</p>
+    <p style="font-size:12px; margin:0;">• Genotypes 3 &amp; 4: zoonotic (pork, deer)</p>
+  </div>
+  <div>
+    <p style="font-size:14px; font-weight:700; color:#264653; margin:0 0 4px 0;">Epidemiology</p>
+    <p style="font-size:12px; margin:0;">• Fecal-oral (waterborne outbreaks)</p>
+    <p style="font-size:12px; margin:0;">• Common in developing countries</p>
+    <p style="font-size:12px; margin:0;">• Epidemic potential (contaminated water)</p>
+    <p style="font-size:12px; margin:0;">• Endemic in South/Southeast Asia, Africa</p>
+  </div>
+</div>
+
+<p style="font-size:14px; font-weight:700; color:#264653; margin:0 0 4px 0;">Clinical Presentation</p>
+<div style="background:rgba(38,70,83,0.08); padding:6px 8px; border-radius:4px; margin:0 0 8px 0;">
+  <p style="font-size:12px; margin:0;">• Similar to HAV: self-limited acute hepatitis with jaundice</p>
+  <p style="font-size:12px; margin:2px 0 0 0;">• Severe in pregnant women (up to 25% mortality in 3rd trimester)</p>
+  <p style="font-size:12px; margin:2px 0 0 0;">• Can cause chronic hepatitis in immunocompromised patients</p>
+  <p style="font-size:12px; margin:2px 0 0 0;">• Extrahepatic: neurological (Guillain-Barré), renal involvement</p>
+</div>
+
+<p style="font-size:14px; font-weight:700; color:#264653; margin:0 0 4px 0;">Acute Mortality Rate</p>
+<div style="background:rgba(38,70,83,0.12); padding:8px 12px; border-radius:6px; display:inline-block;">
+  <span style="font-size:28px; font-weight:700; color:#264653;">1–2%</span>
+  <span style="font-size:12px; color:#264653; margin-left:8px;">— Higher in pregnant women and immunocompromised</span>
+</div>
+
+<p style="font-size:14px; font-weight:700; color:#264653; margin:6px 0 4px 0;">Vaccine Status</p>
+<div style="background:rgba(38,70,83,0.12); padding:8px 12px; border-radius:6px; display:inline-block;">
+  <span style="font-size:22px; font-weight:700; color:#e76f51;">NO VACCINE AVAILABLE</span>
+  <span style="font-size:12px; color:#264653; margin-left:8px;">— Hecolin® exists but not widely available</span>
+</div>
+
+</div>
+
+<svg style="position:absolute; right:32px; bottom:24px; width:40px; height:32px; z-index:100;" aria-hidden="true">
+<rect x="0" y="0" width="40" height="32" rx="4" fill="#2a9d8f" opacity="0.85"/>
+<text x="20" y="22" text-anchor="middle" font-family="Times New Roman,serif" font-size="14" font-weight="700" fill="#ffffff">11</text>
+</svg>
+</div>
+</body>
+</html>

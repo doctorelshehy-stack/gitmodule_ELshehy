@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+<div style="position:absolute; inset:0; background:#ffffff;">
+  <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:#2a9d8f;"></div>
+  <p style="position:absolute; top:20px; left:40px; font-family:'Times New Roman',serif; font-size:24px; font-weight:700; color:#264653; margin:0;">Review Questions — Problem Solving</p>
+  <div style="position:absolute; top:54px; left:40px; width:60px; height:3px; background:#e9c46a; border-radius:2px;"></div>
+
+  <div style="position:absolute; top:76px; left:40px; right:40px; bottom:46px; display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+    <div style="background:#f8f9fa; padding:14px; border-radius:4px; border-left:4px solid #e76f51;">
+      <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#e76f51; margin:0 0 8px 0;">Problem Solving Case</p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0 0 8px; line-height:1.5;">
+        A 23-year-old Female presented with abdominal cramps and bloody diarrhea not associated with mucous, pus or tenesmus. She reported history of eating hamburger outdoors 3 days ago. On examination; she was generally good, temperature 37.1C. There was no history of medications.
+      </p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#2a9d8f; margin:0 0 3px;">A. Name the likely causal infectious agent</p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0 0 8px;">Enterohemorrhagic Escherichia coli (EHEC O157:H7)</p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#2a9d8f; margin:0 0 3px;">B. Enumerate 3 complications</p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0 0 8px;">Hemolytic-uremic syndrome (HUS): acute renal failure, microangiopathic hemolytic anemia, thrombocytopenia</p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#2a9d8f; margin:0 0 3px;">C. Outline your suggested plan of treatment</p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0;">Fluid and electrolyte support. Antibiotic NOT recommended due to risk of HUS.</p>
+    </div>
+    <div style="background:#f8f9fa; padding:14px; border-radius:4px; border-left:4px solid #2a9d8f;">
+      <p style="font-family:'Times New Roman',serif; font-size:14px; font-weight:700; color:#2a9d8f; margin:0 0 8px 0;">Single Best Answer Questions</p>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#264653; margin:0 0 3px;">Q1: Causative organism?</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0; padding-left:16px; line-height:1.5;">
+        <li>a. Enterohemorrhagic Escherichia coli ✓</li>
+        <li>b. Salmonella food poisoning</li>
+        <li>c. Clostridium difficili</li>
+        <li>d. Shigella bacilli</li>
+        <li>e. Entamoeba histolytica</li>
+      </ul>
+      <p style="font-family:'Times New Roman',serif; font-size:12px; font-weight:700; color:#264653; margin:8px 0 3px;">Q2: Safe and appropriate treatment?</p>
+      <ul style="font-family:'Times New Roman',serif; font-size:12px; color:#264653; margin:0; padding-left:16px; line-height:1.5;">
+        <li>a. Quinolones</li>
+        <li>b. Fluid and electrolyte support ✓</li>
+        <li>c. Azithromycin</li>
+        <li>d. Metronidazole</li>
+      </ul>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px; width:40px; height:24px;" aria-hidden="true">
+      <rect x="0" y="2" width="40" height="20" rx="10" fill="#2a9d8f" opacity="0.85"/>
+      <text x="20" y="16" text-anchor="middle" fill="#ffffff" font-family="'Times New Roman',serif" font-size="12" font-weight="700">18</text>
+    </svg>
+</div>
+</div>
+</body>
+</html>

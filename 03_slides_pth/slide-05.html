@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PH — Clinical Consequences</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;background:#fff;overflow:hidden;position:relative;">
+
+  
+
+  <p style="position:absolute;top:30px;left:50px;font-family:'Times New Roman',serif;font-size:34px;font-weight:700;color:#003049;z-index:10;margin:0;">
+    Clinical Consequences of Portal Hypertension
+  </p>
+  <div style="position:absolute;top:70px;left:50px;width:80px;height:3px;background:#c1121f;z-index:10;"></div>
+
+  <!-- Left column: list of consequences -->
+  <div style="position:absolute;top:100px;left:50px;width:420px;z-index:10;font-family:'Times New Roman',serif;">
+    <p style="font-size:18px;font-weight:700;color:#780000;margin:0 0 10px 0;">Major Clinical Consequences</p>
+    <ol style="margin:0;padding-left:22px;font-size:15px;color:#003049;line-height:2.0;">
+      <li><strong style="color:#c1121f;">GI bleeding</strong> — ruptured gastroesophageal varices</li>
+      <li>Portal hypertensive gastropathy &amp; colonopathy</li>
+      <li><strong style="color:#780000;">Ascites</strong></li>
+      <li>Hepatorenal syndrome</li>
+      <li>Spontaneous bacterial peritonitis (SBP)</li>
+      <li>Hepatopulmonary syndrome</li>
+      <li>Porto-pulmonary hypertension</li>
+      <li><strong style="color:#780000;">Hepatic encephalopathy</strong></li>
+    </ol>
+  </div>
+
+  <!-- Right column: variceal bleeding focus -->
+  <div style="position:absolute;top:100px;left:500px;width:420px;z-index:10;font-family:'Times New Roman',serif;">
+    <p style="font-size:18px;font-weight:700;color:#c1121f;margin:0 0 10px 0;">Focus: Gastrointestinal Bleeding</p>
+    <div style="background:rgba(120,0,0,0.05);padding:14px;border-radius:6px;border-left:4px solid #780000;">
+      <p style="font-size:14px;font-weight:700;color:#780000;margin:0 0 6px 0;">UGIB vs LGIB</p>
+      <ul style="margin:0;padding-left:18px;font-size:13px;color:#003049;line-height:1.7;">
+        <li><strong>Upper GI (UGIB):</strong> from upper esophageal sphincter to ligament of Treitz</li>
+        <li><strong>Lower GI (LGIB):</strong> from ligament of Treitz to anal canal (mid-GI + colonic)</li>
+        <li>UGIB is <strong>4× more common</strong> than LGIB</li>
+        <li>Higher incidence in males</li>
+      </ul>
+    </div>
+    <div style="margin-top:14px;background:rgba(102,155,188,0.1);padding:10px 14px;border-radius:6px;border-left:4px solid #669bbc;">
+      <p style="font-size:14px;font-weight:700;color:#003049;margin:0 0 4px 0;">UGIB Classification</p>
+      <ul style="margin:0;padding-left:18px;font-size:13px;color:#003049;line-height:1.6;">
+        <li><strong>Variceal:</strong> complication of ESLD / portal HTN</li>
+        <li><strong>Non-variceal:</strong> peptic ulcer, erosions, Mallory-Weiss, etc.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UGIB — Management 3 Goals</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="width:960px;height:540px;background:#fff;overflow:hidden;position:relative;">
+
+  
+
+  <p style="position:absolute;top:30px;left:50px;font-family:'Times New Roman',serif;font-size:32px;font-weight:700;color:#003049;z-index:10;margin:0;">
+    Management of Acute UGIB — Three Goals
+  </p>
+  <div style="position:absolute;top:68px;left:50px;width:80px;height:3px;background:#c1121f;z-index:10;"></div>
+
+  <!-- Goal 1 -->
+  <div style="position:absolute;top:95px;left:50px;width:280px;z-index:10;font-family:'Times New Roman',serif;">
+    <div style="background:#780000;padding:8px;border-radius:6px 6px 0 0;text-align:center;">
+      <p style="font-size:16px;font-weight:700;color:#fff;margin:0;">Goal 1</p>
+    </div>
+    <div style="background:rgba(120,0,0,0.05);padding:12px;border-radius:0 0 6px 6px;border:1px solid rgba(120,0,0,0.1);min-height:280px;">
+      <p style="font-size:15px;font-weight:700;color:#780000;margin:0 0 8px 0;">Initial Evaluation</p>
+      <ul style="margin:0;padding-left:18px;font-size:13px;color:#003049;line-height:1.7;">
+        <li>Hemodynamic status: pulse, BP, anemia</li>
+        <li>History &amp; clinical examination</li>
+        <li>Assess co-morbidity</li>
+        <li>Avoid multi-organ failure</li>
+        <li>Lower mortality</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Goal 2 -->
+  <div style="position:absolute;top:95px;left:345px;width:280px;z-index:10;font-family:'Times New Roman',serif;">
+    <div style="background:#669bbc;padding:8px;border-radius:6px 6px 0 0;text-align:center;">
+      <p style="font-size:16px;font-weight:700;color:#fff;margin:0;">Goal 2</p>
+    </div>
+    <div style="background:rgba(102,155,188,0.06);padding:12px;border-radius:0 0 6px 6px;border:1px solid rgba(102,155,188,0.15);min-height:280px;">
+      <p style="font-size:15px;font-weight:700;color:#003049;margin:0 0 8px 0;">Resuscitation</p>
+      <ul style="margin:0;padding-left:18px;font-size:13px;color:#003049;line-height:1.7;">
+        <li><strong>Volume replacement:</strong> crystalloids</li>
+        <li><strong>Blood transfusion:</strong> target Hb 7–9 g/dL</li>
+        <li><strong>PPI therapy:</strong> high-dose IV bolus + infusion (80 mg → 8 mg/h × 72h)</li>
+        <li><strong>Vasoactive drugs:</strong> octreotide, terlipressin (if variceal)</li>
+        <li><strong>Nasogastric lavage:</strong> confirm bleeding, improve visualization</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Goal 3 -->
+  <div style="position:absolute;top:95px;left:640px;width:280px;z-index:10;font-family:'Times New Roman',serif;">
+    <div style="background:#c1121f;padding:8px;border-radius:6px 6px 0 0;text-align:center;">
+      <p style="font-size:16px;font-weight:700;color:#fff;margin:0;">Goal 3</p>
+    </div>
+    <div style="background:rgba(192,18,31,0.04);padding:12px;border-radius:0 0 6px 6px;border:1px solid rgba(192,18,31,0.1);min-height:280px;">
+      <p style="font-size:15px;font-weight:700;color:#c1121f;margin:0 0 8px 0;">Identify &amp; Control</p>
+      <ul style="margin:0;padding-left:18px;font-size:13px;color:#003049;line-height:1.7;">
+        <li>Endoscopic therapy ASAP after resuscitation</li>
+        <li>Acute variceal hemorrhage occurs in ~20% of PH patients</li>
+        <li>Esophageal band ligation (preferred)</li>
+        <li>Sclerotherapy (if banding unavailable)</li>
+        <li>Gastric varices: histoacryl injection</li>
+        <li>Balloon tamponade / TIPS as rescue</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
