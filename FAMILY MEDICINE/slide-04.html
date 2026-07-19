@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Slide 04 - Acute Abdomen</title>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="padding:28px 44px;background:#F8FAFC;">
+  <h2 class="slide-title" style="font-size:30px;">Acute Abdomen</h2>
+  <div class="title-accent"></div>
+
+  <div class="clinical-pearl" style="margin-bottom:16px;">
+    <div class="pearl-icon">&#9432;</div>
+    <div class="pearl-text"><strong>Definition:</strong> Sudden, severe abdominal pain of unclear etiology that is &lt; 24 hours in duration.</div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+    <div class="card">
+      <div class="card-title"><span class="icon" style="color:#DC2626;">&#9888;</span> Surgical Causes</div>
+      <ul class="ulist ulist-compact">
+        <li>Acute cholecystitis</li>
+        <li>Acute appendicitis or Meckel's diverticulitis</li>
+        <li>Acute pancreatitis</li>
+        <li>Ectopic pregnancy</li>
+        <li>Diverticulitis</li>
+        <li>Peptic ulcer disease</li>
+        <li>Pelvic inflammatory disease</li>
+        <li>Intestinal obstruction</li>
+        <li>Acute intestinal ischaemia/infarction or vasculitis</li>
+        <li>GI haemorrhage</li>
+        <li>Renal colic or renal tract pain</li>
+        <li>Acute urinary retention</li>
+        <li>Abdominal aortic aneurysm (AAA)</li>
+        <li>Testicular torsion</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon" style="color:#0F766E;">&#9888;</span> Non-Surgical Causes</div>
+      <ul class="ulist ulist-compact">
+        <li>MI, pericarditis, pneumonia</li>
+        <li>Sickle cell crisis</li>
+        <li>Hepatitis</li>
+        <li>Inflammatory bowel disease</li>
+        <li>Opiate withdrawal</li>
+        <li>Typhoid</li>
+        <li>Acute intermittent porphyria</li>
+        <li>HIV associated lymphadenopathy or enteritis</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="page-number">04</div>
+</div>
+</body>
+</html>

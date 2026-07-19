@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+<title>Brucellosis Pathogenesis</title>
+</head>
+<body>
+<div class="slide-content" style="background:#ffffff;overflow:hidden;font-family:'Times New Roman',serif;">
+
+<svg style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:0;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="0" y="0" width="960" height="540" fill="#ffffff"/>
+  <rect x="0" y="0" width="960" height="70" fill="#f4a261"/>
+  <rect x="0" y="70" width="960" height="3" fill="#264653"/>
+</svg>
+<div style="position:absolute;top:18px;left:50px;z-index:1;">
+  <p style="font-size:24px;font-weight:700;color:#ffffff;margin:0;">Section 3 &bull; Brucellosis</p>
+</div>
+<div style="position:absolute;top:95px;left:50px;width:860px;z-index:1;">
+  <p style="font-size:20px;font-weight:700;color:#264653;margin:0 0 4px 0;">Pathogenesis &amp; Clinical Picture</p>
+  <div style="width:50px;height:2px;background:#f4a261;margin-bottom:8px;"></div>
+  <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:10px;">
+    <div>
+      <div style="background:#264653;border-radius:6px;padding:10px;">
+        <p style="color:#e9c46a;font-size:13px;font-weight:700;margin:0 0 4px 0;">Pathogenesis (3 steps)</p>
+        <ol style="margin:0;padding-left:16px;color:#eee;font-size:11px;line-height:1.7;">
+          <li>Brucella enters body, reaches regional lymph nodes then blood stream (primary bacteremia), then taken by reticuloendothelial system (liver, spleen, lymph nodes, bone marrow). Intracellular location protects from defense mechanisms.</li>
+          <li>Following multiplication in endoplasmic reticulum, released into blood stream (secondary bacteremia = end of incubation period) with hemolysins and induced cell necrosis.</li>
+          <li>The cycle repeats with recurrence of bacteremia and fever (undulation) till diagnosis/treatment, death, localization or chronicity. Organism produces inflammation, abscess formation or granuloma formation (delayed hypersensitivity reaction).</li>
+        </ol>
+      </div>
+    </div>
+    <div>
+      <p style="font-size:13px;font-weight:700;color:#264653;margin:0 0 4px 0;">Clinical Types (5 types based on duration &amp; localization)</p>
+      <div style="background:#f0f7f6;border-radius:4px;padding:6px;margin-bottom:4px;">
+        <p style="font-size:12px;font-weight:700;color:#2a9d8f;margin:0 0 1px 0;">I. Subclinical Brucellosis</p>
+        <p style="font-size:10px;color:#555;margin:0;">Asymptomatic, occurs in high risk group. Serology negative/low positive. Negative blood culture. Negative PCR.</p>
+      </div>
+      <div style="background:#fff8f0;border-radius:4px;padding:6px;margin-bottom:4px;">
+        <p style="font-size:12px;font-weight:700;color:#f4a261;margin:0 0 1px 0;">II. Acute (&lt;3mo) &amp; Subacute (3-12mo)</p>
+        <p style="font-size:10px;color:#555;margin:0;">Abrupt/insidious onset. Malaise, headache, weakness, fatigue, anorexia, muscle/joint pain, spinal tenderness (spondylitis). Undulant fever/rigors. Lymphadenopathy, splenomegaly, hepatomegaly. Dyspepsia, constipation, diarrhea, vomiting, abdominal pain from hepatic abscesses.</p>
+      </div>
+      <div style="background:#fef0f0;border-radius:4px;padding:6px;margin-bottom:4px;">
+        <p style="font-size:12px;font-weight:700;color:#e76f51;margin:0 0 1px 0;">III. Relapsing Brucellosis (~10%)</p>
+        <p style="font-size:10px;color:#555;margin:0;">Recurrence of symptoms. Greater in inadequately treated/untreated patients. Even in properly treated patients due to intracellular location protecting from antibiotics.</p>
+      </div>
+      <div style="background:#f0f0f7;border-radius:4px;padding:6px;margin-bottom:4px;">
+        <p style="font-size:12px;font-weight:700;color:#264653;margin:0 0 1px 0;">IV. Focal (Localized)</p>
+        <p style="font-size:10px;color:#555;margin:0;">May localize in any organ: CNS, CVS, Musculoskeletal, Liver, Spleen, Genitourinary.</p>
+      </div>
+      <div style="background:#f5f0f7;border-radius:4px;padding:6px;">
+        <p style="font-size:12px;font-weight:700;color:#264653;margin:0 0 1px 0;">V. Chronic (&gt;1 year)</p>
+        <p style="font-size:10px;color:#555;margin:0;">Fever in 50%. Negative blood culture. Serology may be negative.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<svg style="position:absolute;right:32px;bottom:24px;width:40px;height:24px;z-index:100;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="40" height="24" rx="4" fill="#2a9d8f" opacity="0.9"/>
+  <text x="20" y="17" text-anchor="middle" font-family="Times New Roman, serif" font-size="14" fill="#ffffff" font-weight="700">18</text>
+</svg>
+</div>
+</body>
+</html>

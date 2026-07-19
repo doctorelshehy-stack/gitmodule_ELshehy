@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html,body{margin:0;padding:0;width:100%;height:100%;overflow:hidden;display:flex;justify-content:center;align-items:center;background:#000;}
+.slide-content{width:960px;height:540px;position:relative;transform-origin:center center;}
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960,sy=window.innerHeight/540,sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script><title>Cover</title></head><body><div class="slide-content" style="background:#264653;overflow:hidden;font-family:'Times New Roman',serif;"><svg style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:0;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="0" y="0" width="960" height="540" fill="#264653"/><circle cx="850" cy="-50" r="300" fill="#2a9d8f" opacity="0.15"/><circle cx="700" cy="400" r="250" fill="#e9c46a" opacity="0.08"/><circle cx="150" cy="500" r="200" fill="#e76f51" opacity="0.1"/><rect x="80" y="300" width="4" height="100" fill="#e9c46a" rx="2"/><rect x="80" y="420" width="60" height="4" fill="#e9c46a" rx="2"/></svg>
+<div style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:1;">
+<p style="position:absolute;top:170px;left:110px;font-size:20px;color:#e9c46a;font-weight:400;letter-spacing:2px;opacity:0.9;">TROPICAL GASTROENTEROLOGY</p>
+<p style="position:absolute;top:210px;left:110px;font-size:48px;color:#fff;font-weight:700;line-height:1.2;">Tropical Support 41<br><span style="color:#e9c46a;">Complete Review</span></p>
+<p style="position:absolute;top:330px;left:110px;font-size:16px;color:rgba(255,255,255,0.7);line-height:1.6;">Hepatic Encephalopathy &bull; HPS &bull; Enteric Fever &bull; Brucellosis<br>Schistosomiasis &bull; Malaria &bull; Toxoplasmosis &bull; Fever &bull; Diarrheal Diseases</p>
+<div style="position:absolute;top:440px;left:110px;width:80px;height:3px;background:#f4a261;"></div>
+<p style="position:absolute;top:465px;left:110px;font-size:13px;color:rgba(255,255,255,0.5);">All Details Preserved &mdash; Files 05, 07, 08, 09, 10, 11, 12</p>
+</div></div></body></html>

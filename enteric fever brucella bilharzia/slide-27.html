@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+<title>Schisto Investigations</title>
+</head>
+<body>
+<div class="slide-content" style="background:#ffffff;overflow:hidden;font-family:'Times New Roman',serif;">
+
+<svg style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:0;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="0" y="0" width="960" height="540" fill="#ffffff"/>
+  <rect x="0" y="0" width="960" height="70" fill="#e76f51"/>
+  <rect x="0" y="70" width="960" height="3" fill="#264653"/>
+</svg>
+<div style="position:absolute;top:18px;left:50px;z-index:1;">
+  <p style="font-size:24px;font-weight:700;color:#ffffff;margin:0;">Section 4 &bull; Schistosomiasis</p>
+</div>
+<div style="position:absolute;top:95px;left:50px;width:860px;z-index:1;">
+  <p style="font-size:20px;font-weight:700;color:#264653;margin:0 0 4px 0;">Investigations &amp; Chemotherapy</p>
+  <div style="width:50px;height:2px;background:#e76f51;margin-bottom:8px;"></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div>
+      <p style="font-size:14px;font-weight:700;color:#264653;margin:0 0 4px 0;">Investigations</p>
+      <div style="background:#f0f7f6;border-radius:6px;padding:10px;margin-bottom:6px;">
+        <p style="font-size:12px;font-weight:700;color:#2a9d8f;margin:0 0 2px 0;">1. Direct Methods</p>
+        <ul style="margin:0;padding-left:16px;font-size:11px;color:#444;line-height:1.6;">
+          <li><strong>Urine analysis:</strong> Detecting eggs of S. haematobium</li>
+          <li><strong>Stool analysis:</strong> Detecting eggs of S. mansoni &amp; japonicum</li>
+          <li><strong>Biopsy techniques:</strong>
+            <ul style="padding-left:12px;">
+              <li>Rectal mucosa biopsy from suspected lesion or rectal valves (examined by transparency technique)</li>
+              <li>Liver biopsy: transparency technique or histopathology</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div style="background:#fdf6f0;border-radius:6px;padding:10px;margin-bottom:6px;">
+        <p style="font-size:12px;font-weight:700;color:#f4a261;margin:0 0 2px 0;">2. Indirect Methods</p>
+        <ul style="margin:0;padding-left:16px;font-size:11px;color:#444;line-height:1.6;">
+          <li><strong>Serology:</strong> Detecting circulating antibodies by ELISA or IFAT</li>
+        </ul>
+        <p style="font-size:10px;color:#e76f51;margin:2px 0 0 0;"><strong>Disadvantages of serology:</strong> Not species specific. Doesn't distinguish between past &amp; present infection.</p>
+      </div>
+      <div style="background:#f5f0f7;border-radius:6px;padding:8px;">
+        <p style="font-size:12px;font-weight:700;color:#264653;margin:0 0 2px 0;">3-5. Other Investigations</p>
+        <ul style="margin:0;padding-left:16px;font-size:11px;color:#444;line-height:1.6;">
+          <li><strong>Cystoscopy:</strong> For detection of urinary bladder lesions</li>
+          <li><strong>X-ray of urinary tract:</strong> To detect calcification of bladder and ureter</li>
+          <li><strong>Abdominal ultrasound (US):</strong> To detect periportal fibrosis of liver, splenomegaly and ascites</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <p style="font-size:14px;font-weight:700;color:#264653;margin:0 0 4px 0;">Chemotherapy</p>
+      <div style="background:#264653;border-radius:8px;padding:14px;margin-bottom:8px;">
+        <p style="color:#e9c46a;font-size:16px;font-weight:700;margin:0 0 6px 0;">1) Praziquantel</p>
+        <ul style="margin:0;padding-left:16px;color:#eee;font-size:12px;line-height:1.7;">
+          <li><strong>Dose:</strong> 40 mg/kg single oral dose is sufficient for all species</li>
+          <li><strong>Indications:</strong> Effective against all human Schistosomes</li>
+          <li><strong>Side effects:</strong> Usually mild: epigastric pain, nausea, dizziness, loose stool, pruritus and fever</li>
+        </ul>
+      </div>
+      <div style="background:#2a9d8f;border-radius:6px;padding:10px;margin-bottom:6px;">
+        <p style="color:#ffffff;font-size:13px;font-weight:700;margin:0 0 2px 0;">2) Metriphonate</p>
+        <p style="color:#fff;font-size:12px;margin:0;">Active against S. haematobium only</p>
+      </div>
+      <div style="background:#f4a261;border-radius:6px;padding:10px;">
+        <p style="color:#ffffff;font-size:13px;font-weight:700;margin:0 0 2px 0;">3) Oxamniquine</p>
+        <p style="color:#fff;font-size:12px;margin:0;">Active against S. mansoni only</p>
+      </div>
+      <div style="margin-top:10px;background:#f0f7f6;border-radius:6px;padding:10px;">
+        <p style="font-size:12px;font-weight:700;color:#264653;margin:0 0 4px 0;">Review Questions (from source)</p>
+        <ol style="margin:0;padding-left:16px;font-size:11px;color:#444;line-height:1.6;">
+          <li>The infective stage of schistosoma is: a- Adult worm, b- Eggs, c- Cercaria, d- Miracidium</li>
+          <li>Which one of the following malignancies is related to schistosoma infection? a- Cancer colon, b- HCC, c- Cancer urinary bladder</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<svg style="position:absolute;right:32px;bottom:24px;width:40px;height:24px;z-index:100;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="40" height="24" rx="4" fill="#2a9d8f" opacity="0.9"/>
+  <text x="20" y="17" text-anchor="middle" font-family="Times New Roman, serif" font-size="14" fill="#ffffff" font-weight="700">25</text>
+</svg>
+</div>
+</body>
+</html>

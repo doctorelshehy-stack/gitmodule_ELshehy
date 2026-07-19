@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+<title>Schisto Species</title>
+</head>
+<body>
+<div class="slide-content" style="background:#ffffff;overflow:hidden;font-family:'Times New Roman',serif;">
+
+<svg style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:0;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="0" y="0" width="960" height="540" fill="#ffffff"/>
+  <rect x="0" y="0" width="960" height="70" fill="#e76f51"/>
+  <rect x="0" y="70" width="960" height="3" fill="#264653"/>
+</svg>
+<div style="position:absolute;top:18px;left:50px;z-index:1;">
+  <p style="font-size:24px;font-weight:700;color:#ffffff;margin:0;">Section 4 &bull; Schistosomiasis</p>
+</div>
+<div style="position:absolute;top:95px;left:50px;width:860px;z-index:1;">
+  <p style="font-size:20px;font-weight:700;color:#264653;margin:0 0 4px 0;">Species, Life Cycle &amp; Pathology</p>
+  <div style="width:50px;height:2px;background:#e76f51;margin-bottom:8px;"></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div>
+      <div style="background:#f0f7f6;border-radius:6px;padding:10px;margin-bottom:8px;">
+        <p style="font-size:14px;font-weight:700;color:#264653;margin:0 0 4px 0;">Species</p>
+        <ol style="margin:0;padding-left:16px;font-size:12px;color:#444;line-height:1.6;">
+          <li>S. Mansoni</li>
+          <li>S. Haematobium</li>
+          <li>S. Japonicum</li>
+        </ol>
+      </div>
+      <div style="background:#fff8f0;border-radius:6px;padding:10px;">
+        <p style="font-size:13px;font-weight:700;color:#264653;margin:0 0 4px 0;">Life Cycle (from image)</p>
+        <ol style="margin:0;padding-left:16px;font-size:11px;color:#444;line-height:1.6;">
+          <li>Eggs (S. mansoni B, S. japonicum A in feces; S. haematobium C in urine)</li>
+          <li>Eggs hatch releasing miracidia</li>
+          <li>Miracidia penetrate snail tissue</li>
+          <li>Sporocysts in snail (successive generations)</li>
+          <li>Cercariae released by snail into water (free-swimming) &ndash; <strong>Infective stage</strong></li>
+          <li>Penetrate skin &rarr; lose tails &rarr; become schistosomulae</li>
+          <li>Circulation &rarr; migrate to portal blood in liver &rarr; mature into adults</li>
+          <li>Paired adult worms migrate to mesenteric venules (A, B) or venous plexus of bladder (C)</li>
+        </ol>
+      </div>
+    </div>
+    <div>
+      <div style="background:#264653;border-radius:6px;padding:10px;">
+        <p style="color:#e9c46a;font-size:13px;font-weight:700;margin:0 0 4px 0;">Pathology &mdash; 3 Stages</p>
+        <p style="font-size:12px;font-weight:700;color:#f4a261;margin:4px 0 2px 0;">1. Stage of Invasion</p>
+        <ul style="margin:0;padding-left:16px;color:#eee;font-size:11px;line-height:1.6;">
+          <li><strong>Cercarial dermatitis</strong> (swimmer's itch) &ndash; from skin penetration by cercaria</li>
+          <li><strong>Cercarial pneumonitis</strong> (eosinophilic pneumonitis) &ndash; patchy lung congestion, eosinophilic sputum, high eosinophilia</li>
+        </ul>
+        <p style="font-size:12px;font-weight:700;color:#f4a261;margin:4px 0 2px 0;">2. Stage of Ova Deposition &amp; Granuloma Formation</p>
+        <ul style="margin:0;padding-left:16px;color:#eee;font-size:11px;line-height:1.6;">
+          <li>Ova deposited in submucosa, surrounded by granulomatous reaction</li>
+          <li>S. haematobium: urinary system (ureter, bladder, seminal vesicles, prostate)</li>
+          <li>S. mansoni: large intestine (descending colon, rectum)</li>
+          <li>Granuloma: ova surrounded by epithelioid cells, eosinophils, lymphocytes, giant cells, later loose fibrous tissue</li>
+          <li>Soluble antigen leaks from eggs &rarr; Ag-Ab complex formation &rarr; generalized immune complex disease</li>
+        </ul>
+        <p style="font-size:12px;font-weight:700;color:#f4a261;margin:4px 0 2px 0;">3. Stage of Repair by Fibrosis</p>
+        <p style="font-size:11px;color:#eee;margin:0;">Granulomatous tissue replaced by fibrosis. Clinical manifestations depend on affected organ.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<svg style="position:absolute;right:32px;bottom:24px;width:40px;height:24px;z-index:100;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="40" height="24" rx="4" fill="#2a9d8f" opacity="0.9"/>
+  <text x="20" y="17" text-anchor="middle" font-family="Times New Roman, serif" font-size="14" fill="#ffffff" font-weight="700">21</text>
+</svg>
+</div>
+</body>
+</html>

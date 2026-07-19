@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Slide 01 - Cover</title>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content cover-slide">
+  <div style="position:relative;z-index:10;padding:40px;display:flex;flex-direction:column;align-items:center;">
+    <p class="cover-subtitle">Family (GIT) - 2024</p>
+    <h1 class="cover-title">Gastrointestinal<br>Disorders</h1>
+    <p class="cover-desc">Comprehensive Study Guide</p>
+    <div class="cover-divider"></div>
+    <p class="cover-tags">Abdominal Pain &bull; Colorectal Cancer &bull; Constipation &bull; Functional Dyspepsia &bull; Weight Loss</p>
+  </div>
+  <div style="position:absolute;bottom:20px;left:0;width:100%;text-align:center;z-index:10;">
+    <p style="font-size:12px;color:rgba(255,255,255,0.35);font-weight:400;">Medical Education Content</p>
+  </div>
+  <div class="page-number">01</div>
+</div>
+</body>
+</html>

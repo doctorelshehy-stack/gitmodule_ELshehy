@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+<title>Schisto Hepatic</title>
+</head>
+<body>
+<div class="slide-content" style="background:#ffffff;overflow:hidden;font-family:'Times New Roman',serif;">
+
+<svg style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:0;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="0" y="0" width="960" height="540" fill="#ffffff"/>
+  <rect x="0" y="0" width="960" height="70" fill="#e76f51"/>
+  <rect x="0" y="70" width="960" height="3" fill="#264653"/>
+</svg>
+<div style="position:absolute;top:18px;left:50px;z-index:1;">
+  <p style="font-size:24px;font-weight:700;color:#ffffff;margin:0;">Section 4 &bull; Schistosomiasis</p>
+</div>
+<div style="position:absolute;top:95px;left:50px;width:860px;z-index:1;">
+  <p style="font-size:20px;font-weight:700;color:#264653;margin:0 0 4px 0;">Hepatic Schistosomiasis</p>
+  <div style="width:50px;height:2px;background:#e76f51;margin-bottom:8px;"></div>
+  <div style="background:#f0f7f6;border-left:4px solid #2a9d8f;padding:10px 14px;margin-bottom:8px;">
+    <p style="font-size:13px;color:#264653;margin:0;line-height:1.5;"><strong>Key concept:</strong> Hepatic schistosomiasis is a delayed hypersensitivity reaction produced by T-lymphocytes. It is a mesenchymal rather than parenchymal disease: portal tracts are thickened and many tributaries of the portal vein are obstructed &rarr; portal hypertension. Formation of granuloma replaced later by fibrous tissue &rarr; periportal fibrosis responsible for all sequelae.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div>
+      <p style="font-size:14px;font-weight:700;color:#264653;margin:0 0 4px 0;">Clinical Presentation (5 Stages)</p>
+      <div style="background:#264653;border-radius:6px;padding:8px;margin-bottom:4px;">
+        <p style="color:#e9c46a;font-size:11px;font-weight:700;margin:0 0 1px 0;">Stage 1: Hepatomegaly</p>
+        <p style="color:#eee;font-size:10px;margin:0;">Liver enlarged, tender due to congestion from deposition of embolized ova in portal tracts.</p>
+      </div>
+      <div style="background:#2a9d8f;border-radius:6px;padding:8px;margin-bottom:4px;">
+        <p style="color:#ffffff;font-size:11px;font-weight:700;margin:0 0 1px 0;">Stage 2: Hepatosplenomegaly</p>
+        <p style="color:#fff;font-size:10px;margin:0;">Spleen enlarged (cellular hyperplasia + portal hypertension), liver still enlarged.</p>
+      </div>
+      <div style="background:#f4a261;border-radius:6px;padding:8px;margin-bottom:4px;">
+        <p style="color:#ffffff;font-size:11px;font-weight:700;margin:0 0 1px 0;">Stage 3: Huge Splenomegaly</p>
+        <p style="color:#fff;font-size:10px;margin:0;">Liver shrunken due to marked fibrosis, firm, finely nodular, not tender. Spleen hugely enlarged due to portal hypertension.</p>
+      </div>
+      <div style="background:#e76f51;border-radius:6px;padding:8px;margin-bottom:4px;">
+        <p style="color:#ffffff;font-size:11px;font-weight:700;margin:0 0 1px 0;">Stage 4: Ascites</p>
+        <p style="color:#fff;font-size:10px;margin:0;">Ascites appears due to both portal hypertension and hypoalbuminemia, added to huge splenomegaly.</p>
+      </div>
+      <div style="background:#333;border-radius:6px;padding:8px;">
+        <p style="color:#ff6b6b;font-size:11px;font-weight:700;margin:0 0 1px 0;">Stage 5: Hepatic Cell Failure &amp; Hepatic Coma</p>
+        <p style="color:#eee;font-size:10px;margin:0;">Terminal stage due to compression of hepatocytes by fibrosis &amp; ascites + marked reduction of portal blood flow &rarr; ischemic affection of hepatocytes.</p>
+      </div>
+    </div>
+    <div>
+      <p style="font-size:14px;font-weight:700;color:#264653;margin:0 0 4px 0;">Complications of Hepatic Schistosomiasis</p>
+      <div style="background:#fff8f0;border-radius:6px;padding:10px;border:1px solid #f4a261;">
+        <ol style="margin:0;padding-left:18px;font-size:12px;color:#444;line-height:1.8;">
+          <li><strong>Huge splenomegaly:</strong> Hypersplenism &rarr; monocytopenia or pancytopenia. Splenic pain, thrombosis. Easy rupture of spleen. Divarication of recti and abdominal hernias.</li>
+          <li><strong>Esophageal varices:</strong> May rupture &rarr; fatal hematemesis</li>
+          <li><strong>Ascites and its complications:</strong> Spontaneous bacterial peritonitis (SBP) and TB peritonitis</li>
+          <li><strong>Schistosomal glomerulopathy (nephrotic syndrome):</strong> Due to autoimmune reaction resulting in deposition of antigen-antibody complex in glomerular vessels &amp; Bowman's capsule</li>
+          <li><strong>Chronic salmonellosis</strong></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<svg style="position:absolute;right:32px;bottom:24px;width:40px;height:24px;z-index:100;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="40" height="24" rx="4" fill="#2a9d8f" opacity="0.9"/>
+  <text x="20" y="17" text-anchor="middle" font-family="Times New Roman, serif" font-size="14" fill="#ffffff" font-weight="700">24</text>
+</svg>
+</div>
+</body>
+</html>

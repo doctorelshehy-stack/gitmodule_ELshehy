@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Slide 08 - Assessment & History</title>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="padding:28px 44px;background:#F8FAFC;">
+  <h2 class="slide-title" style="font-size:30px;">Assessment &amp; History Taking</h2>
+  <div class="title-accent"></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+    <div>
+      <div class="card card-secondary" style="margin-bottom:12px;">
+        <div class="card-title">&#128300; Initial Impression</div>
+        <ol class="olist olist-compact">
+          <li>Does patient look ill, septic or shocked?</li>
+          <li>Lying still (peritonitis) or writhing (colic)?</li>
+          <li>Assess and manage ABC as priority</li>
+          <li>Community setting: rapid transfer to hospital</li>
+        </ol>
+      </div>
+      <div class="card">
+        <div class="card-title">&#128221; History Components</div>
+        <ul class="ulist ulist-compact">
+          <li>Demographic details, occupation, recent travel</li>
+          <li>History of recent abdominal trauma</li>
+          <li>Pain analysis: (SOCRATES)</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="card card-accent" style="margin-bottom:12px;">
+        <div class="card-title">&#128200; Associated Symptoms</div>
+        <ul class="ulist ulist-compact">
+          <li>Vomiting and nature of vomitus</li>
+          <li>Hematemesis or melena</li>
+          <li>New lumps in abdominal region</li>
+          <li>Diarrhea, constipation</li>
+          <li>Fainting, dizziness or palpitations</li>
+          <li>Fever/rigors, Rash or itching</li>
+          <li>Urinary symptoms, Recent weight loss</li>
+          <li>Past medical and surgical history</li>
+        </ul>
+      </div>
+      <div class="warning-box">
+        <div class="warn-icon">&#9794;</div>
+        <div class="warn-text">
+          <strong>Gynecological History</strong><br>
+          <span style="font-size:12px;line-height:1.7;">Contraception, Last menstrual period<br>STIs/PID, Ectopic pregnancy, Vaginal bleeding<br>Drug history and allergies</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-number">08</div>
+</div>
+</body>
+</html>

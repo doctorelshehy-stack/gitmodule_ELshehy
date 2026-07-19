@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+<title>HPS Treatment</title>
+</head>
+<body>
+<div class="slide-content" style="background:#ffffff;overflow:hidden;font-family:'Times New Roman',serif;">
+
+<svg style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:0;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="0" y="0" width="960" height="540" fill="#ffffff"/>
+  <rect x="0" y="0" width="960" height="70" fill="#264653"/>
+  <rect x="0" y="70" width="960" height="3" fill="#2a9d8f"/>
+</svg>
+<div style="position:absolute;top:18px;left:50px;z-index:1;">
+  <p style="font-size:24px;font-weight:700;color:#ffffff;margin:0;">Section 1 &bull; Hepatopulmonary Syndrome</p>
+</div>
+<div style="position:absolute;top:95px;left:50px;width:860px;z-index:1;">
+  <p style="font-size:20px;font-weight:700;color:#264653;margin:0 0 4px 0;">Treatment of HPS &amp; HPS Diagnosis Flowchart</p>
+  <div style="width:50px;height:2px;background:#2a9d8f;margin-bottom:10px;"></div>
+  <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:12px;">
+    <div>
+      <div style="background:#264653;border-radius:8px;padding:12px;">
+        <p style="color:#e9c46a;font-size:14px;font-weight:700;margin:0 0 6px 0;">Lines of Treatment</p>
+        <div style="background:rgba(255,255,255,0.1);border-radius:4px;padding:8px;margin-bottom:6px;">
+          <p style="color:#f4a261;font-size:13px;font-weight:700;margin:0 0 2px 0;">Conservative</p>
+          <p style="color:#eee;font-size:12px;margin:0;">Oxygen can be used in all patients</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.1);border-radius:4px;padding:8px;margin-bottom:6px;">
+          <p style="color:#f4a261;font-size:13px;font-weight:700;margin:0 0 2px 0;">Medical</p>
+          <p style="color:#eee;font-size:12px;margin:0;">Not effective</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.1);border-radius:4px;padding:8px;">
+          <p style="color:#f4a261;font-size:13px;font-weight:700;margin:0 0 2px 0;">Surgical</p>
+          <p style="color:#eee;font-size:12px;margin:0;">Liver transplant in patients with PaO<sub>2</sub> &gt; 55-60 mmHg and shunt fraction &lt; 20%</p>
+        </div>
+      </div>
+    </div>
+    <div style="background:#f8f9fa;border-radius:8px;padding:10px;border:1px solid #ddd;">
+      <p style="font-size:13px;font-weight:700;color:#264653;margin:0 0 6px 0;">HPS Diagnosis Flowchart (from image)</p>
+      <p style="font-size:11px;color:#555;margin:0;line-height:1.6;">
+        <strong>Chronic liver disease</strong> &rarr; Pulse oximetry<br>
+        &nbsp;&nbsp;&bull; SaO<sub>2</sub> &ge; 96% &rarr; No severe gas exchange abnormality<br>
+        &nbsp;&nbsp;&bull; SaO<sub>2</sub> &lt; 96% &rarr; Contrast echocardiography<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPVD positive &rarr; Arterial blood gas analysis<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPVD negative &rarr; No HPS<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; AaPO<sub>2</sub> &lt; 15 mmHg &rarr; No HPS, solely IPVD<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; AaPO<sub>2</sub> &ge; 15, PaO<sub>2</sub> &ge; 80 &rarr; Mild HPS<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; AaPO<sub>2</sub> &ge; 15, PaO<sub>2</sub> &lt; 80 &rarr; PFT + chest imaging<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; PaO<sub>2</sub> &lt; 60 &rarr; Severe HPS, LTOT, evaluate for LTX<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; PaO<sub>2</sub> &ge; 60 &rarr; Moderate HPS, follow up
+      </p>
+    </div>
+  </div>
+</div>
+<svg style="position:absolute;right:32px;bottom:24px;width:40px;height:24px;z-index:100;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="40" height="24" rx="4" fill="#2a9d8f" opacity="0.9"/>
+  <text x="20" y="17" text-anchor="middle" font-family="Times New Roman, serif" font-size="14" fill="#ffffff" font-weight="700">10</text>
+</svg>
+</div>
+</body>
+</html>

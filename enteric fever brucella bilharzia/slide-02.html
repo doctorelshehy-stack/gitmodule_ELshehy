@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+<title>TOC</title>
+</head>
+<body>
+<div class="slide-content" style="background:#ffffff;overflow:hidden;font-family:'Times New Roman',serif;">
+
+<svg style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:0;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="0" y="0" width="960" height="540" fill="#ffffff"/>
+  <rect x="0" y="0" width="6" height="540" fill="#264653"/>
+  <circle cx="920" cy="500" r="180" fill="#2a9d8f" opacity="0.04"/>
+</svg>
+<div style="position:absolute;top:30px;left:50px;z-index:1;">
+  <p style="font-size:28px;font-weight:700;color:#264653;margin:0;">Table of Contents</p>
+  <div style="width:60px;height:3px;background:#2a9d8f;margin-top:8px;"></div>
+</div>
+<div style="position:absolute;top:100px;left:50px;width:860px;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+  <div>
+    
+    <div style="display:flex;align-items:center;padding:8px 0;">
+      <div style="width:36px;height:36px;border-radius:50%;background:#2a9d8f;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+        <span style="color:#ffffff;font-size:16px;font-weight:700;">01</span>
+      </div>
+      <div style="margin-left:16px;">
+        <p style="margin:0;font-size:18px;font-weight:700;color:#264653;">Hepatic Encephalopathy &amp; Hepatopulmonary Syndrome</p>
+        <p style="margin:2px 0 0 0;font-size:12px;color:#f4a261;opacity:0.8;">Pages 27-33</p>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;padding:8px 0;">
+      <div style="width:36px;height:36px;border-radius:50%;background:#2a9d8f;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+        <span style="color:#ffffff;font-size:16px;font-weight:700;">02</span>
+      </div>
+      <div style="margin-left:16px;">
+        <p style="margin:0;font-size:18px;font-weight:700;color:#264653;">Enteric Fever (Typhoid)</p>
+        <p style="margin:2px 0 0 0;font-size:12px;color:#f4a261;opacity:0.8;">Pages 37-41</p>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;padding:8px 0;">
+      <div style="width:36px;height:36px;border-radius:50%;background:#2a9d8f;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+        <span style="color:#ffffff;font-size:16px;font-weight:700;">03</span>
+      </div>
+      <div style="margin-left:16px;">
+        <p style="margin:0;font-size:18px;font-weight:700;color:#264653;">Brucellosis</p>
+        <p style="margin:2px 0 0 0;font-size:12px;color:#f4a261;opacity:0.8;">Pages 42-45</p>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;padding:8px 0;">
+      <div style="width:36px;height:36px;border-radius:50%;background:#2a9d8f;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+        <span style="color:#ffffff;font-size:16px;font-weight:700;">04</span>
+      </div>
+      <div style="margin-left:16px;">
+        <p style="margin:0;font-size:18px;font-weight:700;color:#264653;">Schistosomiasis</p>
+        <p style="margin:2px 0 0 0;font-size:12px;color:#f4a261;opacity:0.8;">Pages 46-51</p>
+      </div>
+    </div>
+  </div>
+  <div style="background:#264653;border-radius:12px;padding:24px;display:flex;flex-direction:column;justify-content:center;">
+    <p style="color:#e9c46a;font-size:18px;font-weight:700;margin:0 0 8px 0;">Source Material</p>
+    <p style="color:rgba(255,255,255,0.8);font-size:14px;margin:0;line-height:1.5;">Extracted from Tropical Support 41 Book (Print Edition)<br>Files 05, 07, 08, 09<br>All text preserved without summarization<br>Diagrams &amp; clinical images included</p>
+  </div>
+</div>
+<svg style="position:absolute;right:32px;bottom:24px;width:40px;height:24px;z-index:100;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="40" height="24" rx="4" fill="#2a9d8f" opacity="0.9"/>
+  <text x="20" y="17" text-anchor="middle" font-family="Times New Roman, serif" font-size="14" fill="#ffffff" font-weight="700"></text>
+</svg>
+</div>
+</body>
+</html>

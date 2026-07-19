@@ -1,0 +1,530 @@
+/* ============================================================
+   Gastrointestinal Disorders - Premium Medical Design System
+   Family (GIT) 2024
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* ----- Reset & Base ----- */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  margin: 0; padding: 0; width: 100%; height: 100%;
+  overflow: hidden;
+  display: flex; justify-content: center; align-items: center;
+  background: #0B1121;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.slide-content {
+  width: 960px; height: 540px;
+  position: relative;
+  transform-origin: center center;
+  overflow: hidden;
+  background: #F8FAFC;
+  color: #0F172A;
+}
+
+/* ----- Page Number Badge ----- */
+.page-number {
+  position: absolute; right: 28px; bottom: 20px;
+  z-index: 100;
+  display: flex; align-items: center; justify-content: center;
+  width: 36px; height: 24px;
+  background: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(4px);
+  border-radius: 6px;
+  font-size: 11px; font-weight: 600; color: #fff;
+  letter-spacing: 0.3px;
+}
+
+/* ----- Section Label Badge ----- */
+.section-badge {
+  display: inline-flex; align-items: center;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 11px; font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 12px;
+}
+
+/* ----- Title Styles ----- */
+.slide-title {
+  font-size: 32px; font-weight: 700; color: #0F172A;
+  margin: 0 0 6px 0; line-height: 1.2;
+  letter-spacing: -0.3px;
+}
+.slide-subtitle {
+  font-size: 14px; color: #64748B; font-weight: 400;
+  margin: 0 0 16px 0;
+}
+.title-accent {
+  width: 48px; height: 4px;
+  background: linear-gradient(90deg, #2563EB, #06B6D4);
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+/* ----- Content Layouts ----- */
+.content-2col {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+}
+.content-3col {
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;
+}
+.content-4col {
+  display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px;
+}
+.content-full {
+  width: 100%;
+}
+
+/* ----- Card Base ----- */
+.card {
+  background: #FFFFFF;
+  border-radius: 14px;
+  padding: 16px 18px;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.card-title {
+  font-size: 14px; font-weight: 600; color: #0F172A;
+  margin-bottom: 8px; display: flex; align-items: center; gap: 8px;
+}
+.card-title .icon { font-size: 16px; }
+
+/* ----- Colored Cards ----- */
+.card-primary { border-left: 4px solid #2563EB; }
+.card-secondary { border-left: 4px solid #0F766E; }
+.card-accent { border-left: 4px solid #06B6D4; }
+.card-warning { border-left: 4px solid #F59E0B; }
+.card-danger { border-left: 4px solid #DC2626; }
+.card-success { border-left: 4px solid #16A34A; }
+
+.card-bg-primary { background: #EFF6FF; border-color: #BFDBFE; }
+.card-bg-secondary { background: #F0FDFA; border-color: #99F6E4; }
+.card-bg-accent { background: #ECFEFF; border-color: #A5F3FC; }
+.card-bg-warning { background: #FFFBEB; border-color: #FDE68A; }
+.card-bg-danger { background: #FEF2F2; border-color: #FECACA; }
+.card-bg-success { background: #F0FDF4; border-color: #BBF7D0; }
+
+/* ----- Section Heading ----- */
+.section-heading {
+  font-size: 14px; font-weight: 700; color: #2563EB;
+  text-transform: uppercase; letter-spacing: 0.8px;
+  margin-bottom: 8px;
+}
+
+/* ----- List Styles ----- */
+.ulist {
+  list-style: none; padding: 0; margin: 0;
+}
+.ulist li {
+  font-size: 13px; line-height: 1.6;
+  padding: 3px 0 3px 18px;
+  position: relative; color: #334155;
+}
+.ulist li::before {
+  content: ''; position: absolute; left: 0; top: 10px;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: #2563EB;
+}
+
+.olist {
+  list-style: none; padding: 0; margin: 0; counter-reset: item;
+}
+.olist li {
+  font-size: 13px; line-height: 1.6;
+  padding: 3px 0 3px 24px;
+  position: relative; color: #334155;
+  counter-increment: item;
+}
+.olist li::before {
+  content: counter(item);
+  position: absolute; left: 0; top: 4px;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: #2563EB; color: #fff;
+  font-size: 10px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* ----- Compact Lists ----- */
+.ulist-compact li { font-size: 12px; line-height: 1.5; padding: 2px 0 2px 16px; }
+.ulist-compact li::before { top: 8px; width: 5px; height: 5px; }
+.olist-compact li { font-size: 12px; line-height: 1.5; padding: 2px 0 2px 22px; }
+.olist-compact li::before { width: 16px; height: 16px; font-size: 9px; top: 3px; }
+
+/* ----- Clinical Pearl / Callout Boxes ----- */
+.clinical-pearl {
+  background: linear-gradient(135deg, #EFF6FF, #F0FDFA);
+  border: 1px solid #BFDBFE;
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex; gap: 10px; align-items: flex-start;
+}
+.clinical-pearl .pearl-icon {
+  width: 28px; height: 28px;
+  background: linear-gradient(135deg, #2563EB, #06B6D4);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  color: #fff; font-size: 14px;
+}
+.clinical-pearl .pearl-text { font-size: 12px; color: #1E293B; line-height: 1.5; flex: 1; }
+.clinical-pearl .pearl-text strong { color: #2563EB; }
+
+.warning-box {
+  background: #FEF2F2;
+  border: 1px solid #FECACA;
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex; gap: 10px; align-items: flex-start;
+}
+.warning-box .warn-icon {
+  width: 28px; height: 28px;
+  background: #DC2626;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  color: #fff; font-size: 14px;
+}
+.warning-box .warn-text { font-size: 12px; color: #7F1D1D; line-height: 1.5; flex: 1; }
+.warning-box .warn-text strong { color: #DC2626; }
+
+.remember-box {
+  background: linear-gradient(135deg, #F0FDF4, #ECFEFF);
+  border: 1px solid #BBF7D0;
+  border-radius: 12px;
+  padding: 10px 14px;
+  display: flex; gap: 10px; align-items: flex-start;
+}
+.remember-box .rem-icon {
+  width: 24px; height: 24px;
+  background: #16A34A;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  color: #fff; font-size: 13px;
+}
+.remember-box .rem-text { font-size: 12px; color: #14532D; line-height: 1.5; flex: 1; }
+.remember-box .rem-text strong { color: #16A34A; }
+
+.info-box {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 12px; color: #475569; line-height: 1.5;
+}
+
+/* ----- Tables ----- */
+.med-table {
+  width: 100%; border-collapse: separate; border-spacing: 0;
+  font-size: 12px; border-radius: 10px; overflow: hidden;
+}
+.med-table thead th {
+  background: linear-gradient(135deg, #1E293B, #334155);
+  color: #fff; font-weight: 600; padding: 8px 12px;
+  text-align: left; font-size: 12px;
+  letter-spacing: 0.3px;
+}
+.med-table thead th:first-child { border-radius: 10px 0 0 0; }
+.med-table thead th:last-child { border-radius: 0 10px 0 0; }
+.med-table tbody td {
+  padding: 7px 12px; border-bottom: 1px solid #E2E8F0;
+  color: #334155; font-size: 12px;
+}
+.med-table tbody tr:nth-child(even) td { background: #F8FAFC; }
+.med-table tbody tr:last-child td:first-child { border-radius: 0 0 0 10px; }
+.med-table tbody tr:last-child td:last-child { border-radius: 0 0 10px 0; }
+.med-table tbody tr:hover td { background: #EFF6FF; }
+
+/* ----- Badges ----- */
+.badge {
+  display: inline-flex; align-items: center;
+  padding: 2px 10px; border-radius: 12px;
+  font-size: 10px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.badge-primary { background: #DBEAFE; color: #1D4ED8; }
+.badge-danger { background: #FEE2E2; color: #DC2626; }
+.badge-success { background: #DCFCE7; color: #16A34A; }
+.badge-warning { background: #FEF3C7; color: #D97706; }
+.badge-secondary { background: #E2E8F0; color: #475569; }
+.badge-accent { background: #CFFAFE; color: #0891B2; }
+
+/* ----- Section Divider Slides ----- */
+.section-divider {
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #0F766E 100%);
+}
+.section-divider .section-number {
+  font-size: 80px; font-weight: 800;
+  background: linear-gradient(135deg, #2563EB, #06B6D4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.section-divider .section-title-lg {
+  font-size: 40px; font-weight: 700; color: #FFFFFF;
+  margin: 0 0 8px 0; letter-spacing: -0.5px;
+}
+.section-divider .section-subtitle-lg {
+  font-size: 16px; color: #94A3B8; font-weight: 400;
+}
+
+/* ----- Cover Slide ----- */
+.cover-slide {
+  display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+  background: linear-gradient(135deg, #0B1121 0%, #0F172A 40%, #1E293B 100%);
+  position: relative;
+}
+.cover-slide::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 30% 50%, rgba(37,99,235,0.08) 0%, transparent 60%),
+              radial-gradient(ellipse at 70% 50%, rgba(6,182,212,0.06) 0%, transparent 60%);
+}
+.cover-slide .cover-subtitle {
+  font-size: 13px; color: #2563EB; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 2px; margin-bottom: 16px;
+}
+.cover-slide .cover-title {
+  font-size: 48px; font-weight: 800; color: #FFFFFF;
+  margin: 0 0 12px 0; letter-spacing: -1px;
+}
+.cover-slide .cover-desc {
+  font-size: 18px; color: #94A3B8; font-weight: 400; margin-bottom: 24px;
+}
+.cover-slide .cover-divider {
+  width: 80px; height: 4px;
+  background: linear-gradient(90deg, #2563EB, #06B6D4);
+  border-radius: 2px; margin: 0 auto 24px;
+}
+.cover-slide .cover-tags {
+  font-size: 12px; color: #64748B; font-weight: 400;
+}
+
+/* ----- Summary Slide ----- */
+.summary-slide {
+  display: flex; flex-direction: column; justify-content: center;
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+  padding: 40px 60px;
+}
+.summary-slide .summary-title {
+  font-size: 40px; font-weight: 700; color: #FFFFFF;
+  margin-bottom: 8px; letter-spacing: -0.5px;
+}
+.summary-slide .summary-divider {
+  width: 60px; height: 4px;
+  background: linear-gradient(90deg, #2563EB, #06B6D4);
+  border-radius: 2px; margin-bottom: 24px;
+}
+.summary-slide .summary-list { list-style: none; padding: 0; margin: 0; }
+.summary-slide .summary-list li {
+  font-size: 14px; color: #CBD5E1; line-height: 2;
+  padding-left: 24px; position: relative;
+}
+.summary-slide .summary-list li::before {
+  content: '▸'; position: absolute; left: 0;
+  color: #06B6D4; font-weight: 700;
+}
+.summary-slide .summary-list li strong { color: #FFFFFF; }
+
+/* ----- KC (Key Concept) Highlight ----- */
+.key-highlight {
+  background: linear-gradient(135deg, #FEF3C7, #FFFBEB);
+  border: 1px solid #FDE68A;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 12px; color: #92400E; line-height: 1.5;
+}
+.key-highlight strong { color: #D97706; }
+
+/* ----- Algorithm Box ----- */
+.algorithm-box {
+  background: #FFFFFF;
+  border: 2px solid #E2E8F0;
+  border-radius: 14px;
+  padding: 14px 18px;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.algorithm-step {
+  display: flex; align-items: center; gap: 12px;
+  font-size: 12px; color: #334155; line-height: 1.4;
+}
+.algorithm-step .step-num {
+  width: 24px; height: 24px;
+  background: linear-gradient(135deg, #2563EB, #06B6D4);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 11px; font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* ----- Gradient Background Classes ----- */
+.grad-blue { background: linear-gradient(135deg, #EFF6FF, #F8FAFC); }
+.grad-teal { background: linear-gradient(135deg, #F0FDFA, #F8FAFC); }
+.grad-warm { background: linear-gradient(135deg, #FFFBEB, #F8FAFC); }
+.grad-cool { background: linear-gradient(135deg, #ECFEFF, #F8FAFC); }
+
+/* ----- Two Column with Cards ----- */
+.split-card {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+}
+.split-card .sc-item {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.split-card .sc-title {
+  font-size: 13px; font-weight: 600; color: #0F172A;
+  margin-bottom: 8px; display: flex; align-items: center; gap: 8px;
+}
+
+/* ----- Drug Card ----- */
+.drug-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 6px;
+}
+.drug-card .drug-name {
+  font-size: 13px; font-weight: 600; color: #0F172A; margin-bottom: 2px;
+}
+.drug-card .drug-detail {
+  font-size: 11px; color: #64748B; line-height: 1.5;
+}
+.drug-card .drug-detail strong { color: #2563EB; }
+
+/* ----- Screening Table Compact ----- */
+.screening-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+}
+.screening-item {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 11px; color: #475569;
+}
+.screening-item .si-label { font-weight: 600; color: #0F172A; }
+
+/* ----- Spacing Helpers ----- */
+.mt-4 { margin-top: 4px; }
+.mt-8 { margin-top: 8px; }
+.mt-12 { margin-top: 12px; }
+.mt-16 { margin-top: 16px; }
+.mb-8 { margin-bottom: 8px; }
+.mb-12 { margin-bottom: 12px; }
+.mb-16 { margin-bottom: 16px; }
+.gap-8 { gap: 8px; }
+.gap-12 { gap: 12px; }
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-start { align-items: flex-start; }
+.justify-between { justify-content: space-between; }
+.flex-1 { flex: 1; }
+
+/* ----- Extra Small Text for Dense Slides ----- */
+.text-xs { font-size: 11px; }
+.text-sm { font-size: 12px; }
+.text-base { font-size: 13px; }
+.font-bold { font-weight: 700; }
+.font-semibold { font-weight: 600; }
+.text-muted { color: #64748B; }
+.text-primary { color: #2563EB; }
+.text-danger { color: #DC2626; }
+.text-warning { color: #D97706; }
+.text-success { color: #16A34A; }
+
+/* ----- Grid with 2 rows / 3 cols for large data ----- */
+.grid-3x2 {
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px;
+}
+.grid-2x3 {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+}
+
+/* ----- Compact Card for dense slides ----- */
+.card-compact {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+.card-compact .cc-title {
+  font-size: 12px; font-weight: 600; color: #0F172A; margin-bottom: 6px;
+}
+
+/* ----- Vertical spacing between sections ----- */
+.section-gap { height: 12px; }
+
+/* ----- DD Card Grid ----- */
+.dd-grid {
+  display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px;
+}
+.dd-item {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  text-align: center;
+}
+.dd-item .dd-title {
+  font-size: 11px; font-weight: 600; color: #0F172A; margin-bottom: 2px;
+}
+.dd-item .dd-desc {
+  font-size: 10px; color: #64748B; line-height: 1.4;
+}
+
+/* ----- Timeline ----- */
+.timeline {
+  position: relative; padding-left: 24px;
+}
+.timeline::before {
+  content: ''; position: absolute; left: 6px; top: 4px; bottom: 4px;
+  width: 2px; background: #DBEAFE;
+}
+.timeline-item {
+  position: relative; margin-bottom: 10px;
+}
+.timeline-item::before {
+  content: ''; position: absolute; left: -20px; top: 4px;
+  width: 10px; height: 10px; border-radius: 50%;
+  background: #2563EB; border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #2563EB;
+}
+.timeline-item .tl-title {
+  font-size: 12px; font-weight: 600; color: #0F172A;
+}
+.timeline-item .tl-desc {
+  font-size: 11px; color: #64748B; line-height: 1.5;
+}
+
+/* ----- Special: Treatment Cards ----- */
+.tx-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+}
+.tx-card .tx-name {
+  font-size: 14px; font-weight: 700; color: #2563EB; margin-bottom: 2px;
+}
+.tx-card .tx-mechanism {
+  font-size: 11px; color: #64748B; margin-bottom: 4px;
+}
+.tx-card .tx-ae {
+  font-size: 11px; color: #DC2626;
+}
+</style>

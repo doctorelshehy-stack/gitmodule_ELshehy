@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Slide 11 - Chronic Abdominal Pain</title>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="padding:28px 44px;background:#F8FAFC;">
+  <h2 class="slide-title" style="font-size:30px;">Chronic Abdominal Pain</h2>
+  <div class="title-accent"></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;">
+    <div class="card card-bg-warning" style="border-color:#FDE68A;">
+      <div class="card-title" style="color:#92400E;font-size:13px;">Family History of Epilepsy/Migraine</div>
+      <ul class="ulist ulist-compact">
+        <li>Migraine, colicky</li>
+        <li>Flank pain, may be radiation to testicle</li>
+      </ul>
+    </div>
+    <div class="card" style="background:#FFF7ED;border-color:#FDBA74;">
+      <div class="card-title" style="color:#9A3412;font-size:13px;">No Family History of Epilepsy/Migraine</div>
+      <ul class="ulist ulist-compact">
+        <li>Persistent epilepsy</li>
+      </ul>
+    </div>
+    <div class="card card-bg-accent" style="border-color:#A5F3FC;">
+      <div class="card-title" style="color:#155E75;font-size:13px;">Midabdominal, RUQ Radiating to Shoulder</div>
+      <ul class="ulist ulist-compact">
+        <li>Renal calculus</li>
+        <li>Partial intestinal obstruction</li>
+        <li>Cholelithiasis</li>
+      </ul>
+    </div>
+    <div class="card" style="background:#FEF2F2;border-color:#FECACA;">
+      <div class="card-title" style="color:#991B1B;font-size:13px;">Localized Upper Abdomen</div>
+      <ul class="ulist ulist-compact">
+        <li>Associated with jaundice</li>
+        <li>Relieved by food</li>
+        <li>History of alcoholism</li>
+        <li>Pyelonephritis, Peptic ulcer</li>
+        <li>Chronic pancreatitis</li>
+      </ul>
+    </div>
+    <div class="card" style="background:#1E293B;border-color:#334155;">
+      <div class="card-title" style="color:#F59E0B;font-size:13px;">Lower Abdomen</div>
+      <ul class="ulist ulist-compact">
+        <li style="color:#CBD5E1;">Diverticulitis</li>
+        <li style="color:#CBD5E1;">Chronic cystitis, Bladder calculus</li>
+        <li style="color:#CBD5E1;">Salpingitis, Endometriosis</li>
+      </ul>
+    </div>
+    <div class="card card-bg-warning" style="border-color:#FDE68A;">
+      <div class="card-title" style="color:#92400E;font-size:13px;">Pelvic Region</div>
+      <ul class="ulist ulist-compact">
+        <li>Pelvic inflammatory disease</li>
+        <li>Bladder neck obstruction</li>
+        <li>Pelvic appendix</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="page-number">11</div>
+</div>
+</body>
+</html>

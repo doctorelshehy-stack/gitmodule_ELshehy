@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Slide 15 - CRC Screening</title>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="padding:28px 44px;background:#F8FAFC;">
+  <h2 class="slide-title" style="font-size:30px;">CRC Screening</h2>
+  <div class="title-accent"></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+    <div>
+      <div class="card card-secondary" style="margin-bottom:12px;">
+        <div class="card-title">&#128269; Screening Methods</div>
+        <ul class="ulist ulist-compact">
+          <li>Proctoscopy</li>
+          <li>Flexible sigmoidoscopy</li>
+          <li>Colonoscopy <span class="badge badge-success" style="font-size:9px;">gold standard</span></li>
+          <li>Barium enema</li>
+          <li>CT colonography</li>
+          <li>Liver US and CT or MRI for metastases</li>
+          <li>CEA (Carcinoembryonic Antigen)</li>
+        </ul>
+      </div>
+      <div class="card card-primary">
+        <div class="card-title">&#128203; Referral Criteria</div>
+        <ol class="olist olist-compact">
+          <li>2 main symptoms: rectal bleeding + change in bowel habit</li>
+          <li>2 secondary effects: iron deficiency anemia + intestinal obstruction</li>
+          <li>2 physical findings: abdominal or rectal masses</li>
+        </ol>
+      </div>
+    </div>
+    <div>
+      <div class="card card-danger" style="margin-bottom:12px;">
+        <div class="card-title">&#9888; When to Refer</div>
+        <ul class="ulist ulist-compact">
+          <li>Aged 40+: change in bowel habit with rectal bleeding for 6+ weeks</li>
+          <li>Aged 60+: change in bowel habit without rectal bleeding for 6+ weeks</li>
+          <li>Aged 60+: rectal bleeding without change in bowel habit for 6+ weeks</li>
+          <li>Any age with right lower abdominal mass</li>
+          <li>Any age with palpable rectal mass</li>
+          <li>Men: unexplained iron-deficiency anaemia, Hb ≤ 11 g/100 ml</li>
+          <li>Non-menstruating women: unexplained iron-deficiency anemia, Hb ≤ 10 g/100 ml</li>
+        </ul>
+      </div>
+      <div class="card card-accent">
+        <div class="card-title">&#128196; USPSTF 2020 Screening</div>
+        <ul class="ulist ulist-compact">
+          <li>Adults aged 50-75: <span class="badge badge-success">Grade A</span></li>
+          <li>Adults aged 45-49: <span class="badge badge-warning">Grade B</span></li>
+          <li>Adults aged 76-85: <span class="badge badge-secondary">Grade C</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-number">15</div>
+</div>
+</body>
+</html>

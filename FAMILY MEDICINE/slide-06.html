@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Slide 06 - Red Flags</title>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="padding:28px 44px;background:#F8FAFC;">
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px;">
+    <span class="badge badge-danger" style="font-size:13px;padding:4px 16px;">Red Flags</span>
+    <h2 class="slide-title" style="font-size:30px;margin:0;">Serious Pathology</h2>
+  </div>
+  <div class="title-accent"></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px;">
+    <div class="warning-box">
+      <div class="warn-icon">&#9888;</div>
+      <div class="warn-text" style="display:flex;flex-direction:column;gap:6px;">
+        <span style="font-size:13px;line-height:1.7;">Hypotension, signs of shock, signs of dehydration</span>
+        <span style="font-size:13px;line-height:1.7;">Confusion/impaired consciousness</span>
+        <span style="font-size:13px;line-height:1.7;">Septic looking</span>
+        <span style="font-size:13px;line-height:1.7;">Rigid abdomen</span>
+        <span style="font-size:13px;line-height:1.7;">Patient lying very still or writhing</span>
+      </div>
+    </div>
+    <div class="warning-box">
+      <div class="warn-icon">&#9888;</div>
+      <div class="warn-text" style="display:flex;flex-direction:column;gap:6px;">
+        <span style="font-size:13px;line-height:1.7;">Absent or altered bowel sounds</span>
+        <span style="font-size:13px;line-height:1.7;">Associated testicular pathology</span>
+        <span style="font-size:13px;line-height:1.7;">Marked involuntary guarding/rebound tenderness</span>
+        <span style="font-size:13px;line-height:1.7;">Tenderness to percussion</span>
+        <span style="font-size:13px;line-height:1.7;">History of hematemesis/melena or evidence on PR examination</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-number">06</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Slide 09 - Physical Exam</title>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="padding:28px 44px;background:#F8FAFC;">
+  <h2 class="slide-title" style="font-size:30px;">Physical Examination</h2>
+  <div class="title-accent"></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+    <div>
+      <div class="card card-secondary" style="margin-bottom:10px;">
+        <div class="card-title">&#128064; General Assessment</div>
+        <ul class="ulist ulist-compact">
+          <li>Pulse, temp, BP &amp; RR</li>
+          <li>Peritonitis: shallow, rapid breaths</li>
+          <li>Altered consciousness: check Glasgow Coma Scale</li>
+        </ul>
+      </div>
+      <div class="card" style="margin-bottom:10px;">
+        <div class="card-title">&#128065; Inspection</div>
+        <ul class="ulist ulist-compact">
+          <li>Anemia, jaundice, abdominal distention, dehydration</li>
+          <li>Cullen's sign (umbilicus) - hemorrhagic pancreatitis, ectopic pregnancy</li>
+          <li>Grey Turner's sign (flanks) - retroperitoneal hematoma</li>
+        </ul>
+      </div>
+      <div class="card card-accent">
+        <div class="card-title">&#128266; Auscultation</div>
+        <ul class="ulist ulist-compact">
+          <li>Absent bowel sounds: paralytic ileus, peritonitis</li>
+          <li>High-pitched/tinkling: subacute obstruction</li>
+          <li>Listen for abdominal and iliac bruits (AAA)</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="card card-warning" style="margin-bottom:10px;">
+        <div class="card-title">&#128070; Percussion</div>
+        <ul class="ulist ulist-compact">
+          <li>Assess swelling/distension</li>
+          <li>Tenderness to percussion: generalized peritonitis</li>
+          <li>Assess for shifting dullness and fluid thrill</li>
+        </ul>
+      </div>
+      <div class="card card-danger" style="margin-bottom:10px;">
+        <div class="card-title">&#128137; Palpation</div>
+        <ul class="ulist ulist-compact">
+          <li>Gentle then deeper, starting away from pain</li>
+          <li>Feel for masses, tenderness, guarding, organomegaly</li>
+          <li>Test for rebound tenderness</li>
+          <li>Examine groins for hernia, scrotum in men</li>
+          <li>Check supraclavicular and groin lymph nodes</li>
+        </ul>
+      </div>
+      <div class="card card-primary">
+        <div class="card-title">&#128138; Further Examination</div>
+        <ul class="ulist ulist-compact">
+          <li>Rectal/pelvic examination as needed</li>
+          <li>Lower limb pulses (for AAA)</li>
+          <li>Pregnancy test in women of childbearing age</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-number">09</div>
+</div>
+</body>
+</html>

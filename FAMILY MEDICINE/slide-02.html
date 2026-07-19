@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Slide 02 - Table of Contents</title>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="padding:36px 48px;background:#FFFFFF;">
+  <h2 class="slide-title">Table of Contents</h2>
+  <div class="title-accent"></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px;">
+    <div class="card card-primary" style="border-left-color:#2563EB;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
+        <span style="font-size:12px;font-weight:700;color:#2563EB;">01</span>
+        <span class="badge badge-primary">Section 1</span>
+      </div>
+      <p style="font-size:16px;font-weight:600;color:#0F172A;margin:2px 0;">Abdominal Pain</p>
+      <p style="font-size:12px;color:#64748B;">Acute Abdomen &amp; Chronic Abdominal Pain</p>
+    </div>
+
+    <div class="card card-accent" style="border-left-color:#06B6D4;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
+        <span style="font-size:12px;font-weight:700;color:#06B6D4;">02</span>
+        <span class="badge badge-accent">Section 2</span>
+      </div>
+      <p style="font-size:16px;font-weight:600;color:#0F172A;margin:2px 0;">Colorectal Cancer</p>
+      <p style="font-size:12px;color:#64748B;">Diagnosis, Screening &amp; Prevention</p>
+    </div>
+
+    <div class="card card-warning" style="border-left-color:#F59E0B;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
+        <span style="font-size:12px;font-weight:700;color:#F59E0B;">03</span>
+        <span class="badge badge-warning">Section 3</span>
+      </div>
+      <p style="font-size:16px;font-weight:600;color:#0F172A;margin:2px 0;">Constipation</p>
+      <p style="font-size:12px;color:#64748B;">Definition, Causes &amp; Treatment</p>
+    </div>
+
+    <div class="card card-danger" style="border-left-color:#DC2626;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
+        <span style="font-size:12px;font-weight:700;color:#DC2626;">04</span>
+        <span class="badge badge-danger">Section 4</span>
+      </div>
+      <p style="font-size:16px;font-weight:600;color:#0F172A;margin:2px 0;">Functional Dyspepsia</p>
+      <p style="font-size:12px;color:#64748B;">Non-Ulcer Dyspepsia &amp; Management</p>
+    </div>
+
+    <div class="card card-success" style="border-left-color:#16A34A;grid-column:span 2;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
+        <span style="font-size:12px;font-weight:700;color:#16A34A;">05</span>
+        <span class="badge badge-success">Section 5</span>
+      </div>
+      <p style="font-size:16px;font-weight:600;color:#0F172A;margin:2px 0;">Weight Loss</p>
+      <p style="font-size:12px;color:#64748B;">Unintentional Weight Loss in Adults &amp; Elderly</p>
+    </div>
+  </div>
+
+  <div class="page-number">02</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Slide 24 - FD Management</title>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="padding:24px 40px;background:#F8FAFC;">
+  <h2 class="slide-title" style="font-size:26px;">Functional Dyspepsia - Management</h2>
+  <div class="title-accent"></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+    <div>
+      <div class="card card-success" style="margin-bottom:10px;">
+        <div class="card-title">&#128154; Non-Pharmacological</div>
+        <ul class="ulist ulist-compact">
+          <li>Reassurance and lifestyle modification</li>
+          <li>Avoid NSAIDs and tobacco</li>
+          <li>Avoid spicy food</li>
+          <li>Avoid fat, coffee, alcohol and cigarette smoking</li>
+        </ul>
+      </div>
+      <div class="card card-primary" style="margin-bottom:10px;">
+        <div class="card-title">&#128137; Pharmacological</div>
+        <ul class="ulist ulist-compact">
+          <li>No evidence of active infection: Ranitidine 400 mg twice before meals for 4-6 weeks</li>
+          <li>Dysmotility-related symptoms (nausea, bloating, early satiety): Metoclopramide</li>
+          <li>Positive for H. pylori: Triple therapy for 14 days</li>
+        </ul>
+      </div>
+      <div class="card" style="background:#FFFBEB;border-color:#FDE68A;">
+        <div class="card-title" style="color:#D97706;">&#9888; Triple Therapy (14 days)</div>
+        <ol class="olist olist-compact">
+          <li>Amoxicillin 1 g twice daily</li>
+          <li>Clarithromycin 500 mg twice daily</li>
+          <li>Omeprazole 20 mg twice daily</li>
+        </ol>
+        <p style="font-size:11px;color:#78350F;margin-top:6px;">Add Metronidazole 500 mg bid for quadrant therapy</p>
+        <p style="font-size:11px;color:#DC2626;margin-top:2px;"><strong>Note:</strong> Omeprazole contraindicated in breast feeding</p>
+      </div>
+    </div>
+    <div>
+      <div class="card card-accent" style="margin-bottom:10px;">
+        <div class="card-title">&#128218; Patient Education</div>
+        <ul class="ulist ulist-compact">
+          <li>Educated about dyspepsia and relationship to H. pylori</li>
+          <li>Instructed to take entire course of medication</li>
+          <li>Advised to return if any alarm sign develops</li>
+          <li>Follow-up visit almost 4 weeks after initial visit</li>
+        </ul>
+      </div>
+      <div class="warning-box" style="margin-bottom:10px;">
+        <div class="warn-icon">&#9888;</div>
+        <div class="warn-text">
+          <strong>Symptoms of Complications</strong><br>
+          <span style="font-size:11px;line-height:1.6;">Occult blood in stool without anemia &bull; Coffee grounds-like emesis &bull; Hematemesis &bull; Melena &bull; Sudden vascular collapse with shock</span>
+        </div>
+      </div>
+      <div class="card card-danger" style="margin-bottom:10px;">
+        <div class="card-title">&#9888; Alarm Features</div>
+        <ul class="ulist ulist-compact">
+          <li>Dysphagia, Blood in stools, Abdominal mass</li>
+          <li>Anorexia, Dyspepsia related lymphadenopathy</li>
+          <li>Weight loss, Family history of GIT malignancy</li>
+          <li>Hematemesis or melena, Anemia</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <strong>DD: GERD</strong> — Patients with GERD report heartburn and acid regurgitation. Dyspepsia patients do not have heartburn/regurgitation. Epigastric pain in dyspepsia relieved by meal; pain in GERD occurs after meals.
+      </div>
+    </div>
+  </div>
+
+  <div class="page-number">24</div>
+</div>
+</body>
+</html>

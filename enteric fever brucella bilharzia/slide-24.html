@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+<title>Schisto Clinical</title>
+</head>
+<body>
+<div class="slide-content" style="background:#ffffff;overflow:hidden;font-family:'Times New Roman',serif;">
+
+<svg style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:0;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="0" y="0" width="960" height="540" fill="#ffffff"/>
+  <rect x="0" y="0" width="960" height="70" fill="#e76f51"/>
+  <rect x="0" y="70" width="960" height="3" fill="#264653"/>
+</svg>
+<div style="position:absolute;top:18px;left:50px;z-index:1;">
+  <p style="font-size:24px;font-weight:700;color:#ffffff;margin:0;">Section 4 &bull; Schistosomiasis</p>
+</div>
+<div style="position:absolute;top:95px;left:50px;width:860px;z-index:1;">
+  <p style="font-size:20px;font-weight:700;color:#264653;margin:0 0 4px 0;">Clinical Features by Pathological Stage</p>
+  <div style="width:50px;height:2px;background:#e76f51;margin-bottom:8px;"></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div>
+      <div style="background:#f0f7f6;border-radius:6px;padding:10px;margin-bottom:8px;">
+        <p style="font-size:13px;font-weight:700;color:#264653;margin:0 0 4px 0;">1. Stage of Invasion</p>
+        <ul style="margin:0;padding-left:16px;font-size:11px;color:#444;line-height:1.6;">
+          <li><strong>Cercarial dermatitis (swimmer's itch):</strong> Severe itching due to cercarial penetration of skin. Occurs in first infection.</li>
+          <li><strong>Cercarial pneumonitis (eosinophilic pneumonitis):</strong> 4-6 weeks, occurs with heavy infection. Patchy lung congestion, eosinophilic sputum, high eosinophilia.</li>
+        </ul>
+      </div>
+      <div style="background:#fff8f0;border-radius:6px;padding:10px;">
+        <p style="font-size:13px;font-weight:700;color:#264653;margin:0 0 4px 0;">2. Stage of Ova Deposition &amp; Granuloma Formation</p>
+        <p style="font-size:12px;font-weight:700;color:#e76f51;margin:0 0 2px 0;">Acute Schistosomiasis &mdash; "Katayama Syndrome"</p>
+        <ul style="margin:0;padding-left:16px;font-size:11px;color:#444;line-height:1.6;">
+          <li>Common with S. japonicum, followed by S. mansoni, rare with S. haematobium</li>
+          <li>Main problem in immigrants/visitors encountering cercaria for first time</li>
+          <li>After 4-8 weeks of infection: Fever, urticaria, eosinophilia, arthralgia, myalgia, cough &amp; wheezes, diarrhea, abdominal pain, hepatosplenomegaly</li>
+          <li><strong>Diagnosis:</strong> Eosinophilia, serological (ELISA), repeated urine and stool analysis</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div style="background:#f0f0f7;border-radius:6px;padding:10px;margin-bottom:8px;">
+        <p style="font-size:13px;font-weight:700;color:#264653;margin:0 0 4px 0;">3. Granuloma Formation</p>
+        <p style="font-size:12px;font-weight:700;color:#2a9d8f;margin:0 0 2px 0;">S. haematobium:</p>
+        <ul style="margin:0;padding-left:16px;font-size:11px;color:#444;line-height:1.6;">
+          <li>Terminal hematuria</li>
+          <li>Dysuria, frequency &amp; precipitancy</li>
+          <li>Hemospermia (ova in semen if seminal vesicles, vas deferens or prostate affected)</li>
+        </ul>
+        <p style="font-size:12px;font-weight:700;color:#2a9d8f;margin:4px 0 2px 0;">S. japonicum &amp; mansoni:</p>
+        <ul style="margin:0;padding-left:16px;font-size:11px;color:#444;line-height:1.6;">
+          <li>Dysentery &amp; tenesmus</li>
+          <li>Prolapse of anal mucosa</li>
+          <li>Anal fistula &amp; fissures</li>
+        </ul>
+        <p style="font-size:11px;color:#888;margin:4px 0 0 0;"><em>NB: Dysentery is an inflammatory disorder affecting intestines, resulting in severe diarrhea containing mucus and/or blood, with abdominal pain, tenesmus and may be fever.</em></p>
+      </div>
+      <div style="background:#fef0f0;border-radius:6px;padding:10px;">
+        <p style="font-size:13px;font-weight:700;color:#264653;margin:0 0 4px 0;">4. Stage of Fibrosis &mdash; Organ-Specific</p>
+        <p style="font-size:11px;color:#555;margin:0;line-height:1.5;">Results in Urinary bilharziasis, Intestinal bilharziasis, and Hepatosplenic bilharziasis (detailed in following slides).</p>
+      </div>
+    </div>
+  </div>
+</div>
+<svg style="position:absolute;right:32px;bottom:24px;width:40px;height:24px;z-index:100;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="40" height="24" rx="4" fill="#2a9d8f" opacity="0.9"/>
+  <text x="20" y="17" text-anchor="middle" font-family="Times New Roman, serif" font-size="14" fill="#ffffff" font-weight="700">22</text>
+</svg>
+</div>
+</body>
+</html>

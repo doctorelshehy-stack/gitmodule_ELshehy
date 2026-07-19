@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+<title>HE Diagnosis</title>
+</head>
+<body>
+<div class="slide-content" style="background:#ffffff;overflow:hidden;font-family:'Times New Roman',serif;">
+
+<svg style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:0;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="0" y="0" width="960" height="540" fill="#ffffff"/>
+  <rect x="0" y="0" width="960" height="70" fill="#264653"/>
+  <rect x="0" y="70" width="960" height="3" fill="#2a9d8f"/>
+</svg>
+<div style="position:absolute;top:18px;left:50px;z-index:1;">
+  <p style="font-size:24px;font-weight:700;color:#ffffff;margin:0;">Section 1 &bull; Hepatic Encephalopathy</p>
+</div>
+<div style="position:absolute;top:95px;left:50px;width:860px;z-index:1;">
+  <p style="font-size:20px;font-weight:700;color:#264653;margin:0 0 4px 0;">Diagnosis of HE</p>
+  <div style="width:50px;height:2px;background:#2a9d8f;margin-bottom:8px;"></div>
+  <p style="font-size:13px;color:#555;margin:0 0 6px 0;line-height:1.5;">The diagnosis of HE is a clinical one based on symptoms reported by patients and more often their caregivers.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div style="background:#f0f7f6;border-radius:6px;padding:10px;">
+      <p style="font-size:14px;font-weight:700;color:#264653;margin:0 0 4px 0;">History / Symptoms</p>
+      <ul style="margin:0;padding-left:16px;font-size:12px;color:#444;line-height:1.7;">
+        <li>History of confusion</li>
+        <li>Lethargy</li>
+        <li>Memory loss</li>
+        <li>Disorientation</li>
+        <li>Slowness to respond</li>
+        <li>Personality change with increased aggression</li>
+        <li>Reversal of day and night sleep pattern</li>
+        <li>In recurrent admissions: poor compliance with lactulose or overconsumption of proteins</li>
+        <li>In comatose patient: presence of clonus may be a sign (non-specific)</li>
+      </ul>
+    </div>
+    <div style="background:#fdf6f0;border-radius:6px;padding:10px;">
+      <p style="font-size:14px;font-weight:700;color:#264653;margin:0 0 4px 0;">Physical Examination</p>
+      <ul style="margin:0;padding-left:16px;font-size:12px;color:#444;line-height:1.7;">
+        <li><strong>Stigmata of chronic liver disease:</strong> jaundice, muscle wasting, gynecomastia, ascites, spider angioma, leg edema, splenomegaly</li>
+        <li><strong>Fetor hepaticus:</strong> peculiar musty smell of breath caused by gut-derived methanethiol</li>
+        <li><strong>Asterixis:</strong> denotes hyperactive deep tendon reflexes &mdash; manifestation of stage 2 HE</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<svg style="position:absolute;right:32px;bottom:24px;width:40px;height:24px;z-index:100;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="40" height="24" rx="4" fill="#2a9d8f" opacity="0.9"/>
+  <text x="20" y="17" text-anchor="middle" font-family="Times New Roman, serif" font-size="14" fill="#ffffff" font-weight="700">04</text>
+</svg>
+</div>
+</body>
+</html>

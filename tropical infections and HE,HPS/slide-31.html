@@ -1,0 +1,47 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html,body{margin:0;padding:0;width:100%;height:100%;overflow:hidden;display:flex;justify-content:center;align-items:center;background:#000;}
+.slide-content{width:960px;height:540px;position:relative;transform-origin:center center;}
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960,sy=window.innerHeight/540,sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform='scale('+sc+')';s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script><title>Malaria Tx</title></head><body><div class="slide-content" style="background:#fff;overflow:hidden;font-family:'Times New Roman',serif;"><svg style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:0;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="0" y="0" width="960" height="540" fill="#fff"/><rect x="0" y="0" width="960" height="65" fill="#264653"/><rect x="0" y="65" width="960" height="3" fill="#2a9d8f"/></svg>
+<div style="position:absolute;top:14px;left:40px;z-index:1;"><p style="font-size:22px;font-weight:700;color:#fff;margin:0;">Section 5 • Malaria</p></div>
+<div style="position:absolute;top:88px;left:40px;width:880px;z-index:1;">
+<p style="font-size:19px;font-weight:700;color:#264653;margin:0 0 3px 0;">Diagnosis &amp; Treatment</p>
+<div style="width:45px;height:2px;background:#2a9d8f;margin-bottom:6px;"></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+<div>
+<div style="background:#f0f7f6;border-radius:5px;padding:8px;margin-bottom:6px;">
+<p style="font-size:12px;font-weight:700;color:#264653;margin:0 0 2px 0;">Diagnosis</p>
+<ul style="margin:0;padding-left:14px;font-size:10px;color:#444;line-height:1.5;">
+<li>Gold standard: Asexual forms on peripheral blood smears</li>
+<li><strong>Thick smear:</strong> Detects parasitemia as low as 0.001%</li>
+<li><strong>Thin smear:</strong> Detects &lt;0.05%</li>
+<li>If high suspicion + negative → repeat q12-24h for 2 days</li>
+<li>Other: normochromic normocytic anemia, elevated inflammatory markers, thrombocytopenia</li>
+<li>Antibody-based tests used with increasing frequency</li></ul></div>
+<div style="background:#264653;border-radius:5px;padding:8px;">
+<p style="color:#e9c46a;font-size:12px;font-weight:700;margin:0 0 2px 0;">Chloroquine-Sensitive Strains</p>
+<p style="color:#eee;font-size:10px;margin:0;">P. vivax, P. malariae, P. ovale:<br>
+<strong>Chloroquine:</strong> 10 mg base/kg stat → 5 mg/kg at 12, 24, 36h (or 10 mg/kg at 24h, 5 mg/kg at 48h)<br>
+<strong>Primaquine:</strong> 0.5 mg base/kg/day for 14 days to prevent relapse (P. vivax)</p></div></div>
+<div>
+<div style="background:#fff8f0;border-radius:5px;padding:8px;margin-bottom:6px;">
+<p style="font-size:12px;font-weight:700;color:#264653;margin:0 0 2px 0;">P. falciparum — ACT (from image)</p>
+<p style="font-size:10px;color:#444;margin:0;line-height:1.5;"><strong>Uncomplicated:</strong> Artemisinin-based Combination Therapy (ACT) worldwide recommended.</p>
+<ul style="margin:0;padding-left:14px;font-size:9px;color:#444;line-height:1.4;">
+<li>Artesunate 4 mg/kg/d ×3d + Sulfadoxine/Pyrimethamine single dose</li>
+<li>Artesunate 4 mg/kg/d ×3d + Amodiaquine 10 mg base/kg/d ×3d</li>
+<li>Artemether-lumefantrine 1.5/9 mg/kg bid ×3d with food</li>
+<li>Artesunate 4 mg/kg/d ×3d + Mefloquine 24-25 mg base/kg</li>
+<li>Dihydroartemisinin + Piperaquine</li></ul></div>
+<div style="background:#fef0f0;border-radius:5px;padding:8px;">
+<p style="font-size:12px;font-weight:700;color:#e76f51;margin:0 0 2px 0;">Special Groups (from image)</p>
+<ul style="margin:0;padding-left:14px;font-size:9px;color:#444;line-height:1.4;">
+<li><strong>Pregnancy 1st tri:</strong> Quinine + Clindamycin</li>
+<li><strong>Pregnancy 2nd/3rd tri:</strong> ACTs recommended</li>
+<li><strong>Lactating:</strong> ACTs (avoid dapsone, tetracyclines, primaquine)</li>
+<li><strong>Uncomplicated P. vivax:</strong> ACTs + Primaquine (or Chloroquine 25 mg base/kg over 3 days + Primaquine 0.25 mg base/kg ×14d)</li>
+<li><strong>Severe malaria:</strong> Adults: Artesunate IM/IV. Children: Artesunate IM/IV, Quinine, or Artemether</li></ul></div></div></div></div><svg style="position:absolute;right:32px;bottom:24px;width:40px;height:24px;z-index:100;" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="40" height="24" rx="4" fill="#2a9d8f" opacity="0.9"/><text x="20" y="17" text-anchor="middle" font-family:"Times New Roman,serif" font-size="14" fill="#fff" font-weight="700">24</text></svg></div></body></html>

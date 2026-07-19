@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Slide 29 - WL Evaluation</title>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="padding:24px 40px;background:#F8FAFC;">
+  <h2 class="slide-title" style="font-size:28px;">Weight Loss - Evaluation</h2>
+  <div class="title-accent"></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+    <div>
+      <div class="card card-secondary" style="margin-bottom:10px;">
+        <div class="card-title">&#128221; Detailed History Taking</div>
+        <ol class="olist olist-compact">
+          <li>Determine amount and duration of weight loss</li>
+          <li>Review of different body systems</li>
+          <li>Questions about daily food intake, appetite changes, pain with swallowing, vomiting, change in bowel habits</li>
+          <li>Questions to assess psychological state</li>
+          <li>Past history</li>
+          <li>Social history</li>
+        </ol>
+      </div>
+      <div class="card card-accent">
+        <div class="card-title">&#128064; Complete Physical Examination</div>
+        <ul class="ulist ulist-compact">
+          <li>Measuring weight and height + vital signs</li>
+          <li>General examination</li>
+          <li>Examination of different body systems</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="card card-danger" style="margin-bottom:10px;">
+        <div class="card-title">&#128300; Laboratory Investigations</div>
+        <ul class="ulist ulist-compact">
+          <li>CBC/diff, MCV, chemistries (electrolytes, glucose, calcium, phosphorus)</li>
+          <li>BUN, creatinine, AST, ALT, Alk Phos, bilirubin, ESR/CRP, UA</li>
+          <li>Chest radiograph</li>
+          <li>Stool Hemoccult</li>
+        </ul>
+      </div>
+      <div class="card card-primary" style="margin-bottom:10px;">
+        <div class="card-title">&#128204; Additional Considerations</div>
+        <ul class="ulist ulist-compact">
+          <li>Iron studies, B12, folate, serum protein electrophoresis, zinc</li>
+          <li>Endomysial antibody, fat-soluble vitamins, HIV</li>
+          <li>Stool: Fat collection, leukocytes</li>
+          <li>Pap smear, mammography, PSA</li>
+        </ul>
+      </div>
+      <div class="card card-warning">
+        <div class="card-title">&#128269; Gastroenterologic Evaluation</div>
+        <ul class="ulist ulist-compact">
+          <li>Radiographic contrast studies vs upper and lower endoscopy</li>
+          <li>Clinical situation dictates testing (diarrhea or anemia → endoscopy + biopsies)</li>
+          <li>Cancer screening: mammogram, pap smear, PSA, occult blood</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-number">29</div>
+</div>
+</body>
+</html>

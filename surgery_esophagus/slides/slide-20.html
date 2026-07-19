@@ -26,12 +26,58 @@ window.addEventListener('load',scaleSlide);window.addEventListener('resize',scal
   <p style="position:absolute;top:40px;left:60px;font-family:'Times New Roman',serif;font-size:36px;font-weight:700;color:#FFC107;z-index:10;margin:0;">GERD — Overview</p>
   <div style="position:absolute;top:100px;left:60px;width:400px;height:3px;background:#42A5F5;z-index:10;"></div>
   
-  <div style="position:absolute;top:120px;left:40px;width:440px;">
-    <img src="../imgs/img-141.jpg" alt="GERD Signs/Symptoms" style="width:100%;height:auto;border-radius:8px;border:2px solid rgba(66,165,245,0.3);">
-  </div>
-  
-  <div style="position:absolute;top:120px;right:40px;width:420px;">
-    <img src="../imgs/img-140.jpg" alt="GERD Management Flowchart" style="width:100%;height:auto;border-radius:8px;border:2px solid rgba(66,165,245,0.3);">
+  <div style="position:absolute;top:108px;left:12px;right:12px;bottom:10px;font-family:'Times New Roman',serif;font-size:14px;color:#fff;z-index:10;line-height:1.35;display:flex;flex-direction:column;gap:8px;">
+    
+    <!-- Top Row: Signs & Symptoms -->
+    <div style="flex:1;background:rgba(0,0,0,0.4);border-radius:4px;border:1px solid rgba(66,165,245,0.3);padding:4px 10px;display:flex;flex-direction:column;">
+      <div style="color:#FFC107;font-weight:bold;font-size:15px;text-align:center;margin-bottom:2px;">GERD — Signs &amp; Symptoms</div>
+      <div style="flex:1;display:flex;gap:12px;">
+        <div style="flex:1;display:flex;flex-direction:column;">
+          <div style="color:#42A5F5;font-weight:bold;border-bottom:1px solid #42A5F5;margin-bottom:1px;">Non-esophageal</div>
+          <div style="margin-top:1px;"><span style="color:#FF9800;">Respiratory:</span></div>
+          <div style="margin-left:10px;">• Chronic cough</div>
+          <div style="margin-left:10px;">• Wheezing</div>
+          <div style="margin-left:10px;">• Aspiration pneumonia</div>
+          <div style="margin-top:1px;"><span style="color:#FF9800;">Non-respiratory:</span></div>
+          <div style="margin-left:10px;">• Sore throat</div>
+          <div style="margin-left:10px;">• Hoarseness</div>
+          <div style="margin-left:10px;">• Dental erosions</div>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;">
+          <div style="color:#42A5F5;font-weight:bold;border-bottom:1px solid #42A5F5;margin-bottom:1px;">Esophageal</div>
+          <div style="margin-top:1px;"><span style="color:#4CAF50;">Typical:</span></div>
+          <div style="margin-left:10px;">• Heartburn</div>
+          <div style="margin-left:10px;">• Acid regurgitation</div>
+          <div style="margin-top:1px;"><span style="color:#E53935;">Atypical:</span></div>
+          <div style="margin-left:10px;">• Chest pain</div>
+          <div style="margin-left:10px;">• Dysphagia (late)</div>
+          <div style="margin-left:10px;">• Odynophagia (rare)</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bottom Row: Management -->
+    <div style="flex:1;background:rgba(0,0,0,0.4);border-radius:4px;border:1px solid rgba(66,165,245,0.3);padding:4px 10px;display:flex;flex-direction:column;">
+      <div style="color:#FFC107;font-weight:bold;font-size:15px;text-align:center;margin-bottom:2px;">GERD — Gastroscopy-Guided Management</div>
+      <div style="flex:1;display:flex;gap:12px;">
+        <div style="flex:1;background:rgba(66,165,245,0.12);padding:4px 8px;border-radius:4px;border-left:4px solid #42A5F5;display:flex;flex-direction:column;">
+          <div style="color:#42A5F5;font-weight:bold;font-size:15px;">NERD</div>
+          <div><em style="color:#aaa;">Non-erosive reflux disease</em></div>
+          <div style="margin-top:2px;">• Normal esophagus on endoscopy</div>
+          <div>• Aim: symptom relief only</div>
+          <div style="margin-top:auto;padding-top:2px;"><strong style="color:#4CAF50;font-size:15px;">→ PPI PRN</strong></div>
+        </div>
+        <div style="flex:1;background:rgba(255,152,0,0.12);padding:4px 8px;border-radius:4px;border-left:4px solid #FF9800;display:flex;flex-direction:column;">
+          <div style="color:#FF9800;font-weight:bold;font-size:15px;">Esophagitis</div>
+          <div><em style="color:#aaa;">Esophageal inflammation</em></div>
+          <div style="margin-top:2px;">• Inflamed mucosa on endoscopy</div>
+          <div>• Aim: heal inflammation</div>
+          <div style="margin-top:auto;padding-top:2px;"><strong style="color:#E53935;font-size:15px;">→ PPI indefinitely</strong></div>
+          <div><strong style="color:#E53935;font-size:15px;">→ or Surgical fundoplication</strong></div>
+        </div>
+      </div>
+    </div>
+    
   </div>
 
 </div>

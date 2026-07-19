@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+<title>Typhoid Widal</title>
+</head>
+<body>
+<div class="slide-content" style="background:#ffffff;overflow:hidden;font-family:'Times New Roman',serif;">
+
+<svg style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:0;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="0" y="0" width="960" height="540" fill="#ffffff"/>
+  <rect x="0" y="0" width="960" height="70" fill="#2a9d8f"/>
+  <rect x="0" y="70" width="960" height="3" fill="#264653"/>
+</svg>
+<div style="position:absolute;top:18px;left:50px;z-index:1;">
+  <p style="font-size:24px;font-weight:700;color:#ffffff;margin:0;">Section 2 &bull; Enteric Fever (Typhoid)</p>
+</div>
+<div style="position:absolute;top:95px;left:50px;width:860px;z-index:1;">
+  <p style="font-size:20px;font-weight:700;color:#264653;margin:0 0 4px 0;">Limitations of Widal Test &amp; Chronic Salmonellosis</p>
+  <div style="width:50px;height:2px;background:#2a9d8f;margin-bottom:8px;"></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div style="background:#fff8f0;border-radius:6px;padding:10px;border:1px solid #f4a261;">
+      <p style="font-size:14px;font-weight:700;color:#e76f51;margin:0 0 4px 0;">Limitations of Widal Test</p>
+      <ul style="margin:0;padding-left:16px;font-size:12px;color:#444;line-height:1.7;">
+        <li>A single test is of little clinical relevance especially in endemic areas</li>
+        <li>False positive test occurs in patients with previous vaccination or infection with S. Typhi</li>
+        <li>Cross-reactivity with other Salmonella species</li>
+        <li>Cannot distinguish between a current infection and previous infection or vaccination against typhoid</li>
+        <li>False negative test may be due to blocked antibody responses by early antimicrobial treatment or following a typhoid relapse</li>
+      </ul>
+    </div>
+    <div>
+      <div style="background:#264653;border-radius:6px;padding:10px;margin-bottom:8px;">
+        <p style="color:#e9c46a;font-size:14px;font-weight:700;margin:0 0 4px 0;">Chronic Salmonellosis</p>
+        <ul style="margin:0;padding-left:16px;color:#eee;font-size:11px;line-height:1.6;">
+          <li>Chronic salmonella infection in patients with active Schistosomal infection, characterized by recurrent bacteremia and prolonged fever</li>
+          <li>The organism penetrates the schistosome and multiply within their ceca, so schistosome act as nidus producing showers of salmonella into the circulation</li>
+          <li><strong>Treatment aim:</strong> Eradicate Salmonella bacilli by anti typhoid drugs for 10-14 days (choice individualized) and prevent relapse by anti bilharzial drugs (Praziquantel 40 mg/kg as single dose) given on the second apyrexial day</li>
+        </ul>
+      </div>
+      <div style="background:#f0f7f6;border-radius:6px;padding:10px;">
+        <p style="font-size:14px;font-weight:700;color:#264653;margin:0 0 4px 0;">Typhoid Prevention (Vaccines)</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+          <div style="background:#ffffff;border-radius:4px;padding:6px;border:1px solid #ddd;">
+            <p style="font-size:12px;font-weight:700;color:#2a9d8f;margin:0;">Ty21a (Live attenuated)</p>
+            <p style="font-size:10px;color:#555;margin:2px 0 0 0;">Oral, 4 doses every other day. Min age 5. Protection 50-80%. Boost every 5 years.</p>
+          </div>
+          <div style="background:#ffffff;border-radius:4px;padding:6px;border:1px solid #ddd;">
+            <p style="font-size:12px;font-weight:700;color:#2a9d8f;margin:0;">VI Capsule Antigen (Polysaccharide)</p>
+            <p style="font-size:10px;color:#555;margin:2px 0 0 0;">IM, 1 dose. Min age 2. Protection 50-80%. Boost every 2 years in travelers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<svg style="position:absolute;right:32px;bottom:24px;width:40px;height:24px;z-index:100;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="40" height="24" rx="4" fill="#2a9d8f" opacity="0.9"/>
+  <text x="20" y="17" text-anchor="middle" font-family="Times New Roman, serif" font-size="14" fill="#ffffff" font-weight="700">15</text>
+</svg>
+</div>
+</body>
+</html>

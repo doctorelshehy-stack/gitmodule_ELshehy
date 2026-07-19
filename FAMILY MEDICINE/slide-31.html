@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Slide 31 - Summary</title>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content summary-slide">
+  <h2 class="summary-title">Summary</h2>
+  <div class="summary-divider"></div>
+
+  <p style="font-size:15px;color:#2563EB;font-weight:600;margin-bottom:12px;">Key Topics Covered:</p>
+  <ul class="summary-list">
+    <li><strong>Abdominal Pain:</strong> Acute Abdomen, Chronic Recurrent Pain, Red Flags, Pre-hospital Care, Assessment, History, Examination, Investigation</li>
+    <li><strong>Colorectal Cancer:</strong> Incidence, Risk Factors, Distribution, Genetic Predisposition, Screening, Management, Prevention</li>
+    <li><strong>Constipation:</strong> Definition, Causes, History, Rome VI Criteria, Examination, Investigation, Non-Pharmacological and Pharmacological Treatment</li>
+    <li><strong>Functional Dyspepsia:</strong> Definition, Categories, Mechanisms, Rome VI Criteria, History, Examination, DD, Investigation, Management</li>
+    <li><strong>Weight Loss:</strong> Definition, Pathophysiology, DD by System, Medication Effects, Evaluation, Treatment, Elderly Considerations</li>
+  </ul>
+
+  <div class="page-number">31</div>
+</div>
+</body>
+</html>

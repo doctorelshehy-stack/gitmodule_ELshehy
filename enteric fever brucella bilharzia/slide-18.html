@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+<title>Typhoid Treatment</title>
+</head>
+<body>
+<div class="slide-content" style="background:#ffffff;overflow:hidden;font-family:'Times New Roman',serif;">
+
+<svg style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:0;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="0" y="0" width="960" height="540" fill="#ffffff"/>
+  <rect x="0" y="0" width="960" height="70" fill="#2a9d8f"/>
+  <rect x="0" y="70" width="960" height="3" fill="#264653"/>
+</svg>
+<div style="position:absolute;top:18px;left:50px;z-index:1;">
+  <p style="font-size:24px;font-weight:700;color:#ffffff;margin:0;">Section 2 &bull; Enteric Fever (Typhoid)</p>
+</div>
+<div style="position:absolute;top:95px;left:50px;width:860px;z-index:1;">
+  <p style="font-size:20px;font-weight:700;color:#264653;margin:0 0 4px 0;">Treatment of Enteric Fever</p>
+  <div style="width:50px;height:2px;background:#2a9d8f;margin-bottom:8px;"></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div>
+      <div style="background:#f0f7f6;border-radius:6px;padding:10px;margin-bottom:8px;">
+        <p style="font-size:13px;font-weight:700;color:#264653;margin:0 0 4px 0;">I. General Measures</p>
+        <ul style="margin:0;padding-left:16px;font-size:11px;color:#444;line-height:1.7;">
+          <li>Good nursing care, sanitary disposal of excreta</li>
+          <li>Adequate soft diet of high caloric value</li>
+          <li>Fluid and electrolyte balance</li>
+          <li>Avoid purgatives even if constipated</li>
+          <li>Monitoring vital signs</li>
+        </ul>
+      </div>
+      <div style="background:#fff8f0;border-radius:6px;padding:10px;">
+        <p style="font-size:13px;font-weight:700;color:#264653;margin:0 0 4px 0;">Role of Surgery</p>
+        <ul style="margin:0;padding-left:16px;font-size:11px;color:#444;line-height:1.7;">
+          <li>Intestinal hemorrhage (if conservative measures fail to stop bleeding)</li>
+          <li>Intestinal perforation</li>
+          <li>Cholecystectomy if antibiotic treatment fails to eradicate the hepatobiliary carrier</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <p style="font-size:13px;font-weight:700;color:#264653;margin:0 0 4px 0;">II. Anti-Typhoid Drugs</p>
+      <div style="background:#264653;border-radius:6px;padding:10px;margin-bottom:6px;">
+        <p style="color:#e9c46a;font-size:12px;font-weight:700;margin:0 0 2px 0;">3rd Gen Cephalosporin (5-7 days after fever subsides)</p>
+        <p style="color:#eee;font-size:11px;margin:0;">Cefotaxim/Cefoperazone: IM/IV Adult 1gm/8-12h. Or Ceftriaxone: IV/IM Adult 2gm.</p>
+      </div>
+      <div style="background:#264653;border-radius:6px;padding:10px;margin-bottom:6px;">
+        <p style="color:#e9c46a;font-size:12px;font-weight:700;margin:0 0 2px 0;">4th Gen Cephalosporin (5-7 days after fever subsides)</p>
+        <p style="color:#eee;font-size:11px;margin:0;">Cefepime (Maxipime): Infusion/Injection Adult 1-2gm/8-12h.</p>
+      </div>
+      <div style="background:#264653;border-radius:6px;padding:10px;margin-bottom:6px;">
+        <p style="color:#e9c46a;font-size:12px;font-weight:700;margin:0 0 2px 0;">Fluoroquinolone (10-14 days)</p>
+        <p style="color:#eee;font-size:11px;margin:0;">Not in pregnant, lactating, children &lt;16y. Ciprofloxacin 500-750mg/12h, Norfloxacin 400mg/12h, Levofloxacin 500-750mg/day.</p>
+      </div>
+      <div style="background:#2a9d8f;border-radius:6px;padding:10px;margin-bottom:6px;">
+        <p style="color:#ffffff;font-size:12px;font-weight:700;margin:0 0 2px 0;">Azithromycin (Zithromax)</p>
+        <p style="color:#fff;font-size:11px;margin:0;">Oral 10 mg/kg (max 500 mg/d). For uncomplicated typhoid fever in children 4-17 y.</p>
+      </div>
+      <div style="background:#fff8f0;border-radius:6px;padding:8px;border:1px solid #f4a261;">
+        <p style="font-size:12px;font-weight:700;color:#e76f51;margin:0 0 2px 0;">Treatment of Typhoid Carrier</p>
+        <ul style="margin:0;padding-left:14px;font-size:10px;color:#444;line-height:1.6;">
+          <li>Co-Trimoxazole, Amoxycillin, or Ampicillin for 1 month (if no resistance)</li>
+          <li>Ciprofloxacin or Norfloxacin for 1 month + 2gm Probencid/day for fecal carrier</li>
+          <li>Cholecystectomy if medical treatment fails (especially with gallbladder disease)</li>
+          <li>Three successive negative stool or urine cultures before discharge to avoid carrier state</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<svg style="position:absolute;right:32px;bottom:24px;width:40px;height:24px;z-index:100;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="40" height="24" rx="4" fill="#2a9d8f" opacity="0.9"/>
+  <text x="20" y="17" text-anchor="middle" font-family="Times New Roman, serif" font-size="14" fill="#ffffff" font-weight="700">16</text>
+</svg>
+</div>
+</body>
+</html>

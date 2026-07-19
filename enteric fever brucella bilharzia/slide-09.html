@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+<title>HE Treatment</title>
+</head>
+<body>
+<div class="slide-content" style="background:#ffffff;overflow:hidden;font-family:'Times New Roman',serif;">
+
+<svg style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:0;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="0" y="0" width="960" height="540" fill="#ffffff"/>
+  <rect x="0" y="0" width="960" height="70" fill="#264653"/>
+  <rect x="0" y="70" width="960" height="3" fill="#2a9d8f"/>
+</svg>
+<div style="position:absolute;top:18px;left:50px;z-index:1;">
+  <p style="font-size:24px;font-weight:700;color:#ffffff;margin:0;">Section 1 &bull; Hepatic Encephalopathy</p>
+</div>
+<div style="position:absolute;top:95px;left:50px;width:860px;z-index:1;">
+  <p style="font-size:20px;font-weight:700;color:#264653;margin:0 0 4px 0;">Treatment Summary &mdash; Three-Pronged Approach</p>
+  <div style="width:50px;height:2px;background:#2a9d8f;margin-bottom:10px;"></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;">
+    <div style="background:#2a9d8f;border-radius:8px;padding:12px;">
+      <p style="color:#ffffff;font-size:14px;font-weight:700;margin:0 0 6px 0;">General Treatment</p>
+      <ul style="margin:0;padding-left:16px;color:#fff;font-size:12px;line-height:1.7;">
+        <li>Adequate caloric intake: 35-45 kcal/kg/day</li>
+        <li>Protein intake: 1-1.5 g protein/kg bodyweight</li>
+        <li>Vegetable protein may be superior to animal protein</li>
+        <li>High fiber diet encouraged</li>
+        <li>Lactulose 15-30 cm&sup3; q4-6h to ensure 2-3 bowel movements/day</li>
+        <li>Rifaximin 550 mg PO bid</li>
+      </ul>
+    </div>
+    <div style="background:#e76f51;border-radius:8px;padding:12px;">
+      <p style="color:#ffffff;font-size:14px;font-weight:700;margin:0 0 6px 0;">Treatment of Cause</p>
+      <ul style="margin:0;padding-left:16px;color:#fff;font-size:12px;line-height:1.7;">
+        <li><strong>Infection:</strong> Antibiotics</li>
+        <li><strong>GI Bleeding due to OVs:</strong> Band ligation or injection sclerotherapy</li>
+      </ul>
+    </div>
+    <div style="background:#264653;border-radius:8px;padding:12px;">
+      <p style="color:#e9c46a;font-size:14px;font-weight:700;margin:0 0 6px 0;">Treatment of Complication</p>
+      <ul style="margin:0;padding-left:16px;color:#fff;font-size:12px;line-height:1.7;">
+        <li><strong>Surgical:</strong> Embolization of large portosystemic collaterals in patient with spontaneous chronic incapacitating encephalopathy</li>
+        <li><strong>Liver transplantation</strong></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<svg style="position:absolute;right:32px;bottom:24px;width:40px;height:24px;z-index:100;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="40" height="24" rx="4" fill="#2a9d8f" opacity="0.9"/>
+  <text x="20" y="17" text-anchor="middle" font-family="Times New Roman, serif" font-size="14" fill="#ffffff" font-weight="700">07</text>
+</svg>
+</div>
+</body>
+</html>

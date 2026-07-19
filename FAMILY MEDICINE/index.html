@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gastrointestinal Disorders - Presentation Viewer</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  body { background: #0B1121; }
+  .viewer-wrapper {
+    width: 100%; max-width: 1200px; margin: 0 auto;
+    padding: 30px 24px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #F8FAFC;
+  }
+  .viewer-header { text-align: center; margin-bottom: 32px; }
+  .viewer-header h1 {
+    font-size: 36px; font-weight: 800; color: #FFFFFF;
+    letter-spacing: -0.5px; margin-bottom: 6px;
+  }
+  .viewer-header .subtitle {
+    font-size: 16px; color: #64748B; font-weight: 400;
+  }
+  .viewer-header .header-accent {
+    width: 60px; height: 4px;
+    background: linear-gradient(90deg, #2563EB, #06B6D4);
+    border-radius: 2px; margin: 12px auto;
+  }
+
+  .nav-bar {
+    display: flex; justify-content: center; gap: 6px;
+    margin-bottom: 36px; flex-wrap: wrap;
+  }
+  .nav-bar a {
+    padding: 8px 18px; border-radius: 8px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.08);
+    color: #94A3B8; text-decoration: none;
+    font-size: 13px; font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  .nav-bar a:hover {
+    background: rgba(37,99,235,0.15);
+    border-color: rgba(37,99,235,0.3);
+    color: #FFFFFF;
+  }
+  .nav-bar a.active { background: #2563EB; border-color: #2563EB; color: #fff; }
+
+  .section-group { margin-bottom: 28px; }
+  .section-group .sg-title {
+    font-size: 16px; font-weight: 600; color: #94A3B8;
+    margin-bottom: 12px; display: flex; align-items: center; gap: 10px;
+  }
+  .section-group .sg-title .sg-line {
+    flex: 1; height: 1px; background: rgba(255,255,255,0.08);
+  }
+
+  .slide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 12px;
+  }
+  .slide-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.25s ease;
+  }
+  .slide-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(37,99,235,0.3);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
+  .slide-card a {
+    display: block; padding: 14px 16px;
+    color: #CBD5E1; text-decoration: none;
+  }
+  .slide-card h3 {
+    font-size: 14px; font-weight: 600; color: #F1F5F9;
+    margin-bottom: 4px;
+  }
+  .slide-card p { font-size: 11px; color: #64748B; line-height: 1.4; }
+  .slide-num {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 28px; height: 22px;
+    background: rgba(37,99,235,0.2);
+    border: 1px solid rgba(37,99,235,0.3);
+    border-radius: 6px;
+    font-size: 10px; font-weight: 700; color: #60A5FA;
+    margin-right: 8px; float: right;
+  }
+  .slide-card .section-tag {
+    display: inline-block;
+    padding: 2px 10px; border-radius: 10px;
+    font-size: 9px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 8px;
+  }
+  .tag-abd { background: rgba(37,99,235,0.15); color: #60A5FA; }
+  .tag-crc { background: rgba(6,182,212,0.15); color: #67E8F9; }
+  .tag-con { background: rgba(245,158,11,0.15); color: #FCD34D; }
+  .tag-dys { background: rgba(220,38,38,0.15); color: #FCA5A5; }
+  .tag-wl  { background: rgba(22,163,74,0.15); color: #86EFAC; }
+  .tag-sum { background: rgba(139,92,246,0.15); color: #C4B5FD; }
+</style>
+</head>
+<body>
+<div class="viewer-wrapper">
+  <div class="viewer-header">
+    <h1>Gastrointestinal Disorders</h1>
+    <div class="header-accent"></div>
+    <p class="subtitle">Comprehensive Study Guide &mdash; Family (GIT) 2024 &bull; 31 Slides</p>
+  </div>
+
+  <div class="nav-bar">
+    <a href="slide-01.html" target="slide">Cover</a>
+    <a href="slide-02.html" target="slide">TOC</a>
+    <a href="slide-03.html" target="slide">Abdominal Pain</a>
+    <a href="slide-12.html" target="slide">Colorectal Cancer</a>
+    <a href="slide-17.html" target="slide">Constipation</a>
+    <a href="slide-21.html" target="slide">Dyspepsia</a>
+    <a href="slide-25.html" target="slide">Weight Loss</a>
+    <a href="slide-31.html" target="slide">Summary</a>
+  </div>
+
+  <div class="section-group">
+    <div class="sg-title"><span>Introduction</span><span class="sg-line"></span></div>
+    <div class="slide-grid">
+      <div class="slide-card">
+        <a href="slide-01.html" target="slide"><span class="slide-num">01</span>
+        <h3>Cover Page</h3>
+        <p>Gastrointestinal Disorders &mdash; Comprehensive Study Guide</p>
+        <span class="section-tag tag-abd">Cover</span></a>
+      </div>
+      <div class="slide-card">
+        <a href="slide-02.html" target="slide"><span class="slide-num">02</span>
+        <h3>Table of Contents</h3>
+        <p>Overview of all topics covered</p>
+        <span class="section-tag tag-abd">Index</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-group">
+    <div class="sg-title"><span>01 &mdash; Abdominal Pain</span><span class="sg-line"></span></div>
+    <div class="slide-grid">
+      <div class="slide-card"><a href="slide-03.html" target="slide"><span class="slide-num">03</span><h3>Section Divider</h3><p>Abdominal Pain Introduction</p><span class="section-tag tag-abd">Section</span></a></div>
+      <div class="slide-card"><a href="slide-04.html" target="slide"><span class="slide-num">04</span><h3>Acute Abdomen</h3><p>Definition, Surgical &amp; Non-Surgical Causes</p><span class="section-tag tag-abd">Content</span></a></div>
+      <div class="slide-card"><a href="slide-05.html" target="slide"><span class="slide-num">05</span><h3>Classification by Site</h3><p>RUQ, LUQ, RLQ, LLQ, Epigastrium, Midabdominal</p><span class="section-tag tag-abd">Content</span></a></div>
+      <div class="slide-card"><a href="slide-06.html" target="slide"><span class="slide-num">06</span><h3>Red Flags</h3><p>Serious Pathology Warning Signs</p><span class="section-tag tag-abd">Content</span></a></div>
+      <div class="slide-card"><a href="slide-07.html" target="slide"><span class="slide-num">07</span><h3>Pre-hospital Care</h3><p>Emergency Department Management</p><span class="section-tag tag-abd">Content</span></a></div>
+      <div class="slide-card"><a href="slide-08.html" target="slide"><span class="slide-num">08</span><h3>Assessment &amp; History</h3><p>Initial Impression, History Taking, SOCRATES</p><span class="section-tag tag-abd">Content</span></a></div>
+      <div class="slide-card"><a href="slide-09.html" target="slide"><span class="slide-num">09</span><h3>Physical Examination</h3><p>Inspection, Auscultation, Percussion, Palpation</p><span class="section-tag tag-abd">Content</span></a></div>
+      <div class="slide-card"><a href="slide-10.html" target="slide"><span class="slide-num">10</span><h3>Investigation</h3><p>Laboratory Tests, Imaging, Additional Tests</p><span class="section-tag tag-abd">Content</span></a></div>
+      <div class="slide-card"><a href="slide-11.html" target="slide"><span class="slide-num">11</span><h3>Chronic Abdominal Pain</h3><p>Classification by Location &amp; Symptoms</p><span class="section-tag tag-abd">Content</span></a></div>
+    </div>
+  </div>
+
+  <div class="section-group">
+    <div class="sg-title"><span>02 &mdash; Colorectal Cancer</span><span class="sg-line"></span></div>
+    <div class="slide-grid">
+      <div class="slide-card"><a href="slide-12.html" target="slide"><span class="slide-num">12</span><h3>Section Divider</h3><p>Colorectal Cancer Introduction</p><span class="section-tag tag-crc">Section</span></a></div>
+      <div class="slide-card"><a href="slide-13.html" target="slide"><span class="slide-num">13</span><h3>Incidence &amp; Risk Factors</h3><p>Age, Sex, Genetic Predisposition</p><span class="section-tag tag-crc">Content</span></a></div>
+      <div class="slide-card"><a href="slide-14.html" target="slide"><span class="slide-num">14</span><h3>Distribution &amp; Genetics</h3><p>Colon Anatomy, Familial Risk</p><span class="section-tag tag-crc">Content</span></a></div>
+      <div class="slide-card"><a href="slide-15.html" target="slide"><span class="slide-num">15</span><h3>Screening</h3><p>Methods, Referral Criteria, USPSTF Guidelines</p><span class="section-tag tag-crc">Content</span></a></div>
+      <div class="slide-card"><a href="slide-16.html" target="slide"><span class="slide-num">16</span><h3>Management &amp; Prevention</h3><p>Surgical, Radiochemotherapy, Prevention</p><span class="section-tag tag-crc">Content</span></a></div>
+    </div>
+  </div>
+
+  <div class="section-group">
+    <div class="sg-title"><span>03 &mdash; Constipation</span><span class="sg-line"></span></div>
+    <div class="slide-grid">
+      <div class="slide-card"><a href="slide-17.html" target="slide"><span class="slide-num">17</span><h3>Section Divider</h3><p>Constipation Introduction</p><span class="section-tag tag-con">Section</span></a></div>
+      <div class="slide-card"><a href="slide-18.html" target="slide"><span class="slide-num">18</span><h3>Definition &amp; Causes</h3><p>Rome VI Criteria, Medications, Structural</p><span class="section-tag tag-con">Content</span></a></div>
+      <div class="slide-card"><a href="slide-19.html" target="slide"><span class="slide-num">19</span><h3>History &amp; Examination</h3><p>History Taking, Physical Exam, Investigation</p><span class="section-tag tag-con">Content</span></a></div>
+      <div class="slide-card"><a href="slide-20.html" target="slide"><span class="slide-num">20</span><h3>Treatment</h3><p>Non-Pharmacological, Pharmacological, Complications</p><span class="section-tag tag-con">Content</span></a></div>
+    </div>
+  </div>
+
+  <div class="section-group">
+    <div class="sg-title"><span>04 &mdash; Functional Dyspepsia</span><span class="sg-line"></span></div>
+    <div class="slide-grid">
+      <div class="slide-card"><a href="slide-21.html" target="slide"><span class="slide-num">21</span><h3>Section Divider</h3><p>Functional Dyspepsia Introduction</p><span class="section-tag tag-dys">Section</span></a></div>
+      <div class="slide-card"><a href="slide-22.html" target="slide"><span class="slide-num">22</span><h3>Definition &amp; Categories</h3><p>Rome VI Criteria, Mechanisms</p><span class="section-tag tag-dys">Content</span></a></div>
+      <div class="slide-card"><a href="slide-23.html" target="slide"><span class="slide-num">23</span><h3>History &amp; Examination</h3><p>Clinical Approach, DD, Investigation</p><span class="section-tag tag-dys">Content</span></a></div>
+      <div class="slide-card"><a href="slide-24.html" target="slide"><span class="slide-num">24</span><h3>Management</h3><p>Non-Pharmacological, Triple Therapy, Alarm Features</p><span class="section-tag tag-dys">Content</span></a></div>
+    </div>
+  </div>
+
+  <div class="section-group">
+    <div class="sg-title"><span>05 &mdash; Weight Loss</span><span class="sg-line"></span></div>
+    <div class="slide-grid">
+      <div class="slide-card"><a href="slide-25.html" target="slide"><span class="slide-num">25</span><h3>Section Divider</h3><p>Weight Loss Introduction</p><span class="section-tag tag-wl">Section</span></a></div>
+      <div class="slide-card"><a href="slide-26.html" target="slide"><span class="slide-num">26</span><h3>Definition &amp; Pathophysiology</h3><p>Unintentional Weight Loss, Consequences</p><span class="section-tag tag-wl">Content</span></a></div>
+      <div class="slide-card"><a href="slide-27.html" target="slide"><span class="slide-num">27</span><h3>DD by System</h3><p>Cardiovascular, GI, Malignancy, Endocrine</p><span class="section-tag tag-wl">Content</span></a></div>
+      <div class="slide-card"><a href="slide-28.html" target="slide"><span class="slide-num">28</span><h3>Medication Effects</h3><p>Adverse Effects Leading to Weight Loss</p><span class="section-tag tag-wl">Content</span></a></div>
+      <div class="slide-card"><a href="slide-29.html" target="slide"><span class="slide-num">29</span><h3>Evaluation</h3><p>History, Physical Exam, Laboratory Tests</p><span class="section-tag tag-wl">Content</span></a></div>
+      <div class="slide-card"><a href="slide-30.html" target="slide"><span class="slide-num">30</span><h3>Treatment &amp; Elderly</h3><p>Treatment Approach, Elderly Considerations</p><span class="section-tag tag-wl">Content</span></a></div>
+    </div>
+  </div>
+
+  <div class="section-group">
+    <div class="sg-title"><span>Summary</span><span class="sg-line"></span></div>
+    <div class="slide-grid">
+      <div class="slide-card"><a href="slide-31.html" target="slide"><span class="slide-num">31</span><h3>Summary</h3><p>Key Topics Covered</p><span class="section-tag tag-sum">Review</span></a></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

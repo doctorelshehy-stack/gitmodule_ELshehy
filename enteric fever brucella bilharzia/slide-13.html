@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide(){const s=document.querySelector('.slide-content');if(!s)return;const sx=window.innerWidth/960;const sy=window.innerHeight/540;const sc=Math.min(sx,sy);s.style.width='960px';s.style.height='540px';s.style.transform=`scale(${sc})`;s.style.transformOrigin='center center';s.style.flexShrink='0';}
+window.addEventListener('load',scaleSlide);window.addEventListener('resize',scaleSlide);
+</script>
+<title>Typhoid Definition</title>
+</head>
+<body>
+<div class="slide-content" style="background:#ffffff;overflow:hidden;font-family:'Times New Roman',serif;">
+
+<svg style="position:absolute;top:0;left:0;width:960px;height:540px;z-index:0;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="0" y="0" width="960" height="540" fill="#ffffff"/>
+  <rect x="0" y="0" width="960" height="70" fill="#2a9d8f"/>
+  <rect x="0" y="70" width="960" height="3" fill="#264653"/>
+</svg>
+<div style="position:absolute;top:18px;left:50px;z-index:1;">
+  <p style="font-size:24px;font-weight:700;color:#ffffff;margin:0;">Section 2 &bull; Enteric Fever (Typhoid)</p>
+</div>
+<div style="position:absolute;top:95px;left:50px;width:860px;z-index:1;">
+  <p style="font-size:20px;font-weight:700;color:#264653;margin:0 0 4px 0;">Definition, Organism &amp; Transmission</p>
+  <div style="width:50px;height:2px;background:#2a9d8f;margin-bottom:8px;"></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div>
+      <div style="background:#f0f7f6;border-radius:6px;padding:10px;margin-bottom:8px;">
+        <p style="font-size:14px;font-weight:700;color:#264653;margin:0 0 3px 0;">Definition</p>
+        <p style="font-size:12px;color:#444;margin:0;line-height:1.5;">Enteric Fever (Enterica) is an acute enteric infectious disease leading to life threatening systemic illness caused by <em>salmonella enterica</em>.</p>
+        <p style="font-size:12px;color:#555;margin:4px 0 0 0;"><strong>Two subspecies:</strong></p>
+        <ul style="margin:2px 0 0 0;padding-left:16px;font-size:12px;color:#444;">
+          <li>Serovar typhi causing <strong>Typhoid fever</strong></li>
+          <li>Serovars Para typhi A, B, and C causing <strong>Paratyphoid fever</strong> A, B, C</li>
+        </ul>
+      </div>
+      <div style="background:#264653;border-radius:6px;padding:10px;">
+        <p style="color:#e9c46a;font-size:13px;font-weight:700;margin:0 0 3px 0;">Salmonella Enterica</p>
+        <ul style="margin:0;padding-left:16px;color:#eee;font-size:11px;line-height:1.6;">
+          <li>Gram negative short thick bacilli, motile by flagella</li>
+          <li>Facultative anaerobes and resistant to bile salts</li>
+          <li>H<sub>2</sub>S producing, non-lactose fermenting, non-spore forming organism</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div style="background:#fdf6f0;border-radius:6px;padding:10px;margin-bottom:8px;">
+        <p style="font-size:14px;font-weight:700;color:#264653;margin:0 0 3px 0;">Sources of Infection</p>
+        <p style="font-size:12px;color:#444;margin:0;"><strong>Primary source:</strong> Urine or feces of cases or carriers.</p>
+        <p style="font-size:12px;color:#444;margin:2px 0 0 0;"><strong>Secondary source:</strong> From contaminated food, water, fingers or flies.</p>
+      </div>
+      <div style="background:#fff8f0;border-radius:6px;padding:10px;">
+        <p style="font-size:14px;font-weight:700;color:#264653;margin:0 0 3px 0;">Mode of Infection</p>
+        <p style="font-size:12px;color:#444;margin:0;line-height:1.5;">Ingestion of contaminated food or water by organism in urine or feces of case or carrier either directly or by flies.</p>
+      </div>
+      <div style="background:#e76f51;border-radius:6px;padding:10px;margin-top:8px;">
+        <p style="color:#ffffff;font-size:13px;font-weight:700;margin:0 0 3px 0;">Pathogenesis (3 Steps)</p>
+        <ol style="margin:0;padding-left:16px;color:#fff;font-size:11px;line-height:1.6;">
+          <li>Bacilli survive gastric acidity, attack mucosa at terminal ileum via bacterial Ag. Taken by lymphatics to Peyer's patches &amp; mesenteric LNs, engulfed by lymphocytes &amp; macrophages.</li>
+          <li>Bacilli reach blood via thoracic duct (primary bacteremia = incubation period). After multiplication in liver, spleen, bone marrow, LNs &rarr; spill into blood again (secondary bacteremia = clinical phase).</li>
+          <li>Bacteria shed from gall bladder with bile, re-infect Peyer's patches &amp; lymphoid follicles of ileum &rarr; inflammation and ulceration.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<svg style="position:absolute;right:32px;bottom:24px;width:40px;height:24px;z-index:100;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="40" height="24" rx="4" fill="#2a9d8f" opacity="0.9"/>
+  <text x="20" y="17" text-anchor="middle" font-family="Times New Roman, serif" font-size="14" fill="#ffffff" font-weight="700">11</text>
+</svg>
+</div>
+</body>
+</html>
