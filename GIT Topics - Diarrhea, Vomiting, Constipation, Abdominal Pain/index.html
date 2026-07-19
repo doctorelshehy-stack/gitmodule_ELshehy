@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pediatric GIT Presentation Viewer</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Times New Roman',serif; background:#1a1a2e; color:#edf6f9; }
+header { background:#006d77; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; }
+header h1 { font-size:24px; font-weight:700; }
+header p { font-size:14px; color:#83c5be; }
+nav { display:flex; gap:8px; flex-wrap:wrap; padding:16px 40px; background:#0d1b2a; }
+nav a { padding:6px 12px; background:#006d77; color:#fff; text-decoration:none; border-radius:4px; font-size:13px; transition:background 0.2s; }
+nav a:hover { background:#e29578; }
+nav a.active { background:#e29578; font-weight:700; }
+main { padding:20px 40px; text-align:center; }
+.slide-container { display:inline-block; background:#000; border-radius:8px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.5); }
+.slide-container img { display:block; max-width:960px; width:100%; height:auto; }
+.caption { margin-top:12px; font-size:16px; color:#83c5be; }
+.controls { margin-top:16px; display:flex; justify-content:center; gap:16px; }
+.controls button { padding:10px 24px; background:#006d77; color:#fff; border:none; border-radius:6px; font-size:16px; cursor:pointer; font-family:'Times New Roman',serif; }
+.controls button:hover { background:#e29578; }
+footer { text-align:center; padding:20px; color:#636e72; font-size:13px; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Pediatric Gastro-Enterology</h1>
+    <p>GIT Topics &mdash; Diarrhea &bull; Vomiting &bull; Constipation &bull; Abdominal Pain</p>
+  </div>
+  <span id="slideCounter" style="font-size:18px;font-weight:700;">1 / 31</span>
+</header>
+<nav id="slideNav">
+</nav>
+<main>
+  <div class="slide-container">
+    <img id="slideImage" src="png/slide-01.png" alt="Slide">
+  </div>
+  <p class="caption" id="slideCaption">Slide 1: Cover</p>
+  <div class="controls">
+    <button onclick="goSlide(-1)">&#9664; Previous</button>
+    <button onclick="goSlide(1)">Next &#9654;</button>
+  </div>
+</main>
+<footer>Menoufia Faculty of Medicine &mdash; Pediatric Gastro-Enterology, Hepatology and Infectious Diseases Module</footer>
+
+<script>
+const totalSlides = 31;
+let current = 1;
+
+const slideTitles = {
+  1:'Cover', 2:'Table of Contents', 3:'Section 1: Diarrhea',
+  4:'Definitions & Etiology', 5:'Persistent & Chronic Diarrhea',
+  6:'Complications (1)', 7:'Complications (2)', 8:'Investigations & Management',
+  9:'Assessment of the Child', 10:'Degree of Dehydration',
+  11:'ORS Composition & Types', 12:'ORS Preparation & Plan A',
+  13:'Plan B & Plan C', 14:'Additional Therapies',
+  15:'Prevention of Diarrhea', 16:'Persistent Diarrhea',
+  17:'Section 2: Vomiting', 18:'Definitions & Causes',
+  19:'Hypertrophic Pyloric Stenosis', 20:'GERD (1)',
+  21:'GERD (2) - Diagnosis & Treatment', 22:'Section 3: Constipation',
+  23:'Hirschsprung Disease', 24:'Functional vs Hirschsprung',
+  25:'Encopresis & Fecal Soiling', 26:'Section 4: Abdominal Pain',
+  27:'Acute Abdominal Pain', 28:'Medical Causes (cont.)',
+  29:'Recurrent Abdominal Pain', 30:'Rome IV & Red Flags',
+  31:'Summary'
+};
+
+const nav = document.getElementById('slideNav');
+for (let i = 1; i <= totalSlides; i++) {
+  const a = document.createElement('a');
+  a.href = '#';
+  a.textContent = i.toString().padStart(2,'0');
+  a.onclick = (e) => { e.preventDefault(); showSlide(i); };
+  a.id = 'nav-'+i;
+  nav.appendChild(a);
+}
+
+function showSlide(n) {
+  current = Math.max(1, Math.min(totalSlides, n));
+  document.getElementById('slideImage').src = 'png/slide-'+current.toString().padStart(2,'0')+'.png';
+  document.getElementById('slideCounter').textContent = current+' / '+totalSlides;
+  document.getElementById('slideCaption').textContent = 'Slide '+current+': '+(slideTitles[current]||'');
+  document.querySelectorAll('#slideNav a').forEach(a => a.classList.remove('active'));
+  document.getElementById('nav-'+current).classList.add('active');
+}
+
+function goSlide(delta) { showSlide(current + delta); }
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight' || e.key === 'ArrowDown') goSlide(1);
+  if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') goSlide(-1);
+});
+
+showSlide(1);
+</script>
+</body>
+</html>
